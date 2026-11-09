@@ -1,12 +1,12 @@
-# Computations and source audit, version 1.1
+# Computations, source audit and Lean rerun, version 1.1.0
 
-Yao Xu, 7 November 2026. Companion evidence for *A smooth force and a singular
+Yao Xu. Companion evidence for *A smooth force and a singular
 fluid*. This directory is part of the article distribution. Keep it beside
 the article and its source ledger when sharing the text. No public archival
 deposit URL or DOI has been assigned.
 
 The [content manifest](MANIFEST.json) identifies every file in this package by
-SHA-256. It fixes the contents of version 1.1 without claiming that the package
+SHA-256. It fixes the contents of version 1.1.0 without claiming that the package
 has already been publicly hosted. The original mathematical output records
 are included, rather than a summary of their values alone.
 
@@ -37,8 +37,8 @@ article uses the full manuscript schedule and keeps h symbolic.
   [frozen definition source](refs/formal-conjectures-NavierStokes.lean).
 - [Compiler version output](verify/lean-environment.log). The inspected proof
   pins Lean 4.34.0-rc2, while the available compiler reported Lean 4.34.1.
-  No Lean build, elaboration, axiom replay or kernel execution was attempted
-  for this article.
+  This is the environment of the earlier source/algebra checks; the Lean rerun
+  below used the pinned toolchain.
 
 The audit reads project sources at
 [`f9e8bc5b38b6e212696e8a30e3e91517af887bbd`](https://github.com/openai/NavierStokesAndEuler/tree/f9e8bc5b38b6e212696e8a30e3e91517af887bbd).
@@ -52,6 +52,38 @@ the supplied reference snapshots. External library bodies are excluded.
 The source and algebra checks do not prove profile existence, positivity,
 stress-cone realizability, pulse estimates, all-order summation or whole-space
 uniqueness. Their process exits are not Lean acceptance receipts.
+
+## Lean rerun
+
+On 9 November 2026 we reran the pinned development on a rented cloud Linux VM
+with 8 vCPUs and 50 GB RAM. The records are:
+
+- [Commit](lean-rerun/commit.txt), [toolchain](lean-rerun/toolchain.txt),
+  [runner](lean-rerun/runner.sh) and [run log](lean-rerun/runner.log).
+- [Mathlib cache log](lean-rerun/cache.log): `lake exe cache get`, exit 0.
+- [Build log](lean-rerun/build.log) and [exit receipt](lean-rerun/build.exit):
+  `lake build`, exit 0, 11,424 jobs, `103m23.528s` wall time. Mathlib's compiled
+  files came from its binary cache; the project was built from source. The four
+  `sorry` warnings are challenge placeholders outside the solution import closure.
+- [Axiom output](lean-rerun/axioms.log) and [exit receipt](lean-rerun/axioms.exit):
+  the file importing `NavierStokes.ComparatorSolution` prints exactly `propext`,
+  `Classical.choice`, `Quot.sound` for each endpoint, exit 0.
+- [Comparator log](lean-rerun/comparator.log) and [exit receipt](lean-rerun/comparator.exit):
+  `lake exe comparator ComparatorChallenges/NavierStokes.json`, exit 0;
+  challenge and solution statements compared, nanoda and Lean's default kernel
+  accept, “Your solution is okay!”.
+
+Comparator used landrun v0.1.17 from `go install`, lean4export
+`df81913eee5519d5a88ae5b0fd701b5298cc29ab` built with the project toolchain,
+and nanoda_lib `0da9f98feadd3a0a2ef4b3dbcf52a298a6fef929` built with
+`cargo build --release`, using rustc 1.99.1. The additional landrun checkout
+revision in the log identifies a separate checkout, not the installed binary.
+The runner's `@latest` tool installations describe the recorded run; the log's
+resolved versions identify what was actually used.
+
+Comparator's [README](https://github.com/leanprover/comparator/blob/19e111e2141cf333c7daff0f64c5f24acc91dd2e/README.md)
+sets out its trust assumptions. The runner uses the project's configured command
+after a full build, without the README's additional unprivileged-isolation setup.
 
 ## Manuscript versions
 
@@ -73,13 +105,24 @@ that every intermediate version was captured, or that every edit is harmless.
 
 ## Metadata transformations
 
-Scripts and mathematical result JSON are copied without changes. In process
+The source/algebra scripts and mathematical result JSON are copied without changes. In process
 receipts and the environment record only absolute interpreter names are replaced
 with portable Python executable names. The negative-control traceback retains
 its relative file and line locators, with the absolute temporary-directory
 prefix removed. Exit statuses, timestamps, assertions and mathematical output
-are unchanged. These copies make the evidence distributable without exposing
+are unchanged. The Python receipt scope label is clarified to distinguish it
+from the later Lean rerun; its process records are unchanged. These copies make the evidence distributable without exposing
 private filesystem locations.
+
+In the Lean rerun logs only environment-specific filesystem locations and PATH
+values are replaced by `<run-root>`, `<home>`, `<temporary-file>`,
+`<cache-root>` and `<environment-path>`. Commands, timestamps, compiler/tool
+versions, warnings, axiom lists and exit statuses are unchanged. In the runner,
+the original fixed execution directory is replaced by the required
+`RERUN_ROOT` variable, and its environment-specific comment is generalized.
+The manifest records the SHA-256 of each supplied original as well as the
+SHA-256 of the distributed copy. Intermediate status snapshots and checksums
+of undistributed transport archives are omitted.
 
 In the MathDB record snapshot (`refs/mathdb-formalizations.json`), the prefix of
 each record's internal `external_id` and its `source_url` into a private

@@ -1,0 +1,24 @@
+2026-11-09T10:33:35Z start
+8
+               total        used        free      shared  buff/cache   available
+Mem:              50           1          47           0           2          49
+Swap:              0           0           0
+Filesystem      Size  Used Avail Use% Mounted on
+overlay         226G   85M  226G   1% /
+info: downloading installer
+2026-11-09T10:33:36Z cache get
+cache exit 0
+2026-11-09T10:35:34Z build
+build exit 0
+Build completed successfully (11424 jobs).
+
+real	103m23.528s
+user	693m47.053s
+sys	69m17.253s
+2026-11-09T12:18:57Z axioms
+axioms exit 0
+'NavierStokes.Comparator.navier_stokes_breakdown_periodic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NavierStokes.Comparator.navier_stokes_breakdown_R3' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-11-09T12:19:06Z stage1 done (build exit 0)
+2026-11-09T12:19:06Z stage1 packed
+comparator exit 0

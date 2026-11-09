@@ -1,5 +1,5 @@
 {
-  "scope": "Python source/statement audit and exact algebra only; Lean build and replay not run",
+  "scope": "Original Python source/statement audit and exact algebra receipts only; Lean rerun recorded separately in article/evidence/lean-rerun",
   "receipts": [
     {
       "command": [
@@ -32,6 +32,7 @@
   ],
   "passed": true,
   "redactions": [
-    "Absolute interpreter paths replaced with portable executable names; arguments, timestamps and exit statuses unchanged."
+    "Absolute interpreter paths replaced with portable executable names; arguments, timestamps and exit statuses unchanged.",
+    "Scope label clarified to distinguish these original Python receipts from the later Lean rerun; process records unchanged."
   ]
 }

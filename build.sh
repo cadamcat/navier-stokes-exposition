@@ -6,7 +6,7 @@ LEAN_REPO=https://github.com/openai/NavierStokesAndEuler.git
 LEAN_COMMIT=f9e8bc5b38b6e212696e8a30e3e91517af887bbd
 case "${1:-}" in
   verify)
-    # the source audit and the article check read the Lean source at the pinned commit (read only, never built)
+    # the source audit and the article check read the pinned Lean source without rebuilding it
     if [ ! -d refs/NavierStokesAndEuler ]; then
       git clone --quiet "$LEAN_REPO" refs/NavierStokesAndEuler
       git -C refs/NavierStokesAndEuler checkout --quiet "$LEAN_COMMIT"

@@ -23,7 +23,7 @@ for command, destination in commands:
     if result.returncode:
         break
 Path('verify/acceptance.json').write_text(json.dumps({
-    'scope': 'Python source/statement audit and exact algebra only; Lean build and replay not run',
+    'scope': 'Python source/statement audit and exact algebra only; Lean execution recorded separately in article/evidence/lean-rerun',
     'receipts': receipts,
     'passed': len(receipts) == len(commands) and all(r['exit_status'] == 0 for r in receipts)
 }, indent=2) + '\n')

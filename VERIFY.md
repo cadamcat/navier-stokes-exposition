@@ -1,13 +1,13 @@
 # Forced breakdown for the three-dimensional Navier–Stokes equations
 
 Verification scope: source and statement audit, exact elementary calculations,
-and inspection of public verification records. Evidence retrieved
-7 November 2026. The selected formal version is
+inspection of public verification records retrieved 7 November 2026, and our
+Lean build, axiom check and two-kernel Comparator run on 9 November 2026.
+The selected formal version is
 `openai/NavierStokesAndEuler@f9e8bc5b38b6e212696e8a30e3e91517af887bbd`.
 
-This verification does **not** mean
-that we rebuilt Lean, refereed the manuscript, established mathematical consensus,
-or secured MathDB/Clay acceptance. No counterexample to the final formal
+The comparison of the Lean statements with the official problem is the source
+reading below. No counterexample to the final formal
 statements was found. Two differences between intermediate paper and Lean
 arguments were confirmed. The source is a claimed resolution of **forced**
 alternatives C and D; it does not establish the **unforced** alternatives A or B.
@@ -86,7 +86,7 @@ exposes the same propositions as
 `NavierStokes.Comparator.navier_stokes_breakdown_R3` and
 `NavierStokes.Comparator.navier_stokes_breakdown_periodic`. Its lines 31–32
 request their axiom lists. These named endpoints, rather than every intermediate
-lemma of the paper, are what the external Comparator record checks.
+lemma of the paper, are what our Comparator run and the external records check.
 
 The mathematical shape of C is
 \[
@@ -195,21 +195,38 @@ correspondence is not a successful proof import into MathDB's older environment.
 `reviewed_by` is null in the retrieved records. Any adoption or version migration
 is for MathDB to document.
 
-## 3. Build, source audit, and external execution evidence
+## 3. Build, source audit, and execution evidence
 
-### Own checks
+### Own Lean rerun
 
-No local Lean build or kernel replay was run. The available Lean installation reports
-**4.34.1**, rather than the project's **4.34.0-rc2**. We did not alter the
-project pins. `verify/BUILD.md` gives the cost estimate and exact limitation.
+On 9 November 2026, on a rented cloud Linux VM with 8 vCPUs and 50 GB RAM,
+we reran the development at the pinned commit with `leanprover/lean4:v4.34.0-rc2`.
+The [runner and logs](article/evidence/README.md#lean-rerun) record:
 
-Before a full reproduction one should allow hours, several GB of cache/build
-disk, and a compatible memory pilot. The submission's own project closure has
-609 files and 382,514 lines, plus external imports. Four processes at an assumed 2–4 GB each would use
-8–16 GB, but there is no measured upper bound guaranteeing less than 24 GB.
-The toolchain mismatch prevented a meaningful compatible pilot. No cache command
-was needed after that finding. There is no local build exit code, local axiom
-output, or local build log to report.
+- `lake exe cache get`: exit 0; Mathlib compiled files came from its binary cache.
+- `lake build`: exit 0, “Build completed successfully (11424 jobs).”, wall time
+  `103m23.528s`. The project was built from source.
+- A file importing `NavierStokes.ComparatorSolution` and requesting `#print axioms`
+  for both endpoints: exit 0; each depends on exactly `propext`, `Classical.choice`
+  and `Quot.sound`.
+- `lake exe comparator ComparatorChallenges/NavierStokes.json`: exit 0, with
+  “nanoda kernel accepts the solution”, “Lean default kernel accepts the solution”
+  and “Your solution is okay!”. This compares the solution with the repository's
+  challenge statements.
+
+The Comparator run used landrun v0.1.17 installed with `go install`, lean4export
+`df81913eee5519d5a88ae5b0fd701b5298cc29ab` built with the project toolchain,
+and nanoda_lib `0da9f98feadd3a0a2ef4b3dbcf52a298a6fef929` built with
+`cargo build --release`, using rustc 1.99.1. These are the tools actually recorded
+in `comparator.log`; the separate landrun checkout printed there is not the
+source used by `go install`.
+
+Comparator's [README](https://github.com/leanprover/comparator/blob/19e111e2141cf333c7daff0f64c5f24acc91dd2e/README.md)
+states its trust assumptions. We ran the project's configured command after the
+full build, without the README's additional unprivileged-isolation setup.
+`verify/BUILD.md` gives the pins and reproduction commands.
+
+### Source and algebra checks
 
 `verify/source_audit.py` follows actual local import statements from each root,
 blanks nested comments and strings, and searches code tokens. It reports:
@@ -226,8 +243,10 @@ import. External library bodies and the Lean/compiler trust base were **not**
 scanned by this script. An import closure overapproximates a declaration's proof
 dependencies; it is not an elaborated declaration-level axiom cone.
 
-The independent challenge file has two intentional `sorry` declarations at
-lines 277 and 284. It is **absent** from all three proof-root closures.
+The Navier–Stokes challenge file has two intentional `sorry` declarations
+(the build warnings locate them at lines 273 and 280); two further warnings are
+in the Euler challenge file at lines 85 and 170.
+The challenge modules are **absent** from all three proof-root closures.
 `ComparatorDefinitions.lean` supplies its definitions without those placeholders.
 Finding a challenge placeholder is therefore not evidence of a hole in either
 proved endpoint. Conversely, a clean lexical scan alone cannot establish kernel
@@ -244,8 +263,9 @@ dimension in the volume exponent. Logs: `verify/source-audit-selftest.log` and
 
 The project `formalization.yaml` explicitly says its review is **self-assessed**.
 It lists the two submission endpoints with axioms
-`propext`, `Classical.choice`, `Quot.sound`. This is upstream metadata, not our
-printed axiom output. The pinned source has no `.github` workflow directory;
+`propext`, `Classical.choice`, `Quot.sound`. This upstream metadata agrees with our
+printed axiom output in `article/evidence/lean-rerun/axioms.log`.
+The pinned source has no `.github` workflow directory;
 the retrieved upstream Actions API returned zero runs. No public upstream CI
 execution record was found there.
 

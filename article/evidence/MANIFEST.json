@@ -1,11 +1,77 @@
 {
-  "package_version": "1.1",
-  "scope": "Distributed computation evidence; no Lean execution or public deposit implied",
+  "package_version": "1.1.0",
+  "scope": "Distributed exact calculations, source audit and Lean rerun evidence; no public deposit implied",
   "files": [
     {
       "path": "README.md",
-      "sha256": "78904633b7ff948e07226aae2f001e46dd3f9e3b489e5ce6ffd5ab6213980825",
-      "bytes": 4956
+      "sha256": "c5e2cf1a6297bcead75b74c72ff2fb65ee47f8a334f34be4fcb741b6ef232f7d",
+      "bytes": 7736
+    },
+    {
+      "path": "lean-rerun/axioms.exit",
+      "sha256": "e47a6499729b742f54c0937610bd113b6187970cbf1238d6eccc0df408c11fd2",
+      "bytes": 14,
+      "supplied_original_sha256": "e47a6499729b742f54c0937610bd113b6187970cbf1238d6eccc0df408c11fd2"
+    },
+    {
+      "path": "lean-rerun/axioms.log",
+      "sha256": "e779bc627d126252173d4536520a851a2d9672afbd603b44bf4bff25a93f7203",
+      "bytes": 230,
+      "supplied_original_sha256": "e779bc627d126252173d4536520a851a2d9672afbd603b44bf4bff25a93f7203"
+    },
+    {
+      "path": "lean-rerun/build.exit",
+      "sha256": "9ac8238da27779e76b052247db226d9c6290a861e622a4f822a1b89927bc8241",
+      "bytes": 13,
+      "supplied_original_sha256": "9ac8238da27779e76b052247db226d9c6290a861e622a4f822a1b89927bc8241"
+    },
+    {
+      "path": "lean-rerun/build.log",
+      "sha256": "9c8d7a3f571d216d567a7ed10940c3303612fff6fabaeff3d1fdd25c2e4d223e",
+      "bytes": 162550,
+      "supplied_original_sha256": "9c8d7a3f571d216d567a7ed10940c3303612fff6fabaeff3d1fdd25c2e4d223e"
+    },
+    {
+      "path": "lean-rerun/cache.log",
+      "sha256": "e9dec7443122a95573eeb963f25399334eac38a87640df82fe3d7458d5fb3edd",
+      "bytes": 9733,
+      "supplied_original_sha256": "f7f7f55482acd6a8d434639dc28d54393f45b9681f775654f70beeb52e7d6a00"
+    },
+    {
+      "path": "lean-rerun/commit.txt",
+      "sha256": "4cb8b85c992dd3fa1dfbd9e69f017bbea7939f5d6052778d545625550cd53468",
+      "bytes": 41,
+      "supplied_original_sha256": "4cb8b85c992dd3fa1dfbd9e69f017bbea7939f5d6052778d545625550cd53468"
+    },
+    {
+      "path": "lean-rerun/comparator.exit",
+      "sha256": "8972fe0b278cb13c6a8f9211928d227a02661cecee6cafe9152f96a9fac2ba42",
+      "bytes": 18,
+      "supplied_original_sha256": "8972fe0b278cb13c6a8f9211928d227a02661cecee6cafe9152f96a9fac2ba42"
+    },
+    {
+      "path": "lean-rerun/comparator.log",
+      "sha256": "1702b9121e243607e74035b9593a91da27a5b8527a498b167f2848a52ead313e",
+      "bytes": 5614,
+      "supplied_original_sha256": "86f825345d96a2b5b83e33cca98e5375ba33d0220723ee2797c00e25e4af8bf6"
+    },
+    {
+      "path": "lean-rerun/runner.log",
+      "sha256": "9e4da5d3efa031d2566caddc4474326b2ef8410bb3d3269b0642a4978d53c15c",
+      "bytes": 903,
+      "supplied_original_sha256": "9e4da5d3efa031d2566caddc4474326b2ef8410bb3d3269b0642a4978d53c15c"
+    },
+    {
+      "path": "lean-rerun/runner.sh",
+      "sha256": "76421b1087afc1fcc69cc18f72f55262492cffd52def71e2a1d82e8bde62083b",
+      "bytes": 3133,
+      "supplied_original_sha256": "93f62c4dbe72242b26e63f0c6d03e3d2d6a83a736b70046ed1ebde86c02ab134"
+    },
+    {
+      "path": "lean-rerun/toolchain.txt",
+      "sha256": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88",
+      "bytes": 29,
+      "supplied_original_sha256": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88"
     },
     {
       "path": "refs/formal-conjectures-NavierStokes.lean",
@@ -29,8 +95,8 @@
     },
     {
       "path": "verify/acceptance.json",
-      "sha256": "ff7b9bb1677a942424e6985ca7dca578bbbd36580740b2230188d5bd40e811de",
-      "bytes": 989
+      "sha256": "1be7b7c7e2b7e99398f70467fe3e155aca21622aa686a995d16e8b2e0442d2cb",
+      "bytes": 1168
     },
     {
       "path": "verify/check_identities.py",

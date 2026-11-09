@@ -1,0 +1,102 @@
++ apt-get -qq update
+W: Skipping acquire of configured file 'main/source/Sources' as repository 'https://r2u.stat.illinois.edu/ubuntu noble InRelease' does not seem to provide it (sources.list entry misspelt?)
++ apt-get -qq install -y golang-go cargo
++ export GOPATH=<environment-path>
++ GOPATH=<environment-path>
++ PATH=<environment-path>
++ go install github.com/zouuup/landrun/cmd/landrun@latest
+go: downloading github.com/zouuup/landrun v0.1.17
+go: github.com/zouuup/landrun@v0.1.17 requires go >= 1.24.0; switching to go1.26.10
+go: downloading go1.26.10 (linux/amd64)
+go: downloading github.com/urfave/cli/v3 v3.6.2
+go: downloading github.com/landlock-lsm/go-landlock v0.9.0
+go: downloading golang.org/x/sys v0.40.0
+go: downloading kernel.org/pub/linux/libs/security/libcap/psx v1.2.77
++ curl -sSf https://sh.rustup.rs
++ sh -s -- -y --profile minimal
+info: downloading installer
+warn: It looks like you have an existing installation of Rust at:
+warn: /usr/bin
+warn: This could mean one of the following:
+warn: - You have already installed rustup: you can quit the installer right now.
+warn: - You haven't installed rustup yet, but have Rust installed from elsewhere.
+warn: In the latter case, rustup can coexist with and adopt your existing Rust.
+warn: To adopt, please reply `yes`, or set RUSTUP_INIT_SKIP_PATH_CHECK to yes,
+warn: or pass `-y` to ignore all ignorable checks, then follow the instructions at:
+warn: <https://rust-lang.github.io/rustup/installation/already-installed-rust.html>
+error: cannot install while Rust is installed
+warn: continuing (because the -y flag is set and the error is ignorable)
+info: profile set to minimal
+info: default host tuple is x86_64-unknown-linux-gnu
+info: syncing channel updates for stable-x86_64-unknown-linux-gnu
+info: latest update on 2026-10-15 for version 1.99.1 (58cf8f9c3 2026-10-13)
+info: downloading 3 components
+info: default toolchain set to stable-x86_64-unknown-linux-gnu
++ . <home>/.cargo/env
+++ case ":${PATH}:" in
++ rustc --version
+rustc 1.99.1 (58cf8f9c3 2026-10-13)
++ git clone -q https://github.com/ammkrn/nanoda_lib <run-root>/nanoda_lib
++ cd <run-root>/nanoda_lib
++ git rev-parse HEAD
+0da9f98feadd3a0a2ef4b3dbcf52a298a6fef929
++ cargo build --release -q
++ export PATH=<environment-path>
++ PATH=<environment-path>
++ cd <run-root>
++ git clone -q https://github.com/zouuup/landrun lr
++ cd lr
++ git rev-parse HEAD
+ec104f6edc1e14d7fec6d31146f1ec6f9c192c5a
++ git clone -q https://github.com/leanprover/lean4export <run-root>/lean4export
++ cd <run-root>/lean4export
++ git rev-parse HEAD
+df81913eee5519d5a88ae5b0fd701b5298cc29ab
++ cp <run-root>/nslean/repo/lean-toolchain .
++ lake build
+✔ [2/6] Built Export (10s)
+✔ [3/6] Built Main (1.6s)
+✔ [4/6] Built Main:c.o (372ms)
+✔ [5/6] Built Export:c.o (5.2s)
+✔ [6/6] Built lean4export:exe (6.2s)
+Build completed successfully (6 jobs).
++ mkdir -p <home>/bin
++ ln -sf <run-root>/lean4export/.lake/build/bin/lean4export <home>/bin/lean4export
++ export PATH=<environment-path>
++ PATH=<environment-path>
++ which landrun lean4export nanoda_bin
+<home>/go/bin/landrun
+<home>/bin/lean4export
+<run-root>/nanoda_lib/target/release/nanoda_bin
++ cd <run-root>/nslean/repo
++ lake exe comparator ComparatorChallenges/NavierStokes.json
+✔ [5/17] Built Comparator.Util (519ms)
+✔ [6/17] Built Comparator.Util:c.o (205ms)
+✔ [7/17] Built Export.Parse (2.2s)
+✔ [8/17] Built Comparator.Axioms (802ms)
+✔ [9/17] Built Comparator.Axioms:c.o (458ms)
+✔ [10/17] Built Comparator.Compare (852ms)
+✔ [11/17] Built Comparator (512ms)
+✔ [12/17] Built Comparator.Compare:c.o (641ms)
+✔ [13/17] Built Comparator:c.o (98ms)
+✔ [14/17] Built Main (2.6s)
+✔ [15/17] Built Export.Parse:c.o (5.0s)
+✔ [16/17] Built Main:c.o (1.6s)
+✔ [17/17] Built comparator:exe (1.3s)
+Building ComparatorChallenges.NavierStokes
+⚠ [8763/8763] Replayed ComparatorChallenges.NavierStokes
+warning: ComparatorChallenges/NavierStokes.lean:273:8: declaration uses `sorry`
+warning: ComparatorChallenges/NavierStokes.lean:280:8: declaration uses `sorry`
+Build completed successfully (8763 jobs).
+Exporting #[Nat, String, String.mk, Char, Quot, Quot.mk, Quot.lift, Quot.ind, NavierStokes.Comparator.navier_stokes_breakdown_R3, NavierStokes.Comparator.navier_stokes_breakdown_periodic, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from ComparatorChallenges.NavierStokes
+Building NavierStokes.ComparatorSolution
+ℹ [9371/9371] Replayed NavierStokes.ComparatorSolution
+info: NavierStokes/ComparatorSolution.lean:31:0: 'NavierStokes.Comparator.navier_stokes_breakdown_R3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NavierStokes/ComparatorSolution.lean:32:0: 'NavierStokes.Comparator.navier_stokes_breakdown_periodic' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9371 jobs).
+Exporting #[Nat, String, String.mk, Char, Quot, Quot.mk, Quot.lift, Quot.ind, NavierStokes.Comparator.navier_stokes_breakdown_R3, NavierStokes.Comparator.navier_stokes_breakdown_periodic, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from NavierStokes.ComparatorSolution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!

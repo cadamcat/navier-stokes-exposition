@@ -12,6 +12,7 @@ const css = `
 @font-face{font-family:"Source Sans 3";font-weight:600;src:url(${f('@fontsource/source-sans-3/files/source-sans-3-greek-600-normal.woff2')});unicode-range:U+0370-03FF}
 @font-face{font-family:"KaTeX_Math";font-style:italic;src:url(${f('katex/dist/fonts/KaTeX_Math-Italic.woff2')})}
 @font-face{font-family:"KaTeX_Math";font-style:normal;src:url(${f('katex/dist/fonts/KaTeX_Main-Regular.woff2')})}
+@font-face{font-family:"KaTeX_Caligraphic";src:url(${f('katex/dist/fonts/KaTeX_Caligraphic-Regular.woff2')})}
 @font-face{font-family:"KaTeX_MainFB";font-style:normal;src:url(${f('katex/dist/fonts/KaTeX_Main-Regular.woff2')})}
 @font-face{font-family:"KaTeX_MainFB";font-style:italic;src:url(${f('katex/dist/fonts/KaTeX_Main-Regular.woff2')})}
 @font-face{font-family:"JetBrains Mono";src:url(${f('@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2')})}

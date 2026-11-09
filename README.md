@@ -1,6 +1,6 @@
 # A smooth force and a singular fluid: an exposition
 
-An article (22 pages) and a narrated film (9 minutes 29 seconds, with subtitles in the picture and a quiet music bed, in 4K at 60 frames per second) on the Navier–Stokes existence and smoothness problem (MathDB problem 315852): the Clay problem with its four alternatives, what was known, OpenAI's announced finite-time breakdown with a smooth force, which addresses alternatives C and D, what its Lean development states, how it has been received, including the differences between the paper and the formal proof, and what stays open: the unforced alternatives A and B.
+An article (23 pages) and a narrated film (9 minutes 29 seconds, with subtitles in the picture and a quiet music bed, in 4K at 60 frames per second) on the Navier–Stokes existence and smoothness problem (MathDB problem 315852): the Clay problem with its four alternatives, what was known, OpenAI's announced finite-time breakdown with a smooth force, which addresses alternatives C and D, what its Lean development states, how it has been received, including the differences between the paper and the formal proof, and what stays open: the unforced alternatives A and B.
 
 Prepared by Yao Xu with AI assistance; the narration voice is synthesized with an OpenAI speech model.
 
@@ -16,12 +16,14 @@ Prepared by Yao Xu with AI assistance; the narration voice is synthesized with a
 
 ## Status of each part
 
-- **Claimed** (stated in a cited source, without independent refereeing established here): the announced construction, as stated in OpenAI's manuscript *Finite Time Blowup for Navier–Stokes* (Theorem 1.1 and Corollary 10.6): for every positive viscosity, zero initial velocity and a smooth, compactly supported force for which the velocity becomes unbounded in finite time while the energy stays bounded, and no global smooth solution exists, in the whole space and on the torus. It is announced, not yet independently refereed.
-- **Lean:** OpenAI's Lean development `openai/NavierStokesAndEuler` at commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd` ends in `NavierStokes.Comparator.navier_stokes_breakdown_R3` (alternative C) and `navier_stokes_breakdown_periodic` (alternative D). Their statements were read against the official problem; the authors' formalization record lists both with only the axioms `propext`, `Classical.choice` and `Quot.sound` and calls its review self-assessed. Nothing was rebuilt for this exposition.
+- **Claimed** (stated in a cited source, without independent refereeing established here): the announced construction, as stated in OpenAI's manuscript *Finite Time Blowup for Navier–Stokes* (Theorem 1.1 and Corollary 10.6): for every positive viscosity, zero initial velocity and a smooth, compactly supported force for which the velocity becomes unbounded in finite time while the energy stays bounded, and no global smooth solution exists, in the whole space and on the torus.
+- **Lean:** OpenAI's Lean development `openai/NavierStokesAndEuler` at commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd` ends in `NavierStokes.Comparator.navier_stokes_breakdown_R3` (alternative C) and `navier_stokes_breakdown_periodic` (alternative D). Their statements were read against the official problem. On 9 November 2026 we built the pinned development from source, using Mathlib's binary cache, printed both axiom lists (`propext`, `Classical.choice`, `Quot.sound` only), and ran the repository's Comparator configuration: both nanoda and Lean's default kernel accepted the solution against the challenge statements. The [rerun evidence](article/evidence/README.md#lean-rerun) includes the logs and runner script.
 - **Proved:** the classical results cited (with their hypotheses, all for the unforced equations unless stated), the elementary identities and arguments given in the article, and the final compactness step from comparison to nonexistence, given the construction.
 - **Computed:** the scale exponents, coordinate identities and polynomial identities of the article, checked by exact symbolic computation in `verify/` and `article/evidence/`, with negative controls; and a lexical source audit of the Lean development's import closure. See `VERIFY.md`.
 - **Open:** alternatives A and B. A breakdown with a force does not settle them.
-- **This exposition** is our own work and has not been peer reviewed. Our contribution is the explanation, a clause-by-clause comparison of the formal statements with the official problem, exact checks of elementary calculations, and a dated account of the evidence; the mathematics is due to the authors cited. Every claim is listed with its status and source in `article/CLAIMS.md`.
+- **This exposition** is our own work and has not been peer reviewed. Our contribution is the explanation, a clause-by-clause comparison of the formal statements with the official problem, exact checks of elementary calculations, a rerun of the pinned Lean development, and a dated account of the evidence; the mathematics is due to the authors cited. Every claim is listed with its status and source in `article/CLAIMS.md`.
+
+The film was made before the rerun, so its chapter on the formal record cites the authors' record only.
 
 ## Contents
 
@@ -30,8 +32,8 @@ Prepared by Yao Xu with AI assistance; the narration voice is synthesized with a
 | `article/exposition.md` | the article (Markdown with LaTeX math; the PDF is built from it) |
 | `article/CLAIMS.md` | every claim of the article with its status (proved, computed, claimed, Lean, heuristic, definition, record) and source |
 | `article/SOURCES.md`, `article/refs.bib` | every citation with its locator and how it was verified |
-| `article/figures/` | the figure specifications, the figures as SVG and their generator; figure 2 embeds a 3D picture (`3d/*.png`) rendered with three.js |
-| `article/evidence/` | the evidence package the article cites: exact calculations, source audit, manuscript-version records, with a SHA-256 manifest |
+| `article/figures/` | the figure specifications, the figures as SVG and their generator; figures 2 and 3 embed 3D plates (`3d/*.png`) drawn with the film's seeded particle renderer |
+| `article/evidence/` | the evidence package the article cites: exact calculations, source audit, manuscript-version records and our Lean rerun, with a SHA-256 manifest |
 | `VERIFY.md`, `verify/` | the verification report and the programs with their original outputs, negative controls and process receipts |
 | `film/script.md` | the narration, beat by beat, with the status of each beat |
 | `film/narration.txt`, `film/subtitles.srt` | the spoken text and the subtitles of the whole film |

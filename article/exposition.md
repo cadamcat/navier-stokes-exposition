@@ -2,7 +2,7 @@
 title: "A smooth force and a singular fluid"
 subtitle: "The Navier–Stokes breakdown claim, the classical problem, and the scope of its formal proof"
 author: "Yao Xu"
-date: "Version 1.0, 8 November 2026"
+date: "Version 1.1.0"
 bibliography: refs.bib
 fontsize: 11pt
 geometry: margin=23mm
@@ -14,21 +14,21 @@ Picture water filling all of space. At every point and instant it has a velocity
 
 On 8 September 2026, OpenAI announced a construction that, it claims, answers this question for flows driven by a force. A smooth external force sets a fluid in motion from rest. In the announced flow, the speed becomes unbounded in finite time while the total kinetic energy stays bounded, for every positive viscosity, in the whole space and on the three-dimensional torus. The manuscript presents this as a proof of alternatives C and D of Charles Fefferman's official formulation of the Millennium problem, which admits a force that stays smooth and decaying for all time, including through the singular time [@Announcement2026; @Manuscript2026, Theorem 1.1 and Corollary 10.6].
 
-The announcement comes with a public Lean development. At the revision studied here, its final propositions state the two forced breakdown alternatives without any unproved hypothesis about the construction. The authors' formalization record lists both with only the three standard foundational axioms and calls its review self-assessed [@Lean2026].
+The announcement comes with a public Lean development. At the revision studied here, its final propositions state the two forced breakdown alternatives without any unproved hypothesis about the construction. On 9 November 2026 we rebuilt the pinned development from source using Mathlib's binary cache, printed both axiom lists with only the three standard foundational axioms, and ran Comparator: nanoda and Lean's default kernel accepted the solution against the challenge statements [@Rerun2026].
 
-Three points set the scope. The manuscript is announced, and no completed independent referee report is publicly known; Clay's page still labels the problem Active and MathDB's progress text labels it Open [@ClayStatus2026; @MathDB2026]. The construction uses a force, so the unforced alternatives A and B remain open; a positive answer to A or B could coexist with forced breakdown. This article reads the Lean statements against the official problem and inspects the authors' record; it does not rerun the development.
+Three points set the scope. The manuscript is announced, and no completed independent referee report is publicly known; Clay's page still labels the problem Active and MathDB's progress text labels it Open [@ClayStatus2026; @MathDB2026]. The construction uses a force, so the unforced alternatives A and B remain open; a positive answer to A or B could coexist with forced breakdown. This article reads the Lean statements against the official problem and adds execution evidence at the same revision; Section 10.1 gives the run's scope.
 
 Each claim carries one of five labels:
 
 - **proved**: established in accepted published work, or by a complete elementary argument given here;
 - **claimed**: asserted in the cited source, with no completed independent referee report publicly known;
-- **computed**: checked by the exact computations in the accompanying [evidence package, version 1.1](evidence/README.md);
-- **Lean**: a named formal proposition, as stated in the source and recorded by its authors;
+- **computed**: checked by the exact computations in the accompanying [evidence package, version 1.1.0](evidence/README.md);
+- **Lean**: a named formal proposition, with build and kernel evidence at the pinned revision;
 - **heuristic**: an explanatory picture that proves nothing.
 
 The claim ledger also identifies definitions, historical dates and observations about sources.
 
-**Contribution.** The mathematical results belong to the authors cited. This article explains them for readers with multivariable calculus, compares the formal and official statements clause by clause, checks elementary calculations, and gives a dated account of the evidence, including an October critique that documents two places where the formal proof uses a different estimate from the manuscript. It explains the profile existence proof, the every-order analytic estimates and the whole-space uniqueness argument without reproving them.
+**Contribution.** The mathematical results belong to the authors cited. This article explains them for readers with multivariable calculus, compares the formal and official statements clause by clause, checks elementary calculations, reruns the pinned Lean development, and gives a dated account of the evidence, including an October critique that documents two places where the formal proof uses a different estimate from the manuscript. It explains the profile existence proof, the every-order analytic estimates and the whole-space uniqueness argument without reproving them.
 
 # 1. What the equations say
 
@@ -228,7 +228,7 @@ Critical quantities can grow while the core's energy shrinks. These **computed**
 
 The angular Reynolds number \(UR/\nu\) grows like \(\tau^{-h}\) at fixed viscosity. Radial diffusion still has rate \(\nu/R^2\sim\tau^{-1}\), while axial transport has rate \(U/L\sim\tau^{-1}\). Viscosity remains in the leading balance, so the construction needs a viscous profile.
 
-![**Figure 2 — Speed and energy on different scales.** Left: core regions at three times, bounded by coordinate contours, not material volumes, drawn with \(h=0.2\) and the anisotropy exaggerated (**heuristic**); the source requires a far smaller \(h\), fixed by its full parameter schedule. Right: the leading scale laws (12)–(13) and their logarithmic slopes, with all constants normalized to one; the exponents are **computed**, and the scales are the manuscript's (**claimed**). These are scale laws, not numerical data of the constructed solution.](figures/fig2-concentration.svg){width=100%}
+![**Figure 2 — Speed and energy on different scales.** Left: core regions at three times, shown with particle trails, not material volumes, drawn with \(h=0.2\) and the anisotropy exaggerated (**heuristic**); the source requires a far smaller \(h\), fixed by its full parameter schedule. Right: the leading scale laws (12)–(13) and their logarithmic slopes, with all constants normalized to one; the exponents are **computed**, and the scales are the manuscript's (**claimed**). These are scale laws, not numerical data of the constructed solution.](figures/fig2-concentration.svg){width=100%}
 
 # 5. The residual turns forcing into a design problem
 
@@ -395,8 +395,11 @@ The periodic lift has no compact support in the whole space. Its force retains c
 
 ## 9.1 Identify an endpoint before trusting a label
 
-The inspected development is `openai/NavierStokesAndEuler` at revision
-`f9e8bc5b38b6e212696e8a30e3e91517af887bbd` [@Lean2026]. Its bridge endpoints are
+The inspected development is `openai/NavierStokesAndEuler` [@Lean2026]. The pinned revision is:
+
+`f9e8bc5b38b6e212696e8a30e3e91517af887bbd`.
+
+Its bridge endpoints are
 
 - `NavierStokes.ComparatorBridge.navier_stokes_breakdown_R3`;
 - `NavierStokes.ComparatorBridge.navier_stokes_breakdown_periodic`.
@@ -409,7 +412,7 @@ The submission exposes the same propositions in the namespace `NavierStokes.Comp
 \neg\exists v,p\;\operatorname{GlobalSolution}_{\nu,u_0,f}(v,p).
 \tag{25}
 \]
-The periodic endpoint replaces the three predicates with their periodic versions. The existential force may depend on viscosity. The final proofs obtain their candidates from the construction; they require no supplied vortex, residual estimate or blowup assumption. This is **Lean** evidence from the source and the authors' record, discussed below; (25) is an explanatory transcription.
+The periodic endpoint replaces the three predicates with their periodic versions. The existential force may depend on viscosity. The final proofs obtain their candidates from the construction; they require no supplied vortex, residual estimate or blowup assumption. This is **Lean** evidence from the source and our rerun, discussed below; (25) is an explanatory transcription.
 
 ## 9.2 The clauses inside the predicates
 
@@ -456,24 +459,29 @@ Matching text does not establish a proof import. The MathDB targets pin Lean 4.3
 
 ## 10.1 Execution evidence has a version
 
-The following evidence was inspected as of 7 November 2026. A successful run is evidence about the source revision and environment it actually used.
+The public records below were inspected as of 7 November 2026; our rerun took place on 9 November 2026. A successful run is evidence about the source revision and environment it actually used.
 
 | Evidence | What it supports | Limit |
 |---|---|---|
 | This article's exact calculations | The powers, coordinate identities and specified algebraic checks in Sections 4–7 | No profile existence, all-order estimates or PDE solution proof |
-| This article's source audit | Both final statement shapes, definition correspondence and absence of prohibited code tokens in the enumerated project import closures | No local elaboration or declaration-level axiom replay; external library bodies were outside the scan |
+| This article's source audit | Both final statement shapes, definition correspondence and absence of prohibited code tokens in the enumerated project import closures | Lexical source inspection; external library bodies were outside the scan |
+| Our Lean rerun | The pinned development builds; both endpoint axiom lists contain only the three standard axioms; Comparator compares challenge and solution statements and both kernels accept | Execution evidence with the cache, toolchain and Comparator trust boundary described below |
 | Upstream formalization metadata | The authors list the two endpoints and three standard axioms | The record calls its assessment self-assessed |
 | Earlier independent checks | Public build/audit reports exist for the earlier `8937a8f…` revision | They do not establish execution of the later source tree |
 | Institutional status pages | Clay says Active; MathDB's progress text says Open | Neither label is a kernel transcript or a mathematical referee report |
 
-No fresh Lean build was run for this article. The source audit followed imports from each endpoint and searched code, excluding comments and strings. The submission closure contains 609 project modules and 382,514 lines, with no `sorry`, `admit`, new `axiom`, `native_decide`, `implemented_by`, `extern` or `unsafe` tokens. Intentional challenge placeholders lie outside that closure. This is a lexical check, with the limits listed above [@Calculations2026; @Lean2026].
+Our rerun used a rented cloud Linux VM with 8 vCPUs and 50 GB RAM and the pinned Lean 4.34.0-rc2 toolchain. Mathlib compiled files came from `lake exe cache get`; the project itself was built from source. `lake build` exited 0 after 11,424 jobs and 103 minutes 23.528 seconds wall time. Our axiom check imported `NavierStokes.ComparatorSolution`; Comparator ran with `ComparatorChallenges/NavierStokes.json`. Both commands exited 0, and Comparator reported acceptance by nanoda and Lean's default kernel [@Rerun2026].
 
-The authors' formalization record at the same revision, `formalization.yaml`, lists the two submission endpoints with zero `sorry` and the axiom lists
+Separately, the source audit followed imports from each endpoint and searched code, excluding comments and strings. The submission closure contains 609 project modules and 382,514 lines, with no `sorry`, `admit`, new `axiom`, `native_decide`, `implemented_by`, `extern` or `unsafe` tokens. The four `sorry` warnings in the full build are intentional challenge placeholders outside that closure. This is a lexical check, with the limits listed above [@Calculations2026; @Lean2026].
+
+Our own `#print axioms` output for each submission endpoint gives
 \[
 \texttt{[propext, Classical.choice, Quot.sound]}.
 \tag{26}
 \]
-These are the permitted foundational axioms, not assumptions of the Navier–Stokes construction. The authors' self-assessed record reports these lists; it is not an execution receipt [@Lean2026, review metadata].
+These are the permitted foundational axioms, not assumptions of the Navier–Stokes construction. The authors' self-assessed `formalization.yaml` record reports the same lists; our logs supply the execution receipts [@Lean2026, review metadata; @Rerun2026].
+
+Whether these statements express the official problem is the subject of Section 9's clause-by-clause reading. The evidence package records the tool versions and the exact commands [@Rerun2026].
 
 Formal checking tests whether a proof term establishes a proposition from the allowed foundations. Reading definitions tests whether that proposition expresses the intended mathematics. Reproducible builds, compiler and library provenance, and independent kernels address further trust questions. Human review asks whether the manuscript's written steps are valid and communicate the actual proof. Each of these four tasks needs its own evidence.
 
@@ -517,11 +525,11 @@ The public records describe different assessments. OpenAI announces a resolution
 
 The announced construction claims that a carefully selected smooth force can drive a fluid from rest into a finite-time velocity singularity. Its proposed mechanism couples a concentrating viscous core to oscillatory momentum transfer in an annulus, then removes residual singularities to every derivative order. The force, geometry, estimates and solution class are all part of this specific claim.
 
-The named formal endpoints express the corrected forced alternatives on the whole space and the unit torus. The authors' record lists only the standard foundational axioms; the execution limits above still apply. Some intermediate manuscript arguments differ from the formal proofs, and independent mathematical review remains a separate task.
+The named formal endpoints express the corrected forced alternatives on the whole space and the unit torus. Our rerun builds the pinned development, prints only the standard foundational axioms for both endpoints, and records acceptance by both Comparator kernels. Some intermediate manuscript arguments differ from the formal proofs (Section 10.2).
 
 The endpoints do not set the chosen force to zero, so global smoothness for all admissible unforced data, A and B, remains open. They also leave questions about how typical singularity formation is, what happens when the force or data change, and the behavior and uniqueness of weak continuations for this construction. An existential statement alone answers none of these.
 
-Fefferman gives the official conditions in six pages. Sections 2–3 of the manuscript provide its mechanism and roadmap; Sections 4–9 carry the profile and correction estimates; Section 10 supplies the force extension and nonexistence conclusion. Reading the comparator predicates and the authors' formal record alongside that account clarifies the announced advance while leaving the outcome of mathematical review open.
+Fefferman gives the official conditions in six pages. Sections 2–3 of the manuscript provide its mechanism and roadmap; Sections 4–9 carry the profile and correction estimates; Section 10 supplies the force extension and nonexistence conclusion. Reading the comparator predicates and the execution record alongside that account clarifies the announced advance while leaving the outcome of mathematical review open.
 
 # References {-}
 
