@@ -68,7 +68,7 @@ Use the content of each correction, not that number alone.
 The official negative conclusion is nonexistence of a global admissible smooth
 solution. An explicit finite-time velocity singularity is a way to prove it;
 it is not itself the full logical conclusion. One must also exclude a different
-global smooth solution for the **same** force and data. Weak solutions and their
+global smooth solution with bounded energy on the whole space, or in the periodic class on the torus, for the **same** force and data. Weak solutions and their
 possible continuations are a separate question.
 
 ## 2. The pinned Lean statements and their meaning

@@ -105,7 +105,9 @@ colorTerm(eqProd, "uu", "--velocity");
 const peakLimit = formula("peak-limit", "\\htmlClass{term-U}{U}\\to\\infty", 690, 60);
 peakLimit.el.style.width = "235px";
 colorTerm(peakLimit, "U", "--velocity");
-const coreEnergy = text("core-energy-name", "core energy", 704, { x: 1510, w: 290, color: "--energy", kind: "label" });
+/* The name sits beside the product it names. */
+eqProd.el.style.width = "330px";
+const coreEnergy = text("core-energy-name", "core energy", 562, { x: 1604, w: 196, color: "--energy", kind: "label" });
 entry("exponent-check", "exact exponent check", 754, T.b4 + 3.35, T.peak, "core");
 entry("scale-laws-only", "scale laws, not the full solution", 796, T.b4 + 3.35, T.peak, "core");
 const clockNote = text("tracer-clock", "tracer clock $\\times0.3$", 746, { x: 120, w: 650 });
@@ -130,7 +132,9 @@ function rectBar(el, x, h, k) {
 }
 
 const st = stage3d({ left: Z.picture.x, top: Z.picture.y, width: Z.picture.w, height: Z.picture.h, fov: 28 });
-const cam = t => t < CORE_IN ? { az: -8, el: 22, dist: 7.7 } : { az: -10, el: 10, dist: 5.55 };
+/* Opening: one slow orbit about the vertical axis (eased in from rest, peak about 4 deg/s) so the frozen field reads
+   as 3D; it settles on the comparison view before lambda starts to change, and the camera stays locked after that. */
+const cam = t => t < CORE_IN ? { az: KIT.mix(-22, -8, KIT.sineInOut(t, 0, T.space - 0.15)), el: 22, dist: 7.7 } : { az: -10, el: 10, dist: 5.55 };
 let swirl, core, radArrow, lenArrow;
 const fieldLegend = KIT.legend(content, {
   box: "field-speed-legend", y: 780, map: speedMap, label: "speed", unit: "fixed · log scale",
@@ -192,6 +196,8 @@ window.setTime = function (t) {
   st.orbit([0, 0, 0], c.az, c.el, c.dist);
   swirl.setTime(Math.min(Math.max(0, t), CORE_IN), fieldK);
   core.setTime(Math.max(CORE_IN, Math.min(t, T.end)), coreK);
+  /* No hard outline on the particle core: hide the kit's velocity-coloured silhouette; the faint tau = 1 reference stays. */
+  core.group.children.forEach(mesh => { if (mesh.material?.uniforms?.halfWidth && mesh !== core.ghostContour?.mesh) mesh.visible = false; });
 
   const coreWidths = core.trails.mesh.geometry.attributes.width;
   const coreTint = core.trails.mesh.geometry.attributes.tint;

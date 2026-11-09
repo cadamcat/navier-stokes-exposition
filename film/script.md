@@ -41,7 +41,7 @@ End card (not spoken; silent, about 7 s, music swelling): a left-aligned referen
 <!-- passage -->
 - **c3b1** `definition` Charles Fefferman's official statement poses the problem in all of space, and on the torus, a cube whose opposite faces are identified. It has four alternatives, each posed for every positive viscosity.
 - **c3b2** `definition` A and B ask for a smooth solution for all time from every smooth, divergence-free initial velocity, with no force. In all of space, the data must decay rapidly and the energy must stay bounded.
-- **c3b3** `definition` C and D ask for the opposite: admissible initial data and a smooth force, chosen together, for which no global smooth solution exists. The force must stay smooth and decaying through the breakdown and after it.
+- **c3b3** `definition` C and D ask for the opposite: admissible initial data and a smooth force, chosen together, for which no global smooth solution exists: on the whole space, none with bounded energy; on the torus, none that is periodic. The force must stay smooth and decaying through the breakdown and after it.
 
 <!-- passage -->
 - **c3b4** `definition` A proof of any one alternative is accepted.
@@ -83,9 +83,11 @@ End card (not spoken; silent, about 7 s, music swelling): a left-aligned referen
 - **c7b2** `claimed` Joined to the flow outside, it leaves an error in a ring around it: a missing stress.
 
 <!-- passage -->
-- **c7b3** `proved` Oscillations can supply stress. A wave whose velocity averages to zero still carries a flux of momentum, because the equations see the velocity times itself, and a square averages to something positive.
-- **c7b4** `proved` But only positive combinations are available. In a toy model with two directions, the stresses that waves can make fill a cone, and a target outside it cannot be made.
-- **c7b5** `claimed` So the manuscript adjusts the core until its error lies inside the actual cone. Localized pulses then deliver it: the core's shear amplifies them, and viscosity damps them.
+- **c7b3** `proved` Oscillations can supply stress. Take a wave whose velocity averages to zero over each period.
+- **c7b4** `proved` The equations see the velocity times itself. That square never drops below zero, so its average is positive.
+- **c7b5** `proved` So a wave that goes nowhere on average still carries a steady flux of momentum.
+- **c7b6** `proved` But only positive combinations are available. In a toy model with two directions, the stresses that waves can make fill a cone, and a target outside it cannot be made.
+- **c7b7** `claimed` So the manuscript adjusts the core until its error lies inside the actual cone. Localized pulses then deliver it: the core's shear first amplifies them, then viscosity damps them.
 
 ## c8 · Every derivative
 
@@ -98,7 +100,7 @@ End card (not spoken; silent, about 7 s, music swelling): a left-aligned referen
 
 <!-- passage -->
 - **c9b1** `claimed` Now the whole construction: the force stays smooth through time one and after, the velocity becomes unbounded as time approaches one, and the energy stays bounded.
-- **c9b2** `claimed` One step remains: could another smooth solution, with the same force and start, last forever? The manuscript's comparison argument says no, without assuming decay of its derivatives or pressure.
+- **c9b2** `claimed` One step remains: could another smooth solution with bounded energy, the same force and the same start, last forever? The manuscript's comparison argument says no, without assuming decay of its derivatives or pressure.
 - **c9b3** `proved` The end is elementary. Such a solution would be bounded on a compact region up to time one, yet equal to a branch whose speed is unbounded there. Given the construction, that contradiction gives C.
 
 - **c9b4** `claimed` For D, shrink the construction into one cell of the torus and repeat it periodically. The copies do not interact, and a periodic comparison finishes the argument.
@@ -106,9 +108,9 @@ End card (not spoken; silent, about 7 s, music swelling): a left-aligned referen
 ## c10 · What the Lean development states
 
 <!-- passage -->
-- **c10b1** `lean` OpenAI's Lean development ends in two theorems, for C and for D. Each says: for every positive viscosity, there are admissible initial data and an admissible force for which no global smooth solution exists.
+- **c10b1** `lean` OpenAI's Lean development ends in two theorems, for C and for D. Each says: for every positive viscosity, there are admissible initial data and an admissible force for which no admissible global smooth solution exists.
 - **c10b2** `context` Its predicates spell out the official clauses: smoothness, incompressibility, the same initial data, decay, finite energy with one uniform bound, periodic velocity and pressure. Compared with Fefferman's text clause by clause, we found none missing.
-- **c10b3** `lean` No hypothesis asks for a vortex or an estimate. OpenAI's own record lists both theorems with only the three standard axioms, and calls its review self-assessed. Nothing was rerun for this film.
+- **c10b3** `lean` No hypothesis asks for a vortex or an estimate. We rebuilt the development and ran its checker: two independent kernels accept both theorems, which use only the three standard axioms.
 
 <!-- passage -->
 - **c10b4** `context` In October, Alexander Bastounis, Fabian Circelli and Anders Hansen showed two places where the Lean proof uses a different estimate from the paper: one more derivative, and another pressure bound. That refutes neither C nor D, but not every printed estimate was checked as written.

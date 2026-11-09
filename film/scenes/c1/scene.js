@@ -3,6 +3,7 @@ import { stage3d } from "../three3d/stage3d.js";
 import { magnitudeMap } from "../lib/colormap.mjs";
 import { makeFlow } from "./flow.js";
 import { coreContour } from "../ns/contour.js";
+import { makeAlternatives } from "../ns/alternatives.js";
 
 installBeats(window.__BEATS__);
 
@@ -18,7 +19,7 @@ const D_QUOTE = need("c1b2", "Navier–Stokes", 0.4, "typeset attributed title a
 const D_CARD = need("c1b2", "eighth", 0.4, "announcement calendar");
 const D_VISC = need("c1b2", "viscosity", 0.4, "viscosity line");
 const D_GRID = need("c1b2", "alternatives", 0.6, "alternatives grid");
-const D_NOT = need("c1b2", "not", 0.45, "A and B muted");
+const D_NOT = need("c1b2", "not", 0.45, "A and B not addressed; full-colour cells remain");
 const D_REF = need("c1b3", "announced", 0.4, "refereed line");
 const D_LEAN = need("c1b3", "Lean", 0.2, "Lean line");
 const OUT = need("c1b3", "tail", 0.8, "picture fades out");
@@ -58,12 +59,16 @@ const bracket = KIT.svgEl(svg, "path", {d: "M 1500 380 H 1490 V 416 H 1500", fil
 const calendar = text("calendar", "8 September 2026", Z.rail.x, 96, "strong");
 const announcer = text("announcer", "OpenAI · announced", Z.rail.x, 146);
 const construction = text("announced-construction", "smooth force →\nfinite-time breakdown", Z.rail.x, 194);
-const visc = text("viscosity", "every viscosity $\\nu > 0$", Z.rail.x, 278);
-const matrix = KIT.matrix(content, {size: "rail", box: "alternatives", x: Z.rail.x, y: 338, rows: ["smooth\nforever", "breakdown"]});
-const notAB = text("not-addressed", "$A$, $B$: not addressed", Z.rail.x, 636);
-const claimed = KIT.card(content, {box: "announcement-status", status: "claimed", x: Z.rail.x, y: 674,
+// The table of Figure 1, shared with c3 and c11 (ns/alternatives.js). c1 states only what its narration says.
+const alt = makeAlternatives(content, {x: 830, y: 130, w: 970, hAB: 150, hCD: 150, cells: {
+  A: {text: "force = 0", status: "not addressed"},
+  B: {text: "force = 0", status: "not addressed"},
+  C: {text: "smooth force → breakdown"},
+  D: {text: "smooth force → breakdown"},
+}});
+const claimed = KIT.card(content, {box: "announcement-status", status: "claimed", x: 120, y: 692,
   title: "announced,", lines: ["not yet independently refereed"]});
-const lean = KIT.card(content, {box: "lean-statements", status: "lean", x: Z.rail.x, y: 782,
+const lean = KIT.card(content, {box: "lean-statements", status: "lean", x: 120, y: 786,
   title: "final statements", lines: ["also written in Lean"]});
 for (const card of [claimed, lean]) card.el.querySelector(".ledger-body").style.padding = "6px 18px 8px";
 const tintDefs = KIT.svgEl(svg, "defs", {});
@@ -97,7 +102,7 @@ window.sceneEvents = [
   [T.b2, "c1b2", "continuous vortex translates into the picture zone"],
   [T.eighth, "c1b2", "announcement calendar"],
   [T.viscosity, "c1b2", "every positive viscosity"],
-  [T.C, "c1b2", "C framed amber"], [T.D, "c1b2", "D framed amber"],
+  [T.C, "c1b2", "C and D inside one shared claimed frame"], [T.D, "c1b2", "D class: periodic velocity and pressure"],
   [T.ref, "c1b3", "announced, not yet independently refereed"],
   [T.final, "c1b3", "final statements also written in Lean"],
 ].map(([t, beat, what]) => ({t, beat, what}));
@@ -105,8 +110,15 @@ window.sceneDuration = T.end;
 window.setTime = function (t) {
   t = Math.max(0, Math.min(t, T.end));
   const stay = 1 - powerIn(t, T.end - 0.5, 0.5);
-  const dx = -284 * sineInOut(t, T.b2, D_MOVE);
-  const az = KIT.mix(-20, -8, sineInOut(t, T.force, T.vortex - 0.3 - T.force));
+  const layoutK = sineInOut(t, T.b2, D_MOVE);
+  const dx = -530 * layoutK;
+  const flowScale = KIT.mix(1, 0.66, layoutK);
+  const dy = -80 * layoutK;
+  const screenX = x => 960 + (x - 960) * flowScale + dx;
+  const screenY = y => 464 + (y - 464) * flowScale + dy;
+  /* One slow orbit from the first frame (eased in from rest, peak about 5.5 deg/s), so the resting ring reads as 3D;
+     the camera locks before the core forms. */
+  const az = KIT.mix(-34, -8, sineInOut(t, 0, T.vortex - 0.3));
   st.orbit([0, 0, 0], az, 26, 10.6);
   const draw = powerOut(t, T.vortex - 0.3, D_VORTEX);
   const {R, L, tau} = flow.scales(t);
@@ -116,16 +128,20 @@ window.setTime = function (t) {
     left: Math.min(...silhouette.map(p => p.x)), right: Math.max(...silhouette.map(p => p.x)),
     top: Math.min(...silhouette.map(p => p.y)), bottom: Math.max(...silhouette.map(p => p.y)),
   };
-  for (const [key, value] of Object.entries({cx: (bounds.left + bounds.right) / 2 + dx,
-    cy: (bounds.top + bounds.bottom) / 2, rx: (bounds.right - bounds.left) * 0.8,
-    ry: (bounds.bottom - bounds.top) * 0.65, opacity: draw})) coreTint.setAttribute(key, value);
+  for (const [key, value] of Object.entries({cx: screenX((bounds.left + bounds.right) / 2),
+    cy: screenY((bounds.top + bounds.bottom) / 2), rx: (bounds.right - bounds.left) * 0.8 * flowScale,
+    ry: (bounds.bottom - bounds.top) * 0.65 * flowScale, opacity: draw})) coreTint.setAttribute(key, value);
   st.render();
-  st.canvas.style.transform = `translateX(${dx.toFixed(3)}px)`;
+  st.canvas.style.transformOrigin = "50% 50%";
+  st.canvas.style.transform = `translate(${dx.toFixed(3)}px, ${dy.toFixed(3)}px) scale(${flowScale.toFixed(4)})`;
   const paperIn = powerOut(t, T.b2, 0.5);
-  const paperOut = powerIn(t, T.viscosity + 0.6, 0.6);
+  /* The paper finishes fading before the table's sentence starts. */
+  const paperOut = powerIn(t, T.viscosity + 0.25, 0.55);
   const paperK = paperIn * (1 - paperOut);
-  st.setOpacity(stay * (1 - paperK));
-  coreTint.style.opacity = String(1 - paperK);
+  /* The vortex, like its note, comes back only after the paper text has gone. */
+  const backK = t < T.b2 + 1 ? 1 - paperIn : powerOut(t, T.viscosity + 0.8, 0.35);
+  st.setOpacity(stay * backK);
+  coreTint.style.opacity = String(backK);
   op(content, stay);
   const openingK = swap(t, T.b2).oldK;
   const stackK = paperIn * (1 - powerIn(t, T.construction - 0.5, 0.4));
@@ -141,28 +157,32 @@ window.setTime = function (t) {
   op(noteField, swap(t, T.force).oldK);
   op(noteForce, gate(t, T.force, T.vortex - 0.55));
   op(noteShape, gate(t, T.vortex - 0.3, T.peak - 0.25));
-  op(noteVolume, powerOut(t, T.peak, 0.35) * (1 - paperK));
+  /* The core note leaves as the paper enters and returns only after the paper text has gone (no text over text). */
+  op(noteVolume, powerOut(t, T.peak, 0.35) * backK);
+  noteVolume.style.top = KIT.mix(Z.note.y, 600, layoutK).toFixed(2) + "px";
   const a = st.project([-R, L * 0.6, 0]);
-  coreLabel.style.left = (a.x + dx - coreLabel.getBoundingClientRect().width - 64).toFixed(2) + "px";
-  coreLabel.style.top = (a.y - 18).toFixed(2) + "px";
+  coreLabel.style.left = (screenX(a.x) - coreLabel.getBoundingClientRect().width - 64).toFixed(2) + "px";
+  coreLabel.style.top = (screenY(a.y) - 18).toFixed(2) + "px";
   const leaderK = gate(t, 12, 15, 0.4, 0.6) * (1 - paperK);
   op(coreLabel, leaderK);
-  leader.set(a.x + dx, a.y, a.x + dx - 52, a.y, leaderK);
+  leader.set(screenX(a.x), screenY(a.y), screenX(a.x) - 52, screenY(a.y), leaderK);
   op(peak, KIT.textIn(t, T.peak, D_PEAK) * openingK);
   op(infinity, KIT.textIn(t, T.peak, D_PEAK) * openingK);
   op(energy, KIT.textIn(t, T.energy, D_ENERGY) * openingK);
   op(bounded, KIT.textIn(t, T.bounded, D_BOUND) * openingK);
   bracket.setAttribute("opacity", KIT.textIn(t, T.bounded, D_BOUND) * openingK);
   legend.setOpacity(powerOut(t, T.force, D_FORCE) * openingK);
-  const seen = (el, at, next) => op(el, KIT.entryIn(t, el, at));
-  seen(calendar, T.eighth, T.announced);
-  seen(announcer, T.announced, T.construction);
-  seen(construction, T.construction, T.viscosity);
-  seen(visc, T.viscosity, T.alternatives);
-  matrix.set({k: KIT.textIn(t, T.alternatives, D_GRID),
-    C: {frame: KIT.textIn(t, T.C)}, D: {frame: KIT.textIn(t, T.D)},
-    A: {dim: KIT.textIn(t, T.not, D_NOT)}, B: {dim: KIT.textIn(t, T.not, D_NOT)}});
-  op(notAB, KIT.textIn(t, T.not, D_NOT));
+  const metadataK = swap(t, T.viscosity).oldK;
+  for (const [el, at] of [[calendar, T.eighth], [announcer, T.announced], [construction, T.construction]])
+    op(el, KIT.entryIn(t, el, at) * metadataK);
+  // The viscosity line precedes the table; the table arrives with its sentence, A and B with their status.
+  const tableK = KIT.textIn(t, T.alternatives, D_GRID);
+  const abK = KIT.textIn(t, T.not, D_NOT);
+  const cdK = KIT.textIn(t, T.C);
+  alt.set({k: Math.max(tableK, powerOut(t, T.viscosity, D_VISC)), visc: powerOut(t, T.viscosity, D_VISC),
+    heads: tableK, row0: abK, row1: tableK, claim: cdK,
+    A: {k: tableK * abK, status: abK}, B: {k: tableK * abK, status: abK},
+    C: {k: tableK * cdK, outline: 0}, D: {k: tableK * KIT.textIn(t, T.D), outline: 0}});
   claimed.setK(KIT.textIn(t, T.ref, D_REF));
   lean.setK(KIT.textIn(t, T.final));
   chapter.setTime(t); op(chapter.el, stay);

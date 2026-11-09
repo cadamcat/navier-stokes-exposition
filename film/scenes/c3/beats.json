@@ -4,18 +4,18 @@
  "model": "gpt-4o-mini-tts",
  "speed": null,
  "audio": "c3.wav",
- "duration": 55.9,
+ "duration": 58.02,
  "inserted": [
   {
    "at": 0.0,
-   "seconds": 2.25,
+   "seconds": 2.07,
    "where": "chapter start",
    "reason": [
     "title card held 2 s, first picture 0.25 s before the first word"
    ]
   },
   {
-   "at": 55.4,
+   "at": 57.52,
    "seconds": 0.5,
    "where": "after c3b5",
    "reason": [
@@ -30,169 +30,169 @@
    "hold": "short",
    "paragraph": "1.1",
    "start": 2.25,
-   "end": 15.8,
-   "holdEnd": 16.14,
+   "end": 14.34,
+   "holdEnd": 14.665,
    "text": "Charles Fefferman's official statement poses the problem in all of space, and on the torus, a cube whose opposite faces are identified. It has four alternatives, each posed for every positive viscosity.",
    "words": [
     {
      "word": "Charles",
      "start": 2.25,
-     "end": 2.91
+     "end": 2.79
     },
     {
      "word": "Fefferman's",
-     "start": 2.91,
-     "end": 3.57
+     "start": 2.79,
+     "end": 3.49
     },
     {
      "word": "official",
-     "start": 3.57,
-     "end": 4.09
+     "start": 3.49,
+     "end": 3.91
     },
     {
      "word": "statement",
-     "start": 4.09,
-     "end": 4.53
+     "start": 3.91,
+     "end": 4.25
     },
     {
      "word": "poses",
-     "start": 4.53,
-     "end": 5.03
+     "start": 4.25,
+     "end": 4.65
     },
     {
      "word": "the",
-     "start": 5.03,
-     "end": 5.31
+     "start": 4.65,
+     "end": 4.93
     },
     {
      "word": "problem",
-     "start": 5.31,
-     "end": 5.63
+     "start": 4.93,
+     "end": 5.25
     },
     {
      "word": "in",
-     "start": 5.63,
-     "end": 6.15
+     "start": 5.25,
+     "end": 5.61
     },
     {
      "word": "all",
-     "start": 6.15,
-     "end": 6.43
+     "start": 5.61,
+     "end": 5.81
     },
     {
      "word": "of",
-     "start": 6.43,
-     "end": 6.73
+     "start": 5.81,
+     "end": 5.99
     },
     {
      "word": "space,",
-     "start": 6.73,
-     "end": 6.99
+     "start": 5.99,
+     "end": 6.25
     },
     {
      "word": "and",
-     "start": 7.53,
-     "end": 7.75
+     "start": 6.25,
+     "end": 6.83
     },
     {
      "word": "on",
-     "start": 7.75,
-     "end": 7.91
+     "start": 6.83,
+     "end": 6.97
     },
     {
      "word": "the",
-     "start": 7.91,
-     "end": 8.19
+     "start": 6.97,
+     "end": 7.17
     },
     {
      "word": "torus,",
-     "start": 8.19,
-     "end": 8.25
+     "start": 7.17,
+     "end": 7.35
     },
     {
      "word": "a",
-     "start": 8.85,
-     "end": 9.31
+     "start": 8.01,
+     "end": 8.31
     },
     {
      "word": "cube",
-     "start": 9.31,
-     "end": 9.31
+     "start": 8.31,
+     "end": 8.31
     },
     {
      "word": "whose",
-     "start": 9.31,
-     "end": 9.55
+     "start": 8.31,
+     "end": 8.55
     },
     {
      "word": "opposite",
-     "start": 9.55,
-     "end": 9.95
+     "start": 8.55,
+     "end": 8.93
     },
     {
      "word": "faces",
-     "start": 9.95,
-     "end": 10.27
+     "start": 8.93,
+     "end": 9.25
     },
     {
      "word": "are",
-     "start": 10.27,
-     "end": 10.59
+     "start": 9.25,
+     "end": 9.53
     },
     {
      "word": "identified.",
-     "start": 10.59,
-     "end": 10.87
+     "start": 9.53,
+     "end": 9.89
     },
     {
      "word": "It",
-     "start": 11.77,
-     "end": 11.87
+     "start": 10.71,
+     "end": 10.73
     },
     {
      "word": "has",
-     "start": 11.87,
-     "end": 12.11
+     "start": 10.73,
+     "end": 10.91
     },
     {
      "word": "four",
-     "start": 12.11,
-     "end": 12.55
+     "start": 10.91,
+     "end": 11.27
     },
     {
      "word": "alternatives,",
-     "start": 12.55,
-     "end": 13.13
+     "start": 11.27,
+     "end": 11.73
     },
     {
      "word": "each",
-     "start": 13.67,
-     "end": 13.81
+     "start": 12.31,
+     "end": 12.45
     },
     {
      "word": "posed",
-     "start": 13.81,
-     "end": 14.13
+     "start": 12.45,
+     "end": 12.79
     },
     {
      "word": "for",
-     "start": 14.13,
-     "end": 14.45
+     "start": 12.79,
+     "end": 13.07
     },
     {
      "word": "every",
-     "start": 14.45,
-     "end": 14.77
+     "start": 13.07,
+     "end": 13.39
     },
     {
      "word": "positive",
-     "start": 14.77,
-     "end": 15.19
+     "start": 13.39,
+     "end": 13.75
     },
     {
      "word": "viscosity.",
-     "start": 15.19,
-     "end": 15.8
+     "start": 13.75,
+     "end": 14.34
     }
    ]
   },
@@ -201,185 +201,185 @@
    "status": "definition",
    "hold": "short",
    "paragraph": "1.1",
-   "start": 16.14,
-   "end": 29.0,
-   "holdEnd": 29.425,
+   "start": 14.665,
+   "end": 26.94,
+   "holdEnd": 27.255,
    "text": "A and B ask for a smooth solution for all time from every smooth, divergence-free initial velocity, with no force. In all of space, the data must decay rapidly and the energy must stay bounded.",
    "words": [
     {
      "word": "A",
-     "start": 16.48,
-     "end": 16.71
+     "start": 14.99,
+     "end": 15.25
     },
     {
      "word": "and",
-     "start": 16.71,
-     "end": 16.87
+     "start": 15.25,
+     "end": 15.41
     },
     {
      "word": "B",
-     "start": 16.87,
-     "end": 17.13
+     "start": 15.41,
+     "end": 15.69
     },
     {
      "word": "ask",
-     "start": 17.13,
-     "end": 17.59
+     "start": 15.69,
+     "end": 16.03
     },
     {
      "word": "for",
-     "start": 17.59,
-     "end": 17.77
+     "start": 16.03,
+     "end": 16.21
     },
     {
      "word": "a",
-     "start": 17.77,
-     "end": 18.33
+     "start": 16.21,
+     "end": 16.47
     },
     {
      "word": "smooth",
-     "start": 18.33,
-     "end": 18.33
+     "start": 16.47,
+     "end": 16.63
     },
     {
      "word": "solution",
-     "start": 18.33,
-     "end": 18.73
+     "start": 16.63,
+     "end": 17.03
     },
     {
      "word": "for",
-     "start": 18.73,
-     "end": 19.07
+     "start": 17.03,
+     "end": 17.39
     },
     {
      "word": "all",
-     "start": 19.07,
-     "end": 19.37
+     "start": 17.39,
+     "end": 17.67
     },
     {
      "word": "time",
-     "start": 19.37,
-     "end": 19.69
+     "start": 17.67,
+     "end": 18.01
     },
     {
      "word": "from",
-     "start": 19.89,
-     "end": 20.07
+     "start": 18.39,
+     "end": 18.53
     },
     {
      "word": "every",
-     "start": 20.07,
-     "end": 20.57
+     "start": 18.53,
+     "end": 18.97
     },
     {
      "word": "smooth,",
-     "start": 20.57,
-     "end": 20.97
+     "start": 18.97,
+     "end": 19.37
     },
     {
      "word": "divergence-free",
-     "start": 21.05,
-     "end": 21.71
+     "start": 20.01,
+     "end": 20.25
     },
     {
      "word": "initial",
-     "start": 21.71,
-     "end": 22.13
+     "start": 20.25,
+     "end": 20.59
     },
     {
      "word": "velocity,",
-     "start": 22.13,
-     "end": 22.55
+     "start": 20.59,
+     "end": 20.97
     },
     {
      "word": "with",
-     "start": 23.09,
-     "end": 23.23
+     "start": 21.37,
+     "end": 21.53
     },
     {
      "word": "no",
-     "start": 23.23,
-     "end": 23.47
+     "start": 21.53,
+     "end": 21.79
     },
     {
      "word": "force.",
-     "start": 23.47,
-     "end": 23.79
+     "start": 21.79,
+     "end": 22.09
     },
     {
      "word": "In",
-     "start": 24.35,
-     "end": 24.53
+     "start": 22.71,
+     "end": 22.87
     },
     {
      "word": "all",
-     "start": 24.53,
-     "end": 24.81
+     "start": 22.87,
+     "end": 23.13
     },
     {
      "word": "of",
-     "start": 24.81,
-     "end": 25.19
+     "start": 23.13,
+     "end": 23.53
     },
     {
      "word": "space,",
-     "start": 25.19,
-     "end": 25.21
+     "start": 23.53,
+     "end": 23.57
     },
     {
      "word": "the",
-     "start": 25.31,
-     "end": 25.79
+     "start": 23.89,
+     "end": 24.09
     },
     {
      "word": "data",
-     "start": 25.79,
-     "end": 25.97
+     "start": 24.09,
+     "end": 24.21
     },
     {
      "word": "must",
-     "start": 25.97,
-     "end": 26.31
+     "start": 24.21,
+     "end": 24.47
     },
     {
      "word": "decay",
-     "start": 26.31,
-     "end": 26.59
+     "start": 24.47,
+     "end": 24.79
     },
     {
      "word": "rapidly",
-     "start": 26.59,
-     "end": 27.03
+     "start": 24.79,
+     "end": 25.19
     },
     {
      "word": "and",
-     "start": 27.41,
-     "end": 27.53
+     "start": 25.19,
+     "end": 25.69
     },
     {
      "word": "the",
-     "start": 27.53,
-     "end": 28.01
+     "start": 25.69,
+     "end": 26.13
     },
     {
      "word": "energy",
-     "start": 28.01,
-     "end": 28.01
+     "start": 26.13,
+     "end": 26.13
     },
     {
      "word": "must",
-     "start": 28.01,
-     "end": 28.41
+     "start": 26.13,
+     "end": 26.43
     },
     {
      "word": "stay",
-     "start": 28.41,
-     "end": 28.65
+     "start": 26.43,
+     "end": 26.61
     },
     {
      "word": "bounded.",
-     "start": 28.65,
-     "end": 29.0
+     "start": 26.61,
+     "end": 26.94
     }
    ]
   },
@@ -388,190 +388,265 @@
    "status": "definition",
    "hold": "short",
    "paragraph": "1.1",
-   "start": 29.425,
-   "end": 42.98,
-   "holdEnd": 43.5,
-   "text": "C and D ask for the opposite: admissible initial data and a smooth force, chosen together, for which no global smooth solution exists. The force must stay smooth and decaying through the breakdown and after it.",
+   "start": 27.255,
+   "end": 45.21,
+   "holdEnd": 45.62,
+   "text": "C and D ask for the opposite: admissible initial data and a smooth force, chosen together, for which no global smooth solution exists: on the whole space, none with bounded energy; on the torus, none that is periodic. The force must stay smooth and decaying through the breakdown and after it.",
    "words": [
     {
      "word": "C",
-     "start": 29.85,
-     "end": 30.19
+     "start": 27.57,
+     "end": 27.93
     },
     {
      "word": "and",
-     "start": 30.19,
-     "end": 30.35
+     "start": 27.93,
+     "end": 28.13
     },
     {
      "word": "D",
-     "start": 30.35,
-     "end": 30.59
+     "start": 28.13,
+     "end": 28.37
     },
     {
      "word": "ask",
-     "start": 30.59,
-     "end": 30.87
+     "start": 28.37,
+     "end": 28.65
     },
     {
      "word": "for",
-     "start": 30.87,
-     "end": 31.03
+     "start": 28.65,
+     "end": 28.81
     },
     {
      "word": "the",
-     "start": 31.03,
-     "end": 31.33
+     "start": 28.81,
+     "end": 29.29
     },
     {
      "word": "opposite:",
-     "start": 31.33,
-     "end": 31.47
+     "start": 29.29,
+     "end": 29.29
     },
     {
      "word": "admissible",
-     "start": 31.47,
-     "end": 32.51
+     "start": 29.29,
+     "end": 30.25
     },
     {
      "word": "initial",
-     "start": 32.51,
-     "end": 32.89
+     "start": 30.25,
+     "end": 30.67
     },
     {
      "word": "data",
-     "start": 32.89,
-     "end": 33.15
+     "start": 30.67,
+     "end": 30.91
     },
     {
      "word": "and",
-     "start": 33.65,
-     "end": 33.69
+     "start": 30.91,
+     "end": 31.37
     },
     {
      "word": "a",
-     "start": 33.69,
-     "end": 33.97
+     "start": 31.37,
+     "end": 31.61
     },
     {
      "word": "smooth",
-     "start": 33.97,
-     "end": 34.19
+     "start": 31.61,
+     "end": 31.81
     },
     {
      "word": "force,",
-     "start": 34.19,
-     "end": 34.59
+     "start": 31.81,
+     "end": 32.21
     },
     {
      "word": "chosen",
-     "start": 35.23,
-     "end": 35.23
+     "start": 32.83,
+     "end": 32.83
     },
     {
      "word": "together,",
-     "start": 35.23,
-     "end": 35.61
+     "start": 32.83,
+     "end": 33.21
     },
     {
      "word": "for",
-     "start": 35.99,
-     "end": 36.09
+     "start": 33.61,
+     "end": 33.73
     },
     {
      "word": "which",
-     "start": 36.09,
-     "end": 36.29
+     "start": 33.73,
+     "end": 33.91
     },
     {
      "word": "no",
-     "start": 36.29,
-     "end": 36.65
+     "start": 33.91,
+     "end": 34.25
     },
     {
      "word": "global",
-     "start": 36.65,
-     "end": 37.05
+     "start": 34.25,
+     "end": 34.59
     },
     {
      "word": "smooth",
-     "start": 37.05,
-     "end": 37.47
+     "start": 34.59,
+     "end": 34.95
     },
     {
      "word": "solution",
-     "start": 37.47,
-     "end": 37.89
+     "start": 34.95,
+     "end": 35.31
     },
     {
-     "word": "exists.",
-     "start": 37.89,
-     "end": 38.55
+     "word": "exists:",
+     "start": 35.31,
+     "end": 35.81
     },
     {
-     "word": "The",
-     "start": 39.35,
-     "end": 39.57
-    },
-    {
-     "word": "force",
-     "start": 39.57,
-     "end": 39.77
-    },
-    {
-     "word": "must",
-     "start": 39.77,
-     "end": 40.01
-    },
-    {
-     "word": "stay",
-     "start": 40.01,
-     "end": 40.29
-    },
-    {
-     "word": "smooth",
-     "start": 40.29,
-     "end": 40.69
-    },
-    {
-     "word": "and",
-     "start": 40.69,
-     "end": 40.99
-    },
-    {
-     "word": "decaying",
-     "start": 40.99,
-     "end": 41.39
-    },
-    {
-     "word": "through",
-     "start": 41.39,
-     "end": 41.51
+     "word": "on",
+     "start": 36.39,
+     "end": 36.41
     },
     {
      "word": "the",
-     "start": 41.51,
-     "end": 41.81
+     "start": 36.41,
+     "end": 36.61
     },
     {
-     "word": "breakdown",
-     "start": 41.81,
-     "end": 42.01
+     "word": "whole",
+     "start": 36.61,
+     "end": 36.81
+    },
+    {
+     "word": "space,",
+     "start": 36.81,
+     "end": 37.09
+    },
+    {
+     "word": "none",
+     "start": 37.67,
+     "end": 37.69
+    },
+    {
+     "word": "with",
+     "start": 37.69,
+     "end": 37.99
+    },
+    {
+     "word": "bounded",
+     "start": 37.99,
+     "end": 38.21
+    },
+    {
+     "word": "energy;",
+     "start": 38.21,
+     "end": 38.55
+    },
+    {
+     "word": "on",
+     "start": 39.17,
+     "end": 39.25
+    },
+    {
+     "word": "the",
+     "start": 39.25,
+     "end": 39.51
+    },
+    {
+     "word": "torus,",
+     "start": 39.51,
+     "end": 39.69
+    },
+    {
+     "word": "none",
+     "start": 40.25,
+     "end": 40.29
+    },
+    {
+     "word": "that",
+     "start": 40.29,
+     "end": 40.47
+    },
+    {
+     "word": "is",
+     "start": 40.47,
+     "end": 40.61
+    },
+    {
+     "word": "periodic.",
+     "start": 40.61,
+     "end": 41.03
+    },
+    {
+     "word": "The",
+     "start": 41.69,
+     "end": 41.87
+    },
+    {
+     "word": "force",
+     "start": 41.87,
+     "end": 42.09
+    },
+    {
+     "word": "must",
+     "start": 42.09,
+     "end": 42.31
+    },
+    {
+     "word": "stay",
+     "start": 42.31,
+     "end": 42.59
+    },
+    {
+     "word": "smooth",
+     "start": 42.59,
+     "end": 43.01
     },
     {
      "word": "and",
-     "start": 42.35,
-     "end": 42.61
+     "start": 43.01,
+     "end": 43.47
+    },
+    {
+     "word": "decaying",
+     "start": 43.47,
+     "end": 43.93
+    },
+    {
+     "word": "through",
+     "start": 43.93,
+     "end": 44.01
+    },
+    {
+     "word": "the",
+     "start": 44.01,
+     "end": 44.31
+    },
+    {
+     "word": "breakdown",
+     "start": 44.31,
+     "end": 44.47
+    },
+    {
+     "word": "and",
+     "start": 44.47,
+     "end": 44.81
     },
     {
      "word": "after",
-     "start": 42.61,
-     "end": 42.79
+     "start": 44.81,
+     "end": 45.01
     },
     {
      "word": "it.",
-     "start": 42.79,
-     "end": 42.98
+     "start": 45.01,
+     "end": 45.21
     }
    ]
   },
@@ -580,50 +655,50 @@
    "status": "definition",
    "hold": "short",
    "paragraph": "2.1",
-   "start": 43.5,
-   "end": 46.51,
-   "holdEnd": 46.77,
+   "start": 45.62,
+   "end": 48.63,
+   "holdEnd": 48.89,
    "text": "A proof of any one alternative is accepted.",
    "words": [
     {
      "word": "A",
-     "start": 43.5,
-     "end": 43.74
+     "start": 45.62,
+     "end": 45.86
     },
     {
      "word": "proof",
-     "start": 43.74,
-     "end": 44.1
+     "start": 45.86,
+     "end": 46.22
     },
     {
      "word": "of",
-     "start": 44.1,
-     "end": 44.4
+     "start": 46.22,
+     "end": 46.52
     },
     {
      "word": "any",
-     "start": 44.4,
-     "end": 44.8
+     "start": 46.52,
+     "end": 46.92
     },
     {
      "word": "one",
-     "start": 44.8,
-     "end": 45.04
+     "start": 46.92,
+     "end": 47.16
     },
     {
      "word": "alternative",
-     "start": 45.04,
-     "end": 45.52
+     "start": 47.16,
+     "end": 47.64
     },
     {
      "word": "is",
-     "start": 45.52,
-     "end": 46.04
+     "start": 47.64,
+     "end": 48.16
     },
     {
      "word": "accepted.",
-     "start": 46.04,
-     "end": 46.51
+     "start": 48.16,
+     "end": 48.63
     }
    ]
   },
@@ -632,105 +707,105 @@
    "status": "proved",
    "hold": "short",
    "paragraph": "2.1",
-   "start": 46.77,
-   "end": 55.1,
-   "holdEnd": 55.9,
+   "start": 48.89,
+   "end": 57.22,
+   "holdEnd": 58.02,
    "text": "Breakdown with a force does not settle A or B. Without a force, smooth solutions might still last forever.",
    "words": [
     {
      "word": "Breakdown",
-     "start": 47.03,
-     "end": 47.62
+     "start": 49.15,
+     "end": 49.74
     },
     {
      "word": "with",
-     "start": 47.62,
-     "end": 47.78
+     "start": 49.74,
+     "end": 49.9
     },
     {
      "word": "a",
-     "start": 47.78,
-     "end": 48.14
+     "start": 49.9,
+     "end": 50.26
     },
     {
      "word": "force",
-     "start": 48.14,
-     "end": 48.26
+     "start": 50.26,
+     "end": 50.38
     },
     {
      "word": "does",
-     "start": 48.26,
-     "end": 48.72
+     "start": 50.38,
+     "end": 50.84
     },
     {
      "word": "not",
-     "start": 48.72,
-     "end": 49.16
+     "start": 50.84,
+     "end": 51.28
     },
     {
      "word": "settle",
-     "start": 49.16,
-     "end": 49.34
+     "start": 51.28,
+     "end": 51.46
     },
     {
      "word": "A",
-     "start": 49.34,
-     "end": 49.8
+     "start": 51.46,
+     "end": 51.92
     },
     {
      "word": "or",
-     "start": 49.8,
-     "end": 50.22
+     "start": 51.92,
+     "end": 52.34
     },
     {
      "word": "B.",
-     "start": 50.22,
-     "end": 50.5
+     "start": 52.34,
+     "end": 52.62
     },
     {
      "word": "Without",
-     "start": 51.3,
-     "end": 51.52
+     "start": 53.42,
+     "end": 53.64
     },
     {
      "word": "a",
-     "start": 51.52,
-     "end": 52.08
+     "start": 53.64,
+     "end": 54.2
     },
     {
      "word": "force,",
-     "start": 52.08,
-     "end": 52.08
+     "start": 54.2,
+     "end": 54.2
     },
     {
      "word": "smooth",
-     "start": 52.7,
-     "end": 52.96
+     "start": 54.82,
+     "end": 55.08
     },
     {
      "word": "solutions",
-     "start": 52.96,
-     "end": 53.48
+     "start": 55.08,
+     "end": 55.6
     },
     {
      "word": "might",
-     "start": 53.48,
-     "end": 53.8
+     "start": 55.6,
+     "end": 55.92
     },
     {
      "word": "still",
-     "start": 53.8,
-     "end": 54.22
+     "start": 55.92,
+     "end": 56.34
     },
     {
      "word": "last",
-     "start": 54.22,
-     "end": 54.6
+     "start": 56.34,
+     "end": 56.72
     },
     {
      "word": "forever.",
-     "start": 54.6,
-     "end": 55.1
+     "start": 56.72,
+     "end": 57.22
     }
    ]
   }

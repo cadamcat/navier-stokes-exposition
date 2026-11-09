@@ -121,7 +121,7 @@ const velocityLeader = KIT.leader(svg, "--velocity");
 const parcelLeader = KIT.leader(svg);
 const volumeLeader = KIT.leader(svg);
 const legend = KIT.legend(content, { map, y: 742, label: "speed", unit: "", ticks: [{ u: 0, text: "0" }, { u: 1, text: "" }] });
-legend.el.style.left = "912px";
+legend.el.style.left = "120px";   // bottom-left of the picture zone, away from the rail formulas
 
 katex.render("\\sqrt{6}", legend.el.querySelectorAll(".colorbar-tick")[1], KIT.KX);
 legend.el.querySelectorAll(".colorbar-tick")[1].style.right = "4px";
@@ -131,12 +131,13 @@ const inset = node("g", {});
 const previousArrow = arrow(inset, "--ink-muted", 3);
 const nowArrow = arrow(inset, "--velocity", 3.5);
 const differenceArrow = arrow(inset, "--ink", 3.5);
-const earlyLabel = text("earlier", "u earlier", 1520, 352);
-const nowLabel = text("now", "u now", 1520, 412);
-const differenceLabel = text("difference", "= u now − u earlier", 1256, 526);
-const zoomLabel = text("zoom", "(auto-zoomed sketch)", 1256, 566);
+const earlyLabel = text("earlier", "$u$ earlier", 1520, 352);
+const nowLabel = text("now", "$u$ now", 1520, 412);
+const differenceLabel = text("difference", "$=$ $u$ now $-$ $u$ earlier", 1256, 526);
+const zoomLabel = text("zoom", "(enlarged sketch)", 1256, 566);
 const accelLabel = text("acceleration", "acceleration", 1256, 610);
-const material = KIT.formula(content, "material", "\\begin{aligned}&\\frac{Du}{Dt}\\\\&=\\partial_tu+(u\\cdot\\nabla)u\\end{aligned}", { x: 1256, y: 650, w: 544, h: 176 });
+/* One line, clear of the legend. */
+const material = KIT.formula(content, "material", "\\frac{Du}{Dt}=\\partial_tu+(u\\cdot\\nabla)u", { x: 1256, y: 660, w: 544, h: 110 });
 const lhs = KIT.formula(content, "balance-left", "\\htmlClass{term-v}{\\partial_tu+(u\\cdot\\nabla)u}", { x: 1256, y: 140, w: 544, h: 100 });
 const rhs = KIT.formula(content, "balance-right", "\\htmlClass{term-p}{=-\\nabla p}\\htmlClass{term-n}{+\\nu\\Delta u}\\htmlClass{term-f}{+f}", { x: 1256, y: 250, w: 544, h: 100 });
 const div = KIT.formula(content, "incompressibility", "\\nabla\\cdot\\htmlClass{term-u}{u}=0", { x: 1256, y: 500, w: 544, h: 100 });

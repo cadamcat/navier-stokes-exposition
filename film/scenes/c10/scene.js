@@ -1,4 +1,4 @@
-/* Comparator statements and the authors' formalization record. */
+/* Comparator statements and independently rerun kernel checks. */
 installBeats(window.__BEATS__);
 
 const INTRO = need("c10b1", "lead", 2.25, "title card held 2 s, first picture 0.25 s before the first word");
@@ -6,7 +6,7 @@ const TAGC = need("c10b1", "C", 0.45, "theorem tagged C");
 const TAGD = need("c10b1", "D", 0.5, "periodic theorem tagged D");
 const VIS = need("c10b1", "viscosity", 0.5, "every positive viscosity underlined");
 const ADM = need("c10b1", "admissible", 0.5, "admissible data and force underlined");
-const EXS = need("c10b1", "exists", 0.45, "no global smooth solution underlined");
+const EXS = need("c10b1", "exists", 0.45, "no admissible global smooth solution underlined");
 const SHRINK = need("c10b2", "Its", 0.6, "theorem panel fades for the table");
 const SM = need("c10b2", "smoothness", 0.4, "smoothness pair lights");
 const INC = need("c10b2", "incompressibility", 0.4, "divergence-free pair lights");
@@ -17,9 +17,9 @@ const PER = need("c10b2", "periodic", 0.4, "periodic pair lights");
 const NONE = need("c10b2", "none", 0.45, "source comparison footer");
 const BACK = need("c10b3", "No", 0.55, "table leaves and the theorem returns");
 const HYP = need("c10b3", "hypothesis", 0.55, "only hypotheses");
-const REC = need("c10b3", "record", 0.5, "formalization record card");
-const SELF = need("c10b3", "self-assessed", 0.45, "review status");
-const RERUN = need("c10b3", "rerun", 0.45, "nothing rebuilt for this film");
+const REC = need("c10b3", "rebuilt", 0.5, "rebuilt development");
+const CHECK = need("c10b3", "kernels", 0.45, "two independent kernels accept both theorems");
+const AXIOMS = need("c10b3", "axioms", 0.4, "only the three standard axioms");
 const CLEAR = need("c10b4", "In", 0.55, "theorem leaves for the comparison");
 const DER = need("c10b4", "derivative", 0.6, "inverse estimate row");
 const PRES = need("c10b4", "pressure", 0.7, "pressure flux row");
@@ -34,8 +34,8 @@ const T = {
   table: beatStart("c10b2"), smooth: cue("c10b2", "smoothness"), inc: cue("c10b2", "incompressibility"),
   same: cue("c10b2", "same"), decay: cue("c10b2", "decay"), finite: cue("c10b2", "finite"),
   per: cue("c10b2", "periodic"), compared: cue("c10b2", "Compared"), none: cue("c10b2", "none"),
-  back: beatStart("c10b3"), hyp: cue("c10b3", "hypothesis"), record: cue("c10b3", "record"),
-  self: cue("c10b3", "self-assessed"), nothing: cue("c10b3", "Nothing"),
+  back: beatStart("c10b3"), hyp: cue("c10b3", "hypothesis"), record: cue("c10b3", "rebuilt"),
+  kernels: cue("c10b3", "kernels"), axioms: cue("c10b3", "axioms"),
   estimates: beatStart("c10b4"), names: cue("c10b4", "Alexander"), two: cue("c10b4", "two"),
   proof: cue("c10b4", "proof"), paper: cue("c10b4", "paper"), der: cue("c10b4", "derivative"),
   pressure: cue("c10b4", "pressure"), ref: cue("c10b4", "refutes"), but: cue("c10b4", "but"),
@@ -52,7 +52,7 @@ function entry(name, words, y, at, next, kind="aux") {
 const abridged=KIT.note(content,"abridged","abridged; ℝ³ is EuclideanSpace ℝ (Fin 3)");
 const source=entry("source","openai/NavierStokesAndEuler\n@ f9e8bc5\nNavierStokes.Comparator",652,T.C,T.vis);
 const comparison=entry("comparison-limit","our comparison;\nnot a formal equivalence proof",272,T.compared,T.none);
-const recordSource=txt("record-source","authors’ formalization.yaml\n· f9e8bc5",1256,690,"aux");
+
 
 /* Source identifiers are unchanged; line breaks expose the logical clauses. */
 const sourceLines = [
@@ -99,13 +99,13 @@ const tagC=txt("tag-c","C",120,106,"strong");
 const tagD=txt("tag-d","D",120,638,"strong");
 const vis=entry("every-viscosity","every $\\nu>0$",270,T.vis,T.adm,"label");
 const adm=entry("admissible","admissible data\nand force",350,T.adm,T.exs,"label");
-const exs=entry("no-global","no global\nsmooth solution",462,T.exs,T.table,"label");
+const exs=entry("no-global","no admissible global\nsmooth solution",462,T.exs,T.table,"label");
 const hyp=entry("hypotheses","only hypotheses",120,T.hyp,T.record,"label");
 const noAssumption=entry("no-assumption","no vortex, no estimate assumed",188,T.hyp,T.record);
 
 /* Paired rows keep the six-clause scaffold while words arrive one pair at a time. */
 const headPaper=txt("fefferman","Fefferman",138,120,"label");
-const headLean=txt("lean-head","Lean",654,120,"label");
+const headLean=txt("lean-head","Lean",962,120,"label");
 headLean.style.color="var(--status-lean)";
 const rows=[
  ["smooth velocity and pressure",["velocity_smooth,", "pressure_smooth"],T.smooth,T.inc],
@@ -115,24 +115,31 @@ const rows=[
  ["finite energy,\none uniform bound",["integrable,", "globally_bounded_energy"],T.finite,T.per],
  ["periodic velocity and pressure",["isOnePeriodic_velocity,", "isOnePeriodic_pressure"],T.per,T.compared],
 ].map((r,i)=>{
- const y=188+i*100;
- const a=KIT.svgEl(svg,"rect",{x:120,y,width:492,height:92,rx:6,fill:"var(--paper-raised)"});
- const b=KIT.svgEl(svg,"rect",{x:636,y,width:596,height:92,rx:6,fill:"var(--paper-raised)"});
- const ba=KIT.svgEl(svg,"rect",{x:120,y,width:4,height:92,fill:"var(--ink)"});
- const bb=KIT.svgEl(svg,"rect",{x:636,y,width:4,height:92,fill:"var(--status-lean)"});
- const ruleA=KIT.svgEl(svg,"line",{x1:120,y1:y+92,x2:612,y2:y+92,stroke:"var(--rule)","stroke-width":1});
- const ruleB=KIT.svgEl(svg,"line",{x1:636,y1:y+92,x2:1232,y2:y+92,stroke:"var(--rule)","stroke-width":1});
- const left=txt("paper-clause-"+i,r[0],138,y+24,"aux");
+ /* Two equal columns across the frame: Fefferman's clause in full ink beside the Lean predicate. */
+ const y=180+i*96, H=88;
+ const a=KIT.svgEl(svg,"rect",{x:120,y,width:800,height:H,rx:6,fill:"var(--paper-raised)"});
+ const b=KIT.svgEl(svg,"rect",{x:944,y,width:856,height:H,rx:6,fill:"var(--paper-raised)"});
+ const ba=KIT.svgEl(svg,"rect",{x:120,y,width:4,height:H,fill:"var(--ink)"});
+ const bb=KIT.svgEl(svg,"rect",{x:944,y,width:4,height:H,fill:"var(--status-lean)"});
+ const ruleA=KIT.svgEl(svg,"line",{x1:120,y1:y+H,x2:920,y2:y+H,stroke:"var(--rule)","stroke-width":1});
+ const ruleB=KIT.svgEl(svg,"line",{x1:944,y1:y+H,x2:1800,y2:y+H,stroke:"var(--rule)","stroke-width":1});
+ const left=txt("paper-clause-"+i,r[0].replace("\n"," "),142,y+24,"label");
+ left.style.color="var(--ink)";
  const right=document.createElement("div");right.className="stage-abs clause-code";right.dataset.box="lean-clause-"+i;right.dataset.words="skip";
- Object.assign(right.style,{left:"654px",top:y+(r[1].length>1?-4:21)+"px",width:"560px"});
- r[1].forEach(s=>right.append(renderLeanLine(s)));content.append(right);
+ const code=r[1].join(" ").length<=40?[r[1].join(" ")]:r[1];   // one line where it fits
+ Object.assign(right.style,{left:"966px",top:y+(code.length>1?-6:21)+"px",width:"820px"});
+ code.forEach(s=>right.append(renderLeanLine(s)));content.append(right);
  return {a,b,ba,bb,ruleA,ruleB,left,right,on:r[2],off:r[3]};
 });
 const assessment=entry("assessment","we found none missing",192,T.none,T.back,"strong");
-const recordHead=entry("record-heading","Authors’ record · both theorems",284,T.record,T.self,"label");
-const axioms=entry("record-axioms","only propext,\nClassical.choice, Quot.sound",348,cue("c10b3","only"),T.self);
-const review=entry("record-review","review status: self-assessed",470,T.self,T.nothing);
-const rerun=entry("record-rerun","kernel-check evidence:\nauthors’ record only",568,T.nothing,T.estimates);
+/* The finding and its qualification sit under the table, on one line. */
+Object.assign(assessment.style,{left:"120px",top:"772px",width:"340px"});
+KIT.fill(comparison,"our comparison; not a formal equivalence proof");
+Object.assign(comparison.style,{left:"480px",top:"778px",width:"720px"});
+const recordHead=entry("record-heading","rebuilt the development\nran its checker",284,T.record,T.kernels,"label");
+const rerun=entry("record-rerun","two independent kernels\naccept both theorems",430,T.kernels,T.estimates,"label");
+const axioms=entry("record-axioms","only the three standard axioms",568,T.axioms,T.estimates);
+[recordHead,rerun,axioms].forEach(el => { el.style.color="var(--status-lean)"; });
 
 const credit=[
  entry("credit-bastounis","Alexander Bastounis",96,T.names,T.two,"label"),
@@ -157,10 +164,10 @@ const paperEq=txt("paper-equation","(10.19)",138,744);
 const leanUse=txt("lean-use","used in uniqueness",694,744);
 const result1=entry("counterexample","no counterexample to C or D",666,T.ref,T.but);
 const result2=entry("printed-estimates","not every printed estimate\nchecked as written",742,T.but,beatHoldEnd("c10b4"));
-const strip=mountStripJX(document.body);
+const strip=mountStripJX(document.body, {labels: {c10b1: "Lean · formal theorem", c10b3: "Lean · two independent kernels accept both theorems"}});
 const subs=mountSubtitles(document.body,window.__BEATS__);
 window.sceneEvents=Object.entries(T).map(([what,t])=>({t,what,beat:t<T.table?"c10b1":t<T.back?"c10b2":t<T.estimates?"c10b3":"c10b4"}));
-window.sceneDuration=window.__BEATS__.duration;
+window.sceneDuration = Math.ceil(window.__BEATS__.duration * 30) / 30;
 window.setTime=t=>{
  chapter.setTime(t);subs.setTime(t);
  const stay=1-powerIn(t,beatHoldEnd("c10b4")-0.5,0.5);
@@ -188,11 +195,11 @@ window.setTime=t=>{
  ledger.forEach(({el,at,next})=>{
   let topic=el===source||[tagC,tagD,vis,adm,exs].includes(el)?first:
     el===comparison||el===assessment?table:
-    [hyp,noAssumption,recordHead,axioms,review,rerun].includes(el)?returned:s4.newK;
-  op(el,topic*KIT.entryIn(t, el, at));
+    [hyp,noAssumption,recordHead,axioms,rerun].includes(el)?returned:s4.newK;
+  const until = [hyp,noAssumption,recordHead].includes(el) ? 1-powerIn(t,next-0.25,0.25) : 1;
+  op(el,topic*KIT.entryIn(t, el, at)*until);
  });
  op(abridged,Math.max(first,returned));
- op(recordSource,returned*KIT.textIn(t,T.record,REC));
  const estimates=s4.newK;
  [paperHead,leanHead].forEach(n=>op(n,estimates));
  const inverse=estimates*KIT.textIn(t,T.der,DER);

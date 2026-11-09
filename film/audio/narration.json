@@ -15,8 +15,8 @@
   },
   {
    "chapter": "c3",
-   "samples": 1341600,
-   "sha256": "efa6aa8b467d0b221ae8d04e6547084918de410cf26db612fa6b76ceefbfa69a"
+   "samples": 1392480,
+   "sha256": "dd8d2f6b5358ae1bbb32369fa032621abc0000031d1c2154050037363a72d52d"
   },
   {
    "chapter": "c4",
@@ -35,8 +35,8 @@
   },
   {
    "chapter": "c7",
-   "samples": 1248720,
-   "sha256": "b773582458bb3ddd75723853d6efd80233598759bf899b0dfc82206b414d3c38"
+   "samples": 1542600,
+   "sha256": "2d4fc36e707513db4743381f38b2654e649bfeea211fda3df0a4a75df2d2f907"
   },
   {
    "chapter": "c8",
@@ -45,13 +45,13 @@
   },
   {
    "chapter": "c9",
-   "samples": 1245120,
-   "sha256": "c7c6a45840f51eb50c6769379f83bb8d476d9a36a44daae01ff1d4334b4174c0"
+   "samples": 1255440,
+   "sha256": "fff4248d6e074ebf0def42e4066e13fe9413998b2a26f388949b0775704dcc84"
   },
   {
    "chapter": "c10",
-   "samples": 1502160,
-   "sha256": "a56777443bccbead1d968bf115b9c870279bc34be26e43eed266fc228d2755ba"
+   "samples": 1494480,
+   "sha256": "bf3b9a6afa4d0aebb9f529d5497d4342050d2275248651581bc2c628ecf20fcd"
   },
   {
    "chapter": "c11",

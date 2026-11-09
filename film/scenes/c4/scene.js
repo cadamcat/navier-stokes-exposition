@@ -110,7 +110,9 @@ entry("caffarelli-kohn-nirenberg", "Caffarelli–Kohn–\nNirenberg · 1982", 59
 entry("suitable-unforced", "unforced suitable weak solutions", 678, tCKN, B(4), historyK);
 entry("partial-regularity", "partial regularity", 722, tSing, B(4), historyK);
 entry("measure-result", "$\\mathcal P^1(S)=0$", 766, tSing, B(4), historyK);
-const singularName = txt(singular.el, "singular-name", "singular set $S$", 940, 450, "label");
+const singularName = txt(singular.el, "singular-name", "singular set $S$", 716, 396, "label");
+/* The name is tied to the point it names once the point is drawn. */
+const singularLeader = KIT.leader(singular.svg);
 const measureName = txt(singular.el, "measure-name", "one-dimensional parabolic\nHausdorff measure", 400, 100, "label");
 const cknSchem = txt(singular.el, "ckn-schematic", "schematic", 1010, 716);
 
@@ -179,8 +181,8 @@ for (let y = 1930; y <= 2030; y += 10) line(timeline.svg, yearX(y), 820, yearX(y
 const specs = [
   {year: 1934, text: "1934 / 1950", x: 180, y: 778, on: C(2, "Leray"), group: historyK},
   {year: 1964, text: "1964", x: 476, y: 778, on: tFK, group: historyK},
-  {year: 1982, text: "1982", x: 656, y: 778, on: tCKN, group: historyK},
-  {year: 1984, text: "1984", x: 678, y: 778, on: B(4), group: criteriaK},
+  {year: 1982, text: "1982", x: 636, y: 778, on: tCKN, group: historyK},
+  {year: 1984, text: "1984", x: 684, y: 740, on: B(4), group: criteriaK},
   {year: 2003, text: "2003", x: 864, y: 778, on: tESS, group: criteriaK},
   {year: 2016, text: "2016", x: 972, y: 754, on: C(5, "Tao"), group: nearbyK},
   {year: 2025, text: "2025", x: 1078, y: 784, on: tChen, group: nearbyK},
@@ -229,6 +231,7 @@ window.setTime = function (t) {
   op(singular.el, t >= tCKN && t < B(4) ? 1 : 0);
   op(measureName, powerOut(t, tSing, 0.35)); op(singularName, powerOut(t, tSing, 0.35));
   op(singularDot, powerOut(t, tPoint - 0.35, 0.35));
+  singularLeader.set(660, 480, 708, 432, powerOut(t, tPoint, 0.35));
   op(pointCaption, powerOut(t, C(3, "excluded"), 0.3));
   op(space, 1); op(time, 1); op(cknSchem, 1);
 
@@ -252,7 +255,7 @@ window.setTime = function (t) {
   op(wallPoint, powerOut(t, tWall, 0.35)); op(wallName, powerOut(t, tWall, 0.35));
   op(timeline.el, t >= B(2) ? 1 : 0);
   specs.forEach(s => {
-    const k = powerOut(t, s.on, 0.35) * s.group(t);
+    const k = powerOut(t, s.on, 0.35);   // years accumulate on the timeline
     op(s.lab, k); op(s.stem, k); op(s.dot, k);
   });
   ledger.forEach(({el, at, next, group}) => op(el,

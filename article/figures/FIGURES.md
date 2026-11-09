@@ -147,7 +147,7 @@ claim that cutoff has no momentum cost.
 new errors after each node before the next removes them. End with a separate
 summation/realization step. Do not use a “proof complete” stamp here.
 
-**Sources:** Manuscript2026 §3.6 p. 14, §8.6 p. 96, Proposition 9.6
+**Sources:** Manuscript2026 §3.4 pp. 13–14, §8.6 p. 96, Proposition 9.6
 pp. 107–108 and Proposition 9.9 p. 114; article (16), (22)–(23);
 Calculations2026 curl and residual polynomial checks.
 

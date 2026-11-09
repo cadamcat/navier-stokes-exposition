@@ -2,7 +2,7 @@
 title: "A smooth force and a singular fluid"
 subtitle: "The Navier–Stokes breakdown claim, the classical problem, and the scope of its formal proof"
 author: "Yao Xu"
-date: "Version 1.1.0"
+date: "Version 1.2.0 · 9 November 2026"
 bibliography: refs.bib
 fontsize: 11pt
 geometry: margin=23mm
@@ -12,9 +12,9 @@ geometry: margin=23mm
 
 Picture water filling all of space. At every point and instant it has a velocity. In a smooth flow, that velocity changes smoothly across space and time. The three-dimensional Navier–Stokes equations describe its evolution under transport, pressure, viscosity and an external force. The regularity question asks whether smooth initial motion can lose this smoothness in a finite time.
 
-On 8 September 2026, OpenAI announced a construction that, it claims, answers this question for flows driven by a force. A smooth external force sets a fluid in motion from rest. In the announced flow, the speed becomes unbounded in finite time while the total kinetic energy stays bounded, for every positive viscosity, in the whole space and on the three-dimensional torus. The manuscript presents this as a proof of alternatives C and D of Charles Fefferman's official formulation of the Millennium problem, which admits a force that stays smooth and decaying for all time, including through the singular time [@Announcement2026; @Manuscript2026, Theorem 1.1 and Corollary 10.6].
+On 8 September 2026, OpenAI announced a construction that, it claims, answers this question for flows driven by a force. It attributes the written proof and Lean formalization to an internal AI system. A smooth external force sets a fluid in motion from rest. In the announced flow, the speed becomes unbounded in finite time while the total kinetic energy stays bounded, for every positive viscosity, in the whole space and on the three-dimensional torus. The manuscript presents this as a proof of alternatives C and D of Charles Fefferman's official formulation of the Millennium problem, which admits a force that stays smooth and decaying for all time, including through the singular time [@Announcement2026; @Manuscript2026, Theorem 1.1 and Corollary 10.6].
 
-The announcement comes with a public Lean development. At the revision studied here, its final propositions state the two forced breakdown alternatives without any unproved hypothesis about the construction. On 9 November 2026 we rebuilt the pinned development from source using Mathlib's binary cache, printed both axiom lists with only the three standard foundational axioms, and ran Comparator: nanoda and Lean's default kernel accepted the solution against the challenge statements [@Rerun2026].
+The announcement comes with a public Lean development. At the revision studied here, its final propositions state the two forced breakdown alternatives without any unproved hypothesis about the construction. On 9 November 2026 we rebuilt the pinned development from source, printed both axiom lists with only the three standard foundational axioms, and ran Comparator: nanoda and Lean's default kernel accepted the solution against the challenge statements; Mathlib's compiled files came from its binary cache, and Comparator ran after the full project build, as the repository configures it [@Rerun2026].
 
 Three points set the scope. The manuscript is announced, and no completed independent referee report is publicly known; Clay's page still labels the problem Active and MathDB's progress text labels it Open [@ClayStatus2026; @MathDB2026]. The construction uses a force, so the unforced alternatives A and B remain open; a positive answer to A or B could coexist with forced breakdown. This article reads the Lean statements against the official problem and adds execution evidence at the same revision; Section 10.1 gives the run's scope.
 
@@ -29,6 +29,12 @@ Each claim carries one of five labels:
 The claim ledger also identifies definitions, historical dates and observations about sources.
 
 **Contribution.** The mathematical results belong to the authors cited. This article explains them for readers with multivariable calculus, compares the formal and official statements clause by clause, checks elementary calculations, reruns the pinned Lean development, and gives a dated account of the evidence, including an October critique that documents two places where the formal proof uses a different estimate from the manuscript. It explains the profile existence proof, the every-order analytic estimates and the whole-space uniqueness argument without reproving them.
+
+# The mechanism and a reading route {-}
+
+**Claimed:** start by designing the flow, then define the force as what is left over in the equation: its residual. The force must stay smooth through the time when the velocity blows up. A collapsing vortex core supplies the concentration, and oscillatory pulses supply the missing momentum stress. Ordered corrections remove the residual's singular behavior at every derivative order. Comparison then excludes every global smooth solution with uniformly bounded energy on the whole space for the same data and force; rescaling and periodization give the corresponding exclusion in the smooth periodic class on the torus. The construction and comparison are **claimed**; the final compactness implication is **proved**, conditional on them, and the C/D endpoints are **Lean** [@Manuscript2026, §§2–3, 10; @Lean2026; @Rerun2026].
+
+For the main idea in about ten minutes, read Section 2 and Figure 1 for the statement, Section 5 for the residual, Section 6.2 and Figure 3 for stress, Section 7.2 and Figure 4 for every-order correction, and Sections 8.2–8.3 and Figure 5 for comparison and the torus. Sections 1, 3–4 and 6.1, including Figure 2, are optional background on the equations, earlier results, scales and coordinates. For the audit, read Sections 9–10 alongside the [claim ledger](CLAIMS.md), [source locators](SOURCES.md) and [execution evidence](evidence/README.md#lean-rerun). A notation key follows Section 11.
 
 # 1. What the equations say
 
@@ -84,7 +90,7 @@ Fefferman's problem pairs two domains with two kinds of conclusion. The torus \(
 | C | \(\mathbb R^3\) | Some admissible smooth \(u_0,f\) | No global smooth solution with uniformly bounded energy |
 | D | \(\mathbb T^3\) | Some admissible smooth periodic \(u_0,f\) | No global smooth periodic solution |
 
-Each alternative is posed for every positive viscosity. A and B ask for global smooth existence for all admissible initial velocities, with no force. In C and D the solver chooses the initial velocity and force to exclude a global smooth solution. The official formulation explicitly accepts a proof of any one alternative; C and D are part of the stated problem.
+Each alternative is posed for every positive viscosity. A and B ask for global smooth existence for all admissible initial velocities, with no force. In C and D the solver chooses the initial velocity and force to exclude a global smooth solution with bounded energy on the whole space in C, or a global smooth periodic solution in D. The official formulation explicitly accepts a proof of any one alternative; C and D are part of the stated problem.
 
 “Admissible” has substantial content. In C, for every spatial multi-index \(\alpha\), time derivative order \(m\), and decay order \(K\), one requires constants such that
 \[
@@ -104,7 +110,7 @@ Both force requirements cover the singular time and every later time. A formula 
 
 In C the excluded solution has smooth velocity and pressure and one finite energy bound for all nonnegative times. Its velocity derivatives and pressure need not decay rapidly. Imposing those extra conditions would exclude fewer competitors and weaken the nonexistence assertion. In D, the appended Clay errata require both pressure and velocity to be periodic. No finite energy over all of \(\mathbb R^3\) is required for a nonzero periodic lift. Smoothness gives finite energy on each compact cell at each fixed time [@Fefferman2006, (6)–(7), (10)–(11), errata p. 6].
 
-An explicit singular branch alone does not establish nonexistence. Suppose one constructs \(u,p\) on \(0\leq t<1\) with \(\sup_x|u(x,t)|\) unbounded as \(t\uparrow1\). One must also exclude every global smooth pair with the same force and initial data. Comparison or uniqueness must connect any such pair to the branch that blows up. Section 8 returns to this step.
+An explicit singular branch alone does not establish nonexistence. Suppose one constructs \(u,p\) on \(0\leq t<1\) with \(\sup_x|u(x,t)|\) unbounded as \(t\uparrow1\). One must also exclude every global smooth pair with bounded energy on the whole space, or in the periodic class on the torus, with the same force and initial data. Comparison or uniqueness must connect any such pair to the branch that blows up. Section 8 returns to this step.
 
 ![**Figure 1 — The four alternatives.** Columns: whole space and unit torus; rows: global smooth existence and admissible breakdown. A and B range over every admissible initial velocity with zero force; C and D choose an initial velocity and a smooth force together. Each alternative is posed for every viscosity \(\nu>0\), and the official formulation accepts any one of them; no implication between the rows is drawn. The announced 2026 construction addresses C and D (**claimed**); A and B remain open in the sources reviewed.](figures/fig1-alternatives.svg){width=100%}
 
@@ -143,11 +149,11 @@ Classical theory gives a smooth solution for a short time from smooth admissible
 
 The strategy starts with heat diffusion and treats nonlinear transport as a perturbation. Smallness makes the perturbation controllable over all time. Without smallness, the same argument gives only a local interval. With an arbitrary external force, small initial velocity alone gives no such global conclusion.
 
-Smallness need not mean small speed at every point. The norm and geometry matter. Evan Miller's paper associated with arXiv:1909.09125 proves regularity for quantitatively almost-two-dimensional initial data in the unforced equation, including certain data large in critical norms (**proved**). The closer the relevant three-dimensional components are to a two-dimensional configuration, the more total size the hypotheses permit [@Miller2020, Theorem 1.9]. The theorem does not cover all large three-dimensional data, and that identifier does not name a strain-model blowup result.
+Smallness need not mean small speed at every point. The norm and geometry matter. Evan Miller's paper associated with arXiv:1909.09125 proves regularity for quantitatively almost-two-dimensional initial data in the unforced equation, including certain data large in critical norms (**proved**). The closer the relevant three-dimensional components are to a two-dimensional configuration, the more total size the hypotheses permit [@Miller2020, Theorem 1.9]. The theorem does not cover all large three-dimensional data.
 
 ## 3.4 Partial regularity and continuation criteria
 
-For the unforced equations, Caffarelli, Kohn and Nirenberg proved that the singular set of a suitable weak solution has zero one-dimensional parabolic Hausdorff measure (**proved**) [@CKN1982; @Fefferman2006, p. 4]. “Suitable” includes a local energy inequality. “Parabolic” measures time with the weight of two spatial dimensions, reflecting heat diffusion: a spatial scale \(r\) accompanies a time scale \(r^2\). This greatly limits a possible singular set but still allows a single singular point, which has zero such measure.
+Caffarelli, Kohn and Nirenberg proved that the singular set of a suitable weak solution has zero one-dimensional parabolic Hausdorff measure. This includes the smooth forces satisfying (6) (**proved**) [@CKN1982; @Fefferman2006, p. 4]. “Suitable” includes a local energy inequality. “Parabolic” measures time with the weight of two spatial dimensions, reflecting heat diffusion: a spatial scale \(r\) accompanies a time scale \(r^2\). This greatly limits a possible singular set but still allows a single singular point, which has zero such measure.
 
 Continuation criteria specify quantities that must become uncontrollable if smoothness fails. For the unforced Euler Cauchy problem on \(\mathbb R^3\), Beale, Kato and Majda work in the classical \(H^s\) continuation class, with integer \(s\geq3\): on each interval before breakdown the velocity belongs to \(C([0,T];H^s)\cap C^1([0,T];H^{s-1})\). Here \(H^s\) requires square-integrable spatial derivatives through order \(s\), beyond joint smoothness alone. A finite maximal existence time in this class forces
 \[
@@ -169,7 +175,7 @@ Terence Tao constructed finite-time blowup for an averaged three-dimensional Nav
 
 Guo Luo and Thomas Hou's computations exhibited a potential Euler singularity at the wall of a periodic cylinder. Jiajie Chen and Thomas Hou subsequently developed a computer-assisted proof for smooth finite-energy data in that boundary Euler setting (**proved**, published account and rigorous-numerics component). Their method establishes stability of an approximate rescaled profile through rigorous error bounds [@LuoHou2014; @ChenHou2025, Theorem 1; @ChenHouII2025]. Their Part I gives the detailed analysis [@ChenHouI2026, Theorem 2 and §6].
 
-The domain and viscosity are decisive. Euler has \(\nu=0\), and the cylinder wall affects the mechanism. The theorem supplies no positive-viscosity Navier–Stokes counterexample on the whole space or boundaryless torus. Conversely, the 2026 forced construction does not settle smooth unforced Euler breakdown in the whole space.
+The domain and viscosity are decisive. Euler has \(\nu=0\), and the cylinder wall affects the mechanism. The theorem supplies no positive-viscosity Navier–Stokes counterexample on the whole space or boundaryless torus. The same announcement separately claims finite-time breakdown of unforced Euler flow on \(\mathbb R^3\) from smooth, compactly supported, divergence-free data, with a companion manuscript and the endpoints `Euler.euler_breakdown_R3` and `Euler.exists_compact_smooth_euler_singularity` in the pinned repository (**claimed**) [@Announcement2026; @Lean2026, README and review metadata]. Our full build compiled the Euler library and printed those endpoints' axiom lists; our separate axiom command, Comparator run and clause-by-clause problem comparison cover Navier–Stokes.
 
 # 4. Scaling: how energy can miss concentration
 
@@ -215,7 +221,7 @@ Multiply the two radial dimensions and one axial dimension. Then multiply by spe
 \end{aligned}
 \tag{13}
 \]
-The exponents are **computed**; assigning these sizes to a profile remains a **heuristic** until profile bounds are supplied. The core energy tends to zero, and the last power is time integrable when \(h<1/6\), which includes the manuscript's much smaller range. Growing peak speed is therefore consistent with bounded energy and finite integrated dissipation. The full energy bound still requires control of the exterior and corrections.
+The exponents are **computed**; the manuscript states the same core scales and the threshold \(h<1/6\) (**claimed**) [@Manuscript2026, §2.1, p. 4; §3.5, p. 16]. The core energy tends to zero, and the last power is time integrable when \(h<1/6\), which includes the manuscript's much smaller range. Growing peak speed is therefore consistent with bounded energy and finite integrated dissipation. The full energy bound still requires control of the exterior and corrections.
 
 The same scale calculation gives
 \[
@@ -224,11 +230,11 @@ The same scale calculation gives
 \int_{\mathrm{core}}|u|^5\,dx\sim\tau^{-1-6h}.
 \tag{14}
 \]
-Critical quantities can grow while the core's energy shrinks. These **computed** consistency checks do not apply an unforced continuation criterion to this forced solution.
+The \(L^3\) norm is the scale-invariant spatial norm of Section 3.4. The fifth power enters through the scale-invariant space-time integral \(\int_0^1\!\!\int|u|^5\,dx\,dt\) in the Ladyzhenskaya–Prodi–Serrin condition [@ESS2003, Theorem 1.2, pp. 213–214]. At these core scales its time integral diverges, since \(\int_0^{\tau_0}\tau^{-1-6h}\,d\tau=\infty\). Both critical quantities grow while the core's energy shrinks. These **computed** consistency checks do not apply an unforced continuation criterion to this forced solution.
 
-The angular Reynolds number \(UR/\nu\) grows like \(\tau^{-h}\) at fixed viscosity. Radial diffusion still has rate \(\nu/R^2\sim\tau^{-1}\), while axial transport has rate \(U/L\sim\tau^{-1}\). Viscosity remains in the leading balance, so the construction needs a viscous profile.
+The angular Reynolds number \(UR/\nu\) grows like \(\tau^{-h}\) at fixed viscosity. Radial diffusion still has rate \(\nu/R^2\sim\tau^{-1}\), while axial transport has rate \(U/L\sim\tau^{-1}\). Viscosity remains in the leading balance, so the construction needs a viscous profile [@Manuscript2026, §2.1, pp. 4–5].
 
-![**Figure 2 — Speed and energy on different scales.** Left: core regions at three times, shown with particle trails, not material volumes, drawn with \(h=0.2\) and the anisotropy exaggerated (**heuristic**); the source requires a far smaller \(h\), fixed by its full parameter schedule. Right: the leading scale laws (12)–(13) and their logarithmic slopes, with all constants normalized to one; the exponents are **computed**, and the scales are the manuscript's (**claimed**). These are scale laws, not numerical data of the constructed solution.](figures/fig2-concentration.svg){width=100%}
+![**Figure 2 — Speed and energy on different scales.** Left: core regions at three times, shown with particle trails, not material volumes, drawn with \(h=0.2\), outside the range \(h<1/6\) of (13), and with the anisotropy exaggerated (**heuristic**); the source requires a far smaller \(h\), fixed by its full parameter schedule. Right: the leading scale laws (12)–(13) and their logarithmic slopes, with all constants normalized to one; the exponents are **computed**, and the scales are the manuscript's (**claimed**). These are scale laws, not numerical data of the constructed solution.](figures/fig2-concentration.svg){width=100%}
 
 # 5. The residual turns forcing into a design problem
 
@@ -278,7 +284,7 @@ At fixed \(\tau\), differentiation gives
 \quad (|\eta|<1).
 \tag{18}
 \]
-Equivalently, \(q\) solves \(\tau=q-z^2q^{2h}\). On this coordinate surface, the derivative of the right side with respect to \(q\) is \(1-2h\eta^2>0\). Both identities were **computed** and follow directly from (17). They justify local coordinate inversion on the stated region; profile existence requires a separate argument.
+Equivalently, \(q\) solves \(\tau=q-z^2q^{2h}\). On this coordinate surface, the derivative of the right side with respect to \(q\) is \(1-2h\eta^2>0\). Both identities were **computed** and follow directly from (17). Since \(z\to\pm\infty\) as \(\eta\to\pm1\) at fixed \(\tau>0\), they show that every \((z,\tau)\) with \(\tau>0\) determines \(q\) and \(\eta\) uniquely; profile existence requires a separate argument.
 
 Profile existence is a substantial analytic task. Smoothness on the axis constrains cylindrical components. The inner profiles must join a viscous heat exterior, satisfy five radial moment conditions, and leave an error with a special sign geometry. The manuscript's Theorem 4.6 and Appendices A–C address these requirements together (**claimed**).
 
@@ -291,7 +297,12 @@ R_\theta=-\left(\partial_r+\frac2r\right)T_{r\theta},
 R_z=-\left(\partial_r+\frac1r\right)T_{rz}.
 \tag{19}
 \]
-The extra \(1/r\) factors express cylindrical geometry. Radial integration introduces compatibility conditions: a stress that starts at zero need not return to zero outside the annulus. The moment conditions permit this compact localization [@Manuscript2026, §3.2 and Theorem 4.6].
+The extra \(1/r\) factors express cylindrical geometry. Here \(T_{r\theta}\) and \(T_{rz}\) are the radial fluxes of azimuthal and axial momentum. Integrating (19) from the axis gives
+\[
+T_{r\theta}(r)=-\frac1{r^2}\int_0^r s^2R_\theta(s)\,ds,\qquad
+T_{rz}(r)=-\frac1r\int_0^r sR_z(s)\,ds.
+\]
+A stress that starts at zero therefore returns to zero beyond the annulus exactly when \(\int_0^\infty r^2R_\theta\,dr=0\) and \(\int_0^\infty rR_z\,dr=0\). These two moment conditions permit compact localization [@Manuscript2026, §3.2 and Theorem 4.6].
 
 Why should an oscillation supply stress? If a rapidly oscillating vector has the toy form \(w=a b\cos\phi\), where \(b\) is fixed, its phase average is zero but
 \[
@@ -341,16 +352,16 @@ For an elementary comparison, \(s^M\sin(1/s)\) can tend to zero as \(s\downarrow
 
 The manuscript organizes residual improvement into four ordered corrections: supported nonzero angular modes, averaged tangential stress, the residual with zero auxiliary mean, and a five-equation moment correction. The last preserves two existing integral constraints and cancels the linear contributions to three current defects, \((P,J_\theta,J_z)\). Its nonlinear remainders enter the next residual.
 
-After every correction, the authors reconstruct pressure from the updated radial equation and include its axial contribution in the full residual (16). The order matters: one correction can disturb conditions established by another (**claimed**) [@Manuscript2026, §3.6, p. 14; §8.6, p. 96; Proposition 9.6, pp. 107–108].
+After every correction, the authors reconstruct pressure from the updated radial equation and include its axial contribution in the full residual (16). The order matters: one correction can disturb conditions established by another (**claimed**) [@Manuscript2026, §3.4, pp. 13–14; §8.6, p. 96; Proposition 9.6, pp. 107–108].
 
-Proposition 9.6 raises the residual order through
+Proposition 9.6 raises the residual order, measured in powers of \(\varepsilon=q^h\), through
 \[
 \sigma_j=\frac15+\frac{j}{10}.
 \tag{23}
 \]
-For a fixed derivative order, the stated losses depend on that order but do not grow with the stage number. Eventually \(\sigma_j\) exceeds them. This allows the iteration to target smooth forcing at every order.
+In physical variables, derivatives of order \(m\) of the stage-\(j\) residual are bounded by \(q^{h\sigma_j-K_m}\), up to logarithmic factors and a separately retained flat term. The loss \(K_m\) depends on \(m\) but not on the stage [@Manuscript2026, (9.18), p. 113]. Since \(h\sigma_j\to\infty\), the exponent eventually exceeds any prescribed \(N\). This allows the iteration to target smooth forcing at every order (**claimed**).
 
-The sequence must define an actual smooth field. Shrinking cutoffs applied to potentials and pressure produce a locally finite realization for \(q>0\): on any region bounded away from \(q=0\), only finitely many sufficiently late corrections remain. The bounds control approach to \(q=0\). Proposition 9.9 asserts a final residual with every space-time derivative \(O(q^N)\) for every \(N\), on the bounded similarity sectors specified there (**claimed**) [@Manuscript2026, pp. 107, 114].
+The sequence must define an actual smooth field. Shrinking cutoffs applied to potentials and pressure produce a locally finite realization for \(q>0\): on any region bounded away from \(q=0\), every sufficiently late correction vanishes, so only finitely many terms remain. The bounds control approach to \(q=0\). Proposition 9.9 asserts a final residual with every space-time derivative \(O(q^N)\) for every \(N\), on the bounded similarity sectors specified there (**claimed**) [@Manuscript2026, pp. 107, 114].
 
 Much of the proof lies in these uniform pulse estimates, inversion with derivative losses, moment repair, positivity of amplitudes, and nonlinear remainder bounds. Section 4's scale calculation cannot supply them; this account explains their logical role.
 
@@ -371,25 +382,33 @@ Compact support is stronger than Clay's decay requirement. Each derivative is bo
 
 The distinction between smooth and analytic matters here. Constantin, Ignatova and Vicol consider suitable weak solutions smooth on compact subsets before the candidate singular time. Their theorem assumes the specified anisotropic Type II bounds on the angular mean and its radial/axial derivatives through total order two, exact axisymmetry on a nonempty core at each time, and a force uniformly bounded in spatial \(C^2\) up to that time.
 
-Under these assumptions, spatial analyticity locally uniformly on compact pre-singular cylinders implies regularity at the candidate singular point (**claimed**, preprint theorem). The uniform \(C^2\) bound is independent: the analyticity radius may deteriorate towards that time. They also rule out force identically zero near the point within this class. These restrictions on the mechanism neither give regularity for every analytically forced flow nor contradict Clay's smooth-force allowance [@CIV2026, Theorem 1.1, (1.5)–(1.8), and Remark 1.2(a)–(b), pp. 3–4]. Flatness at a point, as in (4), differs from vanishing on a neighborhood.
+Under these assumptions, if the force is real analytic in the space variables, locally uniformly on compact pre-singular cylinders, then the candidate singular point is regular (**claimed**, preprint theorem). The uniform \(C^2\) bound is independent: the analyticity radius may deteriorate towards that time. They also rule out force identically zero near the point within this class. These restrictions on the mechanism neither give regularity for every analytically forced flow nor contradict Clay's smooth-force allowance [@CIV2026, Theorem 1.1, (1.5)–(1.8), and Remark 1.2(a)–(b), pp. 3–4]. Flatness at a point, as in (4), differs from vanishing on a neighborhood.
 
 ## 8.2 Energy and comparison
 
 The completed construction asserts compact spatial support for velocity and pressure before time one, uniformly bounded energy, and unbounded speed along points approaching the origin. Lemma 10.4 obtains the energy and integrated dissipation bounds using the equation and the smooth compact force (**claimed**) [@Manuscript2026, §10.3]. The energy conclusion concerns the whole field, including all corrections.
 
-Suppose a global smooth finite-energy competitor \(v,P\) existed with this force and zero initial data. Comparison must show \(v=u\) before time one. Subtracting the equations suggests an energy estimate for the difference. But the whole-space competitor need not have decaying derivatives or pressure: the argument must account for far-field fluxes without assuming more than Clay requires.
+Suppose a global smooth competitor \(v,P\) with uniformly bounded energy on the whole space existed with this force and zero initial data. Comparison must show \(v=u\) before time one. Subtracting the equations suggests an energy estimate for the difference. But the whole-space competitor need not have decaying derivatives or pressure: the argument must account for far-field fluxes without assuming more than Clay requires.
 
 The manuscript's Lemma 10.5 addresses these fluxes through pressure recovery, cutoff flux bounds and expanding-ball energy estimates (**claimed**) [@Manuscript2026, §10.3, Lemma 10.5, pp. 121–123]. It is the manuscript's own comparison argument, not an appeal to a general uniqueness theorem. One intermediate estimate differs in Lean, as discussed in Section 10.
 
-Once comparison is available, the final contradiction is elementary. The constructed supports lie in a fixed compact set \(K\). A global smooth \(v\) is bounded on the compact space-time set \(K\times[0,1]\). Equality with \(u\) for \(t<1\) contradicts the unbounded peak speed there. This is the **proved** final implication, conditional on the construction and comparison. It excludes every competitor in the official class for the same data and force.
+Once comparison is available, the final contradiction is elementary. The constructed supports lie in a fixed compact set \(K\). A global smooth \(v\) is bounded on the compact space-time set \(K\times[0,1]\). Equality with \(u\) for \(t<1\) contradicts the unbounded peak speed there. This is the **proved** final implication, conditional on the construction and comparison. It excludes every global smooth competitor with bounded energy on the whole space for the same data and force.
+
+The construction is carried out at viscosity one. For \(\nu>0\), the fields
+\[
+u_\nu(x,t)=\sqrt\nu\,u(x/\sqrt\nu,t),\qquad
+p_\nu(x,t)=\nu\,p(x/\sqrt\nu,t),\qquad
+f_\nu(x,t)=\sqrt\nu\,f(x/\sqrt\nu,t)
+\]
+solve (1) with viscosity \(\nu\) and the same singular time (**proved** by the chain rule). A smooth competitor with bounded energy on the whole space at viscosity \(\nu\) rescales to one at viscosity one. This yields the conclusion for every positive viscosity and explains why the force in (25) may depend on \(\nu\) [@Manuscript2026, (10.22)–(10.23), p. 124].
 
 ## 8.3 Transferring the construction to the torus
 
-The whole-space fields have compact support before blowup. Parabolic rescaling and a time shift place them strictly inside a unit spatial cell. Periodize by summing integer translates. At each point the separated supports ensure that different copies do not interact in the nonlinear term. Smooth periodic pressure is included. A periodic energy comparison then excludes a global smooth periodic competitor (**claimed**, Corollary 10.6) [@Manuscript2026, §§10.5].
+The whole-space fields have compact support before blowup. Parabolic rescaling and a time shift place them strictly inside a unit spatial cell. Periodize by summing integer translates. At each point the separated supports ensure that different copies do not interact in the nonlinear term. Smooth periodic pressure is included. A periodic energy comparison then excludes a global smooth periodic competitor (**claimed**, Corollary 10.6) [@Manuscript2026, §10.5, pp. 125–126].
 
 The periodic lift has no compact support in the whole space. Its force retains compact support in time, and all spatial derivatives are bounded on a cell, giving (7). No finite whole-space energy or decay at spatial infinity is asserted for a nonzero periodic lift. These are the domain changes required for D.
 
-![**Figure 5 — Local construction, global conclusion.** Schematic norm envelopes: the force is smooth through time one, the speed grows towards it, the energy stays bounded. Comparison with any global competitor (manuscript Lemma 10.5, **claimed**) and the compactness contradiction (**proved**, given the construction) give C; rescaling and periodization give D (**claimed**, Corollary 10.6). A and B stay outside these arrows.](figures/fig5-tracks.svg){width=100%}
+![**Figure 5 — Local construction, global conclusion.** Schematic norm envelopes: the force is smooth through time one, the speed grows towards it, the energy stays bounded. Comparison with any global smooth competitor with bounded energy on the whole space (manuscript Lemma 10.5, **claimed**) and the compactness contradiction (**proved**, given the construction) give C; rescaling and periodization give D (**claimed**, Corollary 10.6). A and B stay outside these arrows.](figures/fig5-tracks.svg){width=100%}
 
 # 9. Reading the formal theorem against the official problem
 
@@ -412,7 +431,7 @@ The submission exposes the same propositions in the namespace `NavierStokes.Comp
 \neg\exists v,p\;\operatorname{GlobalSolution}_{\nu,u_0,f}(v,p).
 \tag{25}
 \]
-The periodic endpoint replaces the three predicates with their periodic versions. The existential force may depend on viscosity. The final proofs obtain their candidates from the construction; they require no supplied vortex, residual estimate or blowup assumption. This is **Lean** evidence from the source and our rerun, discussed below; (25) is an explanatory transcription.
+Here the global solution predicate requires uniformly bounded energy on the whole space; the periodic endpoint replaces the three predicates with their periodic versions, including periodic velocity and pressure. The existential force may depend on viscosity. The final proofs obtain their candidates from the construction; they require no supplied vortex, residual estimate or blowup assumption. This is **Lean** evidence from the source and our rerun, discussed below; (25) is an explanatory transcription.
 
 ## 9.2 The clauses inside the predicates
 
@@ -443,7 +462,7 @@ To compare these requirements, first consider derivatives. A bound on a full der
 
 Second, the formal decay order \(K\) ranges over real numbers, but integer orders suffice. For any real \(K\), choose a nonnegative integer \(N\geq K\). Since the denominator base is at least one, a bound with exponent \(N\) implies one with exponent \(K\). This **proved** comparison adds no decay demand on the witness.
 
-Third, the energy predicate explicitly requires square integrability. A real-valued integral in Lean has a default value when the function is not integrable, so an integral inequality alone could misdescribe finite physical energy. Here `MemLp` closes that gap. Smoothness and physical finite Lebesgue energy imply the formal field. Using \(<E\) in place of \(\leq E\), or omitting the factor \(1/2\), only changes the constant.
+Third, the energy predicate explicitly requires square integrability. A real-valued integral in Lean has a default value when the function is not integrable, so an integral inequality alone could misdescribe finite physical energy. Here `MemLp` closes that gap. Smoothness and physical finite Lebesgue energy imply the formal field. The formal inequality \(\int\|v\|^2<E\) matches Fefferman's (7); the factor \(1/2\) in (5) only changes the constant.
 
 Finally, the formal time domain is closed, so the PDE uses within derivatives at time zero. An ambient smooth competitor restricts to the required within-domain smoothness; excluding the formal class therefore excludes the usual smooth competitors. The converse, when closed-half-space smoothness is defined by extension, invokes an extension result not reproved here. The constructed force is ambient smooth with positive-time compact support, so the witness presents no such difficulty.
 
@@ -470,9 +489,9 @@ The public records below were inspected as of 7 November 2026; our rerun took pl
 | Earlier independent checks | Public build/audit reports exist for the earlier `8937a8f…` revision | They do not establish execution of the later source tree |
 | Institutional status pages | Clay says Active; MathDB's progress text says Open | Neither label is a kernel transcript or a mathematical referee report |
 
-Our rerun used a rented cloud Linux VM with 8 vCPUs and 50 GB RAM and the pinned Lean 4.34.0-rc2 toolchain. Mathlib compiled files came from `lake exe cache get`; the project itself was built from source. `lake build` exited 0 after 11,424 jobs and 103 minutes 23.528 seconds wall time. Our axiom check imported `NavierStokes.ComparatorSolution`; Comparator ran with `ComparatorChallenges/NavierStokes.json`. Both commands exited 0, and Comparator reported acceptance by nanoda and Lean's default kernel [@Rerun2026].
+Our rerun used a rented cloud Linux VM with 8 vCPUs and 50 GB RAM and the pinned Lean 4.34.0-rc2 toolchain. `lake build` exited 0 after 11,424 jobs and 103 minutes 23.528 seconds wall time. Our axiom check imported `NavierStokes.ComparatorSolution`; Comparator ran with `ComparatorChallenges/NavierStokes.json`. Both commands exited 0, and Comparator reported acceptance by nanoda and Lean's default kernel [@Rerun2026].
 
-Separately, the source audit followed imports from each endpoint and searched code, excluding comments and strings. The submission closure contains 609 project modules and 382,514 lines, with no `sorry`, `admit`, new `axiom`, `native_decide`, `implemented_by`, `extern` or `unsafe` tokens. The four `sorry` warnings in the full build are intentional challenge placeholders outside that closure. This is a lexical check, with the limits listed above [@Calculations2026; @Lean2026].
+Separately, the source audit followed imports from each endpoint and searched code, excluding comments and strings. The submission closure contains 609 project modules and 382,514 lines, with no `sorry`, `admit`, new `axiom`, `native_decide`, `implemented_by`, `extern` or `unsafe` tokens. The four `sorry` warnings in the full build are intentional challenge placeholders, two in `ComparatorChallenges/NavierStokes.lean` and two in `ComparatorChallenges/Euler.lean`, all outside that closure. This is a lexical check, with the limits listed above [@Calculations2026; @Lean2026].
 
 Our own `#print axioms` output for each submission endpoint gives
 \[
@@ -511,13 +530,13 @@ C_P\left[(B_R^{1/2}+1)
 \]
 The source contains the extra localized gradient norm and different exponents, and the formal uniqueness proof invokes this estimate. Equation (28) is not a literal translation of (27) [@Manuscript2026, (10.19), p. 123; @Lean2026, pressure-flux and uniqueness locators].
 
-These differences refute the description “every intermediate manuscript estimate was checked as written.” They neither give a counterexample to C or D nor exhibit a forbidden endpoint axiom. A formal proof can use a different sufficient estimate without certifying a stronger printed lemma. This article does not adjudicate the critique's broader computability claims or independently reprove either pressure estimate.
+These differences show that the formal development does not check every intermediate manuscript estimate as printed. They neither give a counterexample to C or D nor exhibit a forbidden endpoint axiom. A formal proof can use a different sufficient estimate without certifying a stronger printed lemma. This article does not adjudicate the critique's broader computability claims or independently reprove either pressure estimate.
 
 ## 10.3 Mathematical engagement and institutional status
 
 Constantin, Ignatova and Vicol's September preprint gives the structural analytic-force restriction explained in Section 8. Zhen Lei and Xiao Ren's September account develops the profile construction and an explanatory core model, leaving pulse cancellation outside Part I. Their Part II, posted on **4 November**, explains residual correction through oscillatory pulses; it falls outside the pre-November reception record. These works provide substantive mathematical engagement but no completed independent referee verdict on the whole manuscript [@CIV2026; @LeiRenI2026; @LeiRenII2026].
 
-The mutable manuscript URL has yielded two recovered editions, of 165 and 166 pages. The later edition expands the historical attribution, including predecessor work on amplification across scales. This article cites the 166-page edition throughout. The recovered archive does not establish that every intermediate version was captured. The fixed Lean revision is a separate version identifier [@Manuscript2026; @Calculations2026].
+The mutable manuscript URL has yielded two recovered editions, of 165 and 166 pages. The later edition expands the historical attribution. It credits Córdoba and Martínez-Zoroa (forced three-dimensional Euler and porous-medium singularities) and Córdoba, Martínez-Zoroa and Zheng (forced hypodissipative Navier–Stokes) with amplification across scales under a controlled force. Its introduction also cites Albritton, Brué and Colombo for nonuniqueness of forced Leray–Hopf solutions [@Manuscript2026, §1.1, pp. 2–3]. This article cites the 166-page edition throughout. The recovered archive does not establish that every intermediate version was captured. The fixed Lean revision is a separate version identifier [@Manuscript2026; @Calculations2026].
 
 The public records describe different assessments. OpenAI announces a resolution of C and D, and its formal record lists both endpoints with the standard axioms. MathDB's retrieved progress text still reports no independently verified advance that resolves the problem, and its formal verification fields were null. Clay still labels the problem Active. These attributed records do not establish universal acceptance [@Announcement2026; @Lean2026; @MathDB2026; @ClayStatus2026].
 
@@ -525,11 +544,32 @@ The public records describe different assessments. OpenAI announces a resolution
 
 The announced construction claims that a carefully selected smooth force can drive a fluid from rest into a finite-time velocity singularity. Its proposed mechanism couples a concentrating viscous core to oscillatory momentum transfer in an annulus, then removes residual singularities to every derivative order. The force, geometry, estimates and solution class are all part of this specific claim.
 
-The named formal endpoints express the corrected forced alternatives on the whole space and the unit torus. Our rerun builds the pinned development, prints only the standard foundational axioms for both endpoints, and records acceptance by both Comparator kernels. Some intermediate manuscript arguments differ from the formal proofs (Section 10.2).
+On the clause-by-clause reading of Section 9, the named formal endpoints express the forced alternatives, with the pressure erratum, for solutions with bounded energy on the whole space and smooth periodic solutions on the unit torus. Our rerun builds the pinned development, prints only the standard foundational axioms for both endpoints, and records acceptance by both Comparator kernels. Some intermediate manuscript arguments differ from the formal proofs (Section 10.2).
 
 The endpoints do not set the chosen force to zero, so global smoothness for all admissible unforced data, A and B, remains open. They also leave questions about how typical singularity formation is, what happens when the force or data change, and the behavior and uniqueness of weak continuations for this construction. An existential statement alone answers none of these.
 
 Fefferman gives the official conditions in six pages. Sections 2–3 of the manuscript provide its mechanism and roadmap; Sections 4–9 carry the profile and correction estimates; Section 10 supplies the force extension and nonexistence conclusion. Reading the comparator predicates and the execution record alongside that account clarifies the announced advance while leaving the outcome of mathematical review open.
+
+# Notation key {-}
+
+These symbols are defined where used; the key gives a route back to them.
+
+| Symbol | Meaning | Section |
+|---|---|---|
+| \(x,t;\ u,p;\ u_0,f,\nu\) | Position, time; velocity, pressure; initial velocity, force, positive viscosity | 1 |
+| \(\nabla,\Delta;\ \omega=\nabla\times u\) | Spatial gradient and Laplacian; vorticity | 1, 3.4 |
+| \(E(t),\ \|u\|_{L^p}\) | Kinetic energy; spatial \(p\)-norm | 1, 3.4–4 |
+| \(\mathbb R^3,\mathbb T^3\) | Whole space; unit periodic cell with opposite faces identified | 2 |
+| A, B; C, D | Unforced existence alternatives; forced breakdown alternatives | 2 |
+| \(\lambda\) | Parabolic scaling factor in (10); a separate profile parameter in the smallness schedule | 4 |
+| \(\tau=1-t,\ h\) | Time to the normalized singularity; sufficiently small positive profile parameter | 4 |
+| \(R,L,U\) | Core radial width, axial length, leading speed scale | 4 |
+| \(r,\theta,z;\ q,\eta,X\) | Cylindrical coordinates; similarity coordinates of (17) | 6.1 |
+| \(A=\frac12+h,\ D=\frac12-h\) | Profile exponents in (17); distinct from alternatives A and D | 6.1 |
+| \(T_{r\theta},T_{rz};\ w\otimes w,\langle\cdot\rangle\) | Stress components; tensor product, phase average | 6.2 |
+| \(\varepsilon=q^h,\ \sigma_j;\ P,J_\theta,J_z\) | Small parameter, residual order in its powers; three moment defects | 7.2 |
+| \(v,P\) | Competing velocity and pressure; \(P\) here differs from the moment defect | 8.2 |
+| \(\phi_R,\chi_R;\ A_R,B_R\) | Spatial cutoffs; localized gradient and velocity norms | 10.2 |
 
 # References {-}
 

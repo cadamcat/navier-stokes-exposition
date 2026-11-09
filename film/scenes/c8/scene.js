@@ -93,19 +93,12 @@ function entry(id, words, y, at, next = B2, parent = cycle, strong = false) {
 }
 entry("manuscript-status", "manuscript · claimed", 100, 2, B2, cycle, true);
 const detailTimes = [2, tCreates + LEAVE, cue("c8b1", "force"), cue("c8b1", "manuscript")];
-entry("detail-angular", "supported nonzero angular modes", 278, detailTimes[0]);
-entry("detail-stress", "averaged tangential stress", 320, detailTimes[1]);
-entry("detail-mean", "residual: zero auxiliary mean", 362, detailTimes[2]);
-entry("detail-moment", "five-equation moment correction", 404, detailTimes[3]);
-entry("constraints", "keeps 2 constraints", 450, tFour);
-entry("linear-defects", "cancels linear parts of 3 defects", 490, tFour);
-entry("defects", "$(P,J_\\theta,J_z)$", 528, tFour);
-entry("error-terms", "cross terms, $(w\\cdot\\nabla)w$", 574, tCreates);
-entry("pressure", "pressure rebuilt after each", 616, tPressure);
-entry("residual-update", "full residual updated", 658, tPressure);
-entry("all-orders", "force: smooth to every order", 700, cue("c8b1", "smooth"));
-entry("fixed-derivatives", "fixed derivative count → fixed losses", 754, tLoss, tPass);
-entry("passes-losses", "order eventually passes them", 796, tPass, tRung);
+/* The rail carries only what the narration says; the loop's node names stay as short labels on the picture. */
+entry("all-orders", "force: smooth to every order", 278, cue("c8b1", "smooth"));
+entry("four-corrections", "cycle: four corrections", 320, tFour);
+entry("pressure", "pressure rebuilt after each", 362, tPressure);
+entry("fixed-derivatives", "fixed derivative count → fixed losses", 440, tLoss, tPass);
+entry("passes-losses", "order eventually passes them", 482, tPass, tRung);
 const unbounded = text(cycle, "no-last-rung", "no last rung", 900, 104, 320);
 
 /* A locally finite smooth assembly before the singular time. */
@@ -173,7 +166,7 @@ window.setTime = function (t) {
   edges.forEach((e, i) => {
     const ek = i === 0 ? 1 : powerOut(t, tFour + (i - 1) * LOOP / 4, 0.35);
     op(e.edge, ek); op(e.head, ek); op(e.node, powerOut(t, detailTimes[i], 0.35));
-    op(shortLabels[i], KIT.textIn(t, detailTimes[i]));
+    op(shortLabels[i], powerOut(t, detailTimes[i], 0.35));   // each name arrives with its node
   });
   const sparkK = gate(t, tCreates, tFour - 0.25);
   const tx = mix(a[0], b[0], along), ty = mix(a[1], b[1], along);

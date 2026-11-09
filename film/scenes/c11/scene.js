@@ -2,6 +2,7 @@
 import { stage3d } from "../three3d/stage3d.js";
 import { makeFlow } from "../ns/flow.js";
 import { coreContour } from "../ns/contour.js";
+import { makeAlternatives } from "../ns/alternatives.js";
 
 installBeats(window.__BEATS__);
 
@@ -39,62 +40,29 @@ function entry(name,words,y,at,next,kind="aux") {
   const el=KIT.text(content,name,words,{x:1256,y,w:544,kind});
   ledger.push({el,at,next});return el;
 }
-const civ=entry("civ","Constantin–Ignatova–Vicol",96,T.first,T.lei,"label");
-const preprint=entry("civ-status","September · preprint · claimed",142,T.first,T.lei);
-const structured=entry("structured-class","structured class:",184,T.first,T.scope);
-const suitable=entry("suitable","suitable weak solution, smooth before the\ncandidate singular time",224,T.scope,T.type);
-const axisymmetric=entry("axisymmetric","nonempty, exactly axisymmetric core",306,T.scope,T.type);
-const typeII=entry("type-ii","anisotropic Type II bounds on the angular\nmean and its derivatives of order $\\le 2$",348,T.type,T.force);
-const force=entry("force-restriction","force: uniform spatial $C^2$ bound\nup to the candidate time",430,T.force,T.clay);
-const analytic=entry("analytic-force","force locally uniformly analytic in space\n$\\Rightarrow$ regular at the candidate point",512,T.force+0.8,T.clay);
-const lei=entry("lei-ren","Lei–Ren",594,T.lei,T.clay,"label");
-const dates=entry("lei-dates","September; 4 November",636,T.lei,T.clay);
-const expositions=entry("expositions","expositions: profile and pulses",674,T.lei,T.clay);
-const clay=entry("clay","Clay: active",716,T.clay,T.db,"label");
-const db=entry("mathdb","MathDB: open",758,T.db,T.report,"label");
-const report=entry("referee","no completed independent\nreferee report found",800,T.report,T.b2);
-const matrix=KIT.matrix(content,{size:"full",box:"alternatives",x:120,y:128,
-  dims:{rowW:80,cellW:508,cellH:252,headH:108,gap:16},rows:["",""]});
-KIT.fill(matrix.heads[0],"whole space $\\mathbb{R}^3$");
-KIT.fill(matrix.heads[1],"periodic cube $\\mathbb{T}^3$");
-const f0=entry("zero-force","$f=0$",136,T.zero,T.smooth,"label");
-const forever=entry("all-time","smooth for all time",254,T.smooth,T.data,"label");
-const allData=entry("all-data","all admissible data",354,T.data,T.open,"label");
-const open=entry("open","$A$, $B$: open",472,T.open,T.matrixOut,"strong");
-const schematic=KIT.note(content,"schematic","schematic flows");
+/* The side column carries what the narration says, level with the vortex. */
+const civ=entry("civ","Constantin–Ignatova–Vicol",250,T.first,T.lei,"label");
+const preprint=entry("civ-status","September · preprint · claimed",296,T.first,T.lei);
+const lei=entry("lei-ren","Lei–Ren",364,T.lei,T.clay,"label");
+const dates=entry("lei-dates","September; 4 November · preprints",410,T.lei,T.clay);
+const clay=entry("clay","Clay: active",488,T.clay,T.db,"label");
+const db=entry("mathdb","MathDB: open",534,T.db,T.report,"label");
+const report=entry("referee","no completed independent\nreferee report found",580,T.report,T.b2);
+/* The table of Figure 1, as in c1 and c3: A and B open, C and D inside the shared claimed frame. */
+const alt=makeAlternatives(content,{x:830,y:130,w:970,hAB:160,hCD:160,cells:{
+ A:{text:"every admissible initial velocity;\nforce = 0",status:"open"},
+ B:{text:"every admissible initial velocity;\nforce = 0",status:"open"},
+ C:{text:"smooth force → breakdown"},
+ D:{text:"smooth force → breakdown"}}});
+const schematic=KIT.note(content,"schematic","schematic flow");
 const overlay=KIT.overlay(content), leader=KIT.leader(overlay);
-const coreLabel=KIT.text(content,"core-label","schematic core",{x:880,y:250,kind:"aux"});
-const cellLabels={};
-for(const id of ["A","B","C","D"]) {
- const c=matrix.cells[id];
- Object.assign(c.body.style,{top:"160px",whiteSpace:"nowrap"});
- cellLabels[id]=KIT.text(c.pic,"flow-"+id,id==="A"||id==="B"?"calm flow":"vortex",{x:18,y:60,kind:"aux"});
-}
-
-/* The top row is a still field of dots, with a clear central region. */
-for (const id of ["A", "B"]) {
-  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-  svg.setAttribute("width", "508"); svg.setAttribute("height", "172");
-  for (let j = 0; j < 7; j++) for (let i = 0; i < 17; i++) {
-    const u = (i + 0.5) / 17, v = (j + 0.5) / 7;
-    const k = Math.sin(Math.PI * u) * Math.sin(Math.PI * v);
-    KIT.svgEl(svg, "circle", {cx: 110 + u * 370, cy: 24 + v * 128, r: 1.8,
-      fill: "var(--ink-muted)", opacity: k * 0.5});
-  }
-  matrix.cells[id].pic.appendChild(svg);
-}
+const coreLabel=KIT.text(content,"core-label","schematic core",{x:930,y:250,kind:"aux"});
 const map = magnitudeMap();
 /* The same vortex remains the subject while its reception is described. */
 const previewStage = stage3d({left: 120, top: 230, width: 1112, height: 600, fov: 32});
 const previewFlow = makeFlow(previewStage, {force: 0, tightens: 1, tightDuration: 2, peak: 1e9, duration: T.holdEnd + 12}, map,
   {left: 120, top: 230, count: 240, width: 2.2, rail: false});
 const previewContour = coreContour(previewStage);
-const small = ["C", "D"].map(id => {
-  const st = stage3d({left: 70, top: 4, width: 420, height: 170, fov: 32, parent: matrix.cells[id].pic});
-  const flow = makeFlow(st, {force: 0, tightens: 1, tightDuration: 2, peak: 1e9, duration: T.holdEnd + 12}, map,
-    {left: 0, top: 0, count: 160, width: 1.7, rail: false});
-  return {st, flow, contour: coreContour(st, {width: 1.4, halo: 2})};
-});
 const strip = mountStripJX(document.body, {labels: {c11b1: "Context · schematic flow", c11b2: "Context · schematic flow; C/D announced, claimed"}});
 const subs = mountSubtitles(document.body, window.__BEATS__);
 
@@ -128,17 +96,14 @@ locator.dataset.words = "skip";
 const credit = KIT.text(credits, "credit", REFS[13].text, {x: 120, y: 828, w: 1680, kind: "label", nowrap: false});
 credit.dataset.words = "skip";
 window.sceneEvents = [
-  [beatStart("c11b1"), "c11b1", "claimed preprint and analytic-force restriction"],
-  [T.scope, "c11b1", "suitable weak solutions; exactly axisymmetric core"],
+  [beatStart("c11b1"), "c11b1", "first preprint (Constantin, Ignatova, Vicol) and Lei–Ren"],
   [T.type, "c11b1", "anisotropic Type II bounds"],
   [T.force, "c11b1", "uniform spatial C2 force bound up to singular time"],
-  [T.lei, "c11b1", "Lei–Ren expositions"],
+  [T.clay, "c11b1", "Clay, MathDB and referee status"],
   [T.report, "c11b1", "no completed independent referee report found"],
-  [T.b2, "c11b2", "matrix returns with continuing vortices"],
-  [T.zero, "c11b2", "zero-force alternatives"],
-  [T.smooth, "c11b2", "smooth for all time"],
-  [T.data, "c11b2", "all admissible data"],
-  [T.open, "c11b2", "A and B remain open"],
+  [T.b2, "c11b2", "the Figure 1 table returns beside the continuing vortex"],
+  [cue("c11b2", "Alternatives"), "c11b2", "A and B: every admissible initial velocity, force = 0, open"],
+  [T.open, "c11b2", "A and B emphasised: open"],
   [T.matrixOut, "c11b2", "matrix leaves as the final sentence ends"],
   [T.card, "c11b2", "references and credit"],
 ].map(([t, beat, what]) => ({t, beat, what}));
@@ -150,50 +115,40 @@ window.setTime = function (t) {
   chapter.setTime(t);
   if (t >= 2) op(chapter.el, stay);
   const clear=swap(t,T.b2).oldK;
-  const previewK=clear;
+  /* the table and the vortex beside it leave together as the last sentence ends */
+  const mk=gate(t,T.b2,T.matrixOut,D.grid,0.5);
+  const previewK=Math.max(clear,mk);
   const previewAz=KIT.mix(-18,-8,sineInOut(t,beatStart("c11b1"),3));
   previewStage.setOpacity(previewK);
   previewStage.orbit([0,0,0],previewAz,26,10.6);
   const previewClock=t+12;
   const {R:previewR,L:previewL}=previewFlow.scales(previewClock);
-  const previewPoints=previewContour.set(previewR,previewL,0);
+  previewContour.set(previewR,previewL,0);
   previewFlow.setTime(previewClock,1);
   previewStage.render();
+  /* as in c1: the vortex moves into the left column to make room for the table */
+  const layoutK=sineInOut(t,T.b2-0.4,0.9);
+  const scale=KIT.mix(1,0.7,layoutK), dx=-236*layoutK, dy=-96*layoutK;
+  previewStage.canvas.style.transformOrigin="50% 50%";
+  previewStage.canvas.style.transform=`translate(${dx.toFixed(3)}px, ${dy.toFixed(3)}px) scale(${scale.toFixed(4)})`;
   const anchor=previewStage.project([previewR,previewL*0.6,0]);
-  const right=Math.max(...previewPoints.map(p=>p.x));
-  const labelX=anchor.x+64;
-  coreLabel.style.left=labelX.toFixed(2)+"px";
+  const labelX=930;
+  coreLabel.style.left=labelX+"px";
   coreLabel.style.top=(anchor.y-18).toFixed(2)+"px";
   const labelK=clear*(1-powerIn(t,T.scope,0.6));
   op(coreLabel,labelK);
   leader.set(anchor.x,anchor.y,labelX-12,anchor.y,labelK);
-  const mk=gate(t,T.b2,T.matrixOut,D.grid,0.5);
-  const caption=powerOut(t,T.b2+2,0.25);
-  const smoothK=KIT.textIn(t,T.smooth,D.open),openK=KIT.textIn(t,T.open,D.open);
-  matrix.set({k:mk,
-    A:{text:"smooth for all time",textK:smoothK,status:"open ($f=0$)",statusK:openK},
-    B:{text:"smooth for all time",textK:smoothK,status:"open ($f=0$)",statusK:openK},
-    C:{frame:1,status:"announced, claimed",statusK:caption},
-    D:{frame:1,status:"announced, claimed",statusK:caption}});
-  ledger.forEach(({el,at,next})=>{
-    const topic=[f0,forever,allData,open].includes(el)?mk:clear;
-    op(el,topic*KIT.entryIn(t, el, at));
-  });
-  op(schematic,Math.max(clear,mk));
-  for(const el of Object.values(cellLabels))op(el,1);
-  const az=KIT.mix(-18,-8,sineInOut(t,T.b2+D.grid,2.6));
-  for(const p of small) {
-    p.st.orbit([0,0,0],az,26,10.6);
-    const clock=t+12;
-    const {R,L}=p.flow.scales(clock);
-    p.contour.set(R,L,0);
-    p.flow.setTime(clock,1);
-    p.st.render();
-  }
+  const cdK=KIT.textIn(t,T.b2+0.3,D.grid), abK=KIT.textIn(t,cue("c11b2","Alternatives"),D.open);
+  const emphasis=powerOut(t,T.open,D.open);
+  alt.set({k:mk,visc:1,heads:1,row0:abK,row1:cdK,claim:cdK,
+    A:{k:abK,focus:emphasis},B:{k:abK,focus:emphasis},
+    C:{k:cdK,outline:0},D:{k:cdK,outline:0}});
+  ledger.forEach(({el,at,next})=>op(el,clear*KIT.entryIn(t, el, at)));
+  op(schematic,previewK);
   const ck = powerOut(t, T.card, 0.5) * stay;
   op(credits, ck);
   for (const el of [title, ...refBoxes, locator, credit]) op(el, 1);
   strip.setTime(t, mk > 0 ? mk * stay : clear * stay);
   subs.setTime(t);
-  window.c11State = {t, matrixK: mk, creditK: ck, previewCamera: {az:previewAz,el:26,dist:10.6}, camera: {az, el: 26, dist: 10.6}, matrixOut: T.matrixOut, card: T.card};
+  window.c11State = {t, matrixK: mk, creditK: ck, previewCamera: {az:previewAz,el:26,dist:10.6}, layout: {dx, dy, scale}, matrixOut: T.matrixOut, card: T.card};
 };

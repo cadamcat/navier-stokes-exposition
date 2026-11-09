@@ -22,7 +22,7 @@ case "${1:-}" in
     rm -r "${tmp:?}"
     "${PYTHON:-python3}" verify/check_article.py ;;
   article)
-    NODE_MODULES="$PWD/studio/node_modules" article/build.sh ;;
+    NODE_MODULES="${NODE_MODULES:-$PWD/studio/node_modules}" article/build.sh ;;
   narration)
     # the narration as released: navier-stokes-exposition-narration.flac from the release assets
     "${PYTHON:-python3}" film/tools/narration_flac.py unpack "${2:-navier-stokes-exposition-narration.flac}" ;;

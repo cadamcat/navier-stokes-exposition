@@ -56,7 +56,7 @@ const tickZero = plot.querySelector('[data-box="time-x0"]');
 tickZero.style.left = "120px";
 tickZero.style.width = "60px";
 tickZero.style.textAlign = "left";
-const compactBand = svgEl(svg, "rect", { x: X(0), y: 322, width: X(1) - X(0), height: 210, fill: "var(--viscosity)", "fill-opacity": 0.085, opacity: 0 });
+const compactBand = svgEl(svg, "rect", { x: X(0), y: 322, width: X(1) - X(0), height: 210, fill: "var(--ink-muted)", "fill-opacity": 0.07, opacity: 0 });
 const forceChart = KIT.chart(plot, svg, { x: 120, y: 140, w: 1112, h: 100, xr: [0, MAX], yr: [0, 1.2], yAxis: false });
 const forceCurve = forceChart.curve({ token: "--force", from: 0, to: MAX, fn: bell, width: 3 });
 const forceFill = svgEl(svg, "path", { fill: "var(--force)", stroke: "none", opacity: 0 });
@@ -82,7 +82,7 @@ const infinity = KIT.text(plot, "infinity", "$\\to\\infty$", { x: X(EXIT) + 12, 
 const boundName = KIT.text(plot, "energy-bound", "bounded", { x: X(1) + 22, y: energyChart.Y(0.9) - 23, kind: "aux", color: "--energy" });
 const question = KIT.text(plot, "v-question", "$v$ ?", { x: X(1.5) + 8, y: velocityChart.Y(0.73) - 24, kind: "label" });
 const eqName = KIT.text(plot, "equality", "$v=u$ for $t<1$", { x: 440, y: 718, kind: "aux", color: "--velocity" });
-const compactName = KIT.text(plot, "compact-set", "$K\\times[0,1]$", { x: 136, y: 365, kind: "aux", color: "--viscosity" });
+const compactName = KIT.text(plot, "compact-set", "$K\\times[0,1]$", { x: 136, y: 365, kind: "aux", color: "--ink" });
 const schematic = KIT.note(plot, "schematic", "schematic");
 const ledger = [];
 function entry(name, words, y, at, next, strong = false) {
@@ -95,8 +95,8 @@ entry("peak-speed", "unbounded speed as $t\\uparrow1$", 188, T.velocity + VEL, T
 entry("bounded-energy", "energy bounded", 230, T.energy + EN, T.b2).style.color = "var(--energy)";
 entry("pressure-recovery", "pressure recovery", 290, T.b2, T.another);
 entry("flux-bounds", "expanding-ball flux bounds", 328, T.b2, T.another);
-entry("hypothetical", "hypothetical global smooth $v$", 382, T.another, T.same);
-entry("energy-hypothesis", "uniformly bounded finite energy", 424, T.same, T.compare);
+entry("hypothetical", "another smooth solution\nwith bounded energy", 382, T.another, T.same);
+
 entry("same-data", "same $f$, same start $u_0=0$", 466, T.same, T.compare);
 entry("comparison-source", "comparison: claimed", 508, T.manuscript, T.b3);
 entry("comparison-reference", "manuscript Lemma 10.5", 542, T.manuscript, T.b3);
@@ -260,6 +260,8 @@ window.setTime = function(t) {
   });
   dense.group.scale.setScalar(mix(2.8,smallScale,shrink));
   dense.setTime(t,pk * (1 - shrink));
+  /* No hard outline on the particle cores: hide the kit's silhouettes (the support label still uses their geometry). */
+  for (const c of [...copies.map(c => c.core), dense]) c.group.children.forEach(mesh => { if (mesh.material?.uniforms?.halfWidth) mesh.visible = false; });
   cube.mat.opacity = 0.5 * powerOut(t,T.shrink + SHRINK,0.35);
   floor.mat.opacity = 0.65 * powerOut(t,T.repeat,0.6);
   if(pk > 0.001) st.render();
@@ -267,7 +269,7 @@ window.setTime = function(t) {
   const matrixK = powerOut(t,T.gives,0.35);
   const dFrame = powerOut(t,T.comparison,0.35);
   matrix.set({k: matrixK, head: 1, rows: 0,
-    A: {k: 1, dim: 1}, B: {k: 1, dim: 1},
+    A: {k: 1}, B: {k: 1},
     C: {frame: 1, status: "claimed", statusK: 1}, D: {frame: dFrame, status: "claimed", statusK: dFrame},
   });
   periodicLedger.forEach(({el, at, next}) => op(el, pk * KIT.entryIn(t, el, at)));

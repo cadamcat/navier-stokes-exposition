@@ -4,7 +4,7 @@
  "model": "gpt-4o-mini-tts",
  "speed": null,
  "audio": "c7.wav",
- "duration": 52.03,
+ "duration": 64.275,
  "inserted": [
   {
    "at": 0.0,
@@ -15,9 +15,25 @@
    ]
   },
   {
-   "at": 51.35,
-   "seconds": 0.68,
-   "where": "after c7b5",
+   "at": 24.665,
+   "seconds": 0.225,
+   "where": "after c7b3",
+   "reason": [
+    "wave+3.5: scan complete periods and return to zero mean"
+   ]
+  },
+  {
+   "at": 33.385,
+   "seconds": 0.29,
+   "where": "after c7b4",
+   "reason": [
+    "square+4.5: running average of the square visibly settles above zero"
+   ]
+  },
+  {
+   "at": 63.615,
+   "seconds": 0.66,
+   "where": "after c7b7",
    "reason": [
     "tail+0.8: picture fades out"
    ]
@@ -259,169 +275,84 @@
    "hold": "short",
    "paragraph": "2.1",
    "start": 17.65,
-   "end": 29.03,
-   "holdEnd": 29.41,
-   "text": "Oscillations can supply stress. A wave whose velocity averages to zero still carries a flux of momentum, because the equations see the velocity times itself, and a square averages to something positive.",
+   "end": 24.47,
+   "holdEnd": 24.89,
+   "text": "Oscillations can supply stress. Take a wave whose velocity averages to zero over each period.",
    "words": [
     {
      "word": "Oscillations",
      "start": 17.65,
-     "end": 18.21
+     "end": 18.33
     },
     {
      "word": "can",
-     "start": 18.21,
-     "end": 18.67
+     "start": 18.33,
+     "end": 19.05
     },
     {
      "word": "supply",
-     "start": 18.67,
-     "end": 18.93
+     "start": 19.05,
+     "end": 19.49
     },
     {
      "word": "stress.",
-     "start": 18.93,
-     "end": 19.35
+     "start": 19.49,
+     "end": 20.07
     },
     {
-     "word": "A",
-     "start": 19.83,
-     "end": 19.99
+     "word": "Take",
+     "start": 20.93,
+     "end": 20.93
+    },
+    {
+     "word": "a",
+     "start": 20.93,
+     "end": 21.39
     },
     {
      "word": "wave",
-     "start": 19.99,
-     "end": 20.19
+     "start": 21.39,
+     "end": 21.39
     },
     {
      "word": "whose",
-     "start": 20.19,
-     "end": 20.43
+     "start": 21.39,
+     "end": 21.77
     },
     {
      "word": "velocity",
-     "start": 20.43,
-     "end": 20.91
+     "start": 21.77,
+     "end": 22.19
     },
     {
      "word": "averages",
-     "start": 20.91,
-     "end": 21.23
+     "start": 22.19,
+     "end": 22.63
     },
     {
      "word": "to",
-     "start": 21.23,
-     "end": 21.59
+     "start": 22.63,
+     "end": 23.05
     },
     {
      "word": "zero",
-     "start": 21.59,
-     "end": 21.83
+     "start": 23.05,
+     "end": 23.33
     },
     {
-     "word": "still",
-     "start": 21.83,
-     "end": 22.45
+     "word": "over",
+     "start": 23.33,
+     "end": 23.71
     },
     {
-     "word": "carries",
-     "start": 22.45,
-     "end": 22.71
+     "word": "each",
+     "start": 23.71,
+     "end": 24.03
     },
     {
-     "word": "a",
-     "start": 22.71,
-     "end": 23.11
-    },
-    {
-     "word": "flux",
-     "start": 23.11,
-     "end": 23.11
-    },
-    {
-     "word": "of",
-     "start": 23.11,
-     "end": 23.75
-    },
-    {
-     "word": "momentum,",
-     "start": 23.75,
-     "end": 23.75
-    },
-    {
-     "word": "because",
-     "start": 23.75,
-     "end": 24.27
-    },
-    {
-     "word": "the",
-     "start": 24.27,
-     "end": 24.51
-    },
-    {
-     "word": "equations",
-     "start": 24.51,
-     "end": 24.89
-    },
-    {
-     "word": "see",
-     "start": 24.89,
-     "end": 25.15
-    },
-    {
-     "word": "the",
-     "start": 25.15,
-     "end": 25.65
-    },
-    {
-     "word": "velocity",
-     "start": 25.65,
-     "end": 25.65
-    },
-    {
-     "word": "times",
-     "start": 25.65,
-     "end": 25.99
-    },
-    {
-     "word": "itself,",
-     "start": 25.99,
-     "end": 26.39
-    },
-    {
-     "word": "and",
-     "start": 26.83,
-     "end": 26.95
-    },
-    {
-     "word": "a",
-     "start": 26.95,
-     "end": 27.51
-    },
-    {
-     "word": "square",
-     "start": 27.51,
-     "end": 27.51
-    },
-    {
-     "word": "averages",
-     "start": 27.51,
-     "end": 27.89
-    },
-    {
-     "word": "to",
-     "start": 27.89,
-     "end": 28.23
-    },
-    {
-     "word": "something",
-     "start": 28.23,
-     "end": 28.55
-    },
-    {
-     "word": "positive.",
-     "start": 28.55,
-     "end": 29.03
+     "word": "period.",
+     "start": 24.03,
+     "end": 24.47
     }
    ]
   },
@@ -430,312 +361,506 @@
    "status": "proved",
    "hold": "short",
    "paragraph": "2.1",
-   "start": 29.41,
-   "end": 39.23,
-   "holdEnd": 39.71,
-   "text": "But only positive combinations are available. In a toy model with two directions, the stresses that waves can make fill a cone, and a target outside it cannot be made.",
+   "start": 24.89,
+   "end": 33.085,
+   "holdEnd": 33.675,
+   "text": "The equations see the velocity times itself. That square never drops below zero, so its average is positive.",
    "words": [
     {
-     "word": "But",
-     "start": 29.79,
-     "end": 30.01
+     "word": "The",
+     "start": 25.085,
+     "end": 25.595
     },
     {
-     "word": "only",
-     "start": 30.01,
-     "end": 30.37
+     "word": "equations",
+     "start": 25.595,
+     "end": 25.975
     },
     {
-     "word": "positive",
-     "start": 30.37,
-     "end": 30.83
-    },
-    {
-     "word": "combinations",
-     "start": 30.83,
-     "end": 31.31
-    },
-    {
-     "word": "are",
-     "start": 31.31,
-     "end": 31.65
-    },
-    {
-     "word": "available.",
-     "start": 31.65,
-     "end": 31.91
-    },
-    {
-     "word": "In",
-     "start": 32.69,
-     "end": 32.75
-    },
-    {
-     "word": "a",
-     "start": 32.75,
-     "end": 32.97
-    },
-    {
-     "word": "toy",
-     "start": 32.97,
-     "end": 33.15
-    },
-    {
-     "word": "model",
-     "start": 33.15,
-     "end": 33.33
-    },
-    {
-     "word": "with",
-     "start": 33.33,
-     "end": 33.55
-    },
-    {
-     "word": "two",
-     "start": 33.55,
-     "end": 33.79
-    },
-    {
-     "word": "directions,",
-     "start": 33.79,
-     "end": 34.19
+     "word": "see",
+     "start": 25.975,
+     "end": 26.515
     },
     {
      "word": "the",
-     "start": 34.65,
-     "end": 34.93
+     "start": 26.515,
+     "end": 27.235
     },
     {
-     "word": "stresses",
-     "start": 34.93,
-     "end": 35.09
+     "word": "velocity",
+     "start": 27.235,
+     "end": 27.235
     },
     {
-     "word": "that",
-     "start": 35.09,
-     "end": 35.69
+     "word": "times",
+     "start": 27.235,
+     "end": 27.855
     },
     {
-     "word": "waves",
-     "start": 35.69,
-     "end": 35.69
+     "word": "itself.",
+     "start": 27.855,
+     "end": 28.295
     },
     {
-     "word": "can",
-     "start": 35.69,
-     "end": 35.93
+     "word": "That",
+     "start": 28.915,
+     "end": 29.175
     },
     {
-     "word": "make",
-     "start": 35.93,
-     "end": 36.17
+     "word": "square",
+     "start": 29.175,
+     "end": 29.515
     },
     {
-     "word": "fill",
-     "start": 36.17,
-     "end": 36.41
+     "word": "never",
+     "start": 29.515,
+     "end": 29.915
     },
     {
-     "word": "a",
-     "start": 36.41,
-     "end": 36.81
+     "word": "drops",
+     "start": 29.915,
+     "end": 30.175
     },
     {
-     "word": "cone,",
-     "start": 36.81,
-     "end": 36.81
+     "word": "below",
+     "start": 30.175,
+     "end": 30.495
     },
     {
-     "word": "and",
-     "start": 37.09,
-     "end": 37.39
+     "word": "zero,",
+     "start": 30.495,
+     "end": 30.835
     },
     {
-     "word": "a",
-     "start": 37.39,
-     "end": 37.83
+     "word": "so",
+     "start": 31.295,
+     "end": 31.535
     },
     {
-     "word": "target",
-     "start": 37.83,
-     "end": 37.83
+     "word": "its",
+     "start": 31.535,
+     "end": 31.775
     },
     {
-     "word": "outside",
-     "start": 37.83,
-     "end": 38.23
+     "word": "average",
+     "start": 31.775,
+     "end": 32.135
     },
     {
-     "word": "it",
-     "start": 38.23,
-     "end": 38.59
+     "word": "is",
+     "start": 32.135,
+     "end": 32.575
     },
     {
-     "word": "cannot",
-     "start": 38.59,
-     "end": 38.71
-    },
-    {
-     "word": "be",
-     "start": 38.71,
-     "end": 39.03
-    },
-    {
-     "word": "made.",
-     "start": 39.03,
-     "end": 39.23
+     "word": "positive.",
+     "start": 32.575,
+     "end": 33.085
     }
    ]
   },
   {
    "id": "c7b5",
-   "status": "claimed",
+   "status": "proved",
    "hold": "short",
    "paragraph": "2.1",
-   "start": 39.71,
-   "end": 51.23,
-   "holdEnd": 52.03,
-   "text": "So the manuscript adjusts the core until its error lies inside the actual cone. Localized pulses then deliver it: the core's shear amplifies them, and viscosity damps them.",
+   "start": 33.675,
+   "end": 38.775,
+   "holdEnd": 39.045,
+   "text": "So a wave that goes nowhere on average still carries a steady flux of momentum.",
    "words": [
     {
      "word": "So",
-     "start": 40.19,
-     "end": 40.39
+     "start": 33.975,
+     "end": 34.405
+    },
+    {
+     "word": "a",
+     "start": 34.405,
+     "end": 34.765
+    },
+    {
+     "word": "wave",
+     "start": 34.765,
+     "end": 34.765
+    },
+    {
+     "word": "that",
+     "start": 34.765,
+     "end": 35.125
+    },
+    {
+     "word": "goes",
+     "start": 35.125,
+     "end": 35.185
+    },
+    {
+     "word": "nowhere",
+     "start": 35.185,
+     "end": 35.605
+    },
+    {
+     "word": "on",
+     "start": 35.605,
+     "end": 36.225
+    },
+    {
+     "word": "average",
+     "start": 36.225,
+     "end": 36.225
+    },
+    {
+     "word": "still",
+     "start": 36.225,
+     "end": 36.925
+    },
+    {
+     "word": "carries",
+     "start": 36.925,
+     "end": 37.245
+    },
+    {
+     "word": "a",
+     "start": 37.245,
+     "end": 37.845
+    },
+    {
+     "word": "steady",
+     "start": 37.845,
+     "end": 37.845
+    },
+    {
+     "word": "flux",
+     "start": 37.845,
+     "end": 38.105
+    },
+    {
+     "word": "of",
+     "start": 38.105,
+     "end": 38.745
+    },
+    {
+     "word": "momentum.",
+     "start": 38.745,
+     "end": 38.775
+    }
+   ]
+  },
+  {
+   "id": "c7b6",
+   "status": "proved",
+   "hold": "short",
+   "paragraph": "2.1",
+   "start": 39.045,
+   "end": 50.065,
+   "holdEnd": 50.435,
+   "text": "But only positive combinations are available. In a toy model with two directions, the stresses that waves can make fill a cone, and a target outside it cannot be made.",
+   "words": [
+    {
+     "word": "But",
+     "start": 39.315,
+     "end": 39.705
+    },
+    {
+     "word": "only",
+     "start": 39.705,
+     "end": 40.065
+    },
+    {
+     "word": "positive",
+     "start": 40.065,
+     "end": 40.585
+    },
+    {
+     "word": "combinations",
+     "start": 40.585,
+     "end": 41.105
+    },
+    {
+     "word": "are",
+     "start": 41.105,
+     "end": 41.525
+    },
+    {
+     "word": "available.",
+     "start": 41.525,
+     "end": 41.825
+    },
+    {
+     "word": "In",
+     "start": 42.105,
+     "end": 42.485
+    },
+    {
+     "word": "a",
+     "start": 42.485,
+     "end": 42.745
+    },
+    {
+     "word": "toy",
+     "start": 42.745,
+     "end": 42.905
+    },
+    {
+     "word": "model",
+     "start": 42.905,
+     "end": 43.125
+    },
+    {
+     "word": "with",
+     "start": 43.125,
+     "end": 43.445
+    },
+    {
+     "word": "two",
+     "start": 43.445,
+     "end": 43.705
+    },
+    {
+     "word": "directions,",
+     "start": 43.705,
+     "end": 44.125
     },
     {
      "word": "the",
-     "start": 40.39,
-     "end": 40.61
+     "start": 44.685,
+     "end": 45.005
     },
     {
-     "word": "manuscript",
-     "start": 40.61,
-     "end": 41.01
+     "word": "stresses",
+     "start": 45.005,
+     "end": 45.185
     },
     {
-     "word": "adjusts",
-     "start": 41.01,
-     "end": 41.63
+     "word": "that",
+     "start": 45.185,
+     "end": 45.725
     },
     {
-     "word": "the",
-     "start": 41.63,
-     "end": 42.01
+     "word": "waves",
+     "start": 45.725,
+     "end": 45.725
     },
     {
-     "word": "core",
-     "start": 42.01,
-     "end": 42.01
+     "word": "can",
+     "start": 45.725,
+     "end": 45.965
     },
     {
-     "word": "until",
-     "start": 42.01,
-     "end": 42.63
+     "word": "make",
+     "start": 45.965,
+     "end": 46.285
     },
     {
-     "word": "its",
-     "start": 42.63,
-     "end": 42.87
+     "word": "fill",
+     "start": 46.285,
+     "end": 47.125
     },
     {
-     "word": "error",
-     "start": 42.87,
-     "end": 43.15
+     "word": "a",
+     "start": 47.125,
+     "end": 47.525
     },
     {
-     "word": "lies",
-     "start": 43.15,
-     "end": 43.47
-    },
-    {
-     "word": "inside",
-     "start": 43.47,
-     "end": 43.85
-    },
-    {
-     "word": "the",
-     "start": 43.85,
-     "end": 44.05
-    },
-    {
-     "word": "actual",
-     "start": 44.05,
-     "end": 44.47
-    },
-    {
-     "word": "cone.",
-     "start": 44.47,
-     "end": 44.69
-    },
-    {
-     "word": "Localized",
-     "start": 45.53,
-     "end": 45.99
-    },
-    {
-     "word": "pulses",
-     "start": 45.99,
-     "end": 46.25
-    },
-    {
-     "word": "then",
-     "start": 46.25,
-     "end": 46.67
-    },
-    {
-     "word": "deliver",
-     "start": 46.67,
-     "end": 46.87
-    },
-    {
-     "word": "it:",
-     "start": 46.87,
-     "end": 47.13
-    },
-    {
-     "word": "the",
-     "start": 47.13,
-     "end": 47.71
-    },
-    {
-     "word": "core's",
-     "start": 47.71,
-     "end": 48.23
-    },
-    {
-     "word": "shear",
-     "start": 48.23,
-     "end": 48.43
-    },
-    {
-     "word": "amplifies",
-     "start": 48.43,
-     "end": 49.35
-    },
-    {
-     "word": "them,",
-     "start": 49.35,
-     "end": 49.59
+     "word": "cone,",
+     "start": 47.525,
+     "end": 47.525
     },
     {
      "word": "and",
-     "start": 50.03,
-     "end": 50.25
+     "start": 47.845,
+     "end": 48.185
+    },
+    {
+     "word": "a",
+     "start": 48.185,
+     "end": 48.485
+    },
+    {
+     "word": "target",
+     "start": 48.485,
+     "end": 48.665
+    },
+    {
+     "word": "outside",
+     "start": 48.665,
+     "end": 49.065
+    },
+    {
+     "word": "it",
+     "start": 49.065,
+     "end": 49.365
+    },
+    {
+     "word": "cannot",
+     "start": 49.365,
+     "end": 49.565
+    },
+    {
+     "word": "be",
+     "start": 49.565,
+     "end": 49.865
+    },
+    {
+     "word": "made.",
+     "start": 49.865,
+     "end": 50.065
+    }
+   ]
+  },
+  {
+   "id": "c7b7",
+   "status": "claimed",
+   "hold": "short",
+   "paragraph": "2.1",
+   "start": 50.435,
+   "end": 63.475,
+   "holdEnd": 64.275,
+   "text": "So the manuscript adjusts the core until its error lies inside the actual cone. Localized pulses then deliver it: the core's shear first amplifies them, then viscosity damps them.",
+   "words": [
+    {
+     "word": "So",
+     "start": 50.805,
+     "end": 50.985
+    },
+    {
+     "word": "the",
+     "start": 50.985,
+     "end": 51.265
+    },
+    {
+     "word": "manuscript",
+     "start": 51.265,
+     "end": 51.585
+    },
+    {
+     "word": "adjusts",
+     "start": 51.585,
+     "end": 52.265
+    },
+    {
+     "word": "the",
+     "start": 52.265,
+     "end": 52.625
+    },
+    {
+     "word": "core",
+     "start": 52.625,
+     "end": 52.625
+    },
+    {
+     "word": "until",
+     "start": 52.625,
+     "end": 53.205
+    },
+    {
+     "word": "its",
+     "start": 53.205,
+     "end": 53.445
+    },
+    {
+     "word": "error",
+     "start": 53.445,
+     "end": 53.765
+    },
+    {
+     "word": "lies",
+     "start": 53.765,
+     "end": 54.105
+    },
+    {
+     "word": "inside",
+     "start": 54.105,
+     "end": 54.545
+    },
+    {
+     "word": "the",
+     "start": 54.545,
+     "end": 54.765
+    },
+    {
+     "word": "actual",
+     "start": 54.765,
+     "end": 55.185
+    },
+    {
+     "word": "cone.",
+     "start": 55.185,
+     "end": 55.445
+    },
+    {
+     "word": "Localized",
+     "start": 56.605,
+     "end": 57.105
+    },
+    {
+     "word": "pulses",
+     "start": 57.105,
+     "end": 57.385
+    },
+    {
+     "word": "then",
+     "start": 57.385,
+     "end": 57.845
+    },
+    {
+     "word": "deliver",
+     "start": 57.845,
+     "end": 58.045
+    },
+    {
+     "word": "it:",
+     "start": 58.045,
+     "end": 58.445
+    },
+    {
+     "word": "the",
+     "start": 59.065,
+     "end": 59.185
+    },
+    {
+     "word": "core's",
+     "start": 59.185,
+     "end": 59.865
+    },
+    {
+     "word": "shear",
+     "start": 59.865,
+     "end": 59.865
+    },
+    {
+     "word": "first",
+     "start": 59.865,
+     "end": 60.405
+    },
+    {
+     "word": "amplifies",
+     "start": 60.405,
+     "end": 60.925
+    },
+    {
+     "word": "them,",
+     "start": 60.925,
+     "end": 61.265
+    },
+    {
+     "word": "then",
+     "start": 61.945,
+     "end": 62.165
     },
     {
      "word": "viscosity",
-     "start": 50.25,
-     "end": 50.61
+     "start": 62.165,
+     "end": 62.745
     },
     {
      "word": "damps",
-     "start": 50.61,
-     "end": 51.07
+     "start": 62.745,
+     "end": 63.245
     },
     {
      "word": "them.",
-     "start": 51.07,
-     "end": 51.23
+     "start": 63.245,
+     "end": 63.475
     }
    ]
   }

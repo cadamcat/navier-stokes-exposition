@@ -142,8 +142,9 @@ def self_test(root):
                 record.write_text(record.read_text() + '\n')
             else:
                 bibliography = copy / 'article/refs.bib'
-                bibliography.write_text(bibliography.read_text().replace(
-                    'url = {evidence/README.md}', 'url = {evidence/missing.md}'))
+                bibliography.write_text(re.sub(
+                    r'(url\s*=\s*\{)[^}]+(?=\})', r'\1evidence/missing.md',
+                    bibliography.read_text(), count=1))
             try:
                 check(copy, Path(root) / 'refs/NavierStokesAndEuler')
             except AssertionError as error:

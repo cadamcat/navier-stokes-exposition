@@ -107,540 +107,563 @@ Can smooth motion lose its
 smoothness in a finite time?
 
 23
-00:01:37,850 --> 00:01:42,590
+00:01:37,850 --> 00:01:41,850
 Charles Fefferman's official statement
 poses the problem in all of space,
 
 24
-00:01:43,130 --> 00:01:46,470
+00:01:41,850 --> 00:01:45,490
 and on the torus, a cube whose
 opposite faces are identified.
 
 25
-00:01:47,370 --> 00:01:51,400
+00:01:46,310 --> 00:01:49,940
 It has four alternatives,
 each posed for every positive viscosity.
 
 26
-00:01:52,080 --> 00:01:56,570
+00:01:50,590 --> 00:01:54,970
 A and B ask for a smooth solution
 for all time from every smooth,
 
 27
-00:01:56,650 --> 00:02:00,810
+00:01:55,610 --> 00:01:59,170
 divergence-free initial velocity,
 with no force. In all of space,
 
 28
-00:02:00,910 --> 00:02:04,600
+00:01:59,490 --> 00:02:02,540
 the data must decay rapidly and
 the energy must stay bounded.
 
 29
-00:02:05,450 --> 00:02:10,190
+00:02:03,170 --> 00:02:07,810
 C and D ask for the opposite: admissible
 initial data and a smooth force,
 
 30
-00:02:10,830 --> 00:02:14,150
+00:02:08,430 --> 00:02:11,410
 chosen together, for which no
-global smooth solution exists.
+global smooth solution exists:
 
 31
-00:02:14,950 --> 00:02:18,580
-The force must stay smooth and decaying
-through the breakdown and after it.
+00:02:11,990 --> 00:02:15,290
+on the whole space,
+none with bounded energy; on the torus,
 
 32
-00:02:19,100 --> 00:02:22,110
+00:02:15,850 --> 00:02:20,070
+none that is periodic. The force must stay
+smooth and decaying through the breakdown
+
+33
+00:02:20,070 --> 00:02:21,070
+and after it.
+
+34
+00:02:21,220 --> 00:02:24,230
 A proof of any one
 alternative is accepted.
 
-33
-00:02:22,630 --> 00:02:27,680
+35
+00:02:24,750 --> 00:02:29,800
 Breakdown with a force does not
 settle A or B. Without a force,
 
-34
-00:02:28,300 --> 00:02:30,700
+36
+00:02:30,420 --> 00:02:32,820
 smooth solutions might still last forever.
 
-35
-00:02:33,750 --> 00:02:37,910
+37
+00:02:35,883 --> 00:02:40,043
 Without a force, the energy,
 half the integral of the squared speed,
 
-36
-00:02:38,310 --> 00:02:43,760
+38
+00:02:40,443 --> 00:02:45,893
 can only decrease. But energy is a total.
 It does not bound the peak speed.
 
-37
-00:02:44,330 --> 00:02:48,310
+39
+00:02:46,463 --> 00:02:50,443
 In nineteen thirty-four, Jean Leray
 constructed global weak solutions;
 
-38
-00:02:49,230 --> 00:02:51,210
+40
+00:02:51,363 --> 00:02:53,343
 Eberhard Hopf later extended the theory.
 
-39
-00:02:51,930 --> 00:02:56,540
+41
+00:02:54,063 --> 00:02:58,673
 They satisfy the equations only in an
 averaged sense, and need not be smooth.
 
-40
-00:02:56,900 --> 00:03:01,940
+42
+00:02:59,033 --> 00:03:04,073
 Without force, Fujita and Kato proved
 global smooth solutions for data small in
 
-41
-00:03:01,940 --> 00:03:05,660
+43
+00:03:04,073 --> 00:03:07,793
 a critical norm,
 relative to the viscosity. Caffarelli,
 
-42
-00:03:06,320 --> 00:03:10,240
+44
+00:03:08,453 --> 00:03:12,373
 Kohn and Nirenberg proved that the
 possible singular set is very small,
 
-43
-00:03:10,660 --> 00:03:12,530
+45
+00:03:12,793 --> 00:03:14,663
 though a single point is not excluded.
 
-44
-00:03:13,280 --> 00:03:16,500
+46
+00:03:15,413 --> 00:03:18,633
 Continuation criteria name a
 quantity that must blow up:
 
-45
-00:03:17,140 --> 00:03:20,720
+47
+00:03:19,273 --> 00:03:22,853
 a vorticity integral for Euler,
 by Beale, Kato and Majda,
 
-46
-00:03:21,300 --> 00:03:26,100
+48
+00:03:23,433 --> 00:03:28,233
 and the L three norm for Navier–Stokes,
 by Escauriaza, Seregin and Šverák,
 
-47
-00:03:26,600 --> 00:03:27,620
+49
+00:03:28,733 --> 00:03:29,753
 both without force.
 
-48
-00:03:28,240 --> 00:03:32,160
+50
+00:03:30,373 --> 00:03:34,293
 Terence Tao proved blowup for an averaged
 equation that keeps the energy identity.
 
-49
-00:03:33,080 --> 00:03:36,260
+51
+00:03:35,213 --> 00:03:38,393
 Jiajie Chen and Thomas Hou proved,
 with computer assistance,
 
-50
-00:03:36,260 --> 00:03:39,900
+52
+00:03:38,393 --> 00:03:42,033
 blowup for Euler without viscosity,
 at a cylinder's wall.
 
-51
-00:03:40,780 --> 00:03:42,710
+53
+00:03:42,913 --> 00:03:44,843
 Neither is a Navier–Stokes counterexample.
 
-52
-00:03:45,783 --> 00:03:50,003
+54
+00:03:47,917 --> 00:03:52,137
 Rescale a solution by a factor lambda:
 space shrinks by lambda,
 
-53
-00:03:50,703 --> 00:03:54,343
+55
+00:03:52,837 --> 00:03:56,477
 time by lambda squared,
 and the velocity grows by lambda.
 
-54
-00:03:54,883 --> 00:03:59,913
+56
+00:03:57,017 --> 00:04:02,047
 It still solves the equations, with the
 same viscosity and a rescaled force.
 
-55
-00:04:00,443 --> 00:04:04,463
+57
+00:04:02,577 --> 00:04:06,597
 The L three norm does not change,
 but the energy is divided by lambda.
 
-56
-00:04:05,503 --> 00:04:09,083
+58
+00:04:07,637 --> 00:04:11,217
 Packing a flow into ever smaller
 regions costs ever less energy:
 
-57
-00:04:09,663 --> 00:04:12,763
+59
+00:04:11,797 --> 00:04:14,897
 in three dimensions,
 the energy bound is supercritical.
 
-58
-00:04:13,003 --> 00:04:16,843
+60
+00:04:15,137 --> 00:04:18,977
 Put the blowup time at one,
 and let tau be the time left.
 
-59
-00:04:17,543 --> 00:04:21,583
+61
+00:04:19,677 --> 00:04:23,717
 The announced core's radius
 shrinks like tau to the one half.
 
-60
-00:04:22,303 --> 00:04:25,983
+62
+00:04:24,437 --> 00:04:28,117
 Its length shrinks like tau
 to the one half minus h,
 
-61
-00:04:26,623 --> 00:04:28,383
+63
+00:04:28,757 --> 00:04:30,517
 for a small fixed number h.
 
-62
-00:04:29,263 --> 00:04:32,913
+64
+00:04:31,397 --> 00:04:35,047
 Its speed grows like tau to
 the minus one half minus h.
 
-63
-00:04:33,873 --> 00:04:36,343
+65
+00:04:36,007 --> 00:04:38,477
 Multiply the squared speed
 by the core's volume.
 
-64
-00:04:37,063 --> 00:04:40,923
+66
+00:04:39,197 --> 00:04:43,057
 The core's energy then scales like
 tau to the one half minus three h,
 
-65
-00:04:41,343 --> 00:04:45,403
+67
+00:04:43,477 --> 00:04:47,537
 which tends to zero.
 So the peak speed grows without bound,
 
-66
-00:04:45,983 --> 00:04:47,573
+68
+00:04:48,117 --> 00:04:49,707
 while the core's energy shrinks.
 
-67
-00:04:50,650 --> 00:04:55,290
+69
+00:04:52,783 --> 00:04:57,423
 A forced construction can start from the
 answer. Choose a velocity and a pressure,
 
-68
-00:04:55,930 --> 00:04:59,190
+70
+00:04:58,063 --> 00:05:01,323
 put them into the equations,
 and call what is left over the force.
 
-69
-00:04:59,610 --> 00:05:01,860
+71
+00:05:01,743 --> 00:05:03,993
 The equations then hold by definition.
 
-70
-00:05:02,360 --> 00:05:06,130
+72
+00:05:04,493 --> 00:05:08,263
 The difficulty is the blowup time.
 If the velocity blows up,
 
-71
-00:05:06,370 --> 00:05:10,090
+73
+00:05:08,503 --> 00:05:12,223
 the leftover usually does too,
 and such a force is not allowed.
 
-72
-00:05:10,570 --> 00:05:12,950
+74
+00:05:12,703 --> 00:05:15,083
 The force must stay
 smooth through time one.
 
-73
-00:05:13,520 --> 00:05:17,310
+75
+00:05:15,653 --> 00:05:19,443
 Smooth is not the same as analytic.
 This function is smooth,
 
-74
-00:05:17,310 --> 00:05:21,690
+76
+00:05:19,443 --> 00:05:23,823
 and every derivative vanishes at zero,
 yet it is not zero.
 
-75
-00:05:22,230 --> 00:05:25,160
+77
+00:05:24,363 --> 00:05:27,293
 The official problem
 asks only for smoothness.
 
-76
-00:05:28,217 --> 00:05:33,177
+78
+00:05:30,350 --> 00:05:35,310
 The construction has three layers.
 First, a vortex core spirals inward,
 
-77
-00:05:33,937 --> 00:05:37,847
+79
+00:05:36,070 --> 00:05:39,980
 spins faster and leaves along its axis,
 growing more slender as it shrinks.
 
-78
-00:05:38,487 --> 00:05:42,037
+80
+00:05:40,620 --> 00:05:44,170
 Joined to the flow outside,
 it leaves an error in a ring around it:
 
-79
-00:05:42,337 --> 00:05:43,337
+81
+00:05:44,470 --> 00:05:45,470
 a missing stress.
 
-80
-00:05:43,617 --> 00:05:45,317
+82
+00:05:45,750 --> 00:05:48,170
 Oscillations can supply stress.
 
-81
-00:05:45,797 --> 00:05:49,717
-A wave whose velocity averages to
-zero still carries a flux of momentum,
-
-82
-00:05:49,717 --> 00:05:52,357
-because the equations see
-the velocity times itself,
-
 83
-00:05:52,797 --> 00:05:54,997
-and a square averages
-to something positive.
+00:05:49,030 --> 00:05:52,570
+Take a wave whose velocity
+averages to zero over each period.
 
 84
-00:05:55,757 --> 00:05:57,877
+00:05:53,185 --> 00:05:56,395
+The equations see the
+velocity times itself.
+
+85
+00:05:57,015 --> 00:06:01,185
+That square never drops below zero,
+so its average is positive.
+
+86
+00:06:02,075 --> 00:06:06,875
+So a wave that goes nowhere on average
+still carries a steady flux of momentum.
+
+87
+00:06:07,415 --> 00:06:09,925
 But only positive
 combinations are available.
 
-85
-00:05:58,657 --> 00:06:02,777
+88
+00:06:10,205 --> 00:06:15,625
 In a toy model with two directions, the
 stresses that waves can make fill a cone,
 
-86
-00:06:03,057 --> 00:06:05,197
+89
+00:06:15,945 --> 00:06:18,165
 and a target outside it cannot be made.
 
-87
-00:06:06,157 --> 00:06:10,657
+90
+00:06:18,905 --> 00:06:23,545
 So the manuscript adjusts the core until
 its error lies inside the actual cone.
 
-88
-00:06:11,497 --> 00:06:15,557
+91
+00:06:24,705 --> 00:06:29,365
 Localized pulses then deliver it:
-the core's shear amplifies them,
+the core's shear first amplifies them,
 
-89
-00:06:15,997 --> 00:06:17,197
-and viscosity damps them.
+92
+00:06:30,045 --> 00:06:31,575
+then viscosity damps them.
 
-90
-00:06:20,250 --> 00:06:24,850
+93
+00:06:34,650 --> 00:06:39,250
 One repair is not enough.
 Each correction creates new errors,
 
-91
-00:06:25,430 --> 00:06:27,770
+94
+00:06:39,830 --> 00:06:42,170
 and the force must be
 smooth to every order.
 
-92
-00:06:28,710 --> 00:06:31,370
+95
+00:06:43,110 --> 00:06:45,770
 The manuscript cycles
 through four corrections,
 
-93
-00:06:32,270 --> 00:06:33,810
+96
+00:06:46,670 --> 00:06:48,210
 rebuilding the pressure after each.
 
-94
-00:06:34,670 --> 00:06:37,910
+97
+00:06:49,070 --> 00:06:52,310
 Each full cycle raises the
 order of the remaining error.
 
-95
-00:06:39,010 --> 00:06:42,010
+98
+00:06:53,410 --> 00:06:56,410
 For a fixed number of derivatives,
 the losses stay fixed,
 
-96
-00:06:42,510 --> 00:06:46,950
+99
+00:06:56,910 --> 00:07:01,350
 so the order eventually passes them.
 The ladder has no last rung.
 
-97
-00:06:47,700 --> 00:06:51,530
+100
+00:07:02,100 --> 00:07:05,930
 Smooth cutoffs assemble the
 corrections into one smooth field,
 
-98
-00:06:52,390 --> 00:06:55,430
+101
+00:07:06,790 --> 00:07:09,830
 and the force is extended
 smoothly through time one,
 
-99
-00:06:55,770 --> 00:06:57,920
+102
+00:07:10,170 --> 00:07:12,320
 with compact support in space and time.
 
-100
-00:07:00,983 --> 00:07:06,483
+103
+00:07:15,383 --> 00:07:20,783
 Now the whole construction: the force
 stays smooth through time one and after,
 
-101
-00:07:07,203 --> 00:07:10,623
+104
+00:07:21,483 --> 00:07:24,743
 the velocity becomes unbounded
 as time approaches one,
 
-102
-00:07:11,123 --> 00:07:12,893
+105
+00:07:25,243 --> 00:07:26,763
 and the energy stays bounded.
 
-103
-00:07:13,673 --> 00:07:18,583
-One step remains: could another smooth
-solution, with the same force and start,
+106
+00:07:27,413 --> 00:07:31,483
+One step remains: could another
+smooth solution with bounded energy,
 
-104
-00:07:19,223 --> 00:07:22,983
-last forever? The manuscript's
-comparison argument says no,
+107
+00:07:31,963 --> 00:07:34,803
+the same force and the same start,
+last forever?
 
-105
-00:07:23,563 --> 00:07:26,323
+108
+00:07:35,083 --> 00:07:37,923
+The manuscript's comparison
+argument says no,
+
+109
+00:07:38,363 --> 00:07:40,783
 without assuming decay of
 its derivatives or pressure.
 
-106
-00:07:26,853 --> 00:07:28,043
+110
+00:07:41,453 --> 00:07:42,543
 The end is elementary.
 
-107
-00:07:29,023 --> 00:07:32,423
+111
+00:07:43,423 --> 00:07:47,403
 Such a solution would be bounded
 on a compact region up to time one,
 
-108
-00:07:32,923 --> 00:07:37,183
+112
+00:07:47,923 --> 00:07:52,443
 yet equal to a branch whose speed is
 unbounded there. Given the construction,
 
-109
-00:07:37,763 --> 00:07:39,243
+113
+00:07:52,883 --> 00:07:54,263
 that contradiction gives C.
 
-110
-00:07:39,993 --> 00:07:44,143
+114
+00:07:54,903 --> 00:07:59,123
 For D, shrink the construction into
 one cell of the torus and repeat it
 
-111
-00:07:44,143 --> 00:07:46,683
+115
+00:07:59,123 --> 00:08:01,583
 periodically. The copies do not interact,
 
-112
-00:07:47,063 --> 00:07:49,813
+116
+00:08:02,063 --> 00:08:04,643
 and a periodic comparison
 finishes the argument.
 
-113
-00:07:52,883 --> 00:07:58,283
+117
+00:08:07,717 --> 00:08:13,357
 OpenAI's Lean development ends in two
 theorems, for C and for D. Each says:
 
-114
-00:07:58,683 --> 00:08:00,023
+118
+00:08:13,777 --> 00:08:15,217
 for every positive viscosity,
 
-115
-00:08:00,563 --> 00:08:05,083
-there are admissible initial data and
-an admissible force for which no global
+119
+00:08:15,737 --> 00:08:20,057
+there are admissible initial data and an
+admissible force for which no admissible
 
-116
-00:08:05,083 --> 00:08:06,533
-smooth solution exists.
+120
+00:08:20,057 --> 00:08:22,147
+global smooth solution exists.
 
-117
-00:08:07,243 --> 00:08:11,583
+121
+00:08:22,717 --> 00:08:27,497
 Its predicates spell out the official
 clauses: smoothness, incompressibility,
 
-118
-00:08:11,983 --> 00:08:15,903
+122
+00:08:27,957 --> 00:08:32,037
 the same initial data, decay,
 finite energy with one uniform bound,
 
-119
-00:08:16,503 --> 00:08:20,943
+123
+00:08:32,877 --> 00:08:36,957
 periodic velocity and pressure. Compared
 with Fefferman's text clause by clause,
 
-120
-00:08:21,363 --> 00:08:22,373
+124
+00:08:36,957 --> 00:08:38,347
 we found none missing.
 
-121
-00:08:22,783 --> 00:08:25,603
+125
+00:08:38,797 --> 00:08:41,477
 No hypothesis asks for
 a vortex or an estimate.
 
-122
-00:08:26,443 --> 00:08:30,703
-OpenAI's own record lists both theorems
-with only the three standard axioms,
+126
+00:08:42,197 --> 00:08:44,937
+We rebuilt the development
+and ran its checker:
 
-123
-00:08:31,123 --> 00:08:35,283
-and calls its review self-assessed.
-Nothing was rerun for this film.
+127
+00:08:45,157 --> 00:08:47,497
+two independent kernels
+accept both theorems,
 
-124
-00:08:35,853 --> 00:08:38,233
+128
+00:08:47,917 --> 00:08:50,187
+which use only the three standard axioms.
+
+129
+00:08:50,367 --> 00:08:52,747
 In October, Alexander Bastounis,
 
-125
-00:08:38,833 --> 00:08:43,113
+130
+00:08:53,347 --> 00:08:57,627
 Fabian Circelli and Anders Hansen showed
 two places where the Lean proof uses a
 
-126
-00:08:43,113 --> 00:08:45,613
+131
+00:08:57,627 --> 00:09:00,127
 different estimate from the paper:
 one more derivative,
 
-127
-00:08:45,653 --> 00:08:49,573
+132
+00:09:00,167 --> 00:09:04,087
 and another pressure bound.
 That refutes neither C nor D,
 
-128
-00:08:49,933 --> 00:08:52,423
+133
+00:09:04,447 --> 00:09:06,937
 but not every printed estimate
 was checked as written.
 
-129
-00:08:55,483 --> 00:08:59,063
+134
+00:09:10,017 --> 00:09:13,597
 Mathematicians have begun to engage,
 in preprints by Constantin,
 
-130
-00:08:59,443 --> 00:09:02,863
+135
+00:09:13,977 --> 00:09:17,397
 Ignatova and Vicol,
 and by Zhen Lei and Xiao Ren.
 
-131
-00:09:03,543 --> 00:09:06,543
+136
+00:09:18,077 --> 00:09:21,077
 Clay still lists the problem as active,
 MathDB as open,
 
-132
-00:09:06,903 --> 00:09:10,953
+137
+00:09:21,437 --> 00:09:25,487
 and the sources examined contain no
 completed independent referee report.
 
-133
-00:09:11,993 --> 00:09:16,163
+138
+00:09:26,527 --> 00:09:30,697
 Nothing here sets the force to zero.
 Alternatives A and B,
 
-134
-00:09:16,863 --> 00:09:21,443
+139
+00:09:31,397 --> 00:09:35,977
 smoothness for all time without force,
 from all admissible data, remain open.
 

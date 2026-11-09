@@ -4,18 +4,18 @@
  "model": "gpt-4o-mini-tts",
  "speed": null,
  "audio": "c10.wav",
- "duration": 62.59,
+ "duration": 62.27,
  "inserted": [
   {
    "at": 0.0,
-   "seconds": 1.67,
+   "seconds": 2.25,
    "where": "chapter start",
    "reason": [
     "title card held 2 s, first picture 0.25 s before the first word"
    ]
   },
   {
-   "at": 61.97,
+   "at": 61.65,
    "seconds": 0.62,
    "where": "after c10b4",
    "reason": [
@@ -30,179 +30,184 @@
    "hold": "short",
    "paragraph": "1.1",
    "start": 2.25,
-   "end": 15.9,
-   "holdEnd": 16.255,
-   "text": "OpenAI's Lean development ends in two theorems, for C and for D. Each says: for every positive viscosity, there are admissible initial data and an admissible force for which no global smooth solution exists.",
+   "end": 16.68,
+   "holdEnd": 16.965,
+   "text": "OpenAI's Lean development ends in two theorems, for C and for D. Each says: for every positive viscosity, there are admissible initial data and an admissible force for which no admissible global smooth solution exists.",
    "words": [
     {
      "word": "OpenAI's",
      "start": 2.25,
-     "end": 3.17
+     "end": 3.43
     },
     {
      "word": "Lean",
-     "start": 3.17,
-     "end": 3.29
+     "start": 3.43,
+     "end": 3.61
     },
     {
      "word": "development",
-     "start": 3.29,
-     "end": 3.75
+     "start": 3.61,
+     "end": 4.09
     },
     {
      "word": "ends",
-     "start": 3.75,
-     "end": 4.17
+     "start": 4.09,
+     "end": 4.45
     },
     {
      "word": "in",
-     "start": 4.17,
-     "end": 4.43
+     "start": 4.45,
+     "end": 4.77
     },
     {
      "word": "two",
-     "start": 4.43,
-     "end": 4.67
+     "start": 4.77,
+     "end": 5.03
     },
     {
      "word": "theorems,",
-     "start": 4.67,
-     "end": 4.99
+     "start": 5.03,
+     "end": 5.47
     },
     {
      "word": "for",
-     "start": 5.29,
-     "end": 5.49
+     "start": 5.87,
+     "end": 6.07
     },
     {
      "word": "C",
-     "start": 5.49,
-     "end": 5.71
+     "start": 6.07,
+     "end": 6.31
     },
     {
      "word": "and",
-     "start": 5.71,
-     "end": 5.99
+     "start": 6.31,
+     "end": 6.53
     },
     {
      "word": "for",
-     "start": 5.99,
-     "end": 6.33
+     "start": 6.53,
+     "end": 6.89
     },
     {
      "word": "D.",
-     "start": 6.33,
-     "end": 6.41
+     "start": 6.89,
+     "end": 6.97
     },
     {
      "word": "Each",
-     "start": 7.19,
-     "end": 7.29
+     "start": 7.39,
+     "end": 7.51
     },
     {
      "word": "says:",
-     "start": 7.29,
-     "end": 7.65
+     "start": 7.51,
+     "end": 7.89
     },
     {
      "word": "for",
-     "start": 8.05,
-     "end": 8.05
+     "start": 8.31,
+     "end": 8.33
     },
     {
      "word": "every",
-     "start": 8.05,
-     "end": 8.43
+     "start": 8.33,
+     "end": 8.67
     },
     {
      "word": "positive",
-     "start": 8.43,
-     "end": 8.83
+     "start": 8.67,
+     "end": 9.19
     },
     {
      "word": "viscosity,",
-     "start": 8.83,
-     "end": 9.39
+     "start": 9.19,
+     "end": 9.75
     },
     {
      "word": "there",
-     "start": 9.93,
-     "end": 9.93
+     "start": 10.27,
+     "end": 10.27
     },
     {
      "word": "are",
-     "start": 9.93,
-     "end": 10.15
+     "start": 10.27,
+     "end": 10.57
     },
     {
      "word": "admissible",
-     "start": 10.15,
-     "end": 10.59
+     "start": 10.57,
+     "end": 10.95
     },
     {
      "word": "initial",
-     "start": 10.59,
-     "end": 11.05
+     "start": 10.95,
+     "end": 11.41
     },
     {
      "word": "data",
-     "start": 11.05,
-     "end": 11.37
+     "start": 11.41,
+     "end": 11.71
     },
     {
      "word": "and",
-     "start": 11.37,
-     "end": 11.99
+     "start": 11.71,
+     "end": 12.13
     },
     {
      "word": "an",
-     "start": 11.99,
-     "end": 12.23
+     "start": 12.13,
+     "end": 12.37
     },
     {
      "word": "admissible",
-     "start": 12.23,
-     "end": 12.51
+     "start": 12.37,
+     "end": 12.61
     },
     {
      "word": "force",
-     "start": 12.51,
-     "end": 13.01
+     "start": 12.61,
+     "end": 13.11
     },
     {
      "word": "for",
-     "start": 13.01,
-     "end": 13.47
+     "start": 13.51,
+     "end": 13.59
     },
     {
      "word": "which",
-     "start": 13.47,
-     "end": 13.67
+     "start": 13.59,
+     "end": 13.77
     },
     {
      "word": "no",
-     "start": 13.67,
-     "end": 14.05
+     "start": 13.77,
+     "end": 14.17
+    },
+    {
+     "word": "admissible",
+     "start": 14.17,
+     "end": 14.59
     },
     {
      "word": "global",
-     "start": 14.05,
-     "end": 14.45
+     "start": 14.59,
+     "end": 15.07
     },
     {
      "word": "smooth",
-     "start": 14.45,
-     "end": 14.85
+     "start": 15.07,
+     "end": 15.45
     },
     {
      "word": "solution",
-     "start": 14.85,
-     "end": 15.29
+     "start": 15.45,
+     "end": 15.93
     },
     {
      "word": "exists.",
-     "start": 15.29,
-     "end": 15.9
+     "start": 15.93,
+     "end": 16.68
     }
    ]
   },
@@ -211,185 +216,185 @@
    "status": "context",
    "hold": "short",
    "paragraph": "1.1",
-   "start": 16.255,
-   "end": 31.74,
-   "holdEnd": 31.945,
+   "start": 16.965,
+   "end": 32.88,
+   "holdEnd": 33.105,
    "text": "Its predicates spell out the official clauses: smoothness, incompressibility, the same initial data, decay, finite energy with one uniform bound, periodic velocity and pressure. Compared with Fefferman's text clause by clause, we found none missing.",
    "words": [
     {
      "word": "Its",
-     "start": 16.61,
-     "end": 16.85
+     "start": 17.25,
+     "end": 17.49
     },
     {
      "word": "predicates",
-     "start": 16.85,
-     "end": 17.29
+     "start": 17.49,
+     "end": 18.03
     },
     {
      "word": "spell",
-     "start": 17.29,
-     "end": 17.55
+     "start": 18.03,
+     "end": 18.53
     },
     {
      "word": "out",
-     "start": 17.55,
-     "end": 17.79
+     "start": 18.53,
+     "end": 18.77
     },
     {
      "word": "the",
-     "start": 17.79,
-     "end": 17.99
+     "start": 18.77,
+     "end": 18.95
     },
     {
      "word": "official",
-     "start": 17.99,
-     "end": 18.33
+     "start": 18.95,
+     "end": 19.27
     },
     {
      "word": "clauses:",
-     "start": 18.33,
-     "end": 18.97
+     "start": 19.27,
+     "end": 19.69
     },
     {
      "word": "smoothness,",
-     "start": 18.97,
-     "end": 19.85
+     "start": 20.59,
+     "end": 21.31
     },
     {
      "word": "incompressibility,",
-     "start": 20.23,
-     "end": 20.95
-    },
-    {
-     "word": "the",
-     "start": 21.35,
-     "end": 21.55
-    },
-    {
-     "word": "same",
-     "start": 21.55,
-     "end": 21.75
-    },
-    {
-     "word": "initial",
-     "start": 21.75,
+     "start": 21.31,
      "end": 22.03
     },
     {
+     "word": "the",
+     "start": 22.49,
+     "end": 22.63
+    },
+    {
+     "word": "same",
+     "start": 22.63,
+     "end": 22.85
+    },
+    {
+     "word": "initial",
+     "start": 22.85,
+     "end": 23.11
+    },
+    {
      "word": "data,",
-     "start": 22.03,
-     "end": 22.31
+     "start": 23.11,
+     "end": 23.43
     },
     {
      "word": "decay,",
-     "start": 22.71,
-     "end": 22.97
+     "start": 23.89,
+     "end": 24.13
     },
     {
      "word": "finite",
-     "start": 23.59,
-     "end": 23.75
-    },
-    {
-     "word": "energy",
-     "start": 23.75,
-     "end": 24.07
-    },
-    {
-     "word": "with",
-     "start": 24.07,
-     "end": 24.33
-    },
-    {
-     "word": "one",
-     "start": 24.33,
-     "end": 24.57
-    },
-    {
-     "word": "uniform",
-     "start": 24.57,
+     "start": 24.91,
      "end": 24.93
     },
     {
-     "word": "bound,",
+     "word": "energy",
      "start": 24.93,
-     "end": 25.27
-    },
-    {
-     "word": "periodic",
-     "start": 25.87,
-     "end": 26.17
-    },
-    {
-     "word": "velocity",
-     "start": 26.17,
-     "end": 26.63
-    },
-    {
-     "word": "and",
-     "start": 26.63,
-     "end": 27.01
-    },
-    {
-     "word": "pressure.",
-     "start": 27.01,
-     "end": 27.41
-    },
-    {
-     "word": "Compared",
-     "start": 28.45,
-     "end": 28.45
+     "end": 25.29
     },
     {
      "word": "with",
-     "start": 28.45,
-     "end": 28.71
+     "start": 25.29,
+     "end": 25.55
     },
     {
-     "word": "Fefferman's",
-     "start": 28.71,
-     "end": 29.15
+     "word": "one",
+     "start": 25.55,
+     "end": 25.87
     },
     {
-     "word": "text",
-     "start": 29.15,
-     "end": 29.53
+     "word": "uniform",
+     "start": 25.87,
+     "end": 26.19
     },
     {
-     "word": "clause",
-     "start": 29.53,
+     "word": "bound,",
+     "start": 26.19,
+     "end": 26.57
+    },
+    {
+     "word": "periodic",
+     "start": 27.41,
+     "end": 27.41
+    },
+    {
+     "word": "velocity",
+     "start": 27.41,
+     "end": 27.87
+    },
+    {
+     "word": "and",
+     "start": 28.07,
+     "end": 28.53
+    },
+    {
+     "word": "pressure.",
+     "start": 28.53,
+     "end": 28.53
+    },
+    {
+     "word": "Compared",
+     "start": 29.45,
+     "end": 29.45
+    },
+    {
+     "word": "with",
+     "start": 29.45,
      "end": 29.81
     },
     {
-     "word": "by",
+     "word": "Fefferman's",
      "start": 29.81,
-     "end": 30.03
+     "end": 30.27
+    },
+    {
+     "word": "text",
+     "start": 30.27,
+     "end": 30.63
+    },
+    {
+     "word": "clause",
+     "start": 30.63,
+     "end": 30.93
+    },
+    {
+     "word": "by",
+     "start": 30.93,
+     "end": 31.21
     },
     {
      "word": "clause,",
-     "start": 30.03,
-     "end": 30.31
+     "start": 31.21,
+     "end": 31.49
     },
     {
      "word": "we",
-     "start": 30.73,
-     "end": 30.87
+     "start": 31.49,
+     "end": 31.93
     },
     {
      "word": "found",
-     "start": 30.87,
-     "end": 31.09
+     "start": 31.93,
+     "end": 32.19
     },
     {
      "word": "none",
-     "start": 31.09,
-     "end": 31.37
+     "start": 32.19,
+     "end": 32.53
     },
     {
      "word": "missing.",
-     "start": 31.37,
-     "end": 31.74
+     "start": 32.53,
+     "end": 32.88
     }
    ]
   },
@@ -398,170 +403,160 @@
    "status": "lean",
    "hold": "short",
    "paragraph": "1.1",
-   "start": 31.945,
-   "end": 44.65,
-   "holdEnd": 45.22,
-   "text": "No hypothesis asks for a vortex or an estimate. OpenAI's own record lists both theorems with only the three standard axioms, and calls its review self-assessed. Nothing was rerun for this film.",
+   "start": 33.105,
+   "end": 44.72,
+   "holdEnd": 44.9,
+   "text": "No hypothesis asks for a vortex or an estimate. We rebuilt the development and ran its checker: two independent kernels accept both theorems, which use only the three standard axioms.",
    "words": [
     {
      "word": "No",
-     "start": 32.15,
-     "end": 32.43
-    },
-    {
-     "word": "hypothesis",
-     "start": 32.43,
-     "end": 32.99
-    },
-    {
-     "word": "asks",
-     "start": 32.99,
-     "end": 33.39
-    },
-    {
-     "word": "for",
-     "start": 33.39,
+     "start": 33.33,
      "end": 33.59
     },
     {
-     "word": "a",
+     "word": "hypothesis",
      "start": 33.59,
-     "end": 33.91
+     "end": 34.13
     },
     {
-     "word": "vortex",
-     "start": 33.91,
-     "end": 34.17
-    },
-    {
-     "word": "or",
-     "start": 34.17,
-     "end": 34.47
-    },
-    {
-     "word": "an",
-     "start": 34.47,
-     "end": 34.97
-    },
-    {
-     "word": "estimate.",
-     "start": 34.97,
-     "end": 34.97
-    },
-    {
-     "word": "OpenAI's",
-     "start": 35.81,
-     "end": 36.45
-    },
-    {
-     "word": "own",
-     "start": 36.45,
-     "end": 36.79
-    },
-    {
-     "word": "record",
-     "start": 36.79,
-     "end": 37.05
-    },
-    {
-     "word": "lists",
-     "start": 37.05,
-     "end": 37.33
-    },
-    {
-     "word": "both",
-     "start": 37.33,
-     "end": 37.75
-    },
-    {
-     "word": "theorems",
-     "start": 37.75,
-     "end": 38.13
-    },
-    {
-     "word": "with",
-     "start": 38.13,
-     "end": 38.61
-    },
-    {
-     "word": "only",
-     "start": 38.61,
-     "end": 38.85
-    },
-    {
-     "word": "the",
-     "start": 38.85,
-     "end": 39.07
-    },
-    {
-     "word": "three",
-     "start": 39.07,
-     "end": 39.35
-    },
-    {
-     "word": "standard",
-     "start": 39.35,
-     "end": 39.65
-    },
-    {
-     "word": "axioms,",
-     "start": 39.65,
-     "end": 40.07
-    },
-    {
-     "word": "and",
-     "start": 40.49,
-     "end": 40.85
-    },
-    {
-     "word": "calls",
-     "start": 40.85,
-     "end": 41.11
-    },
-    {
-     "word": "its",
-     "start": 41.11,
-     "end": 41.31
-    },
-    {
-     "word": "review",
-     "start": 41.31,
-     "end": 41.69
-    },
-    {
-     "word": "self-assessed.",
-     "start": 41.69,
-     "end": 42.45
-    },
-    {
-     "word": "Nothing",
-     "start": 43.05,
-     "end": 43.35
-    },
-    {
-     "word": "was",
-     "start": 43.35,
-     "end": 43.59
-    },
-    {
-     "word": "rerun",
-     "start": 43.59,
-     "end": 43.93
+     "word": "asks",
+     "start": 34.13,
+     "end": 34.55
     },
     {
      "word": "for",
-     "start": 43.93,
-     "end": 44.15
+     "start": 34.55,
+     "end": 34.77
     },
     {
-     "word": "this",
-     "start": 44.15,
-     "end": 44.37
+     "word": "a",
+     "start": 34.77,
+     "end": 35.03
     },
     {
-     "word": "film.",
-     "start": 44.37,
-     "end": 44.65
+     "word": "vortex",
+     "start": 35.03,
+     "end": 35.17
+    },
+    {
+     "word": "or",
+     "start": 35.17,
+     "end": 35.51
+    },
+    {
+     "word": "an",
+     "start": 35.51,
+     "end": 35.85
+    },
+    {
+     "word": "estimate.",
+     "start": 35.85,
+     "end": 36.01
+    },
+    {
+     "word": "We",
+     "start": 36.73,
+     "end": 36.87
+    },
+    {
+     "word": "rebuilt",
+     "start": 36.87,
+     "end": 37.17
+    },
+    {
+     "word": "the",
+     "start": 37.17,
+     "end": 37.41
+    },
+    {
+     "word": "development",
+     "start": 37.41,
+     "end": 37.75
+    },
+    {
+     "word": "and",
+     "start": 37.75,
+     "end": 38.29
+    },
+    {
+     "word": "ran",
+     "start": 38.29,
+     "end": 38.55
+    },
+    {
+     "word": "its",
+     "start": 38.55,
+     "end": 38.77
+    },
+    {
+     "word": "checker:",
+     "start": 38.77,
+     "end": 39.47
+    },
+    {
+     "word": "two",
+     "start": 39.69,
+     "end": 39.93
+    },
+    {
+     "word": "independent",
+     "start": 39.93,
+     "end": 40.43
+    },
+    {
+     "word": "kernels",
+     "start": 40.43,
+     "end": 40.79
+    },
+    {
+     "word": "accept",
+     "start": 40.79,
+     "end": 41.29
+    },
+    {
+     "word": "both",
+     "start": 41.29,
+     "end": 41.61
+    },
+    {
+     "word": "theorems,",
+     "start": 41.61,
+     "end": 42.03
+    },
+    {
+     "word": "which",
+     "start": 42.45,
+     "end": 42.59
+    },
+    {
+     "word": "use",
+     "start": 42.59,
+     "end": 42.87
+    },
+    {
+     "word": "only",
+     "start": 42.87,
+     "end": 43.15
+    },
+    {
+     "word": "the",
+     "start": 43.15,
+     "end": 43.39
+    },
+    {
+     "word": "three",
+     "start": 43.39,
+     "end": 43.71
+    },
+    {
+     "word": "standard",
+     "start": 43.71,
+     "end": 44.05
+    },
+    {
+     "word": "axioms.",
+     "start": 44.05,
+     "end": 44.72
     }
    ]
   },
@@ -570,235 +565,235 @@
    "status": "context",
    "hold": "short",
    "paragraph": "2.1",
-   "start": 45.22,
-   "end": 61.79,
-   "holdEnd": 62.59,
+   "start": 44.9,
+   "end": 61.47,
+   "holdEnd": 62.27,
    "text": "In October, Alexander Bastounis, Fabian Circelli and Anders Hansen showed two places where the Lean proof uses a different estimate from the paper: one more derivative, and another pressure bound. That refutes neither C nor D, but not every printed estimate was checked as written.",
    "words": [
     {
      "word": "In",
-     "start": 45.22,
-     "end": 45.44
+     "start": 44.9,
+     "end": 45.12
     },
     {
      "word": "October,",
-     "start": 45.44,
-     "end": 45.9
+     "start": 45.12,
+     "end": 45.58
     },
     {
      "word": "Alexander",
-     "start": 46.46,
-     "end": 46.98
+     "start": 46.14,
+     "end": 46.66
     },
     {
      "word": "Bastounis,",
-     "start": 46.98,
-     "end": 47.6
+     "start": 46.66,
+     "end": 47.28
     },
     {
      "word": "Fabian",
-     "start": 48.2,
-     "end": 48.48
+     "start": 47.88,
+     "end": 48.16
     },
     {
      "word": "Circelli",
-     "start": 48.48,
-     "end": 49.04
+     "start": 48.16,
+     "end": 48.72
     },
     {
      "word": "and",
-     "start": 49.38,
-     "end": 49.44
+     "start": 49.06,
+     "end": 49.12
     },
     {
      "word": "Anders",
-     "start": 49.44,
-     "end": 49.82
+     "start": 49.12,
+     "end": 49.5
     },
     {
      "word": "Hansen",
-     "start": 49.82,
-     "end": 50.24
+     "start": 49.5,
+     "end": 49.92
     },
     {
      "word": "showed",
-     "start": 50.24,
-     "end": 50.54
+     "start": 49.92,
+     "end": 50.22
     },
     {
      "word": "two",
-     "start": 50.54,
-     "end": 50.82
+     "start": 50.22,
+     "end": 50.5
     },
     {
      "word": "places",
-     "start": 50.82,
-     "end": 51.16
+     "start": 50.5,
+     "end": 50.84
     },
     {
      "word": "where",
-     "start": 51.16,
-     "end": 51.4
+     "start": 50.84,
+     "end": 51.08
     },
     {
      "word": "the",
-     "start": 51.4,
-     "end": 51.6
+     "start": 51.08,
+     "end": 51.28
     },
     {
      "word": "Lean",
-     "start": 51.6,
-     "end": 51.72
+     "start": 51.28,
+     "end": 51.4
     },
     {
      "word": "proof",
-     "start": 51.72,
-     "end": 52.0
+     "start": 51.4,
+     "end": 51.68
     },
     {
      "word": "uses",
-     "start": 52.0,
-     "end": 52.24
+     "start": 51.68,
+     "end": 51.92
     },
     {
      "word": "a",
-     "start": 52.24,
-     "end": 52.48
+     "start": 51.92,
+     "end": 52.16
     },
     {
      "word": "different",
-     "start": 52.48,
-     "end": 52.74
+     "start": 52.16,
+     "end": 52.42
     },
     {
      "word": "estimate",
-     "start": 52.74,
-     "end": 53.02
+     "start": 52.42,
+     "end": 52.7
     },
     {
      "word": "from",
-     "start": 53.02,
-     "end": 53.26
+     "start": 52.7,
+     "end": 52.94
     },
     {
      "word": "the",
-     "start": 53.26,
-     "end": 53.44
+     "start": 52.94,
+     "end": 53.12
     },
     {
      "word": "paper:",
-     "start": 53.44,
-     "end": 53.66
+     "start": 53.12,
+     "end": 53.34
     },
     {
      "word": "one",
-     "start": 54.34,
-     "end": 54.44
+     "start": 54.02,
+     "end": 54.12
     },
     {
      "word": "more",
-     "start": 54.44,
-     "end": 54.7
+     "start": 54.12,
+     "end": 54.38
     },
     {
      "word": "derivative,",
-     "start": 54.7,
-     "end": 54.98
+     "start": 54.38,
+     "end": 54.66
     },
     {
      "word": "and",
-     "start": 55.02,
-     "end": 55.58
+     "start": 54.7,
+     "end": 55.26
     },
     {
      "word": "another",
-     "start": 55.58,
-     "end": 55.84
+     "start": 55.26,
+     "end": 55.52
     },
     {
      "word": "pressure",
-     "start": 55.84,
-     "end": 56.14
+     "start": 55.52,
+     "end": 55.82
     },
     {
      "word": "bound.",
-     "start": 56.14,
-     "end": 56.52
+     "start": 55.82,
+     "end": 56.2
     },
     {
      "word": "That",
-     "start": 56.9,
-     "end": 57.22
+     "start": 56.58,
+     "end": 56.9
     },
     {
      "word": "refutes",
-     "start": 57.22,
-     "end": 57.58
+     "start": 56.9,
+     "end": 57.26
     },
     {
      "word": "neither",
-     "start": 57.58,
-     "end": 57.88
+     "start": 57.26,
+     "end": 57.56
     },
     {
      "word": "C",
-     "start": 57.88,
-     "end": 58.26
+     "start": 57.56,
+     "end": 57.94
     },
     {
      "word": "nor",
-     "start": 58.26,
-     "end": 58.66
+     "start": 57.94,
+     "end": 58.34
     },
     {
      "word": "D,",
-     "start": 58.66,
-     "end": 58.94
+     "start": 58.34,
+     "end": 58.62
     },
     {
      "word": "but",
-     "start": 59.3,
-     "end": 59.62
+     "start": 58.98,
+     "end": 59.3
     },
     {
      "word": "not",
-     "start": 59.62,
-     "end": 59.86
+     "start": 59.3,
+     "end": 59.54
     },
     {
      "word": "every",
-     "start": 59.86,
-     "end": 60.26
+     "start": 59.54,
+     "end": 59.94
     },
     {
      "word": "printed",
-     "start": 60.26,
-     "end": 60.48
+     "start": 59.94,
+     "end": 60.16
     },
     {
      "word": "estimate",
-     "start": 60.48,
-     "end": 60.82
+     "start": 60.16,
+     "end": 60.5
     },
     {
      "word": "was",
-     "start": 60.82,
-     "end": 61.1
+     "start": 60.5,
+     "end": 60.78
     },
     {
      "word": "checked",
-     "start": 61.1,
-     "end": 61.3
+     "start": 60.78,
+     "end": 60.98
     },
     {
      "word": "as",
-     "start": 61.3,
-     "end": 61.58
+     "start": 60.98,
+     "end": 61.26
     },
     {
      "word": "written.",
-     "start": 61.58,
-     "end": 61.79
+     "start": 61.26,
+     "end": 61.47
     }
    ]
   }

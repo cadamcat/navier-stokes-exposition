@@ -1,0 +1,669 @@
+1
+00:00:00,000 --> 00:00:03,920
+A fluid fills all of
+space and starts at rest.
+
+2
+00:00:04,700 --> 00:00:09,520
+A smooth force begins to stir it.
+A thin vortex forms and tightens.
+
+3
+00:00:10,200 --> 00:00:14,200
+Its peak speed grows without
+bound as a finite time approaches,
+
+4
+00:00:14,900 --> 00:00:16,850
+while its total energy stays bounded.
+
+5
+00:00:17,500 --> 00:00:19,780
+On the eighth of September
+twenty twenty-six,
+
+6
+00:00:20,300 --> 00:00:24,300
+OpenAI announced this construction
+for the Navier–Stokes equations,
+
+7
+00:00:24,300 --> 00:00:26,320
+for every positive viscosity.
+
+8
+00:00:26,980 --> 00:00:31,280
+It addresses the two breakdown
+alternatives of the Clay problem, C and D,
+
+9
+00:00:31,820 --> 00:00:34,230
+not the smooth-forever
+alternatives A and B.
+
+10
+00:00:34,820 --> 00:00:37,880
+The proof is announced,
+not yet independently refereed.
+
+11
+00:00:38,400 --> 00:00:40,840
+Its final statements are
+also written in Lean.
+
+12
+00:00:44,117 --> 00:00:49,737
+At each point x and time t,
+the fluid has a velocity u, an arrow,
+
+13
+00:00:49,997 --> 00:00:53,877
+and a pressure p, a number.
+Follow one small parcel:
+
+14
+00:00:54,577 --> 00:00:58,247
+its acceleration is the change
+of u along its own path.
+
+15
+00:00:58,937 --> 00:01:03,617
+The Navier–Stokes equations balance that
+acceleration against the push of pressure,
+
+16
+00:01:04,397 --> 00:01:07,797
+viscous friction of strength nu,
+and an external force f.
+
+17
+00:01:08,497 --> 00:01:11,477
+A second equation makes
+the flow incompressible:
+
+18
+00:01:11,477 --> 00:01:15,047
+as much fluid leaves each
+tiny volume as enters it.
+
+19
+00:01:15,987 --> 00:01:20,397
+Viscosity tends to smooth out differences
+in velocity, the way heat spreads.
+
+20
+00:01:21,577 --> 00:01:25,047
+Transport, the velocity carrying
+itself along, is nonlinear.
+
+21
+00:01:25,847 --> 00:01:30,937
+Smooth means that every derivative, in
+space and time, exists and is continuous.
+
+22
+00:01:31,617 --> 00:01:34,787
+Can smooth motion lose its
+smoothness in a finite time?
+
+23
+00:01:37,850 --> 00:01:41,850
+Charles Fefferman's official statement
+poses the problem in all of space,
+
+24
+00:01:41,850 --> 00:01:45,490
+and on the torus, a cube whose
+opposite faces are identified.
+
+25
+00:01:46,310 --> 00:01:49,940
+It has four alternatives,
+each posed for every positive viscosity.
+
+26
+00:01:50,590 --> 00:01:54,970
+A and B ask for a smooth solution
+for all time from every smooth,
+
+27
+00:01:55,610 --> 00:01:59,170
+divergence-free initial velocity,
+with no force. In all of space,
+
+28
+00:01:59,490 --> 00:02:02,540
+the data must decay rapidly and
+the energy must stay bounded.
+
+29
+00:02:03,170 --> 00:02:07,810
+C and D ask for the opposite: admissible
+initial data and a smooth force,
+
+30
+00:02:08,430 --> 00:02:11,410
+chosen together, for which no
+global smooth solution exists:
+
+31
+00:02:11,990 --> 00:02:15,290
+on the whole space,
+none with bounded energy; on the torus,
+
+32
+00:02:15,850 --> 00:02:20,070
+none that is periodic. The force must stay
+smooth and decaying through the breakdown
+
+33
+00:02:20,070 --> 00:02:21,070
+and after it.
+
+34
+00:02:21,220 --> 00:02:24,230
+A proof of any one
+alternative is accepted.
+
+35
+00:02:24,750 --> 00:02:29,800
+Breakdown with a force does not
+settle A or B. Without a force,
+
+36
+00:02:30,420 --> 00:02:32,820
+smooth solutions might still last forever.
+
+37
+00:02:35,883 --> 00:02:40,043
+Without a force, the energy,
+half the integral of the squared speed,
+
+38
+00:02:40,443 --> 00:02:45,893
+can only decrease. But energy is a total.
+It does not bound the peak speed.
+
+39
+00:02:46,463 --> 00:02:50,443
+In nineteen thirty-four, Jean Leray
+constructed global weak solutions;
+
+40
+00:02:51,363 --> 00:02:53,343
+Eberhard Hopf later extended the theory.
+
+41
+00:02:54,063 --> 00:02:58,673
+They satisfy the equations only in an
+averaged sense, and need not be smooth.
+
+42
+00:02:59,033 --> 00:03:04,073
+Without force, Fujita and Kato proved
+global smooth solutions for data small in
+
+43
+00:03:04,073 --> 00:03:07,793
+a critical norm,
+relative to the viscosity. Caffarelli,
+
+44
+00:03:08,453 --> 00:03:12,373
+Kohn and Nirenberg proved that the
+possible singular set is very small,
+
+45
+00:03:12,793 --> 00:03:14,663
+though a single point is not excluded.
+
+46
+00:03:15,413 --> 00:03:18,633
+Continuation criteria name a
+quantity that must blow up:
+
+47
+00:03:19,273 --> 00:03:22,853
+a vorticity integral for Euler,
+by Beale, Kato and Majda,
+
+48
+00:03:23,433 --> 00:03:28,233
+and the L three norm for Navier–Stokes,
+by Escauriaza, Seregin and Šverák,
+
+49
+00:03:28,733 --> 00:03:29,753
+both without force.
+
+50
+00:03:30,373 --> 00:03:34,293
+Terence Tao proved blowup for an averaged
+equation that keeps the energy identity.
+
+51
+00:03:35,213 --> 00:03:38,393
+Jiajie Chen and Thomas Hou proved,
+with computer assistance,
+
+52
+00:03:38,393 --> 00:03:42,033
+blowup for Euler without viscosity,
+at a cylinder's wall.
+
+53
+00:03:42,913 --> 00:03:44,843
+Neither is a Navier–Stokes counterexample.
+
+54
+00:03:47,917 --> 00:03:52,137
+Rescale a solution by a factor lambda:
+space shrinks by lambda,
+
+55
+00:03:52,837 --> 00:03:56,477
+time by lambda squared,
+and the velocity grows by lambda.
+
+56
+00:03:57,017 --> 00:04:02,047
+It still solves the equations, with the
+same viscosity and a rescaled force.
+
+57
+00:04:02,577 --> 00:04:06,597
+The L three norm does not change,
+but the energy is divided by lambda.
+
+58
+00:04:07,637 --> 00:04:11,217
+Packing a flow into ever smaller
+regions costs ever less energy:
+
+59
+00:04:11,797 --> 00:04:14,897
+in three dimensions,
+the energy bound is supercritical.
+
+60
+00:04:15,137 --> 00:04:18,977
+Put the blowup time at one,
+and let tau be the time left.
+
+61
+00:04:19,677 --> 00:04:23,717
+The announced core's radius
+shrinks like tau to the one half.
+
+62
+00:04:24,437 --> 00:04:28,117
+Its length shrinks like tau
+to the one half minus h,
+
+63
+00:04:28,757 --> 00:04:30,517
+for a small fixed number h.
+
+64
+00:04:31,397 --> 00:04:35,047
+Its speed grows like tau to
+the minus one half minus h.
+
+65
+00:04:36,007 --> 00:04:38,477
+Multiply the squared speed
+by the core's volume.
+
+66
+00:04:39,197 --> 00:04:43,057
+The core's energy then scales like
+tau to the one half minus three h,
+
+67
+00:04:43,477 --> 00:04:47,537
+which tends to zero.
+So the peak speed grows without bound,
+
+68
+00:04:48,117 --> 00:04:49,707
+while the core's energy shrinks.
+
+69
+00:04:52,783 --> 00:04:57,423
+A forced construction can start from the
+answer. Choose a velocity and a pressure,
+
+70
+00:04:58,063 --> 00:05:01,323
+put them into the equations,
+and call what is left over the force.
+
+71
+00:05:01,743 --> 00:05:03,993
+The equations then hold by definition.
+
+72
+00:05:04,493 --> 00:05:08,263
+The difficulty is the blowup time.
+If the velocity blows up,
+
+73
+00:05:08,503 --> 00:05:12,223
+the leftover usually does too,
+and such a force is not allowed.
+
+74
+00:05:12,703 --> 00:05:15,083
+The force must stay
+smooth through time one.
+
+75
+00:05:15,653 --> 00:05:19,443
+Smooth is not the same as analytic.
+This function is smooth,
+
+76
+00:05:19,443 --> 00:05:23,823
+and every derivative vanishes at zero,
+yet it is not zero.
+
+77
+00:05:24,363 --> 00:05:27,293
+The official problem
+asks only for smoothness.
+
+78
+00:05:30,350 --> 00:05:35,310
+The construction has three layers.
+First, a vortex core spirals inward,
+
+79
+00:05:36,070 --> 00:05:39,980
+spins faster and leaves along its axis,
+growing more slender as it shrinks.
+
+80
+00:05:40,620 --> 00:05:44,170
+Joined to the flow outside,
+it leaves an error in a ring around it:
+
+81
+00:05:44,470 --> 00:05:45,470
+a missing stress.
+
+82
+00:05:45,750 --> 00:05:48,170
+Oscillations can supply stress.
+
+83
+00:05:49,030 --> 00:05:52,570
+Take a wave whose velocity
+averages to zero over each period.
+
+84
+00:05:53,185 --> 00:05:56,395
+The equations see the
+velocity times itself.
+
+85
+00:05:57,015 --> 00:06:01,185
+That square never drops below zero,
+so its average is positive.
+
+86
+00:06:02,075 --> 00:06:06,875
+So a wave that goes nowhere on average
+still carries a steady flux of momentum.
+
+87
+00:06:07,415 --> 00:06:09,925
+But only positive
+combinations are available.
+
+88
+00:06:10,205 --> 00:06:15,625
+In a toy model with two directions, the
+stresses that waves can make fill a cone,
+
+89
+00:06:15,945 --> 00:06:18,165
+and a target outside it cannot be made.
+
+90
+00:06:18,905 --> 00:06:23,545
+So the manuscript adjusts the core until
+its error lies inside the actual cone.
+
+91
+00:06:24,705 --> 00:06:29,365
+Localized pulses then deliver it:
+the core's shear first amplifies them,
+
+92
+00:06:30,045 --> 00:06:31,575
+then viscosity damps them.
+
+93
+00:06:34,650 --> 00:06:39,250
+One repair is not enough.
+Each correction creates new errors,
+
+94
+00:06:39,830 --> 00:06:42,170
+and the force must be
+smooth to every order.
+
+95
+00:06:43,110 --> 00:06:45,770
+The manuscript cycles
+through four corrections,
+
+96
+00:06:46,670 --> 00:06:48,210
+rebuilding the pressure after each.
+
+97
+00:06:49,070 --> 00:06:52,310
+Each full cycle raises the
+order of the remaining error.
+
+98
+00:06:53,410 --> 00:06:56,410
+For a fixed number of derivatives,
+the losses stay fixed,
+
+99
+00:06:56,910 --> 00:07:01,350
+so the order eventually passes them.
+The ladder has no last rung.
+
+100
+00:07:02,100 --> 00:07:05,930
+Smooth cutoffs assemble the
+corrections into one smooth field,
+
+101
+00:07:06,790 --> 00:07:09,830
+and the force is extended
+smoothly through time one,
+
+102
+00:07:10,170 --> 00:07:12,320
+with compact support in space and time.
+
+103
+00:07:15,383 --> 00:07:20,783
+Now the whole construction: the force
+stays smooth through time one and after,
+
+104
+00:07:21,483 --> 00:07:24,743
+the velocity becomes unbounded
+as time approaches one,
+
+105
+00:07:25,243 --> 00:07:26,763
+and the energy stays bounded.
+
+106
+00:07:27,413 --> 00:07:31,483
+One step remains: could another
+smooth solution with bounded energy,
+
+107
+00:07:31,963 --> 00:07:34,803
+the same force and the same start,
+last forever?
+
+108
+00:07:35,083 --> 00:07:37,923
+The manuscript's comparison
+argument says no,
+
+109
+00:07:38,363 --> 00:07:40,783
+without assuming decay of
+its derivatives or pressure.
+
+110
+00:07:41,453 --> 00:07:42,543
+The end is elementary.
+
+111
+00:07:43,423 --> 00:07:47,403
+Such a solution would be bounded
+on a compact region up to time one,
+
+112
+00:07:47,923 --> 00:07:52,443
+yet equal to a branch whose speed is
+unbounded there. Given the construction,
+
+113
+00:07:52,883 --> 00:07:54,263
+that contradiction gives C.
+
+114
+00:07:54,903 --> 00:07:59,123
+For D, shrink the construction into
+one cell of the torus and repeat it
+
+115
+00:07:59,123 --> 00:08:01,583
+periodically. The copies do not interact,
+
+116
+00:08:02,063 --> 00:08:04,643
+and a periodic comparison
+finishes the argument.
+
+117
+00:08:07,717 --> 00:08:13,357
+OpenAI's Lean development ends in two
+theorems, for C and for D. Each says:
+
+118
+00:08:13,777 --> 00:08:15,217
+for every positive viscosity,
+
+119
+00:08:15,737 --> 00:08:20,057
+there are admissible initial data and an
+admissible force for which no admissible
+
+120
+00:08:20,057 --> 00:08:22,147
+global smooth solution exists.
+
+121
+00:08:22,717 --> 00:08:27,497
+Its predicates spell out the official
+clauses: smoothness, incompressibility,
+
+122
+00:08:27,957 --> 00:08:32,037
+the same initial data, decay,
+finite energy with one uniform bound,
+
+123
+00:08:32,877 --> 00:08:36,957
+periodic velocity and pressure. Compared
+with Fefferman's text clause by clause,
+
+124
+00:08:36,957 --> 00:08:38,347
+we found none missing.
+
+125
+00:08:38,797 --> 00:08:41,477
+No hypothesis asks for
+a vortex or an estimate.
+
+126
+00:08:42,197 --> 00:08:44,937
+We rebuilt the development
+and ran its checker:
+
+127
+00:08:45,157 --> 00:08:47,497
+two independent kernels
+accept both theorems,
+
+128
+00:08:47,917 --> 00:08:50,187
+which use only the three standard axioms.
+
+129
+00:08:50,367 --> 00:08:52,747
+In October, Alexander Bastounis,
+
+130
+00:08:53,347 --> 00:08:57,627
+Fabian Circelli and Anders Hansen showed
+two places where the Lean proof uses a
+
+131
+00:08:57,627 --> 00:09:00,127
+different estimate from the paper:
+one more derivative,
+
+132
+00:09:00,167 --> 00:09:04,087
+and another pressure bound.
+That refutes neither C nor D,
+
+133
+00:09:04,447 --> 00:09:06,937
+but not every printed estimate
+was checked as written.
+
+134
+00:09:10,017 --> 00:09:13,597
+Mathematicians have begun to engage,
+in preprints by Constantin,
+
+135
+00:09:13,977 --> 00:09:17,397
+Ignatova and Vicol,
+and by Zhen Lei and Xiao Ren.
+
+136
+00:09:18,077 --> 00:09:21,077
+Clay still lists the problem as active,
+MathDB as open,
+
+137
+00:09:21,437 --> 00:09:25,487
+and the sources examined contain no
+completed independent referee report.
+
+138
+00:09:26,527 --> 00:09:30,697
+Nothing here sets the force to zero.
+Alternatives A and B,
+
+139
+00:09:31,397 --> 00:09:35,977
+smoothness for all time without force,
+from all admissible data, remain open.
+
