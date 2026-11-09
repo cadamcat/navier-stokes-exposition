@@ -1,0 +1,743 @@
+{
+ "chapter": "c7",
+ "voice": "marin",
+ "model": "gpt-4o-mini-tts",
+ "speed": null,
+ "audio": "c7.wav",
+ "duration": 52.03,
+ "inserted": [
+  {
+   "at": 0.0,
+   "seconds": 2.25,
+   "where": "chapter start",
+   "reason": [
+    "title card held 2 s, first picture 0.25 s before the first word"
+   ]
+  },
+  {
+   "at": 51.35,
+   "seconds": 0.68,
+   "where": "after c7b5",
+   "reason": [
+    "tail+0.8: picture fades out"
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "id": "c7b1",
+   "status": "claimed",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 2.25,
+   "end": 11.88,
+   "holdEnd": 12.2,
+   "text": "The construction has three layers. First, a vortex core spirals inward, spins faster and leaves along its axis, growing more slender as it shrinks.",
+   "words": [
+    {
+     "word": "The",
+     "start": 2.25,
+     "end": 2.47
+    },
+    {
+     "word": "construction",
+     "start": 2.47,
+     "end": 3.01
+    },
+    {
+     "word": "has",
+     "start": 3.01,
+     "end": 3.43
+    },
+    {
+     "word": "three",
+     "start": 3.43,
+     "end": 3.77
+    },
+    {
+     "word": "layers.",
+     "start": 3.77,
+     "end": 4.13
+    },
+    {
+     "word": "First,",
+     "start": 5.21,
+     "end": 5.21
+    },
+    {
+     "word": "a",
+     "start": 5.53,
+     "end": 5.75
+    },
+    {
+     "word": "vortex",
+     "start": 5.75,
+     "end": 6.01
+    },
+    {
+     "word": "core",
+     "start": 6.01,
+     "end": 6.37
+    },
+    {
+     "word": "spirals",
+     "start": 6.37,
+     "end": 6.85
+    },
+    {
+     "word": "inward,",
+     "start": 6.85,
+     "end": 7.21
+    },
+    {
+     "word": "spins",
+     "start": 7.97,
+     "end": 7.97
+    },
+    {
+     "word": "faster",
+     "start": 7.97,
+     "end": 8.41
+    },
+    {
+     "word": "and",
+     "start": 8.69,
+     "end": 8.77
+    },
+    {
+     "word": "leaves",
+     "start": 8.77,
+     "end": 8.99
+    },
+    {
+     "word": "along",
+     "start": 8.99,
+     "end": 9.25
+    },
+    {
+     "word": "its",
+     "start": 9.25,
+     "end": 9.49
+    },
+    {
+     "word": "axis,",
+     "start": 9.49,
+     "end": 9.85
+    },
+    {
+     "word": "growing",
+     "start": 10.49,
+     "end": 10.49
+    },
+    {
+     "word": "more",
+     "start": 10.49,
+     "end": 10.85
+    },
+    {
+     "word": "slender",
+     "start": 10.85,
+     "end": 11.09
+    },
+    {
+     "word": "as",
+     "start": 11.09,
+     "end": 11.33
+    },
+    {
+     "word": "it",
+     "start": 11.33,
+     "end": 11.75
+    },
+    {
+     "word": "shrinks.",
+     "start": 11.75,
+     "end": 11.88
+    }
+   ]
+  },
+  {
+   "id": "c7b2",
+   "status": "claimed",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 12.2,
+   "end": 17.24,
+   "holdEnd": 17.65,
+   "text": "Joined to the flow outside, it leaves an error in a ring around it: a missing stress.",
+   "words": [
+    {
+     "word": "Joined",
+     "start": 12.52,
+     "end": 12.79
+    },
+    {
+     "word": "to",
+     "start": 12.79,
+     "end": 12.95
+    },
+    {
+     "word": "the",
+     "start": 12.95,
+     "end": 13.11
+    },
+    {
+     "word": "flow",
+     "start": 13.11,
+     "end": 13.29
+    },
+    {
+     "word": "outside,",
+     "start": 13.29,
+     "end": 13.83
+    },
+    {
+     "word": "it",
+     "start": 14.23,
+     "end": 14.35
+    },
+    {
+     "word": "leaves",
+     "start": 14.35,
+     "end": 14.55
+    },
+    {
+     "word": "an",
+     "start": 14.55,
+     "end": 14.91
+    },
+    {
+     "word": "error",
+     "start": 14.91,
+     "end": 15.01
+    },
+    {
+     "word": "in",
+     "start": 15.01,
+     "end": 15.19
+    },
+    {
+     "word": "a",
+     "start": 15.19,
+     "end": 15.49
+    },
+    {
+     "word": "ring",
+     "start": 15.49,
+     "end": 15.51
+    },
+    {
+     "word": "around",
+     "start": 15.51,
+     "end": 15.83
+    },
+    {
+     "word": "it:",
+     "start": 15.83,
+     "end": 16.07
+    },
+    {
+     "word": "a",
+     "start": 16.37,
+     "end": 16.61
+    },
+    {
+     "word": "missing",
+     "start": 16.61,
+     "end": 16.75
+    },
+    {
+     "word": "stress.",
+     "start": 16.75,
+     "end": 17.24
+    }
+   ]
+  },
+  {
+   "id": "c7b3",
+   "status": "proved",
+   "hold": "short",
+   "paragraph": "2.1",
+   "start": 17.65,
+   "end": 29.03,
+   "holdEnd": 29.41,
+   "text": "Oscillations can supply stress. A wave whose velocity averages to zero still carries a flux of momentum, because the equations see the velocity times itself, and a square averages to something positive.",
+   "words": [
+    {
+     "word": "Oscillations",
+     "start": 17.65,
+     "end": 18.21
+    },
+    {
+     "word": "can",
+     "start": 18.21,
+     "end": 18.67
+    },
+    {
+     "word": "supply",
+     "start": 18.67,
+     "end": 18.93
+    },
+    {
+     "word": "stress.",
+     "start": 18.93,
+     "end": 19.35
+    },
+    {
+     "word": "A",
+     "start": 19.83,
+     "end": 19.99
+    },
+    {
+     "word": "wave",
+     "start": 19.99,
+     "end": 20.19
+    },
+    {
+     "word": "whose",
+     "start": 20.19,
+     "end": 20.43
+    },
+    {
+     "word": "velocity",
+     "start": 20.43,
+     "end": 20.91
+    },
+    {
+     "word": "averages",
+     "start": 20.91,
+     "end": 21.23
+    },
+    {
+     "word": "to",
+     "start": 21.23,
+     "end": 21.59
+    },
+    {
+     "word": "zero",
+     "start": 21.59,
+     "end": 21.83
+    },
+    {
+     "word": "still",
+     "start": 21.83,
+     "end": 22.45
+    },
+    {
+     "word": "carries",
+     "start": 22.45,
+     "end": 22.71
+    },
+    {
+     "word": "a",
+     "start": 22.71,
+     "end": 23.11
+    },
+    {
+     "word": "flux",
+     "start": 23.11,
+     "end": 23.11
+    },
+    {
+     "word": "of",
+     "start": 23.11,
+     "end": 23.75
+    },
+    {
+     "word": "momentum,",
+     "start": 23.75,
+     "end": 23.75
+    },
+    {
+     "word": "because",
+     "start": 23.75,
+     "end": 24.27
+    },
+    {
+     "word": "the",
+     "start": 24.27,
+     "end": 24.51
+    },
+    {
+     "word": "equations",
+     "start": 24.51,
+     "end": 24.89
+    },
+    {
+     "word": "see",
+     "start": 24.89,
+     "end": 25.15
+    },
+    {
+     "word": "the",
+     "start": 25.15,
+     "end": 25.65
+    },
+    {
+     "word": "velocity",
+     "start": 25.65,
+     "end": 25.65
+    },
+    {
+     "word": "times",
+     "start": 25.65,
+     "end": 25.99
+    },
+    {
+     "word": "itself,",
+     "start": 25.99,
+     "end": 26.39
+    },
+    {
+     "word": "and",
+     "start": 26.83,
+     "end": 26.95
+    },
+    {
+     "word": "a",
+     "start": 26.95,
+     "end": 27.51
+    },
+    {
+     "word": "square",
+     "start": 27.51,
+     "end": 27.51
+    },
+    {
+     "word": "averages",
+     "start": 27.51,
+     "end": 27.89
+    },
+    {
+     "word": "to",
+     "start": 27.89,
+     "end": 28.23
+    },
+    {
+     "word": "something",
+     "start": 28.23,
+     "end": 28.55
+    },
+    {
+     "word": "positive.",
+     "start": 28.55,
+     "end": 29.03
+    }
+   ]
+  },
+  {
+   "id": "c7b4",
+   "status": "proved",
+   "hold": "short",
+   "paragraph": "2.1",
+   "start": 29.41,
+   "end": 39.23,
+   "holdEnd": 39.71,
+   "text": "But only positive combinations are available. In a toy model with two directions, the stresses that waves can make fill a cone, and a target outside it cannot be made.",
+   "words": [
+    {
+     "word": "But",
+     "start": 29.79,
+     "end": 30.01
+    },
+    {
+     "word": "only",
+     "start": 30.01,
+     "end": 30.37
+    },
+    {
+     "word": "positive",
+     "start": 30.37,
+     "end": 30.83
+    },
+    {
+     "word": "combinations",
+     "start": 30.83,
+     "end": 31.31
+    },
+    {
+     "word": "are",
+     "start": 31.31,
+     "end": 31.65
+    },
+    {
+     "word": "available.",
+     "start": 31.65,
+     "end": 31.91
+    },
+    {
+     "word": "In",
+     "start": 32.69,
+     "end": 32.75
+    },
+    {
+     "word": "a",
+     "start": 32.75,
+     "end": 32.97
+    },
+    {
+     "word": "toy",
+     "start": 32.97,
+     "end": 33.15
+    },
+    {
+     "word": "model",
+     "start": 33.15,
+     "end": 33.33
+    },
+    {
+     "word": "with",
+     "start": 33.33,
+     "end": 33.55
+    },
+    {
+     "word": "two",
+     "start": 33.55,
+     "end": 33.79
+    },
+    {
+     "word": "directions,",
+     "start": 33.79,
+     "end": 34.19
+    },
+    {
+     "word": "the",
+     "start": 34.65,
+     "end": 34.93
+    },
+    {
+     "word": "stresses",
+     "start": 34.93,
+     "end": 35.09
+    },
+    {
+     "word": "that",
+     "start": 35.09,
+     "end": 35.69
+    },
+    {
+     "word": "waves",
+     "start": 35.69,
+     "end": 35.69
+    },
+    {
+     "word": "can",
+     "start": 35.69,
+     "end": 35.93
+    },
+    {
+     "word": "make",
+     "start": 35.93,
+     "end": 36.17
+    },
+    {
+     "word": "fill",
+     "start": 36.17,
+     "end": 36.41
+    },
+    {
+     "word": "a",
+     "start": 36.41,
+     "end": 36.81
+    },
+    {
+     "word": "cone,",
+     "start": 36.81,
+     "end": 36.81
+    },
+    {
+     "word": "and",
+     "start": 37.09,
+     "end": 37.39
+    },
+    {
+     "word": "a",
+     "start": 37.39,
+     "end": 37.83
+    },
+    {
+     "word": "target",
+     "start": 37.83,
+     "end": 37.83
+    },
+    {
+     "word": "outside",
+     "start": 37.83,
+     "end": 38.23
+    },
+    {
+     "word": "it",
+     "start": 38.23,
+     "end": 38.59
+    },
+    {
+     "word": "cannot",
+     "start": 38.59,
+     "end": 38.71
+    },
+    {
+     "word": "be",
+     "start": 38.71,
+     "end": 39.03
+    },
+    {
+     "word": "made.",
+     "start": 39.03,
+     "end": 39.23
+    }
+   ]
+  },
+  {
+   "id": "c7b5",
+   "status": "claimed",
+   "hold": "short",
+   "paragraph": "2.1",
+   "start": 39.71,
+   "end": 51.23,
+   "holdEnd": 52.03,
+   "text": "So the manuscript adjusts the core until its error lies inside the actual cone. Localized pulses then deliver it: the core's shear amplifies them, and viscosity damps them.",
+   "words": [
+    {
+     "word": "So",
+     "start": 40.19,
+     "end": 40.39
+    },
+    {
+     "word": "the",
+     "start": 40.39,
+     "end": 40.61
+    },
+    {
+     "word": "manuscript",
+     "start": 40.61,
+     "end": 41.01
+    },
+    {
+     "word": "adjusts",
+     "start": 41.01,
+     "end": 41.63
+    },
+    {
+     "word": "the",
+     "start": 41.63,
+     "end": 42.01
+    },
+    {
+     "word": "core",
+     "start": 42.01,
+     "end": 42.01
+    },
+    {
+     "word": "until",
+     "start": 42.01,
+     "end": 42.63
+    },
+    {
+     "word": "its",
+     "start": 42.63,
+     "end": 42.87
+    },
+    {
+     "word": "error",
+     "start": 42.87,
+     "end": 43.15
+    },
+    {
+     "word": "lies",
+     "start": 43.15,
+     "end": 43.47
+    },
+    {
+     "word": "inside",
+     "start": 43.47,
+     "end": 43.85
+    },
+    {
+     "word": "the",
+     "start": 43.85,
+     "end": 44.05
+    },
+    {
+     "word": "actual",
+     "start": 44.05,
+     "end": 44.47
+    },
+    {
+     "word": "cone.",
+     "start": 44.47,
+     "end": 44.69
+    },
+    {
+     "word": "Localized",
+     "start": 45.53,
+     "end": 45.99
+    },
+    {
+     "word": "pulses",
+     "start": 45.99,
+     "end": 46.25
+    },
+    {
+     "word": "then",
+     "start": 46.25,
+     "end": 46.67
+    },
+    {
+     "word": "deliver",
+     "start": 46.67,
+     "end": 46.87
+    },
+    {
+     "word": "it:",
+     "start": 46.87,
+     "end": 47.13
+    },
+    {
+     "word": "the",
+     "start": 47.13,
+     "end": 47.71
+    },
+    {
+     "word": "core's",
+     "start": 47.71,
+     "end": 48.23
+    },
+    {
+     "word": "shear",
+     "start": 48.23,
+     "end": 48.43
+    },
+    {
+     "word": "amplifies",
+     "start": 48.43,
+     "end": 49.35
+    },
+    {
+     "word": "them,",
+     "start": 49.35,
+     "end": 49.59
+    },
+    {
+     "word": "and",
+     "start": 50.03,
+     "end": 50.25
+    },
+    {
+     "word": "viscosity",
+     "start": 50.25,
+     "end": 50.61
+    },
+    {
+     "word": "damps",
+     "start": 50.61,
+     "end": 51.07
+    },
+    {
+     "word": "them.",
+     "start": 51.07,
+     "end": 51.23
+    }
+   ]
+  }
+ ]
+}

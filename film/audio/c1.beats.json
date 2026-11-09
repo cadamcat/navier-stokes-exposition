@@ -1,0 +1,522 @@
+{
+ "chapter": "c1",
+ "voice": "marin",
+ "model": "gpt-4o-mini-tts",
+ "speed": null,
+ "audio": "c1.wav",
+ "duration": 41.85,
+ "inserted": [],
+ "beats": [
+  {
+   "id": "c1b1",
+   "status": "claimed",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 0.0,
+   "end": 16.85,
+   "holdEnd": 17.175,
+   "text": "A fluid fills all of space and starts at rest. A smooth force begins to stir it. A thin vortex forms and tightens. Its peak speed grows without bound as a finite time approaches, while its total energy stays bounded.",
+   "words": [
+    {
+     "word": "A",
+     "start": 0.0,
+     "end": 0.22
+    },
+    {
+     "word": "fluid",
+     "start": 0.22,
+     "end": 0.66
+    },
+    {
+     "word": "fills",
+     "start": 0.66,
+     "end": 1.4
+    },
+    {
+     "word": "all",
+     "start": 1.4,
+     "end": 1.74
+    },
+    {
+     "word": "of",
+     "start": 1.74,
+     "end": 2.16
+    },
+    {
+     "word": "space",
+     "start": 2.16,
+     "end": 2.24
+    },
+    {
+     "word": "and",
+     "start": 2.24,
+     "end": 3.0
+    },
+    {
+     "word": "starts",
+     "start": 3.0,
+     "end": 3.28
+    },
+    {
+     "word": "at",
+     "start": 3.28,
+     "end": 3.6
+    },
+    {
+     "word": "rest.",
+     "start": 3.6,
+     "end": 3.92
+    },
+    {
+     "word": "A",
+     "start": 4.7,
+     "end": 4.78
+    },
+    {
+     "word": "smooth",
+     "start": 4.78,
+     "end": 5.06
+    },
+    {
+     "word": "force",
+     "start": 5.06,
+     "end": 5.52
+    },
+    {
+     "word": "begins",
+     "start": 5.52,
+     "end": 5.86
+    },
+    {
+     "word": "to",
+     "start": 5.86,
+     "end": 6.22
+    },
+    {
+     "word": "stir",
+     "start": 6.22,
+     "end": 6.3
+    },
+    {
+     "word": "it.",
+     "start": 6.3,
+     "end": 6.74
+    },
+    {
+     "word": "A",
+     "start": 7.24,
+     "end": 7.42
+    },
+    {
+     "word": "thin",
+     "start": 7.42,
+     "end": 7.76
+    },
+    {
+     "word": "vortex",
+     "start": 7.76,
+     "end": 8.2
+    },
+    {
+     "word": "forms",
+     "start": 8.2,
+     "end": 8.7
+    },
+    {
+     "word": "and",
+     "start": 8.7,
+     "end": 9.24
+    },
+    {
+     "word": "tightens.",
+     "start": 9.24,
+     "end": 9.52
+    },
+    {
+     "word": "Its",
+     "start": 10.2,
+     "end": 10.32
+    },
+    {
+     "word": "peak",
+     "start": 10.32,
+     "end": 10.72
+    },
+    {
+     "word": "speed",
+     "start": 10.72,
+     "end": 11.08
+    },
+    {
+     "word": "grows",
+     "start": 11.08,
+     "end": 11.46
+    },
+    {
+     "word": "without",
+     "start": 11.46,
+     "end": 11.9
+    },
+    {
+     "word": "bound",
+     "start": 11.9,
+     "end": 12.26
+    },
+    {
+     "word": "as",
+     "start": 12.26,
+     "end": 12.86
+    },
+    {
+     "word": "a",
+     "start": 12.86,
+     "end": 13.26
+    },
+    {
+     "word": "finite",
+     "start": 13.26,
+     "end": 13.38
+    },
+    {
+     "word": "time",
+     "start": 13.38,
+     "end": 13.82
+    },
+    {
+     "word": "approaches,",
+     "start": 13.82,
+     "end": 14.2
+    },
+    {
+     "word": "while",
+     "start": 14.9,
+     "end": 15.0
+    },
+    {
+     "word": "its",
+     "start": 15.0,
+     "end": 15.24
+    },
+    {
+     "word": "total",
+     "start": 15.24,
+     "end": 15.62
+    },
+    {
+     "word": "energy",
+     "start": 15.62,
+     "end": 16.06
+    },
+    {
+     "word": "stays",
+     "start": 16.06,
+     "end": 16.42
+    },
+    {
+     "word": "bounded.",
+     "start": 16.42,
+     "end": 16.85
+    }
+   ]
+  },
+  {
+   "id": "c1b2",
+   "status": "context",
+   "hold": "short",
+   "paragraph": "1.2",
+   "start": 17.175,
+   "end": 34.23,
+   "holdEnd": 34.525,
+   "text": "On the eighth of September twenty twenty-six, OpenAI announced this construction for the Navier–Stokes equations, for every positive viscosity. It addresses the two breakdown alternatives of the Clay problem, C and D, not the smooth-forever alternatives A and B.",
+   "words": [
+    {
+     "word": "On",
+     "start": 17.5,
+     "end": 17.64
+    },
+    {
+     "word": "the",
+     "start": 17.64,
+     "end": 17.94
+    },
+    {
+     "word": "eighth",
+     "start": 17.94,
+     "end": 18.1
+    },
+    {
+     "word": "of",
+     "start": 18.1,
+     "end": 18.32
+    },
+    {
+     "word": "September",
+     "start": 18.32,
+     "end": 18.62
+    },
+    {
+     "word": "twenty",
+     "start": 18.88,
+     "end": 19.251
+    },
+    {
+     "word": "twenty-six,",
+     "start": 19.251,
+     "end": 19.78
+    },
+    {
+     "word": "OpenAI",
+     "start": 20.3,
+     "end": 20.96
+    },
+    {
+     "word": "announced",
+     "start": 20.96,
+     "end": 21.42
+    },
+    {
+     "word": "this",
+     "start": 21.42,
+     "end": 21.8
+    },
+    {
+     "word": "construction",
+     "start": 21.8,
+     "end": 22.3
+    },
+    {
+     "word": "for",
+     "start": 22.3,
+     "end": 22.88
+    },
+    {
+     "word": "the",
+     "start": 22.88,
+     "end": 23.04
+    },
+    {
+     "word": "Navier–Stokes",
+     "start": 23.04,
+     "end": 23.7
+    },
+    {
+     "word": "equations,",
+     "start": 23.7,
+     "end": 24.3
+    },
+    {
+     "word": "for",
+     "start": 24.3,
+     "end": 24.98
+    },
+    {
+     "word": "every",
+     "start": 24.98,
+     "end": 25.44
+    },
+    {
+     "word": "positive",
+     "start": 25.44,
+     "end": 25.86
+    },
+    {
+     "word": "viscosity.",
+     "start": 25.86,
+     "end": 26.32
+    },
+    {
+     "word": "It",
+     "start": 26.98,
+     "end": 27.22
+    },
+    {
+     "word": "addresses",
+     "start": 27.22,
+     "end": 27.52
+    },
+    {
+     "word": "the",
+     "start": 27.52,
+     "end": 27.86
+    },
+    {
+     "word": "two",
+     "start": 27.86,
+     "end": 28.18
+    },
+    {
+     "word": "breakdown",
+     "start": 28.18,
+     "end": 28.52
+    },
+    {
+     "word": "alternatives",
+     "start": 28.52,
+     "end": 29.02
+    },
+    {
+     "word": "of",
+     "start": 29.02,
+     "end": 29.34
+    },
+    {
+     "word": "the",
+     "start": 29.34,
+     "end": 29.5
+    },
+    {
+     "word": "Clay",
+     "start": 29.5,
+     "end": 29.72
+    },
+    {
+     "word": "problem,",
+     "start": 29.72,
+     "end": 30.12
+    },
+    {
+     "word": "C",
+     "start": 30.6,
+     "end": 30.84
+    },
+    {
+     "word": "and",
+     "start": 30.84,
+     "end": 31.02
+    },
+    {
+     "word": "D,",
+     "start": 31.02,
+     "end": 31.28
+    },
+    {
+     "word": "not",
+     "start": 31.82,
+     "end": 32.02
+    },
+    {
+     "word": "the",
+     "start": 32.02,
+     "end": 32.26
+    },
+    {
+     "word": "smooth-forever",
+     "start": 32.26,
+     "end": 32.94
+    },
+    {
+     "word": "alternatives",
+     "start": 32.94,
+     "end": 33.44
+    },
+    {
+     "word": "A",
+     "start": 33.44,
+     "end": 33.84
+    },
+    {
+     "word": "and",
+     "start": 33.84,
+     "end": 34.02
+    },
+    {
+     "word": "B.",
+     "start": 34.02,
+     "end": 34.23
+    }
+   ]
+  },
+  {
+   "id": "c1b3",
+   "status": "context",
+   "hold": "short",
+   "paragraph": "1.2",
+   "start": 34.525,
+   "end": 40.84,
+   "holdEnd": 41.85,
+   "text": "The proof is announced, not yet independently refereed. Its final statements are also written in Lean.",
+   "words": [
+    {
+     "word": "The",
+     "start": 34.82,
+     "end": 34.96
+    },
+    {
+     "word": "proof",
+     "start": 34.96,
+     "end": 35.18
+    },
+    {
+     "word": "is",
+     "start": 35.18,
+     "end": 35.82
+    },
+    {
+     "word": "announced,",
+     "start": 35.82,
+     "end": 35.82
+    },
+    {
+     "word": "not",
+     "start": 36.3,
+     "end": 36.44
+    },
+    {
+     "word": "yet",
+     "start": 36.44,
+     "end": 36.74
+    },
+    {
+     "word": "independently",
+     "start": 36.74,
+     "end": 37.24
+    },
+    {
+     "word": "refereed.",
+     "start": 37.24,
+     "end": 37.88
+    },
+    {
+     "word": "Its",
+     "start": 38.4,
+     "end": 38.64
+    },
+    {
+     "word": "final",
+     "start": 38.64,
+     "end": 39.0
+    },
+    {
+     "word": "statements",
+     "start": 39.0,
+     "end": 39.34
+    },
+    {
+     "word": "are",
+     "start": 39.34,
+     "end": 39.7
+    },
+    {
+     "word": "also",
+     "start": 39.7,
+     "end": 40.12
+    },
+    {
+     "word": "written",
+     "start": 40.12,
+     "end": 40.28
+    },
+    {
+     "word": "in",
+     "start": 40.28,
+     "end": 40.72
+    },
+    {
+     "word": "Lean.",
+     "start": 40.72,
+     "end": 40.84
+    }
+   ]
+  }
+ ]
+}

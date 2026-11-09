@@ -1,0 +1,661 @@
+{
+ "chapter": "c2",
+ "voice": "marin",
+ "model": "gpt-4o-mini-tts",
+ "speed": null,
+ "audio": "c2.wav",
+ "duration": 53.72,
+ "inserted": [
+  {
+   "at": 0.0,
+   "seconds": 2.25,
+   "where": "chapter start",
+   "reason": [
+    "title card held 2 s, first picture 0.25 s before the first word"
+   ]
+  },
+  {
+   "at": 53.05,
+   "seconds": 0.67,
+   "where": "after c2b4",
+   "reason": [
+    "tail+0.8: picture fades out"
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "id": "c2b1",
+   "status": "definition",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 2.25,
+   "end": 16.38,
+   "holdEnd": 16.725,
+   "text": "At each point x and time t, the fluid has a velocity u, an arrow, and a pressure p, a number. Follow one small parcel: its acceleration is the change of u along its own path.",
+   "words": [
+    {
+     "word": "At",
+     "start": 2.25,
+     "end": 2.49
+    },
+    {
+     "word": "each",
+     "start": 2.49,
+     "end": 2.81
+    },
+    {
+     "word": "point",
+     "start": 2.81,
+     "end": 3.15
+    },
+    {
+     "word": "x",
+     "start": 3.15,
+     "end": 3.69
+    },
+    {
+     "word": "and",
+     "start": 3.69,
+     "end": 3.93
+    },
+    {
+     "word": "time",
+     "start": 3.93,
+     "end": 4.27
+    },
+    {
+     "word": "t,",
+     "start": 4.27,
+     "end": 4.55
+    },
+    {
+     "word": "the",
+     "start": 5.55,
+     "end": 5.65
+    },
+    {
+     "word": "fluid",
+     "start": 5.65,
+     "end": 5.87
+    },
+    {
+     "word": "has",
+     "start": 5.87,
+     "end": 6.15
+    },
+    {
+     "word": "a",
+     "start": 6.15,
+     "end": 6.35
+    },
+    {
+     "word": "velocity",
+     "start": 6.35,
+     "end": 6.69
+    },
+    {
+     "word": "u,",
+     "start": 6.69,
+     "end": 7.15
+    },
+    {
+     "word": "an",
+     "start": 7.39,
+     "end": 7.77
+    },
+    {
+     "word": "arrow,",
+     "start": 7.77,
+     "end": 7.87
+    },
+    {
+     "word": "and",
+     "start": 8.13,
+     "end": 8.45
+    },
+    {
+     "word": "a",
+     "start": 8.45,
+     "end": 8.83
+    },
+    {
+     "word": "pressure",
+     "start": 8.83,
+     "end": 8.83
+    },
+    {
+     "word": "p,",
+     "start": 8.83,
+     "end": 9.29
+    },
+    {
+     "word": "a",
+     "start": 9.57,
+     "end": 10.03
+    },
+    {
+     "word": "number.",
+     "start": 10.03,
+     "end": 10.03
+    },
+    {
+     "word": "Follow",
+     "start": 10.93,
+     "end": 10.93
+    },
+    {
+     "word": "one",
+     "start": 10.93,
+     "end": 11.37
+    },
+    {
+     "word": "small",
+     "start": 11.37,
+     "end": 11.65
+    },
+    {
+     "word": "parcel:",
+     "start": 11.65,
+     "end": 12.01
+    },
+    {
+     "word": "its",
+     "start": 12.71,
+     "end": 12.87
+    },
+    {
+     "word": "acceleration",
+     "start": 12.87,
+     "end": 13.39
+    },
+    {
+     "word": "is",
+     "start": 13.39,
+     "end": 14.01
+    },
+    {
+     "word": "the",
+     "start": 14.01,
+     "end": 14.25
+    },
+    {
+     "word": "change",
+     "start": 14.25,
+     "end": 14.53
+    },
+    {
+     "word": "of",
+     "start": 14.53,
+     "end": 14.77
+    },
+    {
+     "word": "u",
+     "start": 14.77,
+     "end": 15.13
+    },
+    {
+     "word": "along",
+     "start": 15.13,
+     "end": 15.47
+    },
+    {
+     "word": "its",
+     "start": 15.47,
+     "end": 15.67
+    },
+    {
+     "word": "own",
+     "start": 15.67,
+     "end": 16.01
+    },
+    {
+     "word": "path.",
+     "start": 16.01,
+     "end": 16.38
+    }
+   ]
+  },
+  {
+   "id": "c2b2",
+   "status": "definition",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 16.725,
+   "end": 33.18,
+   "holdEnd": 33.65,
+   "text": "The Navier–Stokes equations balance that acceleration against the push of pressure, viscous friction of strength nu, and an external force f. A second equation makes the flow incompressible: as much fluid leaves each tiny volume as enters it.",
+   "words": [
+    {
+     "word": "The",
+     "start": 17.07,
+     "end": 17.29
+    },
+    {
+     "word": "Navier–Stokes",
+     "start": 17.29,
+     "end": 17.85
+    },
+    {
+     "word": "equations",
+     "start": 17.85,
+     "end": 18.47
+    },
+    {
+     "word": "balance",
+     "start": 18.47,
+     "end": 19.13
+    },
+    {
+     "word": "that",
+     "start": 19.13,
+     "end": 20.21
+    },
+    {
+     "word": "acceleration",
+     "start": 20.21,
+     "end": 20.21
+    },
+    {
+     "word": "against",
+     "start": 20.21,
+     "end": 20.67
+    },
+    {
+     "word": "the",
+     "start": 20.67,
+     "end": 21.01
+    },
+    {
+     "word": "push",
+     "start": 21.01,
+     "end": 21.19
+    },
+    {
+     "word": "of",
+     "start": 21.19,
+     "end": 21.75
+    },
+    {
+     "word": "pressure,",
+     "start": 21.75,
+     "end": 21.75
+    },
+    {
+     "word": "viscous",
+     "start": 22.53,
+     "end": 22.73
+    },
+    {
+     "word": "friction",
+     "start": 22.73,
+     "end": 23.03
+    },
+    {
+     "word": "of",
+     "start": 23.03,
+     "end": 23.31
+    },
+    {
+     "word": "strength",
+     "start": 23.31,
+     "end": 23.63
+    },
+    {
+     "word": "nu,",
+     "start": 23.63,
+     "end": 23.89
+    },
+    {
+     "word": "and",
+     "start": 24.35,
+     "end": 24.59
+    },
+    {
+     "word": "an",
+     "start": 24.59,
+     "end": 24.87
+    },
+    {
+     "word": "external",
+     "start": 24.87,
+     "end": 25.11
+    },
+    {
+     "word": "force",
+     "start": 25.11,
+     "end": 25.51
+    },
+    {
+     "word": "f.",
+     "start": 25.51,
+     "end": 25.93
+    },
+    {
+     "word": "A",
+     "start": 26.63,
+     "end": 26.95
+    },
+    {
+     "word": "second",
+     "start": 26.95,
+     "end": 27.17
+    },
+    {
+     "word": "equation",
+     "start": 27.17,
+     "end": 27.65
+    },
+    {
+     "word": "makes",
+     "start": 27.65,
+     "end": 28.15
+    },
+    {
+     "word": "the",
+     "start": 28.15,
+     "end": 28.45
+    },
+    {
+     "word": "flow",
+     "start": 28.45,
+     "end": 28.63
+    },
+    {
+     "word": "incompressible:",
+     "start": 28.63,
+     "end": 29.61
+    },
+    {
+     "word": "as",
+     "start": 29.61,
+     "end": 30.17
+    },
+    {
+     "word": "much",
+     "start": 30.17,
+     "end": 30.41
+    },
+    {
+     "word": "fluid",
+     "start": 30.41,
+     "end": 30.71
+    },
+    {
+     "word": "leaves",
+     "start": 30.71,
+     "end": 31.03
+    },
+    {
+     "word": "each",
+     "start": 31.03,
+     "end": 31.39
+    },
+    {
+     "word": "tiny",
+     "start": 31.39,
+     "end": 31.73
+    },
+    {
+     "word": "volume",
+     "start": 31.73,
+     "end": 32.11
+    },
+    {
+     "word": "as",
+     "start": 32.11,
+     "end": 32.67
+    },
+    {
+     "word": "enters",
+     "start": 32.67,
+     "end": 32.93
+    },
+    {
+     "word": "it.",
+     "start": 32.93,
+     "end": 33.18
+    }
+   ]
+  },
+  {
+   "id": "c2b3",
+   "status": "heuristic",
+   "hold": "short",
+   "paragraph": "1.2",
+   "start": 33.65,
+   "end": 43.18,
+   "holdEnd": 43.58,
+   "text": "Viscosity tends to smooth out differences in velocity, the way heat spreads. Transport, the velocity carrying itself along, is nonlinear.",
+   "words": [
+    {
+     "word": "Viscosity",
+     "start": 34.12,
+     "end": 34.75
+    },
+    {
+     "word": "tends",
+     "start": 34.75,
+     "end": 35.05
+    },
+    {
+     "word": "to",
+     "start": 35.05,
+     "end": 35.61
+    },
+    {
+     "word": "smooth",
+     "start": 35.61,
+     "end": 35.61
+    },
+    {
+     "word": "out",
+     "start": 35.61,
+     "end": 35.95
+    },
+    {
+     "word": "differences",
+     "start": 35.95,
+     "end": 36.25
+    },
+    {
+     "word": "in",
+     "start": 36.25,
+     "end": 36.61
+    },
+    {
+     "word": "velocity,",
+     "start": 36.61,
+     "end": 36.91
+    },
+    {
+     "word": "the",
+     "start": 37.51,
+     "end": 37.57
+    },
+    {
+     "word": "way",
+     "start": 37.57,
+     "end": 37.81
+    },
+    {
+     "word": "heat",
+     "start": 37.81,
+     "end": 38.11
+    },
+    {
+     "word": "spreads.",
+     "start": 38.11,
+     "end": 38.53
+    },
+    {
+     "word": "Transport,",
+     "start": 39.71,
+     "end": 39.93
+    },
+    {
+     "word": "the",
+     "start": 40.31,
+     "end": 40.83
+    },
+    {
+     "word": "velocity",
+     "start": 40.83,
+     "end": 40.83
+    },
+    {
+     "word": "carrying",
+     "start": 40.83,
+     "end": 41.23
+    },
+    {
+     "word": "itself",
+     "start": 41.23,
+     "end": 41.63
+    },
+    {
+     "word": "along,",
+     "start": 41.63,
+     "end": 41.95
+    },
+    {
+     "word": "is",
+     "start": 42.39,
+     "end": 42.57
+    },
+    {
+     "word": "nonlinear.",
+     "start": 42.57,
+     "end": 43.18
+    }
+   ]
+  },
+  {
+   "id": "c2b4",
+   "status": "definition",
+   "hold": "short",
+   "paragraph": "1.2",
+   "start": 43.58,
+   "end": 52.92,
+   "holdEnd": 53.72,
+   "text": "Smooth means that every derivative, in space and time, exists and is continuous. Can smooth motion lose its smoothness in a finite time?",
+   "words": [
+    {
+     "word": "Smooth",
+     "start": 43.98,
+     "end": 44.45
+    },
+    {
+     "word": "means",
+     "start": 44.45,
+     "end": 44.75
+    },
+    {
+     "word": "that",
+     "start": 44.75,
+     "end": 45.05
+    },
+    {
+     "word": "every",
+     "start": 45.05,
+     "end": 45.35
+    },
+    {
+     "word": "derivative,",
+     "start": 45.35,
+     "end": 45.69
+    },
+    {
+     "word": "in",
+     "start": 46.13,
+     "end": 46.35
+    },
+    {
+     "word": "space",
+     "start": 46.35,
+     "end": 46.61
+    },
+    {
+     "word": "and",
+     "start": 46.61,
+     "end": 46.81
+    },
+    {
+     "word": "time,",
+     "start": 46.81,
+     "end": 47.13
+    },
+    {
+     "word": "exists",
+     "start": 47.65,
+     "end": 47.97
+    },
+    {
+     "word": "and",
+     "start": 47.97,
+     "end": 48.35
+    },
+    {
+     "word": "is",
+     "start": 48.35,
+     "end": 48.53
+    },
+    {
+     "word": "continuous.",
+     "start": 48.53,
+     "end": 49.07
+    },
+    {
+     "word": "Can",
+     "start": 49.75,
+     "end": 50.05
+    },
+    {
+     "word": "smooth",
+     "start": 50.05,
+     "end": 50.37
+    },
+    {
+     "word": "motion",
+     "start": 50.37,
+     "end": 50.73
+    },
+    {
+     "word": "lose",
+     "start": 50.73,
+     "end": 51.17
+    },
+    {
+     "word": "its",
+     "start": 51.17,
+     "end": 51.45
+    },
+    {
+     "word": "smoothness",
+     "start": 51.45,
+     "end": 51.89
+    },
+    {
+     "word": "in",
+     "start": 51.89,
+     "end": 52.11
+    },
+    {
+     "word": "a",
+     "start": 52.11,
+     "end": 52.51
+    },
+    {
+     "word": "finite",
+     "start": 52.51,
+     "end": 52.51
+    },
+    {
+     "word": "time?",
+     "start": 52.51,
+     "end": 52.92
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+  "scope": "Python source/statement audit and exact algebra only; Lean build and replay not run",
+  "receipts": [
+    {
+      "command": [
+        "python3.14",
+        "verify/source_audit.py",
+        "--self-test"
+      ],
+      "output": "verify/source-audit-selftest.log",
+      "started_at_utc": "2026-11-07T19:20:23.190596+00:00",
+      "exit_status": 0
+    },
+    {
+      "command": [
+        "python3.14",
+        "verify/source_audit.py"
+      ],
+      "output": "verify/source-audit.json",
+      "started_at_utc": "2026-11-07T19:20:23.259548+00:00",
+      "exit_status": 0
+    },
+    {
+      "command": [
+        "python3.12",
+        "verify/check_identities.py"
+      ],
+      "output": "verify/identities.json",
+      "started_at_utc": "2026-11-07T19:20:31.701955+00:00",
+      "exit_status": 0
+    }
+  ],
+  "passed": true,
+  "redactions": [
+    "Absolute interpreter paths replaced with portable executable names; arguments, timestamps and exit statuses unchanged."
+  ]
+}

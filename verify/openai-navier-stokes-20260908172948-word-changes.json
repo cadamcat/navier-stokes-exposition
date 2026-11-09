@@ -1,0 +1,1530 @@
+[
+  {
+    "old": "2",
+    "new": "3"
+  },
+  {
+    "old": "72",
+    "new": "73"
+  },
+  {
+    "old": "87",
+    "new": "88"
+  },
+  {
+    "old": "[8].",
+    "new": "[13]."
+  },
+  {
+    "old": "[8];",
+    "new": "[13];"
+  },
+  {
+    "old": "[7]:",
+    "new": "[12]:"
+  },
+  {
+    "old": "[12, 15],",
+    "new": "[18, 21],"
+  },
+  {
+    "old": "[10]",
+    "new": "[16]"
+  },
+  {
+    "old": "[4]",
+    "new": "[5]"
+  },
+  {
+    "old": "[6]",
+    "new": "[11]"
+  },
+  {
+    "old": "[16]",
+    "new": "[22]"
+  },
+  {
+    "old": "[3]",
+    "new": "[4]"
+  },
+  {
+    "old": "[11, 9]",
+    "new": "[17, 14]"
+  },
+  {
+    "old": "",
+    "new": "Craik and Criminale [9] constructed exact finite-amplitude waves on affine background flows, exploiting the cancellation of the wave’s quadratic self-interaction."
+  },
+  {
+    "old": "generalized",
+    "new": ""
+  },
+  {
+    "old": "criterion",
+    "new": "criteria of Leibovich and Stewartson [15] and"
+  },
+  {
+    "old": "[2]",
+    "new": "[2, 3]"
+  },
+  {
+    "old": "[13].",
+    "new": "[19]."
+  },
+  {
+    "old": "[5].",
+    "new": "[10]. Córdoba and Martínez-Zoroa [6] constructed finite-time singularities for the forced three- dimensional Euler equations through successive amplification of increasingly concentrated vortex layers. Córdoba, Martínez-Zoroa, and Zheng [8] extended this approach to hy- podissipative Navier–Stokes with small positive dissipation orders and forcing in a local well-posedness class. These works established a strategy for singularity formation based on amplification across scales while controlling the regularity of the external force. In their con- structions, larger-scale strain amplifies smaller-scale vorticity, with leading self-interactions and feedback on the larger scales suppressed. For the incompressible porous media equation, Córdoba and Martínez-Zoroa [7] constructed singularities from smooth initial data by suc- cessive amplification of oscillatory layers, using approximations of increasing order to keep every spatial derivative of the source uniformly bounded. Our construction also exploits FINITE TIME BLOWUP FOR NAVIER–STOKES 3 dynamical amplification, with a different role for the amplified disturbances: oscillatory pulses generate a mean momentum flux that supplies the missing force on a collapsing background vortex."
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 3 t1 t2 t3 Figure 1. The central part of the inner core at successive times t1 < t2 < t3 < 1. In this region, fluid spirals inward and flows axially on opposite sides of a dividing layer close to z = 0. As the singular time approaches, the region of intense flow shrinks and the velocity increases. Its radius shrinks faster than its height; this difference is exaggerated in the schematic.",
+    "new": ""
+  },
+  {
+    "old": "4 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "4 OPENAI t1 t2 t3 Figure 1. The central part of the inner core at successive times t1 < t2 < t3 < 1. In this region, fluid spirals inward and flows axially on opposite sides of a dividing layer close to z = 0. As the singular time approaches, the region of intense flow shrinks and the velocity increases. Its radius shrinks faster than its height; this difference is exaggerated in the schematic."
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 5 σ = +1 σ = +1 Core Annulus Annulus rp Δθ Δz Core Δr z Δr r=0 θ σ = −1 σ = −1 r rp Δθ Δz r Δr Δr Figure 2. Pulse geometry and perturbation velocities. Left: At fixed height, pulse envelopes occupy complete rings; the close-ups show radial and az- imuthal perturbation velocities. Right: A radial–axial section, where each localized patch is a cross-section of a complete ring; the close-ups show radial and axial perturbation velocities. Colors distinguish the two families. The specific pulse arrangement shown is schematic; active locations, spacing, and aspect ratios are illustrative."
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 5 σ = +1 σ = +1 Core Annulus Annulus rp Δθ Δz Core Δr z Δr r=0 θ σ = −1 σ = −1 r rp Δθ Δz r Δr Δr Figure 2. Pulse geometry and perturbation velocities. Left: At fixed height, pulse envelopes occupy complete rings; the close-ups show radial and az- imuthal perturbation velocities. Right: A radial–axial section, where each localized patch is a cross-section of a complete ring; the close-ups show radial and axial perturbation velocities. Colors distinguish the two families. The specific pulse arrangement shown is schematic; active locations, spacing, and aspect ratios are illustrative.",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "6 OPENAI"
+  },
+  {
+    "old": "6 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 7"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 7",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "8 OPENAI"
+  },
+  {
+    "old": "8 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "The leading field extends beyond the core. Outside a fixed radial interval in X, U = V0 = 0, while E( X, η ) = c∞ X −1/2−h 1 + O( X −1 ) ( X → ∞ ), (︁ )︁ c∞ > 0, uniformly in η. The exact exterior formula (4.29) gives a purely azimuthal solution of the ra- dial heat equation for the azimuthal velocity. The final spatial localization in Proposition 10.1 gives the completed velocity a fixed compact support. At viscosity one, the local length scales ℓr = q1/2 , ℓz = q D give (0) Reθ = q− A ℓr = q−h −→ ∞, Rer = |ur |ℓr = O(1). The rotation rate exceeds the radial diffusion rate. In the axisymmetric tangential equations, radial diffusion and radial and axial transport enter the leading balance at the rates (0) | ur | q− A 1 = O ( q −1 ), = 2 = q −1 . ℓr ℓz ℓr Axial diffusion is smaller than radial diffusion by the factor ℓ2r /ℓ2z = q2h , which supplies the expansion parameter for the background corrections. FINITE TIME BLOWUP FOR NAVIER–STOKES 9"
+  },
+  {
+    "old": "The leading field extends beyond the core. Outside a fixed radial interval in X, U = V0 = 0, while E( X, η ) = c∞ X −1/2−h 1 + O( X −1 ) ( X → ∞ ), (︁ )︁ c∞ > 0, uniformly in η. The exact exterior formula (4.29) gives a purely azimuthal solution of the ra- dial heat equation for the azimuthal velocity. The final spatial localization in Proposition 10.1 gives the completed velocity a fixed compact support. At viscosity one, the local length scales ℓr = q1/2 , ℓz = q D give (0) Reθ = q− A ℓr = q−h −→ ∞, Rer = |ur |ℓr = O(1). FINITE TIME BLOWUP FOR NAVIER–STOKES 9 The rotation rate exceeds the radial diffusion rate. In the axisymmetric tangential equations, radial diffusion and radial and axial transport enter the leading balance at the rates (0) | ur | q− A 1 = O ( q −1 ), = 2 = q −1 . ℓr ℓz ℓr Axial diffusion is smaller than radial diffusion by the factor ℓ2r /ℓ2z = q2h , which supplies the expansion parameter for the background corrections.",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "10 OPENAI"
+  },
+  {
+    "old": "",
+    "new": "v1 v2 T T = c1 v1 + c2 v2 c2 v2 c1 > 0, c2 > 0 c1 v1 0 Figure 4. Positive representation of the target stress. The shaded cone con- sists of nonnegative linear combinations of the covariance directions v1 , v2 . An interior target T = c1 v1 + c2 v2 has c1 , c2 > 0; the dashed lines show vector addition. The coefficients remain positive under sufficiently small perturba- tions of the two directions."
+  },
+  {
+    "old": "10 OPENAI v1 v2 T T = c1 v1 + c2 v2 c2 v2 c1 > 0, c2 > 0 c1 v1 0 Figure 4. Positive representation of the target stress. The shaded cone con- sists of nonnegative linear combinations of the covariance directions v1 , v2 . An interior target T = c1 v1 + c2 v2 has c1 , c2 > 0; the dashed lines show vector addition. The coefficients remain positive under sufficiently small perturba- tions of the two directions.",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 11"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 11",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "Awave"
+  },
+  {
+    "old": "Awave ≍",
+    "new": "≍≍"
+  },
+  {
+    "old": "≍",
+    "new": ""
+  },
+  {
+    "old": "retaining periodic averaging, we construct an extended field w",
+    "new": "12 OPENAI"
+  },
+  {
+    "old": "",
+    "new": "retaining periodic averaging, we construct an extended field w"
+  },
+  {
+    "old": "T2",
+    "new": "T"
+  },
+  {
+    "old": "",
+    "new": "2"
+  },
+  {
+    "old": "12 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "|2",
+    "new": "|"
+  },
+  {
+    "old": "",
+    "new": "2"
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 13"
+  },
+  {
+    "old": "",
+    "new": "Concentrating axisymmetric background Construct the prescribed blowup profile. Theorem 4.6 and Proposition 5.5 Represent the remaining residual by an annular stress Separate a flat remainder and write the remaining momentum residual as a stress shear divergence, supported in a cylindrical annulus. Proposition 5.5; (5.41) Construct two wave families Background shear amplifies the waves; viscous dissipation makes them decay. Lemma 7.4; (7.22) Choose the squared amplitudes Match the averaged radial flux of tangential momentum to the leading annular stress. Proposition 7.5; (7.24)–(7.26) Add exactly divergence-free waves Take curls. The divergence of the leading averaged flux cancels the leading background stress divergence. w = ∇ × Awave Lemma 7.7; (9.11) Figure 5. Construction of the background and the first oscillatory correction. The averaged pulse flux cancels the leading background stress divergence. The remaining residual is corrected by the cycle in Figure 6. A flat remainder and all curl and cutoff terms are retained."
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 13 Concentrating axisymmetric background Construct the prescribed blowup profile. Theorem 4.6 and Proposition 5.5 Represent the remaining residual by an annular stress Separate a flat remainder and write the remaining momentum residual as a stress shear divergence, supported in a cylindrical annulus. Proposition 5.5; (5.41) Construct two wave families Background shear amplifies the waves; viscous dissipation makes them decay. Lemma 7.4; (7.22) Choose the squared amplitudes Match the averaged radial flux of tangential momentum to the leading annular stress. Proposition 7.5; (7.24)–(7.26) Add exactly divergence-free waves Take curls. The divergence of the leading averaged flux cancels the leading background stress divergence. w = ∇ × Awave Lemma 7.7; (9.11) Figure 5. Construction of the background and the first oscillatory correction. The averaged pulse flux cancels the leading background stress divergence. The remaining residual is corrected by the cycle in Figure 6. A flat remainder and all curl and cutoff terms are retained.",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "14 OPENAI"
+  },
+  {
+    "old": "14 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 15 Compute the full remaining residual Retain oscillatory interactions, curl and cutoff corrections, and all other error terms. Proposition 9.3; (9.3) repeat Correct waves, mean flow, pressure, and radial moments Each cycle improves the decay of the residual. 1 σj+1 = σj + 10 Proposition 9.6; (9.8), (9.18) Sum the corrections with shrinking cutoffs The residual and all its derivatives vanish to every order at the singularity. ⃓∂ x ∂ R (u, p)⃓ ≤ Cα,b,N,X q N ⃓ α b ⃓ t 1 Lemma 5.4 and Proposition 9.9; (3.4) Localize and extend the residual as a smooth force The force is smooth and compactly supported; the leading velocity blowup persists. Lemmas 10.3 and 10.5; Theorem 1.1 Figure 6. Residual correction and completion, continuing Figure 5. The correction cycle improves the residual exponent σj while retaining all linear and nonlinear terms. The flatness estimate holds uniformly for 0 ≤ X ≤ X1 as q ↓ 0, for each finite X1 . Incompressibility is preserved throughout."
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 15 Compute the full remaining residual Retain oscillatory interactions, curl and cutoff corrections, and all other error terms. Proposition 9.3; (9.3) repeat Correct waves, mean flow, pressure, and radial moments Each cycle improves the decay of the residual. 1 σj+1 = σj + 10 Proposition 9.6; (9.8), (9.18) Sum the corrections with shrinking cutoffs The residual and all its derivatives vanish to every order at the singularity. ⃓∂ x ∂ R (u, p)⃓ ≤ Cα,b,N,X q N ⃓ α b ⃓ t 1 Lemma 5.4 and Proposition 9.9; (3.4) Localize and extend the residual as a smooth force The force is smooth and compactly supported; the leading velocity blowup persists. Lemmas 10.3 and 10.5; Theorem 1.1 Figure 6. Residual correction and completion, continuing Figure 5. The correction cycle improves the residual exponent σj while retaining all linear and nonlinear terms. The flatness estimate holds uniformly for 0 ≤ X ≤ X1 as q ↓ 0, for each finite X1 . Incompressibility is preserved throughout.",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "16 OPENAI"
+  },
+  {
+    "old": "16 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "τ"
+  },
+  {
+    "old": "τ",
+    "new": ""
+  },
+  {
+    "old": "< ∞",
+    "new": "<∞"
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 17"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 17",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "′ ′ ′"
+  },
+  {
+    "old": "′",
+    "new": ""
+  },
+  {
+    "old": "′",
+    "new": ""
+  },
+  {
+    "old": "′",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "18 OPENAI"
+  },
+  {
+    "old": "18 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 19"
+  },
+  {
+    "old": "Continued on the next page. FINITE TIME BLOWUP FOR NAVIER–STOKES 19 Guide to the principal symbols (continued). Symbol Meaning and role Definition",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "Continued on the next page. 20 OPENAI Guide to the principal symbols (continued). Symbol Meaning and role Definition"
+  },
+  {
+    "old": "Continued on the next page. 20 OPENAI Guide to the principal symbols (continued). Symbol Meaning and role Definition",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "Continued on the next page. FINITE TIME BLOWUP FOR NAVIER–STOKES 21 Guide to the principal symbols (continued). Symbol Meaning and role Definition"
+  },
+  {
+    "old": "Continued on the next page. FINITE TIME BLOWUP FOR NAVIER–STOKES 21 Guide to the principal symbols (continued). Symbol Meaning and role Definition",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "Edges of the active√︁stress annulus"
+  },
+  {
+    "old": "Edges of the active√︁stress annulus",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "Continued on the next page. 22 OPENAI Guide to the principal symbols (continued). Symbol Meaning and role Definition"
+  },
+  {
+    "old": "Continued on the next page. 22 OPENAI Guide to the principal symbols (continued). Symbol Meaning and role Definition",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "Continued on the next page. FINITE TIME BLOWUP FOR NAVIER–STOKES 23 Guide to the principal symbols (continued). Symbol Meaning and role Definition"
+  },
+  {
+    "old": "Continued on the next page. FINITE TIME BLOWUP FOR NAVIER–STOKES 23 Guide to the principal symbols (continued). Symbol Meaning and role Definition",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "Continued on the next page. 24 OPENAI Guide to the principal symbols (continued). Symbol Meaning and role Definition G"
+  },
+  {
+    "old": "G ,Fj ]",
+    "new": "j] , F"
+  },
+  {
+    "old": "j ]",
+    "new": "j]"
+  },
+  {
+    "old": "24 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "s r2",
+    "new": "sr2"
+  },
+  {
+    "old": "",
+    "new": "s="
+  },
+  {
+    "old": ".s=",
+    "new": "."
+  },
+  {
+    "old": "q 2",
+    "new": "q2"
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 25"
+  },
+  {
+    "old": "",
+    "new": "b b −1 b b− D"
+  },
+  {
+    "old": "(qb",
+    "new": "(q"
+  },
+  {
+    "old": "qb−1",
+    "new": "q"
+  },
+  {
+    "old": "(qb",
+    "new": "(q"
+  },
+  {
+    "old": "qb− D",
+    "new": "q"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 25",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "∫︂ X"
+  },
+  {
+    "old": "X ∫︂",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "26 OPENAI"
+  },
+  {
+    "old": "26 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 27"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 27",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "28 OPENAI"
+  },
+  {
+    "old": "28 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 29"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 29",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "30 OPENAI"
+  },
+  {
+    "old": "E ˆ︁(",
+    "new": "Eˆ︁("
+  },
+  {
+    "old": "ˆ︁ ˆ︁",
+    "new": "M,"
+  },
+  {
+    "old": "H,",
+    "new": "ˆ︁H,"
+  },
+  {
+    "old": "M,",
+    "new": "ˆ︁"
+  },
+  {
+    "old": "ρS,",
+    "new": "ρ"
+  },
+  {
+    "old": "C ˆ︁p",
+    "new": "S, Cˆ︁p"
+  },
+  {
+    "old": "30 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "∥∆(U,",
+    "new": "∥∆( ˆ︁"
+  },
+  {
+    "old": "ˆ︁",
+    "new": "U,"
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 31"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 31",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "32 OPENAI"
+  },
+  {
+    "old": "ps,1",
+    "new": "p s,1"
+  },
+  {
+    "old": "32 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 33"
+  },
+  {
+    "old": "mixed √",
+    "new": "mixed√"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 33",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "34 OPENAI"
+  },
+  {
+    "old": "34 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 35"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 35",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "36 OPENAI"
+  },
+  {
+    "old": "36 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 37"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 37",
+    "new": ""
+  },
+  {
+    "old": "H∗",
+    "new": "H∗2"
+  },
+  {
+    "old": "2",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "38 OPENAI"
+  },
+  {
+    "old": "38 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "v)",
+    "new": "v)2"
+  },
+  {
+    "old": "2",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 39"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 39",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "40 OPENAI"
+  },
+  {
+    "old": "40 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 41"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 41",
+    "new": ""
+  },
+  {
+    "old": "∂ φ A",
+    "new": "∂φA"
+  },
+  {
+    "old": "−A /N",
+    "new": ""
+  },
+  {
+    "old": "=e",
+    "new": "= e−A /N"
+  },
+  {
+    "old": "⎜",
+    "new": ""
+  },
+  {
+    "old": "⎟",
+    "new": "⎟⎟"
+  },
+  {
+    "old": "",
+    "new": "⎜"
+  },
+  {
+    "old": "⎟",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "42 OPENAI"
+  },
+  {
+    "old": "",
+    "new": "−"
+  },
+  {
+    "old": "−1",
+    "new": "1"
+  },
+  {
+    "old": "42 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 43"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 43",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "44 OPENAI"
+  },
+  {
+    "old": "44 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "−"
+  },
+  {
+    "old": "ζy− b",
+    "new": "ζyb"
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 45"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 45",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "46 OPENAI"
+  },
+  {
+    "old": "46 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 47"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 47",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "48 OPENAI"
+  },
+  {
+    "old": "48 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 49"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 49",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "50 OPENAI"
+  },
+  {
+    "old": "50 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 51"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 51",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "52 OPENAI"
+  },
+  {
+    "old": "52 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 53"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 53",
+    "new": ""
+  },
+  {
+    "old": "r2",
+    "new": "2 3/2− A+λn r"
+  },
+  {
+    "old": "q3/2− A+λn",
+    "new": "q"
+  },
+  {
+    "old": "q 1−2A+λn",
+    "new": "q1−2A+λn"
+  },
+  {
+    "old": "",
+    "new": "54 OPENAI"
+  },
+  {
+    "old": "2 R",
+    "new": "R2"
+  },
+  {
+    "old": "54 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 55"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 55",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "56 OPENAI"
+  },
+  {
+    "old": "56 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "2"
+  },
+  {
+    "old": "r2",
+    "new": "r"
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 57"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 57",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "58 OPENAI"
+  },
+  {
+    "old": "58 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 59"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 59",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "60 OPENAI"
+  },
+  {
+    "old": "60 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "j j",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "j"
+  },
+  {
+    "old": "",
+    "new": "j"
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 61"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 61",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "62 OPENAI"
+  },
+  {
+    "old": "62 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 63"
+  },
+  {
+    "old": "in√︁the",
+    "new": "in √︁the"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 63",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "−5 (︁ )︁"
+  },
+  {
+    "old": "10−5",
+    "new": "10"
+  },
+  {
+    "old": "(︁ )︁",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "64 OPENAI"
+  },
+  {
+    "old": "64 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 65"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 65",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "66 OPENAI"
+  },
+  {
+    "old": "66 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 67"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 67",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "68 OPENAI"
+  },
+  {
+    "old": "68 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 69"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 69",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "70 OPENAI"
+  },
+  {
+    "old": "70 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "Ωcut"
+  },
+  {
+    "old": "Ωcut",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 71"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 71",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "72 OPENAI"
+  },
+  {
+    "old": "72 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "ik (m+m′ )Φγ"
+  },
+  {
+    "old": "eik(m+m )Φγ",
+    "new": "e"
+  },
+  {
+    "old": "′",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 73"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 73",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "74 OPENAI"
+  },
+  {
+    "old": "74 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 75"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 75",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "2"
+  },
+  {
+    "old": "|2",
+    "new": "|"
+  },
+  {
+    "old": "C3",
+    "new": "C"
+  },
+  {
+    "old": "",
+    "new": "3"
+  },
+  {
+    "old": "",
+    "new": "76 OPENAI"
+  },
+  {
+    "old": "76 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "T"
+  },
+  {
+    "old": "NaT",
+    "new": "Na"
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 77"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 77",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "78 OPENAI"
+  },
+  {
+    "old": "78 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 79"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 79",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "I"
+  },
+  {
+    "old": "",
+    "new": "′"
+  },
+  {
+    "old": "",
+    "new": "I"
+  },
+  {
+    "old": "",
+    "new": "I"
+  },
+  {
+    "old": "I ′ I I",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "80 OPENAI"
+  },
+  {
+    "old": "80 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 81"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 81",
+    "new": ""
+  },
+  {
+    "old": "z + ( v ) ⃓ ≤",
+    "new": "z+ (v) ⃓⃓"
+  },
+  {
+    "old": "≤",
+    "new": ""
+  },
+  {
+    "old": "≤ C. ⃓",
+    "new": ""
+  },
+  {
+    "old": "P ⃓",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "≤"
+  },
+  {
+    "old": "",
+    "new": "≤"
+  },
+  {
+    "old": "",
+    "new": "≤ C. ⃓ P"
+  },
+  {
+    "old": "",
+    "new": "82 OPENAI"
+  },
+  {
+    "old": "82 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "2"
+  },
+  {
+    "old": "2",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 83"
+  },
+  {
+    "old": "2",
+    "new": ""
+  },
+  {
+    "old": "χ g",
+    "new": "χ2g"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 83",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "2 2"
+  },
+  {
+    "old": "ψ2 x2",
+    "new": "ψ x"
+  },
+  {
+    "old": "",
+    "new": "84 OPENAI"
+  },
+  {
+    "old": "84 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 85"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 85",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "−1 −1 −1"
+  },
+  {
+    "old": "R−1",
+    "new": "R"
+  },
+  {
+    "old": "R−1",
+    "new": "R"
+  },
+  {
+    "old": "R−1",
+    "new": "R"
+  },
+  {
+    "old": "",
+    "new": "86 OPENAI"
+  },
+  {
+    "old": "86 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "2",
+    "new": ""
+  },
+  {
+    "old": "|nΦ",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "n Φ |2"
+  },
+  {
+    "old": "tˆ︁m",
+    "new": "ˆ︁tm"
+  },
+  {
+    "old": "ˆ︁tm",
+    "new": "tˆ︁m"
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 87"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 87",
+    "new": ""
+  },
+  {
+    "old": "tˆ︁m",
+    "new": "tm"
+  },
+  {
+    "old": "",
+    "new": "ˆ︁"
+  },
+  {
+    "old": "",
+    "new": "88 OPENAI"
+  },
+  {
+    "old": "88 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 89"
+  },
+  {
+    "old": "2A Q",
+    "new": "Q2A"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 89",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "90 OPENAI"
+  },
+  {
+    "old": "90 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "⟩ ∫︁ If Y",
+    "new": "⟩Y"
+  },
+  {
+    "old": "",
+    "new": "∫︁ If"
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 91"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 91",
+    "new": ""
+  },
+  {
+    "old": "Re",
+    "new": "R"
+  },
+  {
+    "old": "",
+    "new": "e"
+  },
+  {
+    "old": "",
+    "new": "92 OPENAI"
+  },
+  {
+    "old": "92 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 93"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 93",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "−"
+  },
+  {
+    "old": "−1",
+    "new": "1"
+  },
+  {
+    "old": "",
+    "new": "94 OPENAI"
+  },
+  {
+    "old": "",
+    "new": "2 2 2"
+  },
+  {
+    "old": "γ2",
+    "new": "γ"
+  },
+  {
+    "old": "R2",
+    "new": "R"
+  },
+  {
+    "old": "R2",
+    "new": "R"
+  },
+  {
+    "old": "94 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "2 −1 −2 R",
+    "new": "R2"
+  },
+  {
+    "old": "",
+    "new": "R−1 v"
+  },
+  {
+    "old": "vR",
+    "new": ""
+  },
+  {
+    "old": "R",
+    "new": "R−2"
+  },
+  {
+    "old": "2A−3/2 2A−1",
+    "new": ""
+  },
+  {
+    "old": "Q",
+    "new": "Q2A−3/2"
+  },
+  {
+    "old": "Q",
+    "new": "Q2A−1"
+  },
+  {
+    "old": "∫︁ 2",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "σz with ξ 2 ˆ︁ ∫︁"
+  },
+  {
+    "old": "ˆ︁ σz with ξ",
+    "new": ""
+  },
+  {
+    "old": "q −3/2",
+    "new": "q−3/2 ˆ︁"
+  },
+  {
+    "old": "ˆ︁",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 95"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 95",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "96 OPENAI"
+  },
+  {
+    "old": "96 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 97"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 97",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "98 OPENAI"
+  },
+  {
+    "old": "98 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 99"
+  },
+  {
+    "old": "",
+    "new": "−2"
+  },
+  {
+    "old": "(∆v)2",
+    "new": "(∆v)"
+  },
+  {
+    "old": "R−2",
+    "new": "R 2"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 99",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "∫︁ 2"
+  },
+  {
+    "old": "defect,∫︁",
+    "new": "defect, ∫︁"
+  },
+  {
+    "old": "R2",
+    "new": "R"
+  },
+  {
+    "old": "∫︁ ∫︁ 2",
+    "new": ""
+  },
+  {
+    "old": "2 R",
+    "new": "21 R2"
+  },
+  {
+    "old": "1",
+    "new": "∫︁"
+  },
+  {
+    "old": "R−2",
+    "new": "R"
+  },
+  {
+    "old": "",
+    "new": "− 2"
+  },
+  {
+    "old": "",
+    "new": "100 OPENAI"
+  },
+  {
+    "old": "100 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 101"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 101",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "102 OPENAI"
+  },
+  {
+    "old": "102 OPENAI",
+    "new": ""
+  },
+  {
+    "old": "",
+    "new": "FINITE TIME BLOWUP FOR NAVIER–STOKES 103"
+  },
+  {
+    "old": "FINITE TIME BLOWUP FOR NAVIER–STOKES 103",
+    "new": ""
+  },
+  {
+    "old": "[8,",
+    "new": "[13,"
+  },
+  {
+    "old": "[14].",
+    "new": "[20]."
+  },
+  {
+    "old": "[8].",
+    "new": "[13]."
+  },
+  {
+    "old": "[8].",
+    "new": "[13]."
+  },
+  {
+    "old": "",
+    "new": ", A unified criterion for the centrifugal instabilities of vortices and swirling jets, Journal of Fluid Mechanics 734 (2013), 5–35, https://doi.org/10.1017/jfm.2013.460. 4."
+  },
+  {
+    "old": "4.",
+    "new": "5."
+  },
+  {
+    "old": "5.",
+    "new": "6. Diego Córdoba and Luis Martínez-Zoroa, Blow-up for the incompressible 3D-Euler equations with uniform 1 C1, 2 −ϵ ∩ L2 force, arXiv:2309.08495, 2023, https://arxiv.org/abs/2309.08495. 7. , Finite time singularities of smooth solutions for the 2D incompressible porous media (IPM) equation with a smooth source, arXiv:2410.22920, 2024, Revised 2025. https://arxiv.org/abs/2410.22920. 8. Diego Córdoba, Luis Martínez-Zoroa, and Fan Zheng, Finite time blow-up for the hypodissipative Navier Stokes equations with a force in L1t Cx1,ϵ ∩ L∞ 2 t L x , Archive for Rational Mechanics and Analysis 250 (2026), 38, https://doi.org/10.1007/s00205-026-02198-0. 9. A. D. D. Craik and W. O. Criminale, Evolution of wavelike disturbances in shear flows: a class of exact solutions of the Navier–Stokes equations, Proceedings of the Royal Society of London. Series A 406 (1986), no. 1830, 13–26, https://doi.org/10.1098/rspa.1986.0061. 10."
+  },
+  {
+    "old": "6.",
+    "new": "11."
+  },
+  {
+    "old": "7.",
+    "new": "12."
+  },
+  {
+    "old": "8.",
+    "new": "13."
+  },
+  {
+    "old": "9.",
+    "new": "14."
+  },
+  {
+    "old": "10.",
+    "new": "15. S. Leibovich and K. Stewartson, A sufficient condition for the instability of columnar vortices, Journal of Fluid Mechanics 126 (1983), 335–356, https://doi.org/10.1017/S0022112083000191. 16."
+  },
+  {
+    "old": "11.",
+    "new": "17."
+  },
+  {
+    "old": "12.",
+    "new": "166 OPENAI 18."
+  },
+  {
+    "old": "13.",
+    "new": "19."
+  },
+  {
+    "old": "14.",
+    "new": "20."
+  },
+  {
+    "old": "15.",
+    "new": "21."
+  },
+  {
+    "old": "16.",
+    "new": "22."
+  }
+]

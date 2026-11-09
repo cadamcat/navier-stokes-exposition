@@ -1,0 +1,195 @@
+{
+  "scope": "exact algebra; polynomial identity instances; core scale calculations only",
+  "checks": [
+    {
+      "name": "core_volume_exponent",
+      "result": "exact",
+      "value": "3/2 - h"
+    },
+    {
+      "name": "core_energy_exponent",
+      "result": "exact",
+      "value": "1/2 - 3*h"
+    },
+    {
+      "name": "radial_dissipation_exponent",
+      "result": "exact",
+      "value": "-3*h - 1/2"
+    },
+    {
+      "name": "slenderness_exponent",
+      "result": "exact",
+      "value": "h"
+    },
+    {
+      "name": "angular_Reynolds_exponent",
+      "result": "exact",
+      "value": "-h"
+    },
+    {
+      "name": "axial_transport_rate_exponent",
+      "result": "exact",
+      "value": "-1"
+    },
+    {
+      "name": "radial_diffusion_rate_exponent",
+      "result": "exact",
+      "value": "-1"
+    },
+    {
+      "name": "L3_core_norm_exponent",
+      "result": "exact",
+      "value": "-4*h/3"
+    },
+    {
+      "name": "L5_space_integral_exponent",
+      "result": "exact",
+      "value": "-6*h - 1"
+    },
+    {
+      "name": "antiderivative_of_core_dissipation",
+      "result": "exact",
+      "value": "tau**(-3*h - 1/2)"
+    },
+    {
+      "name": "similarity_jacobian",
+      "result": "exact",
+      "value": "(-tau/(eta**2 - 1))**(1/2 - h)*(eta**2*(2*h - 1) + eta**2 - 1)/(eta**2 - 1)"
+    },
+    {
+      "name": "implicit_q_derivative_on_similarity_surface",
+      "result": "exact",
+      "value": "-2*eta**2*h + 1"
+    },
+    {
+      "name": "polynomial_residual_expansion_component_0",
+      "result": "exact",
+      "value": "0"
+    },
+    {
+      "name": "polynomial_residual_expansion_component_1",
+      "result": "exact",
+      "value": "0"
+    },
+    {
+      "name": "polynomial_residual_expansion_component_2",
+      "result": "exact",
+      "value": "0"
+    },
+    {
+      "name": "divergence_of_localized_curl",
+      "result": "exact",
+      "value": "0"
+    },
+    {
+      "name": "curl_product_rule_squared_norm",
+      "result": "exact",
+      "value": "0"
+    },
+    {
+      "name": "isotropic_time_derivative_scaling_power",
+      "result": "exact",
+      "value": "3"
+    },
+    {
+      "name": "isotropic_advection_scaling_power",
+      "result": "exact",
+      "value": "3"
+    },
+    {
+      "name": "isotropic_viscosity_scaling_power",
+      "result": "exact",
+      "value": "3"
+    },
+    {
+      "name": "isotropic_pressure_gradient_scaling_power",
+      "result": "exact",
+      "value": "3"
+    },
+    {
+      "name": "isotropic_energy_scaling_power",
+      "result": "exact",
+      "value": "-1"
+    },
+    {
+      "name": "viscosity_spatial_scaling_power",
+      "result": "exact",
+      "value": "0"
+    },
+    {
+      "name": "viscosity_advection_scaling_power",
+      "result": "exact",
+      "value": "1/2"
+    },
+    {
+      "name": "viscosity_laplacian_scaling_power",
+      "result": "exact",
+      "value": "1/2"
+    },
+    {
+      "name": "quadratic_conjugate_product",
+      "result": "exact",
+      "value": "-k1**2 - 2*k1*k2 + k2**2"
+    },
+    {
+      "name": "l1_lattice_shell_1",
+      "result": "exact",
+      "value": "4"
+    },
+    {
+      "name": "l1_lattice_shell_2",
+      "result": "exact",
+      "value": "8"
+    },
+    {
+      "name": "l1_lattice_shell_3",
+      "result": "exact",
+      "value": "12"
+    },
+    {
+      "name": "l1_lattice_shell_4",
+      "result": "exact",
+      "value": "16"
+    },
+    {
+      "name": "l1_lattice_shell_5",
+      "result": "exact",
+      "value": "20"
+    },
+    {
+      "name": "l1_lattice_shell_6",
+      "result": "exact",
+      "value": "24"
+    },
+    {
+      "name": "l1_lattice_shell_7",
+      "result": "exact",
+      "value": "28"
+    },
+    {
+      "name": "l1_lattice_shell_8",
+      "result": "exact",
+      "value": "32"
+    },
+    {
+      "name": "l1_lattice_shell_9",
+      "result": "exact",
+      "value": "36"
+    },
+    {
+      "name": "l1_lattice_shell_10",
+      "result": "exact",
+      "value": "40"
+    }
+  ],
+  "integrability_condition": "h < 1/6 (strict); manuscript chooses 0 < h < 1/100",
+  "not_checked": [
+    "existence and positivity of the profiles",
+    "stress cone realizability",
+    "uniform pulse estimates",
+    "all-order summation",
+    "whole-space pressure recovery",
+    "full manuscript",
+    "Lean elaboration or kernels"
+  ]
+}

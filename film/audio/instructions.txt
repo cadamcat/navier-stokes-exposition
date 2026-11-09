@@ -1,0 +1,13 @@
+Voice: a calm, warm mathematics lecturer, explaining to a curious, intelligent audience who are hearing this for the first time.
+
+Pace: slow and deliberate, about 125 words per minute, much slower than everyday speech. Keep this slow pace from the first sentence to the very last; do not speed up in later paragraphs. Never rush, and read every sentence to its end.
+
+Pauses: pause naturally at the end of every sentence, as a lecturer does while the audience takes in the board, and briefly at commas. The text is divided into paragraphs by blank lines. Between paragraphs, take a longer, natural breath before the new idea, the way a speaker turns to a new part of the board.
+
+Tone: conversational and engaged, not an announcer. Let the pitch rise and fall naturally through each sentence, and carry the thread from one sentence to the next.
+
+Lists: give each item its own small falling tone, with a pause before the next.
+
+Symbols: single letters such as u, p, f, x, t and h are mathematical symbols; say each one clearly and a little more slowly, as a lecturer would at the board. "nu", "lambda" and "tau" are Greek letters, said NEW, LAM-duh and TAU (rhymes with "how"). The letters A, B, C and D name four alternatives; say each letter clearly. "L three" is said as the letter L followed by the number three. Powers such as "tau to the one half minus h" are read slowly, as one phrase.
+
+Pronunciation: Navier–Stokes is nav-YAY STOKES; Fefferman is FEF-er-man; Jean Leray is ZHAHN luh-RAY; Eberhard Hopf is AY-ber-hart HOPF; Fujita is foo-JEE-tah; Kato is KAH-toh; Caffarelli is kah-fah-REL-lee; Kohn is KOHN; Nirenberg is NEER-en-berg; Beale is BEEL; Majda is MY-dah; Escauriaza is es-kow-ree-AH-thah; Seregin is seh-REH-gin; Šverák is SHVEH-rahk; Tao is TOW (rhymes with "now"); Jiajie Chen is JYAH-jyeh CHEN; Hou is HOE; Constantin is CON-stan-tin; Ignatova is ig-NAH-toh-vah; Vicol is VEE-kol; Zhen Lei is JEN LAY; Xiao Ren is SHYOW REN; Bastounis is bas-TOO-nis; Circelli is cheer-CHEL-lee; Anders Hansen is AHN-ders HAHN-sen; OpenAI is "Open A I"; MathDB is math-D-B; Lean is said as the word "lean"; Clay is said as the word "clay".

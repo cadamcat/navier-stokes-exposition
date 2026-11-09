@@ -1,0 +1,62 @@
+{
+ "sample_rate": 24000,
+ "channels": 1,
+ "bits": 16,
+ "chapters": [
+  {
+   "chapter": "c1",
+   "samples": 1004400,
+   "sha256": "3a952b61ef140d4523ab2f7061951ec097b8292c0ba33ab28f475cef09c3426a"
+  },
+  {
+   "chapter": "c2",
+   "samples": 1289280,
+   "sha256": "4997f5dfb0d8867b599b64c02bc45c0fe35d34a50f842c35a837e83d4769c536"
+  },
+  {
+   "chapter": "c3",
+   "samples": 1341600,
+   "sha256": "efa6aa8b467d0b221ae8d04e6547084918de410cf26db612fa6b76ceefbfa69a"
+  },
+  {
+   "chapter": "c4",
+   "samples": 1728240,
+   "sha256": "73a15a8d2342ef34c9055e41e9161475ca5a64c223464fa168cae0223761a8ec"
+  },
+  {
+   "chapter": "c5",
+   "samples": 1556160,
+   "sha256": "a13c5d288a3b3286779d8bc200a71def7d614afb4bb566294645236d1c9ccee0"
+  },
+  {
+   "chapter": "c6",
+   "samples": 901440,
+   "sha256": "0161e0ea29b5ac0a404a4f4763b73868a9b7ade52ad697f4fd70b0e6342d0055"
+  },
+  {
+   "chapter": "c7",
+   "samples": 1248720,
+   "sha256": "b773582458bb3ddd75723853d6efd80233598759bf899b0dfc82206b414d3c38"
+  },
+  {
+   "chapter": "c8",
+   "samples": 977280,
+   "sha256": "bafca635452c1493b5f504d8d49d8568fa50b481494a422af7ee7744c3c19f6b"
+  },
+  {
+   "chapter": "c9",
+   "samples": 1245120,
+   "sha256": "c7c6a45840f51eb50c6769379f83bb8d476d9a36a44daae01ff1d4334b4174c0"
+  },
+  {
+   "chapter": "c10",
+   "samples": 1502160,
+   "sha256": "a56777443bccbead1d968bf115b9c870279bc34be26e43eed266fc228d2755ba"
+  },
+  {
+   "chapter": "c11",
+   "samples": 857040,
+   "sha256": "b1f9458cf2c9103a32cd21c483ebafd92b34ab98568a7b4232f53b983cbd3d09"
+  }
+ ]
+}

@@ -1,0 +1,529 @@
+{
+ "chapter": "c6",
+ "voice": "marin",
+ "model": "gpt-4o-mini-tts",
+ "speed": null,
+ "audio": "c6.wav",
+ "duration": 37.56,
+ "inserted": [
+  {
+   "at": 0.0,
+   "seconds": 2.25,
+   "where": "chapter start",
+   "reason": [
+    "title card held 2 s, first picture 0.25 s before the first word"
+   ]
+  },
+  {
+   "at": 37.05,
+   "seconds": 0.51,
+   "where": "after c6b3",
+   "reason": [
+    "tail+0.8: picture fades out"
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "id": "c6b1",
+   "status": "proved",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 2.25,
+   "end": 13.46,
+   "holdEnd": 13.71,
+   "text": "A forced construction can start from the answer. Choose a velocity and a pressure, put them into the equations, and call what is left over the force. The equations then hold by definition.",
+   "words": [
+    {
+     "word": "A",
+     "start": 2.25,
+     "end": 2.55
+    },
+    {
+     "word": "forced",
+     "start": 2.55,
+     "end": 2.85
+    },
+    {
+     "word": "construction",
+     "start": 2.85,
+     "end": 3.37
+    },
+    {
+     "word": "can",
+     "start": 3.37,
+     "end": 3.87
+    },
+    {
+     "word": "start",
+     "start": 3.87,
+     "end": 4.05
+    },
+    {
+     "word": "from",
+     "start": 4.05,
+     "end": 4.25
+    },
+    {
+     "word": "the",
+     "start": 4.25,
+     "end": 4.87
+    },
+    {
+     "word": "answer.",
+     "start": 4.87,
+     "end": 4.87
+    },
+    {
+     "word": "Choose",
+     "start": 5.55,
+     "end": 5.55
+    },
+    {
+     "word": "a",
+     "start": 5.55,
+     "end": 6.11
+    },
+    {
+     "word": "velocity",
+     "start": 6.11,
+     "end": 6.11
+    },
+    {
+     "word": "and",
+     "start": 6.11,
+     "end": 6.49
+    },
+    {
+     "word": "a",
+     "start": 6.49,
+     "end": 6.89
+    },
+    {
+     "word": "pressure,",
+     "start": 6.89,
+     "end": 6.89
+    },
+    {
+     "word": "put",
+     "start": 7.53,
+     "end": 7.53
+    },
+    {
+     "word": "them",
+     "start": 7.53,
+     "end": 7.69
+    },
+    {
+     "word": "into",
+     "start": 7.69,
+     "end": 7.83
+    },
+    {
+     "word": "the",
+     "start": 7.83,
+     "end": 8.05
+    },
+    {
+     "word": "equations,",
+     "start": 8.05,
+     "end": 8.37
+    },
+    {
+     "word": "and",
+     "start": 8.37,
+     "end": 8.97
+    },
+    {
+     "word": "call",
+     "start": 8.97,
+     "end": 9.21
+    },
+    {
+     "word": "what",
+     "start": 9.21,
+     "end": 9.41
+    },
+    {
+     "word": "is",
+     "start": 9.41,
+     "end": 9.65
+    },
+    {
+     "word": "left",
+     "start": 9.65,
+     "end": 9.75
+    },
+    {
+     "word": "over",
+     "start": 9.75,
+     "end": 10.09
+    },
+    {
+     "word": "the",
+     "start": 10.09,
+     "end": 10.51
+    },
+    {
+     "word": "force.",
+     "start": 10.51,
+     "end": 10.79
+    },
+    {
+     "word": "The",
+     "start": 11.21,
+     "end": 11.57
+    },
+    {
+     "word": "equations",
+     "start": 11.57,
+     "end": 11.89
+    },
+    {
+     "word": "then",
+     "start": 11.89,
+     "end": 12.29
+    },
+    {
+     "word": "hold",
+     "start": 12.29,
+     "end": 12.57
+    },
+    {
+     "word": "by",
+     "start": 12.57,
+     "end": 12.93
+    },
+    {
+     "word": "definition.",
+     "start": 12.93,
+     "end": 13.46
+    }
+   ]
+  },
+  {
+   "id": "c6b2",
+   "status": "proved",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 13.71,
+   "end": 24.55,
+   "holdEnd": 24.835,
+   "text": "The difficulty is the blowup time. If the velocity blows up, the leftover usually does too, and such a force is not allowed. The force must stay smooth through time one.",
+   "words": [
+    {
+     "word": "The",
+     "start": 13.96,
+     "end": 14.19
+    },
+    {
+     "word": "difficulty",
+     "start": 14.19,
+     "end": 14.55
+    },
+    {
+     "word": "is",
+     "start": 14.55,
+     "end": 15.01
+    },
+    {
+     "word": "the",
+     "start": 15.01,
+     "end": 15.29
+    },
+    {
+     "word": "blowup",
+     "start": 15.29,
+     "end": 15.55
+    },
+    {
+     "word": "time.",
+     "start": 15.55,
+     "end": 15.85
+    },
+    {
+     "word": "If",
+     "start": 16.29,
+     "end": 16.49
+    },
+    {
+     "word": "the",
+     "start": 16.49,
+     "end": 17.09
+    },
+    {
+     "word": "velocity",
+     "start": 17.09,
+     "end": 17.09
+    },
+    {
+     "word": "blows",
+     "start": 17.09,
+     "end": 17.35
+    },
+    {
+     "word": "up,",
+     "start": 17.35,
+     "end": 17.73
+    },
+    {
+     "word": "the",
+     "start": 17.97,
+     "end": 18.17
+    },
+    {
+     "word": "leftover",
+     "start": 18.17,
+     "end": 18.47
+    },
+    {
+     "word": "usually",
+     "start": 18.47,
+     "end": 18.87
+    },
+    {
+     "word": "does",
+     "start": 18.87,
+     "end": 19.15
+    },
+    {
+     "word": "too,",
+     "start": 19.15,
+     "end": 19.47
+    },
+    {
+     "word": "and",
+     "start": 19.87,
+     "end": 20.29
+    },
+    {
+     "word": "such",
+     "start": 20.29,
+     "end": 20.31
+    },
+    {
+     "word": "a",
+     "start": 20.31,
+     "end": 20.77
+    },
+    {
+     "word": "force",
+     "start": 20.77,
+     "end": 20.77
+    },
+    {
+     "word": "is",
+     "start": 20.77,
+     "end": 21.17
+    },
+    {
+     "word": "not",
+     "start": 21.17,
+     "end": 21.41
+    },
+    {
+     "word": "allowed.",
+     "start": 21.41,
+     "end": 21.69
+    },
+    {
+     "word": "The",
+     "start": 22.17,
+     "end": 22.39
+    },
+    {
+     "word": "force",
+     "start": 22.39,
+     "end": 22.63
+    },
+    {
+     "word": "must",
+     "start": 22.63,
+     "end": 22.93
+    },
+    {
+     "word": "stay",
+     "start": 22.93,
+     "end": 23.29
+    },
+    {
+     "word": "smooth",
+     "start": 23.29,
+     "end": 23.57
+    },
+    {
+     "word": "through",
+     "start": 23.57,
+     "end": 23.99
+    },
+    {
+     "word": "time",
+     "start": 23.99,
+     "end": 24.27
+    },
+    {
+     "word": "one.",
+     "start": 24.27,
+     "end": 24.55
+    }
+   ]
+  },
+  {
+   "id": "c6b3",
+   "status": "proved",
+   "hold": "short",
+   "paragraph": "1.2",
+   "start": 24.835,
+   "end": 36.76,
+   "holdEnd": 37.56,
+   "text": "Smooth is not the same as analytic. This function is smooth, and every derivative vanishes at zero, yet it is not zero. The official problem asks only for smoothness.",
+   "words": [
+    {
+     "word": "Smooth",
+     "start": 25.12,
+     "end": 25.49
+    },
+    {
+     "word": "is",
+     "start": 25.49,
+     "end": 25.83
+    },
+    {
+     "word": "not",
+     "start": 25.83,
+     "end": 26.05
+    },
+    {
+     "word": "the",
+     "start": 26.05,
+     "end": 26.39
+    },
+    {
+     "word": "same",
+     "start": 26.39,
+     "end": 26.43
+    },
+    {
+     "word": "as",
+     "start": 26.43,
+     "end": 26.79
+    },
+    {
+     "word": "analytic.",
+     "start": 26.79,
+     "end": 26.99
+    },
+    {
+     "word": "This",
+     "start": 27.63,
+     "end": 27.99
+    },
+    {
+     "word": "function",
+     "start": 27.99,
+     "end": 28.27
+    },
+    {
+     "word": "is",
+     "start": 28.27,
+     "end": 28.91
+    },
+    {
+     "word": "smooth,",
+     "start": 28.91,
+     "end": 28.91
+    },
+    {
+     "word": "and",
+     "start": 28.91,
+     "end": 29.39
+    },
+    {
+     "word": "every",
+     "start": 29.39,
+     "end": 29.85
+    },
+    {
+     "word": "derivative",
+     "start": 29.85,
+     "end": 30.21
+    },
+    {
+     "word": "vanishes",
+     "start": 30.21,
+     "end": 30.67
+    },
+    {
+     "word": "at",
+     "start": 30.67,
+     "end": 30.95
+    },
+    {
+     "word": "zero,",
+     "start": 30.95,
+     "end": 31.35
+    },
+    {
+     "word": "yet",
+     "start": 31.89,
+     "end": 32.07
+    },
+    {
+     "word": "it",
+     "start": 32.07,
+     "end": 32.41
+    },
+    {
+     "word": "is",
+     "start": 32.41,
+     "end": 32.57
+    },
+    {
+     "word": "not",
+     "start": 32.57,
+     "end": 32.91
+    },
+    {
+     "word": "zero.",
+     "start": 32.91,
+     "end": 33.29
+    },
+    {
+     "word": "The",
+     "start": 33.83,
+     "end": 33.99
+    },
+    {
+     "word": "official",
+     "start": 33.99,
+     "end": 34.33
+    },
+    {
+     "word": "problem",
+     "start": 34.33,
+     "end": 34.87
+    },
+    {
+     "word": "asks",
+     "start": 34.87,
+     "end": 35.41
+    },
+    {
+     "word": "only",
+     "start": 35.41,
+     "end": 35.83
+    },
+    {
+     "word": "for",
+     "start": 35.83,
+     "end": 36.19
+    },
+    {
+     "word": "smoothness.",
+     "start": 36.19,
+     "end": 36.76
+    }
+   ]
+  }
+ ]
+}

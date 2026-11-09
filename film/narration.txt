@@ -1,0 +1,43 @@
+Cold open
+
+A fluid fills all of space and starts at rest. A smooth force begins to stir it. A thin vortex forms and tightens. Its peak speed grows without bound as a finite time approaches, while its total energy stays bounded. On the eighth of September twenty twenty-six, OpenAI announced this construction for the Navier–Stokes equations, for every positive viscosity. It addresses the two breakdown alternatives of the Clay problem, C and D, not the smooth-forever alternatives A and B. The proof is announced, not yet independently refereed. Its final statements are also written in Lean.
+
+The equations
+
+At each point x and time t, the fluid has a velocity u, an arrow, and a pressure p, a number. Follow one small parcel: its acceleration is the change of u along its own path. The Navier–Stokes equations balance that acceleration against the push of pressure, viscous friction of strength nu, and an external force f. A second equation makes the flow incompressible: as much fluid leaves each tiny volume as enters it. Viscosity tends to smooth out differences in velocity, the way heat spreads. Transport, the velocity carrying itself along, is nonlinear. Smooth means that every derivative, in space and time, exists and is continuous. Can smooth motion lose its smoothness in a finite time?
+
+Four alternatives
+
+Charles Fefferman's official statement poses the problem in all of space, and on the torus, a cube whose opposite faces are identified. It has four alternatives, each posed for every positive viscosity. A and B ask for a smooth solution for all time from every smooth, divergence-free initial velocity, with no force. In all of space, the data must decay rapidly and the energy must stay bounded. C and D ask for the opposite: admissible initial data and a smooth force, chosen together, for which no global smooth solution exists. The force must stay smooth and decaying through the breakdown and after it. A proof of any one alternative is accepted. Breakdown with a force does not settle A or B. Without a force, smooth solutions might still last forever.
+
+What was known
+
+Without a force, the energy, half the integral of the squared speed, can only decrease. But energy is a total. It does not bound the peak speed. In nineteen thirty-four, Jean Leray constructed global weak solutions; Eberhard Hopf later extended the theory. They satisfy the equations only in an averaged sense, and need not be smooth. Without force, Fujita and Kato proved global smooth solutions for data small in a critical norm, relative to the viscosity. Caffarelli, Kohn and Nirenberg proved that the possible singular set is very small, though a single point is not excluded. Continuation criteria name a quantity that must blow up: a vorticity integral for Euler, by Beale, Kato and Majda, and the L three norm for Navier–Stokes, by Escauriaza, Seregin and Šverák, both without force. Terence Tao proved blowup for an averaged equation that keeps the energy identity. Jiajie Chen and Thomas Hou proved, with computer assistance, blowup for Euler without viscosity, at a cylinder's wall. Neither is a Navier–Stokes counterexample.
+
+Energy and scaling
+
+Rescale a solution by a factor lambda: space shrinks by lambda, time by lambda squared, and the velocity grows by lambda. It still solves the equations, with the same viscosity and a rescaled force. The L three norm does not change, but the energy is divided by lambda. Packing a flow into ever smaller regions costs ever less energy: in three dimensions, the energy bound is supercritical. Put the blowup time at one, and let tau be the time left. The announced core's radius shrinks like tau to the one half. Its length shrinks like tau to the one half minus h, for a small fixed number h. Its speed grows like tau to the minus one half minus h. Multiply the squared speed by the core's volume. The core's energy then scales like tau to the one half minus three h, which tends to zero. So the peak speed grows without bound, while the core's energy shrinks.
+
+Designing the force
+
+A forced construction can start from the answer. Choose a velocity and a pressure, put them into the equations, and call what is left over the force. The equations then hold by definition. The difficulty is the blowup time. If the velocity blows up, the leftover usually does too, and such a force is not allowed. The force must stay smooth through time one. Smooth is not the same as analytic. This function is smooth, and every derivative vanishes at zero, yet it is not zero. The official problem asks only for smoothness.
+
+A core and its pulses
+
+The construction has three layers. First, a vortex core spirals inward, spins faster and leaves along its axis, growing more slender as it shrinks. Joined to the flow outside, it leaves an error in a ring around it: a missing stress. Oscillations can supply stress. A wave whose velocity averages to zero still carries a flux of momentum, because the equations see the velocity times itself, and a square averages to something positive. But only positive combinations are available. In a toy model with two directions, the stresses that waves can make fill a cone, and a target outside it cannot be made. So the manuscript adjusts the core until its error lies inside the actual cone. Localized pulses then deliver it: the core's shear amplifies them, and viscosity damps them.
+
+Every derivative
+
+One repair is not enough. Each correction creates new errors, and the force must be smooth to every order. The manuscript cycles through four corrections, rebuilding the pressure after each. Each full cycle raises the order of the remaining error. For a fixed number of derivatives, the losses stay fixed, so the order eventually passes them. The ladder has no last rung. Smooth cutoffs assemble the corrections into one smooth field, and the force is extended smoothly through time one, with compact support in space and time.
+
+From a singular branch to C and D
+
+Now the whole construction: the force stays smooth through time one and after, the velocity becomes unbounded as time approaches one, and the energy stays bounded. One step remains: could another smooth solution, with the same force and start, last forever? The manuscript's comparison argument says no, without assuming decay of its derivatives or pressure. The end is elementary. Such a solution would be bounded on a compact region up to time one, yet equal to a branch whose speed is unbounded there. Given the construction, that contradiction gives C. For D, shrink the construction into one cell of the torus and repeat it periodically. The copies do not interact, and a periodic comparison finishes the argument.
+
+What the Lean development states
+
+OpenAI's Lean development ends in two theorems, for C and for D. Each says: for every positive viscosity, there are admissible initial data and an admissible force for which no global smooth solution exists. Its predicates spell out the official clauses: smoothness, incompressibility, the same initial data, decay, finite energy with one uniform bound, periodic velocity and pressure. Compared with Fefferman's text clause by clause, we found none missing. No hypothesis asks for a vortex or an estimate. OpenAI's own record lists both theorems with only the three standard axioms, and calls its review self-assessed. Nothing was rerun for this film. In October, Alexander Bastounis, Fabian Circelli and Anders Hansen showed two places where the Lean proof uses a different estimate from the paper: one more derivative, and another pressure bound. That refutes neither C nor D, but not every printed estimate was checked as written.
+
+What stays open
+
+Mathematicians have begun to engage, in preprints by Constantin, Ignatova and Vicol, and by Zhen Lei and Xiao Ren. Clay still lists the problem as active, MathDB as open, and the sources examined contain no completed independent referee report. Nothing here sets the force to zero. Alternatives A and B, smoothness for all time without force, from all admissible data, remain open.

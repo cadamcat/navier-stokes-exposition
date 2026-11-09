@@ -1,0 +1,738 @@
+{
+ "chapter": "c3",
+ "voice": "marin",
+ "model": "gpt-4o-mini-tts",
+ "speed": null,
+ "audio": "c3.wav",
+ "duration": 55.9,
+ "inserted": [
+  {
+   "at": 0.0,
+   "seconds": 2.25,
+   "where": "chapter start",
+   "reason": [
+    "title card held 2 s, first picture 0.25 s before the first word"
+   ]
+  },
+  {
+   "at": 55.4,
+   "seconds": 0.5,
+   "where": "after c3b5",
+   "reason": [
+    "tail+0.8: picture fades out"
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "id": "c3b1",
+   "status": "definition",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 2.25,
+   "end": 15.8,
+   "holdEnd": 16.14,
+   "text": "Charles Fefferman's official statement poses the problem in all of space, and on the torus, a cube whose opposite faces are identified. It has four alternatives, each posed for every positive viscosity.",
+   "words": [
+    {
+     "word": "Charles",
+     "start": 2.25,
+     "end": 2.91
+    },
+    {
+     "word": "Fefferman's",
+     "start": 2.91,
+     "end": 3.57
+    },
+    {
+     "word": "official",
+     "start": 3.57,
+     "end": 4.09
+    },
+    {
+     "word": "statement",
+     "start": 4.09,
+     "end": 4.53
+    },
+    {
+     "word": "poses",
+     "start": 4.53,
+     "end": 5.03
+    },
+    {
+     "word": "the",
+     "start": 5.03,
+     "end": 5.31
+    },
+    {
+     "word": "problem",
+     "start": 5.31,
+     "end": 5.63
+    },
+    {
+     "word": "in",
+     "start": 5.63,
+     "end": 6.15
+    },
+    {
+     "word": "all",
+     "start": 6.15,
+     "end": 6.43
+    },
+    {
+     "word": "of",
+     "start": 6.43,
+     "end": 6.73
+    },
+    {
+     "word": "space,",
+     "start": 6.73,
+     "end": 6.99
+    },
+    {
+     "word": "and",
+     "start": 7.53,
+     "end": 7.75
+    },
+    {
+     "word": "on",
+     "start": 7.75,
+     "end": 7.91
+    },
+    {
+     "word": "the",
+     "start": 7.91,
+     "end": 8.19
+    },
+    {
+     "word": "torus,",
+     "start": 8.19,
+     "end": 8.25
+    },
+    {
+     "word": "a",
+     "start": 8.85,
+     "end": 9.31
+    },
+    {
+     "word": "cube",
+     "start": 9.31,
+     "end": 9.31
+    },
+    {
+     "word": "whose",
+     "start": 9.31,
+     "end": 9.55
+    },
+    {
+     "word": "opposite",
+     "start": 9.55,
+     "end": 9.95
+    },
+    {
+     "word": "faces",
+     "start": 9.95,
+     "end": 10.27
+    },
+    {
+     "word": "are",
+     "start": 10.27,
+     "end": 10.59
+    },
+    {
+     "word": "identified.",
+     "start": 10.59,
+     "end": 10.87
+    },
+    {
+     "word": "It",
+     "start": 11.77,
+     "end": 11.87
+    },
+    {
+     "word": "has",
+     "start": 11.87,
+     "end": 12.11
+    },
+    {
+     "word": "four",
+     "start": 12.11,
+     "end": 12.55
+    },
+    {
+     "word": "alternatives,",
+     "start": 12.55,
+     "end": 13.13
+    },
+    {
+     "word": "each",
+     "start": 13.67,
+     "end": 13.81
+    },
+    {
+     "word": "posed",
+     "start": 13.81,
+     "end": 14.13
+    },
+    {
+     "word": "for",
+     "start": 14.13,
+     "end": 14.45
+    },
+    {
+     "word": "every",
+     "start": 14.45,
+     "end": 14.77
+    },
+    {
+     "word": "positive",
+     "start": 14.77,
+     "end": 15.19
+    },
+    {
+     "word": "viscosity.",
+     "start": 15.19,
+     "end": 15.8
+    }
+   ]
+  },
+  {
+   "id": "c3b2",
+   "status": "definition",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 16.14,
+   "end": 29.0,
+   "holdEnd": 29.425,
+   "text": "A and B ask for a smooth solution for all time from every smooth, divergence-free initial velocity, with no force. In all of space, the data must decay rapidly and the energy must stay bounded.",
+   "words": [
+    {
+     "word": "A",
+     "start": 16.48,
+     "end": 16.71
+    },
+    {
+     "word": "and",
+     "start": 16.71,
+     "end": 16.87
+    },
+    {
+     "word": "B",
+     "start": 16.87,
+     "end": 17.13
+    },
+    {
+     "word": "ask",
+     "start": 17.13,
+     "end": 17.59
+    },
+    {
+     "word": "for",
+     "start": 17.59,
+     "end": 17.77
+    },
+    {
+     "word": "a",
+     "start": 17.77,
+     "end": 18.33
+    },
+    {
+     "word": "smooth",
+     "start": 18.33,
+     "end": 18.33
+    },
+    {
+     "word": "solution",
+     "start": 18.33,
+     "end": 18.73
+    },
+    {
+     "word": "for",
+     "start": 18.73,
+     "end": 19.07
+    },
+    {
+     "word": "all",
+     "start": 19.07,
+     "end": 19.37
+    },
+    {
+     "word": "time",
+     "start": 19.37,
+     "end": 19.69
+    },
+    {
+     "word": "from",
+     "start": 19.89,
+     "end": 20.07
+    },
+    {
+     "word": "every",
+     "start": 20.07,
+     "end": 20.57
+    },
+    {
+     "word": "smooth,",
+     "start": 20.57,
+     "end": 20.97
+    },
+    {
+     "word": "divergence-free",
+     "start": 21.05,
+     "end": 21.71
+    },
+    {
+     "word": "initial",
+     "start": 21.71,
+     "end": 22.13
+    },
+    {
+     "word": "velocity,",
+     "start": 22.13,
+     "end": 22.55
+    },
+    {
+     "word": "with",
+     "start": 23.09,
+     "end": 23.23
+    },
+    {
+     "word": "no",
+     "start": 23.23,
+     "end": 23.47
+    },
+    {
+     "word": "force.",
+     "start": 23.47,
+     "end": 23.79
+    },
+    {
+     "word": "In",
+     "start": 24.35,
+     "end": 24.53
+    },
+    {
+     "word": "all",
+     "start": 24.53,
+     "end": 24.81
+    },
+    {
+     "word": "of",
+     "start": 24.81,
+     "end": 25.19
+    },
+    {
+     "word": "space,",
+     "start": 25.19,
+     "end": 25.21
+    },
+    {
+     "word": "the",
+     "start": 25.31,
+     "end": 25.79
+    },
+    {
+     "word": "data",
+     "start": 25.79,
+     "end": 25.97
+    },
+    {
+     "word": "must",
+     "start": 25.97,
+     "end": 26.31
+    },
+    {
+     "word": "decay",
+     "start": 26.31,
+     "end": 26.59
+    },
+    {
+     "word": "rapidly",
+     "start": 26.59,
+     "end": 27.03
+    },
+    {
+     "word": "and",
+     "start": 27.41,
+     "end": 27.53
+    },
+    {
+     "word": "the",
+     "start": 27.53,
+     "end": 28.01
+    },
+    {
+     "word": "energy",
+     "start": 28.01,
+     "end": 28.01
+    },
+    {
+     "word": "must",
+     "start": 28.01,
+     "end": 28.41
+    },
+    {
+     "word": "stay",
+     "start": 28.41,
+     "end": 28.65
+    },
+    {
+     "word": "bounded.",
+     "start": 28.65,
+     "end": 29.0
+    }
+   ]
+  },
+  {
+   "id": "c3b3",
+   "status": "definition",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 29.425,
+   "end": 42.98,
+   "holdEnd": 43.5,
+   "text": "C and D ask for the opposite: admissible initial data and a smooth force, chosen together, for which no global smooth solution exists. The force must stay smooth and decaying through the breakdown and after it.",
+   "words": [
+    {
+     "word": "C",
+     "start": 29.85,
+     "end": 30.19
+    },
+    {
+     "word": "and",
+     "start": 30.19,
+     "end": 30.35
+    },
+    {
+     "word": "D",
+     "start": 30.35,
+     "end": 30.59
+    },
+    {
+     "word": "ask",
+     "start": 30.59,
+     "end": 30.87
+    },
+    {
+     "word": "for",
+     "start": 30.87,
+     "end": 31.03
+    },
+    {
+     "word": "the",
+     "start": 31.03,
+     "end": 31.33
+    },
+    {
+     "word": "opposite:",
+     "start": 31.33,
+     "end": 31.47
+    },
+    {
+     "word": "admissible",
+     "start": 31.47,
+     "end": 32.51
+    },
+    {
+     "word": "initial",
+     "start": 32.51,
+     "end": 32.89
+    },
+    {
+     "word": "data",
+     "start": 32.89,
+     "end": 33.15
+    },
+    {
+     "word": "and",
+     "start": 33.65,
+     "end": 33.69
+    },
+    {
+     "word": "a",
+     "start": 33.69,
+     "end": 33.97
+    },
+    {
+     "word": "smooth",
+     "start": 33.97,
+     "end": 34.19
+    },
+    {
+     "word": "force,",
+     "start": 34.19,
+     "end": 34.59
+    },
+    {
+     "word": "chosen",
+     "start": 35.23,
+     "end": 35.23
+    },
+    {
+     "word": "together,",
+     "start": 35.23,
+     "end": 35.61
+    },
+    {
+     "word": "for",
+     "start": 35.99,
+     "end": 36.09
+    },
+    {
+     "word": "which",
+     "start": 36.09,
+     "end": 36.29
+    },
+    {
+     "word": "no",
+     "start": 36.29,
+     "end": 36.65
+    },
+    {
+     "word": "global",
+     "start": 36.65,
+     "end": 37.05
+    },
+    {
+     "word": "smooth",
+     "start": 37.05,
+     "end": 37.47
+    },
+    {
+     "word": "solution",
+     "start": 37.47,
+     "end": 37.89
+    },
+    {
+     "word": "exists.",
+     "start": 37.89,
+     "end": 38.55
+    },
+    {
+     "word": "The",
+     "start": 39.35,
+     "end": 39.57
+    },
+    {
+     "word": "force",
+     "start": 39.57,
+     "end": 39.77
+    },
+    {
+     "word": "must",
+     "start": 39.77,
+     "end": 40.01
+    },
+    {
+     "word": "stay",
+     "start": 40.01,
+     "end": 40.29
+    },
+    {
+     "word": "smooth",
+     "start": 40.29,
+     "end": 40.69
+    },
+    {
+     "word": "and",
+     "start": 40.69,
+     "end": 40.99
+    },
+    {
+     "word": "decaying",
+     "start": 40.99,
+     "end": 41.39
+    },
+    {
+     "word": "through",
+     "start": 41.39,
+     "end": 41.51
+    },
+    {
+     "word": "the",
+     "start": 41.51,
+     "end": 41.81
+    },
+    {
+     "word": "breakdown",
+     "start": 41.81,
+     "end": 42.01
+    },
+    {
+     "word": "and",
+     "start": 42.35,
+     "end": 42.61
+    },
+    {
+     "word": "after",
+     "start": 42.61,
+     "end": 42.79
+    },
+    {
+     "word": "it.",
+     "start": 42.79,
+     "end": 42.98
+    }
+   ]
+  },
+  {
+   "id": "c3b4",
+   "status": "definition",
+   "hold": "short",
+   "paragraph": "2.1",
+   "start": 43.5,
+   "end": 46.51,
+   "holdEnd": 46.77,
+   "text": "A proof of any one alternative is accepted.",
+   "words": [
+    {
+     "word": "A",
+     "start": 43.5,
+     "end": 43.74
+    },
+    {
+     "word": "proof",
+     "start": 43.74,
+     "end": 44.1
+    },
+    {
+     "word": "of",
+     "start": 44.1,
+     "end": 44.4
+    },
+    {
+     "word": "any",
+     "start": 44.4,
+     "end": 44.8
+    },
+    {
+     "word": "one",
+     "start": 44.8,
+     "end": 45.04
+    },
+    {
+     "word": "alternative",
+     "start": 45.04,
+     "end": 45.52
+    },
+    {
+     "word": "is",
+     "start": 45.52,
+     "end": 46.04
+    },
+    {
+     "word": "accepted.",
+     "start": 46.04,
+     "end": 46.51
+    }
+   ]
+  },
+  {
+   "id": "c3b5",
+   "status": "proved",
+   "hold": "short",
+   "paragraph": "2.1",
+   "start": 46.77,
+   "end": 55.1,
+   "holdEnd": 55.9,
+   "text": "Breakdown with a force does not settle A or B. Without a force, smooth solutions might still last forever.",
+   "words": [
+    {
+     "word": "Breakdown",
+     "start": 47.03,
+     "end": 47.62
+    },
+    {
+     "word": "with",
+     "start": 47.62,
+     "end": 47.78
+    },
+    {
+     "word": "a",
+     "start": 47.78,
+     "end": 48.14
+    },
+    {
+     "word": "force",
+     "start": 48.14,
+     "end": 48.26
+    },
+    {
+     "word": "does",
+     "start": 48.26,
+     "end": 48.72
+    },
+    {
+     "word": "not",
+     "start": 48.72,
+     "end": 49.16
+    },
+    {
+     "word": "settle",
+     "start": 49.16,
+     "end": 49.34
+    },
+    {
+     "word": "A",
+     "start": 49.34,
+     "end": 49.8
+    },
+    {
+     "word": "or",
+     "start": 49.8,
+     "end": 50.22
+    },
+    {
+     "word": "B.",
+     "start": 50.22,
+     "end": 50.5
+    },
+    {
+     "word": "Without",
+     "start": 51.3,
+     "end": 51.52
+    },
+    {
+     "word": "a",
+     "start": 51.52,
+     "end": 52.08
+    },
+    {
+     "word": "force,",
+     "start": 52.08,
+     "end": 52.08
+    },
+    {
+     "word": "smooth",
+     "start": 52.7,
+     "end": 52.96
+    },
+    {
+     "word": "solutions",
+     "start": 52.96,
+     "end": 53.48
+    },
+    {
+     "word": "might",
+     "start": 53.48,
+     "end": 53.8
+    },
+    {
+     "word": "still",
+     "start": 53.8,
+     "end": 54.22
+    },
+    {
+     "word": "last",
+     "start": 54.22,
+     "end": 54.6
+    },
+    {
+     "word": "forever.",
+     "start": 54.6,
+     "end": 55.1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+/* The film's status line (tokens only). Load after lib/components.css. */
+.strip.jx-strip {
+  background: none;
+  border-top: none;
+  padding-left: 0;
+  display: block;
+  color: var(--ink-muted);
+}
+.jx-rule {
+  position: absolute;
+  left: 0;
+  top: 32px;
+  width: 1920px;
+  height: 8px;
+  background: var(--rule);
+}
+.jx-rule.st-proved, .jx-rule.st-computed { background: var(--status-proved); }
+.jx-rule.st-claimed { background: var(--status-claimed); }
+.jx-rule.st-lean { background: var(--status-lean); }
+/* heuristic: dashed; x = 1800 falls on a dash (1800 = 50 × 36), where the strip check samples */
+.jx-rule.st-heuristic {
+  background: repeating-linear-gradient(90deg, var(--status-heuristic) 0 24px, transparent 24px 36px);
+}
+.jx-line {
+  position: absolute;
+  left: 120px;
+  top: 0;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+.jx-mark {
+  width: 14px;
+  height: 14px;
+  flex: none;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.jx-mark.st-proved { background: var(--status-proved); }
+.jx-mark.st-computed { color: var(--status-proved); width: 18px; }
+.jx-mark.st-claimed { border: 2.5px solid var(--status-claimed); }
+.jx-mark.st-heuristic { border: 2px dashed var(--status-heuristic); }
+.jx-mark.st-lean { background: var(--paper); border: 4px double var(--status-lean); }
+.jx-mark.st-definition, .jx-mark.st-context { display: none; }
+
+/* cards */
+.ledger.st-computed { border: none; }
+.ledger.st-computed .ledger-bar { background: var(--status-proved); }
+.pmap .st-computed.node-active, .pmap .st-computed.node-done { stroke: var(--status-proved); }

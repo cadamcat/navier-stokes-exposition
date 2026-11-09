@@ -1,0 +1,499 @@
+{
+ "chapter": "c8",
+ "voice": "marin",
+ "model": "gpt-4o-mini-tts",
+ "speed": null,
+ "audio": "c8.wav",
+ "duration": 40.72,
+ "inserted": [
+  {
+   "at": 0.0,
+   "seconds": 2.25,
+   "where": "chapter start",
+   "reason": [
+    "title card held 2 s, first picture 0.25 s before the first word"
+   ]
+  },
+  {
+   "at": 40.25,
+   "seconds": 0.47,
+   "where": "after c8b3",
+   "reason": [
+    "tail+0.8: picture fades out"
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "id": "c8b1",
+   "status": "claimed",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 2.25,
+   "end": 15.81,
+   "holdEnd": 16.24,
+   "text": "One repair is not enough. Each correction creates new errors, and the force must be smooth to every order. The manuscript cycles through four corrections, rebuilding the pressure after each.",
+   "words": [
+    {
+     "word": "One",
+     "start": 2.25,
+     "end": 2.63
+    },
+    {
+     "word": "repair",
+     "start": 2.63,
+     "end": 3.07
+    },
+    {
+     "word": "is",
+     "start": 3.07,
+     "end": 3.41
+    },
+    {
+     "word": "not",
+     "start": 3.41,
+     "end": 3.67
+    },
+    {
+     "word": "enough.",
+     "start": 3.67,
+     "end": 4.01
+    },
+    {
+     "word": "Each",
+     "start": 5.11,
+     "end": 5.11
+    },
+    {
+     "word": "correction",
+     "start": 5.11,
+     "end": 5.57
+    },
+    {
+     "word": "creates",
+     "start": 5.57,
+     "end": 6.11
+    },
+    {
+     "word": "new",
+     "start": 6.11,
+     "end": 6.49
+    },
+    {
+     "word": "errors,",
+     "start": 6.49,
+     "end": 6.85
+    },
+    {
+     "word": "and",
+     "start": 7.43,
+     "end": 7.49
+    },
+    {
+     "word": "the",
+     "start": 7.49,
+     "end": 7.71
+    },
+    {
+     "word": "force",
+     "start": 7.71,
+     "end": 7.99
+    },
+    {
+     "word": "must",
+     "start": 7.99,
+     "end": 8.21
+    },
+    {
+     "word": "be",
+     "start": 8.21,
+     "end": 8.85
+    },
+    {
+     "word": "smooth",
+     "start": 8.85,
+     "end": 8.85
+    },
+    {
+     "word": "to",
+     "start": 8.85,
+     "end": 9.17
+    },
+    {
+     "word": "every",
+     "start": 9.17,
+     "end": 9.51
+    },
+    {
+     "word": "order.",
+     "start": 9.51,
+     "end": 9.77
+    },
+    {
+     "word": "The",
+     "start": 10.71,
+     "end": 10.87
+    },
+    {
+     "word": "manuscript",
+     "start": 10.87,
+     "end": 11.33
+    },
+    {
+     "word": "cycles",
+     "start": 11.33,
+     "end": 12.13
+    },
+    {
+     "word": "through",
+     "start": 12.13,
+     "end": 12.43
+    },
+    {
+     "word": "four",
+     "start": 12.43,
+     "end": 12.89
+    },
+    {
+     "word": "corrections,",
+     "start": 12.89,
+     "end": 13.37
+    },
+    {
+     "word": "rebuilding",
+     "start": 14.27,
+     "end": 14.47
+    },
+    {
+     "word": "the",
+     "start": 14.47,
+     "end": 14.93
+    },
+    {
+     "word": "pressure",
+     "start": 14.93,
+     "end": 15.05
+    },
+    {
+     "word": "after",
+     "start": 15.05,
+     "end": 15.41
+    },
+    {
+     "word": "each.",
+     "start": 15.41,
+     "end": 15.81
+    }
+   ]
+  },
+  {
+   "id": "c8b2",
+   "status": "claimed",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 16.24,
+   "end": 28.95,
+   "holdEnd": 29.325,
+   "text": "Each full cycle raises the order of the remaining error. For a fixed number of derivatives, the losses stay fixed, so the order eventually passes them. The ladder has no last rung.",
+   "words": [
+    {
+     "word": "Each",
+     "start": 16.67,
+     "end": 16.91
+    },
+    {
+     "word": "full",
+     "start": 16.91,
+     "end": 17.35
+    },
+    {
+     "word": "cycle",
+     "start": 17.35,
+     "end": 17.65
+    },
+    {
+     "word": "raises",
+     "start": 17.65,
+     "end": 18.31
+    },
+    {
+     "word": "the",
+     "start": 18.31,
+     "end": 18.71
+    },
+    {
+     "word": "order",
+     "start": 18.71,
+     "end": 18.81
+    },
+    {
+     "word": "of",
+     "start": 18.81,
+     "end": 19.09
+    },
+    {
+     "word": "the",
+     "start": 19.09,
+     "end": 19.31
+    },
+    {
+     "word": "remaining",
+     "start": 19.31,
+     "end": 19.55
+    },
+    {
+     "word": "error.",
+     "start": 19.55,
+     "end": 19.91
+    },
+    {
+     "word": "For",
+     "start": 21.01,
+     "end": 21.09
+    },
+    {
+     "word": "a",
+     "start": 21.09,
+     "end": 21.53
+    },
+    {
+     "word": "fixed",
+     "start": 21.53,
+     "end": 21.53
+    },
+    {
+     "word": "number",
+     "start": 21.53,
+     "end": 21.77
+    },
+    {
+     "word": "of",
+     "start": 21.77,
+     "end": 22.41
+    },
+    {
+     "word": "derivatives,",
+     "start": 22.41,
+     "end": 22.41
+    },
+    {
+     "word": "the",
+     "start": 22.85,
+     "end": 23.21
+    },
+    {
+     "word": "losses",
+     "start": 23.21,
+     "end": 23.29
+    },
+    {
+     "word": "stay",
+     "start": 23.29,
+     "end": 23.69
+    },
+    {
+     "word": "fixed,",
+     "start": 23.69,
+     "end": 24.01
+    },
+    {
+     "word": "so",
+     "start": 24.51,
+     "end": 24.73
+    },
+    {
+     "word": "the",
+     "start": 24.73,
+     "end": 25.03
+    },
+    {
+     "word": "order",
+     "start": 25.03,
+     "end": 25.19
+    },
+    {
+     "word": "eventually",
+     "start": 25.19,
+     "end": 25.81
+    },
+    {
+     "word": "passes",
+     "start": 25.81,
+     "end": 26.15
+    },
+    {
+     "word": "them.",
+     "start": 26.15,
+     "end": 26.43
+    },
+    {
+     "word": "The",
+     "start": 27.09,
+     "end": 27.39
+    },
+    {
+     "word": "ladder",
+     "start": 27.39,
+     "end": 27.65
+    },
+    {
+     "word": "has",
+     "start": 27.65,
+     "end": 27.93
+    },
+    {
+     "word": "no",
+     "start": 27.93,
+     "end": 28.29
+    },
+    {
+     "word": "last",
+     "start": 28.29,
+     "end": 28.63
+    },
+    {
+     "word": "rung.",
+     "start": 28.63,
+     "end": 28.95
+    }
+   ]
+  },
+  {
+   "id": "c8b3",
+   "status": "claimed",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 29.325,
+   "end": 39.92,
+   "holdEnd": 40.72,
+   "text": "Smooth cutoffs assemble the corrections into one smooth field, and the force is extended smoothly through time one, with compact support in space and time.",
+   "words": [
+    {
+     "word": "Smooth",
+     "start": 29.7,
+     "end": 30.17
+    },
+    {
+     "word": "cutoffs",
+     "start": 30.17,
+     "end": 30.63
+    },
+    {
+     "word": "assemble",
+     "start": 30.63,
+     "end": 31.09
+    },
+    {
+     "word": "the",
+     "start": 31.09,
+     "end": 31.35
+    },
+    {
+     "word": "corrections",
+     "start": 31.35,
+     "end": 31.73
+    },
+    {
+     "word": "into",
+     "start": 31.73,
+     "end": 32.31
+    },
+    {
+     "word": "one",
+     "start": 32.31,
+     "end": 32.85
+    },
+    {
+     "word": "smooth",
+     "start": 32.85,
+     "end": 33.17
+    },
+    {
+     "word": "field,",
+     "start": 33.17,
+     "end": 33.53
+    },
+    {
+     "word": "and",
+     "start": 34.39,
+     "end": 34.45
+    },
+    {
+     "word": "the",
+     "start": 34.45,
+     "end": 34.65
+    },
+    {
+     "word": "force",
+     "start": 34.65,
+     "end": 34.93
+    },
+    {
+     "word": "is",
+     "start": 34.93,
+     "end": 35.73
+    },
+    {
+     "word": "extended",
+     "start": 35.73,
+     "end": 35.73
+    },
+    {
+     "word": "smoothly",
+     "start": 35.73,
+     "end": 36.19
+    },
+    {
+     "word": "through",
+     "start": 36.19,
+     "end": 36.55
+    },
+    {
+     "word": "time",
+     "start": 36.55,
+     "end": 36.89
+    },
+    {
+     "word": "one,",
+     "start": 36.89,
+     "end": 37.43
+    },
+    {
+     "word": "with",
+     "start": 37.77,
+     "end": 37.99
+    },
+    {
+     "word": "compact",
+     "start": 37.99,
+     "end": 38.37
+    },
+    {
+     "word": "support",
+     "start": 38.37,
+     "end": 38.77
+    },
+    {
+     "word": "in",
+     "start": 38.77,
+     "end": 39.11
+    },
+    {
+     "word": "space",
+     "start": 39.11,
+     "end": 39.37
+    },
+    {
+     "word": "and",
+     "start": 39.37,
+     "end": 39.67
+    },
+    {
+     "word": "time.",
+     "start": 39.67,
+     "end": 39.92
+    }
+   ]
+  }
+ ]
+}

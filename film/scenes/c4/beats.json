@@ -1,0 +1,918 @@
+{
+ "chapter": "c4",
+ "voice": "marin",
+ "model": "gpt-4o-mini-tts",
+ "speed": null,
+ "audio": "c4.wav",
+ "duration": 72.01,
+ "inserted": [
+  {
+   "at": 0.0,
+   "seconds": 2.25,
+   "where": "chapter start",
+   "reason": [
+    "title card held 2 s, first picture 0.25 s before the first word"
+   ]
+  },
+  {
+   "at": 71.35,
+   "seconds": 0.66,
+   "where": "after c4b5",
+   "reason": [
+    "tail+0.8: picture fades out"
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "id": "c4b1",
+   "status": "proved",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 2.25,
+   "end": 12.26,
+   "holdEnd": 12.545,
+   "text": "Without a force, the energy, half the integral of the squared speed, can only decrease. But energy is a total. It does not bound the peak speed.",
+   "words": [
+    {
+     "word": "Without",
+     "start": 2.25,
+     "end": 2.55
+    },
+    {
+     "word": "a",
+     "start": 2.55,
+     "end": 2.77
+    },
+    {
+     "word": "force,",
+     "start": 2.77,
+     "end": 3.07
+    },
+    {
+     "word": "the",
+     "start": 3.47,
+     "end": 3.67
+    },
+    {
+     "word": "energy,",
+     "start": 3.67,
+     "end": 3.99
+    },
+    {
+     "word": "half",
+     "start": 4.79,
+     "end": 4.79
+    },
+    {
+     "word": "the",
+     "start": 4.79,
+     "end": 5.13
+    },
+    {
+     "word": "integral",
+     "start": 5.13,
+     "end": 5.31
+    },
+    {
+     "word": "of",
+     "start": 5.31,
+     "end": 5.55
+    },
+    {
+     "word": "the",
+     "start": 5.55,
+     "end": 5.79
+    },
+    {
+     "word": "squared",
+     "start": 5.79,
+     "end": 6.03
+    },
+    {
+     "word": "speed,",
+     "start": 6.03,
+     "end": 6.41
+    },
+    {
+     "word": "can",
+     "start": 6.81,
+     "end": 7.01
+    },
+    {
+     "word": "only",
+     "start": 7.01,
+     "end": 7.45
+    },
+    {
+     "word": "decrease.",
+     "start": 7.45,
+     "end": 7.95
+    },
+    {
+     "word": "But",
+     "start": 8.77,
+     "end": 8.99
+    },
+    {
+     "word": "energy",
+     "start": 8.99,
+     "end": 9.29
+    },
+    {
+     "word": "is",
+     "start": 9.29,
+     "end": 9.57
+    },
+    {
+     "word": "a",
+     "start": 9.57,
+     "end": 9.99
+    },
+    {
+     "word": "total.",
+     "start": 9.99,
+     "end": 9.99
+    },
+    {
+     "word": "It",
+     "start": 10.67,
+     "end": 10.73
+    },
+    {
+     "word": "does",
+     "start": 10.73,
+     "end": 10.95
+    },
+    {
+     "word": "not",
+     "start": 10.95,
+     "end": 11.21
+    },
+    {
+     "word": "bound",
+     "start": 11.21,
+     "end": 11.47
+    },
+    {
+     "word": "the",
+     "start": 11.47,
+     "end": 11.83
+    },
+    {
+     "word": "peak",
+     "start": 11.83,
+     "end": 11.93
+    },
+    {
+     "word": "speed.",
+     "start": 11.93,
+     "end": 12.26
+    }
+   ]
+  },
+  {
+   "id": "c4b2",
+   "status": "proved",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 12.545,
+   "end": 25.04,
+   "holdEnd": 25.4,
+   "text": "In nineteen thirty-four, Jean Leray constructed global weak solutions; Eberhard Hopf later extended the theory. They satisfy the equations only in an averaged sense, and need not be smooth.",
+   "words": [
+    {
+     "word": "In",
+     "start": 12.83,
+     "end": 13.01
+    },
+    {
+     "word": "nineteen",
+     "start": 13.01,
+     "end": 13.442
+    },
+    {
+     "word": "thirty-four,",
+     "start": 13.442,
+     "end": 13.97
+    },
+    {
+     "word": "Jean",
+     "start": 14.47,
+     "end": 14.93
+    },
+    {
+     "word": "Leray",
+     "start": 14.93,
+     "end": 14.93
+    },
+    {
+     "word": "constructed",
+     "start": 14.93,
+     "end": 15.53
+    },
+    {
+     "word": "global",
+     "start": 15.53,
+     "end": 16.01
+    },
+    {
+     "word": "weak",
+     "start": 16.01,
+     "end": 16.33
+    },
+    {
+     "word": "solutions;",
+     "start": 16.33,
+     "end": 16.81
+    },
+    {
+     "word": "Eberhard",
+     "start": 17.73,
+     "end": 17.99
+    },
+    {
+     "word": "Hopf",
+     "start": 17.99,
+     "end": 18.31
+    },
+    {
+     "word": "later",
+     "start": 18.31,
+     "end": 18.79
+    },
+    {
+     "word": "extended",
+     "start": 18.79,
+     "end": 19.23
+    },
+    {
+     "word": "the",
+     "start": 19.23,
+     "end": 19.71
+    },
+    {
+     "word": "theory.",
+     "start": 19.71,
+     "end": 19.71
+    },
+    {
+     "word": "They",
+     "start": 20.43,
+     "end": 20.65
+    },
+    {
+     "word": "satisfy",
+     "start": 20.65,
+     "end": 21.09
+    },
+    {
+     "word": "the",
+     "start": 21.09,
+     "end": 21.79
+    },
+    {
+     "word": "equations",
+     "start": 21.79,
+     "end": 21.79
+    },
+    {
+     "word": "only",
+     "start": 21.79,
+     "end": 22.21
+    },
+    {
+     "word": "in",
+     "start": 22.21,
+     "end": 22.39
+    },
+    {
+     "word": "an",
+     "start": 22.39,
+     "end": 22.67
+    },
+    {
+     "word": "averaged",
+     "start": 22.67,
+     "end": 22.95
+    },
+    {
+     "word": "sense,",
+     "start": 22.95,
+     "end": 23.39
+    },
+    {
+     "word": "and",
+     "start": 23.75,
+     "end": 24.07
+    },
+    {
+     "word": "need",
+     "start": 24.07,
+     "end": 24.25
+    },
+    {
+     "word": "not",
+     "start": 24.25,
+     "end": 24.41
+    },
+    {
+     "word": "be",
+     "start": 24.41,
+     "end": 24.69
+    },
+    {
+     "word": "smooth.",
+     "start": 24.69,
+     "end": 25.04
+    }
+   ]
+  },
+  {
+   "id": "c4b3",
+   "status": "proved",
+   "hold": "short",
+   "paragraph": "2.1",
+   "start": 25.4,
+   "end": 41.03,
+   "holdEnd": 41.405,
+   "text": "Without force, Fujita and Kato proved global smooth solutions for data small in a critical norm, relative to the viscosity. Caffarelli, Kohn and Nirenberg proved that the possible singular set is very small, though a single point is not excluded.",
+   "words": [
+    {
+     "word": "Without",
+     "start": 25.4,
+     "end": 25.76
+    },
+    {
+     "word": "force,",
+     "start": 25.76,
+     "end": 26.22
+    },
+    {
+     "word": "Fujita",
+     "start": 26.76,
+     "end": 27.04
+    },
+    {
+     "word": "and",
+     "start": 27.04,
+     "end": 27.48
+    },
+    {
+     "word": "Kato",
+     "start": 27.48,
+     "end": 27.48
+    },
+    {
+     "word": "proved",
+     "start": 27.48,
+     "end": 27.88
+    },
+    {
+     "word": "global",
+     "start": 27.88,
+     "end": 28.34
+    },
+    {
+     "word": "smooth",
+     "start": 28.34,
+     "end": 28.72
+    },
+    {
+     "word": "solutions",
+     "start": 28.72,
+     "end": 29.22
+    },
+    {
+     "word": "for",
+     "start": 29.22,
+     "end": 29.46
+    },
+    {
+     "word": "data",
+     "start": 29.46,
+     "end": 29.78
+    },
+    {
+     "word": "small",
+     "start": 29.78,
+     "end": 30.24
+    },
+    {
+     "word": "in",
+     "start": 30.24,
+     "end": 30.44
+    },
+    {
+     "word": "a",
+     "start": 30.44,
+     "end": 30.86
+    },
+    {
+     "word": "critical",
+     "start": 30.86,
+     "end": 30.86
+    },
+    {
+     "word": "norm,",
+     "start": 30.86,
+     "end": 31.2
+    },
+    {
+     "word": "relative",
+     "start": 31.2,
+     "end": 31.92
+    },
+    {
+     "word": "to",
+     "start": 31.92,
+     "end": 32.2
+    },
+    {
+     "word": "the",
+     "start": 32.2,
+     "end": 32.42
+    },
+    {
+     "word": "viscosity.",
+     "start": 32.42,
+     "end": 32.76
+    },
+    {
+     "word": "Caffarelli,",
+     "start": 33.86,
+     "end": 34.16
+    },
+    {
+     "word": "Kohn",
+     "start": 34.82,
+     "end": 34.82
+    },
+    {
+     "word": "and",
+     "start": 34.96,
+     "end": 35.4
+    },
+    {
+     "word": "Nirenberg",
+     "start": 35.4,
+     "end": 35.64
+    },
+    {
+     "word": "proved",
+     "start": 35.64,
+     "end": 36.3
+    },
+    {
+     "word": "that",
+     "start": 36.3,
+     "end": 36.52
+    },
+    {
+     "word": "the",
+     "start": 36.52,
+     "end": 36.66
+    },
+    {
+     "word": "possible",
+     "start": 36.66,
+     "end": 37.12
+    },
+    {
+     "word": "singular",
+     "start": 37.12,
+     "end": 37.48
+    },
+    {
+     "word": "set",
+     "start": 37.48,
+     "end": 37.8
+    },
+    {
+     "word": "is",
+     "start": 37.8,
+     "end": 38.06
+    },
+    {
+     "word": "very",
+     "start": 38.06,
+     "end": 38.46
+    },
+    {
+     "word": "small,",
+     "start": 38.46,
+     "end": 38.74
+    },
+    {
+     "word": "though",
+     "start": 39.16,
+     "end": 39.36
+    },
+    {
+     "word": "a",
+     "start": 39.36,
+     "end": 39.6
+    },
+    {
+     "word": "single",
+     "start": 39.6,
+     "end": 39.8
+    },
+    {
+     "word": "point",
+     "start": 39.8,
+     "end": 40.14
+    },
+    {
+     "word": "is",
+     "start": 40.14,
+     "end": 40.4
+    },
+    {
+     "word": "not",
+     "start": 40.4,
+     "end": 40.62
+    },
+    {
+     "word": "excluded.",
+     "start": 40.62,
+     "end": 41.03
+    }
+   ]
+  },
+  {
+   "id": "c4b4",
+   "status": "proved",
+   "hold": "short",
+   "paragraph": "2.1",
+   "start": 41.405,
+   "end": 56.12,
+   "holdEnd": 56.43,
+   "text": "Continuation criteria name a quantity that must blow up: a vorticity integral for Euler, by Beale, Kato and Majda, and the L three norm for Navier–Stokes, by Escauriaza, Seregin and Šverák, both without force.",
+   "words": [
+    {
+     "word": "Continuation",
+     "start": 41.78,
+     "end": 42.48
+    },
+    {
+     "word": "criteria",
+     "start": 42.48,
+     "end": 43.06
+    },
+    {
+     "word": "name",
+     "start": 43.06,
+     "end": 43.4
+    },
+    {
+     "word": "a",
+     "start": 43.4,
+     "end": 43.88
+    },
+    {
+     "word": "quantity",
+     "start": 43.88,
+     "end": 43.88
+    },
+    {
+     "word": "that",
+     "start": 43.88,
+     "end": 44.26
+    },
+    {
+     "word": "must",
+     "start": 44.26,
+     "end": 44.54
+    },
+    {
+     "word": "blow",
+     "start": 44.54,
+     "end": 44.78
+    },
+    {
+     "word": "up:",
+     "start": 44.78,
+     "end": 45.0
+    },
+    {
+     "word": "a",
+     "start": 45.64,
+     "end": 45.8
+    },
+    {
+     "word": "vorticity",
+     "start": 45.8,
+     "end": 46.22
+    },
+    {
+     "word": "integral",
+     "start": 46.22,
+     "end": 46.52
+    },
+    {
+     "word": "for",
+     "start": 46.52,
+     "end": 47.06
+    },
+    {
+     "word": "Euler,",
+     "start": 47.06,
+     "end": 47.06
+    },
+    {
+     "word": "by",
+     "start": 47.06,
+     "end": 47.76
+    },
+    {
+     "word": "Beale,",
+     "start": 47.76,
+     "end": 48.218
+    },
+    {
+     "word": "Kato",
+     "start": 48.218,
+     "end": 48.6
+    },
+    {
+     "word": "and",
+     "start": 48.76,
+     "end": 49.12
+    },
+    {
+     "word": "Majda,",
+     "start": 49.12,
+     "end": 49.22
+    },
+    {
+     "word": "and",
+     "start": 49.8,
+     "end": 49.94
+    },
+    {
+     "word": "the",
+     "start": 49.94,
+     "end": 50.16
+    },
+    {
+     "word": "L",
+     "start": 50.16,
+     "end": 50.255
+    },
+    {
+     "word": "three",
+     "start": 50.255,
+     "end": 50.54
+    },
+    {
+     "word": "norm",
+     "start": 50.54,
+     "end": 50.82
+    },
+    {
+     "word": "for",
+     "start": 50.82,
+     "end": 51.1
+    },
+    {
+     "word": "Navier–Stokes,",
+     "start": 51.1,
+     "end": 51.78
+    },
+    {
+     "word": "by",
+     "start": 51.78,
+     "end": 52.34
+    },
+    {
+     "word": "Escauriaza,",
+     "start": 52.34,
+     "end": 53.14
+    },
+    {
+     "word": "Seregin",
+     "start": 53.78,
+     "end": 53.88
+    },
+    {
+     "word": "and",
+     "start": 54.06,
+     "end": 54.56
+    },
+    {
+     "word": "Šverák,",
+     "start": 54.56,
+     "end": 54.6
+    },
+    {
+     "word": "both",
+     "start": 55.1,
+     "end": 55.32
+    },
+    {
+     "word": "without",
+     "start": 55.32,
+     "end": 55.66
+    },
+    {
+     "word": "force.",
+     "start": 55.66,
+     "end": 56.12
+    }
+   ]
+  },
+  {
+   "id": "c4b5",
+   "status": "proved",
+   "hold": "short",
+   "paragraph": "2.1",
+   "start": 56.43,
+   "end": 71.21,
+   "holdEnd": 72.01,
+   "text": "Terence Tao proved blowup for an averaged equation that keeps the energy identity. Jiajie Chen and Thomas Hou proved, with computer assistance, blowup for Euler without viscosity, at a cylinder's wall. Neither is a Navier–Stokes counterexample.",
+   "words": [
+    {
+     "word": "Terence",
+     "start": 56.74,
+     "end": 57.12
+    },
+    {
+     "word": "Tao",
+     "start": 57.12,
+     "end": 57.38
+    },
+    {
+     "word": "proved",
+     "start": 57.38,
+     "end": 57.7
+    },
+    {
+     "word": "blowup",
+     "start": 57.7,
+     "end": 58.14
+    },
+    {
+     "word": "for",
+     "start": 58.14,
+     "end": 58.34
+    },
+    {
+     "word": "an",
+     "start": 58.34,
+     "end": 58.6
+    },
+    {
+     "word": "averaged",
+     "start": 58.6,
+     "end": 58.82
+    },
+    {
+     "word": "equation",
+     "start": 58.82,
+     "end": 59.26
+    },
+    {
+     "word": "that",
+     "start": 59.26,
+     "end": 59.52
+    },
+    {
+     "word": "keeps",
+     "start": 59.52,
+     "end": 59.72
+    },
+    {
+     "word": "the",
+     "start": 59.72,
+     "end": 59.96
+    },
+    {
+     "word": "energy",
+     "start": 59.96,
+     "end": 60.24
+    },
+    {
+     "word": "identity.",
+     "start": 60.24,
+     "end": 60.66
+    },
+    {
+     "word": "Jiajie",
+     "start": 61.58,
+     "end": 61.84
+    },
+    {
+     "word": "Chen",
+     "start": 61.84,
+     "end": 62.08
+    },
+    {
+     "word": "and",
+     "start": 62.08,
+     "end": 62.36
+    },
+    {
+     "word": "Thomas",
+     "start": 62.36,
+     "end": 62.68
+    },
+    {
+     "word": "Hou",
+     "start": 62.68,
+     "end": 63.32
+    },
+    {
+     "word": "proved,",
+     "start": 63.32,
+     "end": 63.62
+    },
+    {
+     "word": "with",
+     "start": 63.62,
+     "end": 63.84
+    },
+    {
+     "word": "computer",
+     "start": 63.84,
+     "end": 64.18
+    },
+    {
+     "word": "assistance,",
+     "start": 64.18,
+     "end": 64.76
+    },
+    {
+     "word": "blowup",
+     "start": 64.76,
+     "end": 65.54
+    },
+    {
+     "word": "for",
+     "start": 65.54,
+     "end": 66.02
+    },
+    {
+     "word": "Euler",
+     "start": 66.02,
+     "end": 66.02
+    },
+    {
+     "word": "without",
+     "start": 66.02,
+     "end": 66.4
+    },
+    {
+     "word": "viscosity,",
+     "start": 66.4,
+     "end": 66.86
+    },
+    {
+     "word": "at",
+     "start": 66.92,
+     "end": 67.56
+    },
+    {
+     "word": "a",
+     "start": 67.56,
+     "end": 67.78
+    },
+    {
+     "word": "cylinder's",
+     "start": 67.78,
+     "end": 68.4
+    },
+    {
+     "word": "wall.",
+     "start": 68.4,
+     "end": 68.4
+    },
+    {
+     "word": "Neither",
+     "start": 69.28,
+     "end": 69.36
+    },
+    {
+     "word": "is",
+     "start": 69.36,
+     "end": 69.68
+    },
+    {
+     "word": "a",
+     "start": 69.68,
+     "end": 69.76
+    },
+    {
+     "word": "Navier–Stokes",
+     "start": 69.76,
+     "end": 70.36
+    },
+    {
+     "word": "counterexample.",
+     "start": 70.36,
+     "end": 71.21
+    }
+   ]
+  }
+ ]
+}

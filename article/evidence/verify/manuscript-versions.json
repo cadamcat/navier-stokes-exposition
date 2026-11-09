@@ -1,0 +1,38 @@
+[
+  {
+    "path": "refs/openai-navier-stokes-20260908172948.pdf",
+    "timestamp": "20260908172948",
+    "sha256": "8c8a94ad9ac824c8b605b9827cadf7beaca48bd10b380de3cfc872a2c37afa81",
+    "pages": 165,
+    "bytes": 2955931,
+    "extracted_text_equals_current": false,
+    "diff_lines": 4703
+  },
+  {
+    "path": "refs/openai-navier-stokes-20260908174913.pdf",
+    "timestamp": "20260908174913",
+    "sha256": "8c8a94ad9ac824c8b605b9827cadf7beaca48bd10b380de3cfc872a2c37afa81",
+    "pages": 165,
+    "bytes": 2955931,
+    "extracted_text_equals_current": false,
+    "diff_lines": 4703
+  },
+  {
+    "path": "refs/openai-navier-stokes-20260908200449.pdf",
+    "timestamp": "20260908200449",
+    "sha256": "0e779481c4da40bd28d1e642e1d8ca57447d129610df28dfa5a11e9af8ae228f",
+    "pages": 166,
+    "bytes": 2959204,
+    "extracted_text_equals_current": true,
+    "diff_lines": 0
+  },
+  {
+    "path": "refs/openai-navier-stokes-20260912200415.pdf",
+    "timestamp": "20260912200415",
+    "sha256": "0e779481c4da40bd28d1e642e1d8ca57447d129610df28dfa5a11e9af8ae228f",
+    "pages": 166,
+    "bytes": 2959204,
+    "extracted_text_equals_current": true,
+    "diff_lines": 0
+  }
+]

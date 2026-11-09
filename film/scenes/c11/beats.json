@@ -1,0 +1,362 @@
+{
+ "chapter": "c11",
+ "voice": "marin",
+ "model": "gpt-4o-mini-tts",
+ "speed": null,
+ "audio": "c11.wav",
+ "duration": 35.71,
+ "inserted": [
+  {
+   "at": 0.0,
+   "seconds": 2.25,
+   "where": "chapter start",
+   "reason": [
+    "title card held 2 s, first picture 0.25 s before the first word"
+   ]
+  },
+  {
+   "at": 28.3,
+   "seconds": 7.41,
+   "where": "after c11b2",
+   "reason": [
+    "tail+7.5: picture fades; then the references and credit"
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "id": "c11b1",
+   "status": "context",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 2.25,
+   "end": 17.72,
+   "holdEnd": 18.24,
+   "text": "Mathematicians have begun to engage, in preprints by Constantin, Ignatova and Vicol, and by Zhen Lei and Xiao Ren. Clay still lists the problem as active, MathDB as open, and the sources examined contain no completed independent referee report.",
+   "words": [
+    {
+     "word": "Mathematicians",
+     "start": 2.25,
+     "end": 2.95
+    },
+    {
+     "word": "have",
+     "start": 2.95,
+     "end": 3.15
+    },
+    {
+     "word": "begun",
+     "start": 3.15,
+     "end": 3.45
+    },
+    {
+     "word": "to",
+     "start": 3.45,
+     "end": 4.07
+    },
+    {
+     "word": "engage,",
+     "start": 4.07,
+     "end": 4.07
+    },
+    {
+     "word": "in",
+     "start": 4.07,
+     "end": 4.53
+    },
+    {
+     "word": "preprints",
+     "start": 4.53,
+     "end": 4.87
+    },
+    {
+     "word": "by",
+     "start": 4.87,
+     "end": 5.17
+    },
+    {
+     "word": "Constantin,",
+     "start": 5.17,
+     "end": 5.83
+    },
+    {
+     "word": "Ignatova",
+     "start": 6.21,
+     "end": 6.69
+    },
+    {
+     "word": "and",
+     "start": 6.81,
+     "end": 7.23
+    },
+    {
+     "word": "Vicol,",
+     "start": 7.23,
+     "end": 7.29
+    },
+    {
+     "word": "and",
+     "start": 7.75,
+     "end": 7.91
+    },
+    {
+     "word": "by",
+     "start": 7.91,
+     "end": 8.27
+    },
+    {
+     "word": "Zhen",
+     "start": 8.27,
+     "end": 8.403
+    },
+    {
+     "word": "Lei",
+     "start": 8.403,
+     "end": 8.51
+    },
+    {
+     "word": "and",
+     "start": 8.51,
+     "end": 8.85
+    },
+    {
+     "word": "Xiao",
+     "start": 8.85,
+     "end": 9.283
+    },
+    {
+     "word": "Ren.",
+     "start": 9.283,
+     "end": 9.63
+    },
+    {
+     "word": "Clay",
+     "start": 10.31,
+     "end": 10.31
+    },
+    {
+     "word": "still",
+     "start": 10.31,
+     "end": 10.65
+    },
+    {
+     "word": "lists",
+     "start": 10.65,
+     "end": 10.87
+    },
+    {
+     "word": "the",
+     "start": 10.87,
+     "end": 11.01
+    },
+    {
+     "word": "problem",
+     "start": 11.01,
+     "end": 11.29
+    },
+    {
+     "word": "as",
+     "start": 11.29,
+     "end": 11.93
+    },
+    {
+     "word": "active,",
+     "start": 11.93,
+     "end": 11.93
+    },
+    {
+     "word": "MathDB",
+     "start": 12.53,
+     "end": 12.79
+    },
+    {
+     "word": "as",
+     "start": 12.79,
+     "end": 13.13
+    },
+    {
+     "word": "open,",
+     "start": 13.13,
+     "end": 13.31
+    },
+    {
+     "word": "and",
+     "start": 13.67,
+     "end": 14.01
+    },
+    {
+     "word": "the",
+     "start": 14.01,
+     "end": 14.23
+    },
+    {
+     "word": "sources",
+     "start": 14.23,
+     "end": 14.49
+    },
+    {
+     "word": "examined",
+     "start": 14.49,
+     "end": 14.97
+    },
+    {
+     "word": "contain",
+     "start": 14.97,
+     "end": 15.37
+    },
+    {
+     "word": "no",
+     "start": 15.37,
+     "end": 15.75
+    },
+    {
+     "word": "completed",
+     "start": 15.75,
+     "end": 16.19
+    },
+    {
+     "word": "independent",
+     "start": 16.19,
+     "end": 16.83
+    },
+    {
+     "word": "referee",
+     "start": 16.83,
+     "end": 17.23
+    },
+    {
+     "word": "report.",
+     "start": 17.23,
+     "end": 17.72
+    }
+   ]
+  },
+  {
+   "id": "c11b2",
+   "status": "context",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 18.24,
+   "end": 28.21,
+   "holdEnd": 35.71,
+   "text": "Nothing here sets the force to zero. Alternatives A and B, smoothness for all time without force, from all admissible data, remain open.",
+   "words": [
+    {
+     "word": "Nothing",
+     "start": 18.76,
+     "end": 19.13
+    },
+    {
+     "word": "here",
+     "start": 19.13,
+     "end": 19.61
+    },
+    {
+     "word": "sets",
+     "start": 19.61,
+     "end": 19.77
+    },
+    {
+     "word": "the",
+     "start": 19.77,
+     "end": 20.03
+    },
+    {
+     "word": "force",
+     "start": 20.03,
+     "end": 20.27
+    },
+    {
+     "word": "to",
+     "start": 20.27,
+     "end": 20.53
+    },
+    {
+     "word": "zero.",
+     "start": 20.53,
+     "end": 20.79
+    },
+    {
+     "word": "Alternatives",
+     "start": 21.87,
+     "end": 22.25
+    },
+    {
+     "word": "A",
+     "start": 22.25,
+     "end": 22.51
+    },
+    {
+     "word": "and",
+     "start": 22.51,
+     "end": 22.69
+    },
+    {
+     "word": "B,",
+     "start": 22.69,
+     "end": 22.93
+    },
+    {
+     "word": "smoothness",
+     "start": 23.63,
+     "end": 23.99
+    },
+    {
+     "word": "for",
+     "start": 23.99,
+     "end": 24.23
+    },
+    {
+     "word": "all",
+     "start": 24.23,
+     "end": 24.45
+    },
+    {
+     "word": "time",
+     "start": 24.45,
+     "end": 24.71
+    },
+    {
+     "word": "without",
+     "start": 24.71,
+     "end": 24.95
+    },
+    {
+     "word": "force,",
+     "start": 24.95,
+     "end": 25.39
+    },
+    {
+     "word": "from",
+     "start": 25.75,
+     "end": 25.91
+    },
+    {
+     "word": "all",
+     "start": 25.91,
+     "end": 26.25
+    },
+    {
+     "word": "admissible",
+     "start": 26.25,
+     "end": 26.51
+    },
+    {
+     "word": "data,",
+     "start": 26.51,
+     "end": 26.95
+    },
+    {
+     "word": "remain",
+     "start": 27.51,
+     "end": 27.75
+    },
+    {
+     "word": "open.",
+     "start": 27.75,
+     "end": 28.21
+    }
+   ]
+  }
+ ]
+}

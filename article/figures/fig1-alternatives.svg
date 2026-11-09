@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1000" viewBox="0 0 1500 1000">
+<title>The four alternatives</title>
+<desc>Whole space or the unit torus, against global smooth existence or admissible breakdown. C and D carry the announced construction. A and B remain open. No arrow runs from C or D to A or B.</desc>
+<rect width="1500" height="1000" fill="#F7F4EC"/>
+<text x="750.0" y="50.0" font-family="'Source Sans 3', sans-serif" font-size="24" font-weight="600" fill="#1C1B19" text-anchor="middle"><tspan x="750.0" dy="0.0">every viscosity <tspan font-family="KaTeX_Math, serif" font-style="italic">ν</tspan>&gt;0</tspan></text>
+<text x="555.0" y="108.0" font-family="'Source Sans 3', sans-serif" font-size="22" font-weight="600" fill="#1C1B19" text-anchor="middle"><tspan x="555.0" dy="0.0">whole space</tspan></text>
+<text x="1145.0" y="108.0" font-family="'Source Sans 3', sans-serif" font-size="22" font-weight="600" fill="#1C1B19" text-anchor="middle"><tspan x="1145.0" dy="0.0">unit torus</tspan></text>
+<text x="270.0" y="150.0" font-family="'Source Sans 3', sans-serif" font-size="22" font-weight="600" fill="#1C1B19" text-anchor="start"><tspan x="270.0" dy="0.0">global smooth existence</tspan></text>
+<rect x="270.0" y="176.0" width="570.0" height="236.0" rx="6" fill="#FBF8F1" stroke="#1C1B19" stroke-width="2.0"/>
+<text x="555.0" y="234.0" font-family="'Source Sans 3', sans-serif" font-size="28" font-weight="600" fill="#1C1B19" text-anchor="middle"><tspan x="555.0" dy="0.0">A</tspan></text>
+<text x="555.0" y="294.0" font-family="'Source Sans 3', sans-serif" font-size="22" font-weight="400" fill="#1C1B19" text-anchor="middle"><tspan x="555.0" dy="0.0">every admissible initial velocity;</tspan><tspan x="555.0" dy="40.0">force = 0</tspan></text>
+<rect x="860.0" y="176.0" width="570.0" height="236.0" rx="6" fill="#FBF8F1" stroke="#1C1B19" stroke-width="2.0"/>
+<text x="1145.0" y="234.0" font-family="'Source Sans 3', sans-serif" font-size="28" font-weight="600" fill="#1C1B19" text-anchor="middle"><tspan x="1145.0" dy="0.0">B</tspan></text>
+<text x="1145.0" y="294.0" font-family="'Source Sans 3', sans-serif" font-size="22" font-weight="400" fill="#1C1B19" text-anchor="middle"><tspan x="1145.0" dy="0.0">every admissible initial velocity;</tspan><tspan x="1145.0" dy="40.0">force = 0</tspan></text>
+<rect x="254.0" y="470.0" width="1192.0" height="360.0" rx="8" fill="none" stroke="#B7791F" stroke-width="2.2"/>
+<rect x="570.0" y="448.0" width="560.0" height="44.0" rx="6" fill="#F7F4EC" stroke="#B7791F" stroke-width="2.0"/>
+<text x="850.0" y="478.0" font-family="'Source Sans 3', sans-serif" font-size="22" font-weight="400" fill="#1C1B19" text-anchor="middle"><tspan x="850.0" dy="0.0"><tspan fill="#B7791F" font-weight="600">claimed</tspan>   announced 2026 construction</tspan></text>
+<text x="270.0" y="528.0" font-family="'Source Sans 3', sans-serif" font-size="22" font-weight="600" fill="#1C1B19" text-anchor="start"><tspan x="270.0" dy="0.0">admissible breakdown</tspan></text>
+<rect x="270.0" y="548.0" width="570.0" height="250.0" rx="6" fill="#FBF8F1" stroke="#1C1B19" stroke-width="2.0"/>
+<text x="555.0" y="596.0" font-family="'Source Sans 3', sans-serif" font-size="28" font-weight="600" fill="#1C1B19" text-anchor="middle"><tspan x="555.0" dy="0.0">C</tspan></text>
+<text x="555.0" y="648.0" font-family="'Source Sans 3', sans-serif" font-size="22" font-weight="400" fill="#1C1B19" text-anchor="middle"><tspan x="555.0" dy="0.0">choose initial velocity and smooth force;</tspan><tspan x="555.0" dy="38.0">exclude every global admissible pair</tspan></text>
+<line x1="306.0" y1="724.0" x2="804.0" y2="724.0" stroke="#D8D2C4" stroke-width="1.6" stroke-linecap="round"/>
+<text x="555.0" y="762.0" font-family="'Source Sans 3', sans-serif" font-size="22" font-weight="400" fill="#1C1B19" text-anchor="middle"><tspan x="555.0" dy="0.0">uniformly finite whole-space energy</tspan></text>
+<rect x="860.0" y="548.0" width="570.0" height="250.0" rx="6" fill="#FBF8F1" stroke="#1C1B19" stroke-width="2.0"/>
+<text x="1145.0" y="596.0" font-family="'Source Sans 3', sans-serif" font-size="28" font-weight="600" fill="#1C1B19" text-anchor="middle"><tspan x="1145.0" dy="0.0">D</tspan></text>
+<text x="1145.0" y="648.0" font-family="'Source Sans 3', sans-serif" font-size="22" font-weight="400" fill="#1C1B19" text-anchor="middle"><tspan x="1145.0" dy="0.0">choose initial velocity and smooth force;</tspan><tspan x="1145.0" dy="38.0">exclude every global admissible pair</tspan></text>
+<line x1="896.0" y1="724.0" x2="1394.0" y2="724.0" stroke="#D8D2C4" stroke-width="1.6" stroke-linecap="round"/>
+<text x="1145.0" y="762.0" font-family="'Source Sans 3', sans-serif" font-size="22" font-weight="400" fill="#1C1B19" text-anchor="middle"><tspan x="1145.0" dy="0.0">periodic velocity and pressure</tspan></text>
+<text x="750.0" y="880.0" font-family="'Source Sans 3', sans-serif" font-size="22" font-weight="400" fill="#1C1B19" text-anchor="middle"><tspan x="750.0" dy="0.0">The official formulation asks for any one alternative.</tspan></text>
+<rect x="430.0" y="910.0" width="640.0" height="52.0" rx="6" fill="#F7F4EC" stroke="#D8D2C4" stroke-width="1.6"/>
+<text x="750.0" y="944.0" font-family="'Source Sans 3', sans-serif" font-size="22" font-weight="400" fill="#1C1B19" text-anchor="middle"><tspan x="750.0" dy="0.0">A/B remain open in the sources reviewed</tspan></text>
+</svg>

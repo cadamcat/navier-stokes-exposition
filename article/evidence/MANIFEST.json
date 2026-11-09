@@ -1,0 +1,91 @@
+{
+  "package_version": "1.1",
+  "scope": "Distributed computation evidence; no Lean execution or public deposit implied",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "78904633b7ff948e07226aae2f001e46dd3f9e3b489e5ce6ffd5ab6213980825",
+      "bytes": 4956
+    },
+    {
+      "path": "refs/formal-conjectures-NavierStokes.lean",
+      "sha256": "f446284f2aa54375f558c263a580b34e2e7bc9f44a28829637199cc72257d25d",
+      "bytes": 13691
+    },
+    {
+      "path": "refs/manuscript-retrievals.jsonl",
+      "sha256": "27cc38cd42ab095c68ba6b6a8740a94ee35e38f556c83804bf1fcbc5a9284294",
+      "bytes": 3550
+    },
+    {
+      "path": "refs/mathdb-formalizations.json",
+      "sha256": "1f132a604b225b2b1da12899dbd7f8b0d802c615dde938f4e003d37d19dbaa6c",
+      "bytes": 67230
+    },
+    {
+      "path": "refs/openai-manuscript-archive-index.json",
+      "sha256": "a067f037720cfd1798018e5c1b993dc344ecac9833a6b0c95b41fcced4388ef5",
+      "bytes": 2078
+    },
+    {
+      "path": "verify/acceptance.json",
+      "sha256": "ff7b9bb1677a942424e6985ca7dca578bbbd36580740b2230188d5bd40e811de",
+      "bytes": 989
+    },
+    {
+      "path": "verify/check_identities.py",
+      "sha256": "bbf235ff70f0e0c571dd4f23f3c218fd9d4c42f08186f374e96d19e188e769ac",
+      "bytes": 4817
+    },
+    {
+      "path": "verify/environment.json",
+      "sha256": "fceed4adb8d395ae6473d7db98d995bdc7900d6676a28ae727b9e93a70ba5752",
+      "bytes": 262
+    },
+    {
+      "path": "verify/identities-negative.log",
+      "sha256": "31e4b20548901cacf1df174741765d0e5ac41292d21b578b6c9e0d1c48dd7b8b",
+      "bytes": 457
+    },
+    {
+      "path": "verify/identities.json",
+      "sha256": "84f6137861d611b62c0725be25bb7a2c274ad6b4ed25c0994e293c41f96b95ea",
+      "bytes": 4304
+    },
+    {
+      "path": "verify/lean-environment.log",
+      "sha256": "36526a338068c343bedff5daa38fec328b4f722df1e8f0b5d026d4f0f908f3a3",
+      "bytes": 53
+    },
+    {
+      "path": "verify/manuscript-versions.json",
+      "sha256": "1bd8068361e3ea85ab60c9e577d83b7fad25a4d034c1b738b103b33883b3ebc2",
+      "bytes": 1167
+    },
+    {
+      "path": "verify/openai-navier-stokes-20260908172948-current.diff",
+      "sha256": "48890a44a78a569c20dc6914c2ef47c8d212dfb6e63f85e3bd26bf9736aa408c",
+      "bytes": 329126
+    },
+    {
+      "path": "verify/openai-navier-stokes-20260908172948-word-changes.json",
+      "sha256": "bb49976fe338946d13b26472f9ce98f55079e113e4bcff5dce3b5418a68d13c7",
+      "bytes": 33744
+    },
+    {
+      "path": "verify/source-audit-selftest.log",
+      "sha256": "fd8a55b3b23c8d63ed484841bffa93c68ee2194839afb57647636a245e2a916f",
+      "bytes": 119
+    },
+    {
+      "path": "verify/source-audit.json",
+      "sha256": "db9b94fb54efcecb0875383c83a769165786750c6105ecc2472e2b27fa0917a0",
+      "bytes": 118603
+    },
+    {
+      "path": "verify/source_audit.py",
+      "sha256": "ce762eeeb4c7e69c4b2150aff43706ca2e96ac32a39b59cc784f45118f580df6",
+      "bytes": 8336
+    }
+  ]
+}

@@ -1,0 +1,661 @@
+{
+ "chapter": "c9",
+ "voice": "marin",
+ "model": "gpt-4o-mini-tts",
+ "speed": null,
+ "audio": "c9.wav",
+ "duration": 51.88,
+ "inserted": [
+  {
+   "at": 0.0,
+   "seconds": 2.25,
+   "where": "chapter start",
+   "reason": [
+    "title card held 2 s, first picture 0.25 s before the first word"
+   ]
+  },
+  {
+   "at": 51.15,
+   "seconds": 0.73,
+   "where": "after c9b4",
+   "reason": [
+    "tail+0.8: picture fades out"
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "id": "c9b1",
+   "status": "claimed",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 2.25,
+   "end": 14.16,
+   "holdEnd": 14.55,
+   "text": "Now the whole construction: the force stays smooth through time one and after, the velocity becomes unbounded as time approaches one, and the energy stays bounded.",
+   "words": [
+    {
+     "word": "Now",
+     "start": 2.25,
+     "end": 2.63
+    },
+    {
+     "word": "the",
+     "start": 2.63,
+     "end": 2.87
+    },
+    {
+     "word": "whole",
+     "start": 2.87,
+     "end": 3.27
+    },
+    {
+     "word": "construction:",
+     "start": 3.27,
+     "end": 3.89
+    },
+    {
+     "word": "the",
+     "start": 4.65,
+     "end": 4.69
+    },
+    {
+     "word": "force",
+     "start": 4.69,
+     "end": 5.05
+    },
+    {
+     "word": "stays",
+     "start": 5.05,
+     "end": 5.45
+    },
+    {
+     "word": "smooth",
+     "start": 5.45,
+     "end": 5.91
+    },
+    {
+     "word": "through",
+     "start": 5.91,
+     "end": 6.43
+    },
+    {
+     "word": "time",
+     "start": 6.43,
+     "end": 6.75
+    },
+    {
+     "word": "one",
+     "start": 6.75,
+     "end": 7.03
+    },
+    {
+     "word": "and",
+     "start": 7.03,
+     "end": 7.43
+    },
+    {
+     "word": "after,",
+     "start": 7.43,
+     "end": 7.75
+    },
+    {
+     "word": "the",
+     "start": 8.47,
+     "end": 8.63
+    },
+    {
+     "word": "velocity",
+     "start": 8.63,
+     "end": 9.05
+    },
+    {
+     "word": "becomes",
+     "start": 9.05,
+     "end": 9.55
+    },
+    {
+     "word": "unbounded",
+     "start": 9.55,
+     "end": 10.27
+    },
+    {
+     "word": "as",
+     "start": 10.27,
+     "end": 10.71
+    },
+    {
+     "word": "time",
+     "start": 10.71,
+     "end": 11.01
+    },
+    {
+     "word": "approaches",
+     "start": 11.01,
+     "end": 11.41
+    },
+    {
+     "word": "one,",
+     "start": 11.41,
+     "end": 11.89
+    },
+    {
+     "word": "and",
+     "start": 12.39,
+     "end": 12.57
+    },
+    {
+     "word": "the",
+     "start": 12.57,
+     "end": 12.81
+    },
+    {
+     "word": "energy",
+     "start": 12.81,
+     "end": 13.15
+    },
+    {
+     "word": "stays",
+     "start": 13.15,
+     "end": 13.73
+    },
+    {
+     "word": "bounded.",
+     "start": 13.73,
+     "end": 14.16
+    }
+   ]
+  },
+  {
+   "id": "c9b2",
+   "status": "claimed",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 14.55,
+   "end": 27.59,
+   "holdEnd": 27.855,
+   "text": "One step remains: could another smooth solution, with the same force and start, last forever? The manuscript's comparison argument says no, without assuming decay of its derivatives or pressure.",
+   "words": [
+    {
+     "word": "One",
+     "start": 14.94,
+     "end": 15.25
+    },
+    {
+     "word": "step",
+     "start": 15.25,
+     "end": 15.47
+    },
+    {
+     "word": "remains:",
+     "start": 15.47,
+     "end": 15.93
+    },
+    {
+     "word": "could",
+     "start": 16.69,
+     "end": 16.69
+    },
+    {
+     "word": "another",
+     "start": 16.69,
+     "end": 17.11
+    },
+    {
+     "word": "smooth",
+     "start": 17.11,
+     "end": 17.55
+    },
+    {
+     "word": "solution,",
+     "start": 17.55,
+     "end": 17.91
+    },
+    {
+     "word": "with",
+     "start": 18.53,
+     "end": 18.55
+    },
+    {
+     "word": "the",
+     "start": 18.55,
+     "end": 18.79
+    },
+    {
+     "word": "same",
+     "start": 18.79,
+     "end": 19.05
+    },
+    {
+     "word": "force",
+     "start": 19.05,
+     "end": 19.33
+    },
+    {
+     "word": "and",
+     "start": 19.33,
+     "end": 19.65
+    },
+    {
+     "word": "start,",
+     "start": 19.65,
+     "end": 19.85
+    },
+    {
+     "word": "last",
+     "start": 20.49,
+     "end": 20.57
+    },
+    {
+     "word": "forever?",
+     "start": 20.57,
+     "end": 20.93
+    },
+    {
+     "word": "The",
+     "start": 21.19,
+     "end": 21.99
+    },
+    {
+     "word": "manuscript's",
+     "start": 21.99,
+     "end": 22.71
+    },
+    {
+     "word": "comparison",
+     "start": 22.71,
+     "end": 23.11
+    },
+    {
+     "word": "argument",
+     "start": 23.11,
+     "end": 23.57
+    },
+    {
+     "word": "says",
+     "start": 23.57,
+     "end": 23.89
+    },
+    {
+     "word": "no,",
+     "start": 23.89,
+     "end": 24.25
+    },
+    {
+     "word": "without",
+     "start": 24.83,
+     "end": 25.07
+    },
+    {
+     "word": "assuming",
+     "start": 25.07,
+     "end": 25.47
+    },
+    {
+     "word": "decay",
+     "start": 25.47,
+     "end": 25.91
+    },
+    {
+     "word": "of",
+     "start": 25.91,
+     "end": 26.15
+    },
+    {
+     "word": "its",
+     "start": 26.15,
+     "end": 26.33
+    },
+    {
+     "word": "derivatives",
+     "start": 26.33,
+     "end": 26.73
+    },
+    {
+     "word": "or",
+     "start": 26.73,
+     "end": 27.13
+    },
+    {
+     "word": "pressure.",
+     "start": 27.13,
+     "end": 27.59
+    }
+   ]
+  },
+  {
+   "id": "c9b3",
+   "status": "proved",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 27.855,
+   "end": 40.51,
+   "holdEnd": 40.885,
+   "text": "The end is elementary. Such a solution would be bounded on a compact region up to time one, yet equal to a branch whose speed is unbounded there. Given the construction, that contradiction gives C.",
+   "words": [
+    {
+     "word": "The",
+     "start": 28.12,
+     "end": 28.33
+    },
+    {
+     "word": "end",
+     "start": 28.33,
+     "end": 28.57
+    },
+    {
+     "word": "is",
+     "start": 28.57,
+     "end": 28.83
+    },
+    {
+     "word": "elementary.",
+     "start": 28.83,
+     "end": 29.31
+    },
+    {
+     "word": "Such",
+     "start": 30.29,
+     "end": 30.35
+    },
+    {
+     "word": "a",
+     "start": 30.35,
+     "end": 30.87
+    },
+    {
+     "word": "solution",
+     "start": 30.87,
+     "end": 30.87
+    },
+    {
+     "word": "would",
+     "start": 30.87,
+     "end": 31.05
+    },
+    {
+     "word": "be",
+     "start": 31.05,
+     "end": 31.41
+    },
+    {
+     "word": "bounded",
+     "start": 31.41,
+     "end": 31.49
+    },
+    {
+     "word": "on",
+     "start": 31.49,
+     "end": 31.75
+    },
+    {
+     "word": "a",
+     "start": 31.75,
+     "end": 32.09
+    },
+    {
+     "word": "compact",
+     "start": 32.09,
+     "end": 32.33
+    },
+    {
+     "word": "region",
+     "start": 32.33,
+     "end": 32.69
+    },
+    {
+     "word": "up",
+     "start": 32.69,
+     "end": 32.99
+    },
+    {
+     "word": "to",
+     "start": 32.99,
+     "end": 33.13
+    },
+    {
+     "word": "time",
+     "start": 33.13,
+     "end": 33.41
+    },
+    {
+     "word": "one,",
+     "start": 33.41,
+     "end": 33.69
+    },
+    {
+     "word": "yet",
+     "start": 34.19,
+     "end": 34.37
+    },
+    {
+     "word": "equal",
+     "start": 34.37,
+     "end": 34.69
+    },
+    {
+     "word": "to",
+     "start": 34.69,
+     "end": 34.85
+    },
+    {
+     "word": "a",
+     "start": 34.85,
+     "end": 35.25
+    },
+    {
+     "word": "branch",
+     "start": 35.25,
+     "end": 35.27
+    },
+    {
+     "word": "whose",
+     "start": 35.27,
+     "end": 35.59
+    },
+    {
+     "word": "speed",
+     "start": 35.59,
+     "end": 35.83
+    },
+    {
+     "word": "is",
+     "start": 35.83,
+     "end": 36.23
+    },
+    {
+     "word": "unbounded",
+     "start": 36.23,
+     "end": 36.67
+    },
+    {
+     "word": "there.",
+     "start": 36.67,
+     "end": 36.95
+    },
+    {
+     "word": "Given",
+     "start": 37.73,
+     "end": 37.85
+    },
+    {
+     "word": "the",
+     "start": 37.85,
+     "end": 38.15
+    },
+    {
+     "word": "construction,",
+     "start": 38.15,
+     "end": 38.45
+    },
+    {
+     "word": "that",
+     "start": 39.03,
+     "end": 39.29
+    },
+    {
+     "word": "contradiction",
+     "start": 39.29,
+     "end": 39.77
+    },
+    {
+     "word": "gives",
+     "start": 39.77,
+     "end": 40.19
+    },
+    {
+     "word": "C.",
+     "start": 40.19,
+     "end": 40.51
+    }
+   ]
+  },
+  {
+   "id": "c9b4",
+   "status": "claimed",
+   "hold": "short",
+   "paragraph": "1.2",
+   "start": 40.885,
+   "end": 51.08,
+   "holdEnd": 51.88,
+   "text": "For D, shrink the construction into one cell of the torus and repeat it periodically. The copies do not interact, and a periodic comparison finishes the argument.",
+   "words": [
+    {
+     "word": "For",
+     "start": 41.26,
+     "end": 41.43
+    },
+    {
+     "word": "D,",
+     "start": 41.43,
+     "end": 41.67
+    },
+    {
+     "word": "shrink",
+     "start": 42.25,
+     "end": 42.25
+    },
+    {
+     "word": "the",
+     "start": 42.25,
+     "end": 42.57
+    },
+    {
+     "word": "construction",
+     "start": 42.57,
+     "end": 42.85
+    },
+    {
+     "word": "into",
+     "start": 42.85,
+     "end": 43.17
+    },
+    {
+     "word": "one",
+     "start": 43.17,
+     "end": 43.55
+    },
+    {
+     "word": "cell",
+     "start": 43.55,
+     "end": 43.73
+    },
+    {
+     "word": "of",
+     "start": 43.73,
+     "end": 43.87
+    },
+    {
+     "word": "the",
+     "start": 43.87,
+     "end": 44.31
+    },
+    {
+     "word": "torus",
+     "start": 44.31,
+     "end": 44.33
+    },
+    {
+     "word": "and",
+     "start": 44.33,
+     "end": 44.87
+    },
+    {
+     "word": "repeat",
+     "start": 44.87,
+     "end": 45.13
+    },
+    {
+     "word": "it",
+     "start": 45.13,
+     "end": 45.41
+    },
+    {
+     "word": "periodically.",
+     "start": 45.41,
+     "end": 45.85
+    },
+    {
+     "word": "The",
+     "start": 46.47,
+     "end": 46.75
+    },
+    {
+     "word": "copies",
+     "start": 46.75,
+     "end": 46.99
+    },
+    {
+     "word": "do",
+     "start": 46.99,
+     "end": 47.25
+    },
+    {
+     "word": "not",
+     "start": 47.25,
+     "end": 47.49
+    },
+    {
+     "word": "interact,",
+     "start": 47.49,
+     "end": 47.95
+    },
+    {
+     "word": "and",
+     "start": 48.33,
+     "end": 48.53
+    },
+    {
+     "word": "a",
+     "start": 48.53,
+     "end": 49.11
+    },
+    {
+     "word": "periodic",
+     "start": 49.11,
+     "end": 49.11
+    },
+    {
+     "word": "comparison",
+     "start": 49.11,
+     "end": 49.67
+    },
+    {
+     "word": "finishes",
+     "start": 49.67,
+     "end": 50.31
+    },
+    {
+     "word": "the",
+     "start": 50.31,
+     "end": 50.99
+    },
+    {
+     "word": "argument.",
+     "start": 50.99,
+     "end": 51.08
+    }
+   ]
+  }
+ ]
+}

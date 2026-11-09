@@ -1,0 +1,7 @@
+PASS negative_core_volume_missing_radial_dimension: rejected with exit 1
+Traceback (most recent call last):
+  File "verify/identities-negative-cor_e1tr/negative_core_volume.py", line 27, in <module>
+    equal('core_volume_exponent', volume, s.Rational(3,2)-h)
+  File "verify/identities-negative-cor_e1tr/negative_core_volume.py", line 19, in equal
+    raise AssertionError(f'{name}: residual {residual}')
+AssertionError: core_volume_exponent: residual -1/2

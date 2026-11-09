@@ -1,0 +1,806 @@
+{
+ "chapter": "c10",
+ "voice": "marin",
+ "model": "gpt-4o-mini-tts",
+ "speed": null,
+ "audio": "c10.wav",
+ "duration": 62.59,
+ "inserted": [
+  {
+   "at": 0.0,
+   "seconds": 1.67,
+   "where": "chapter start",
+   "reason": [
+    "title card held 2 s, first picture 0.25 s before the first word"
+   ]
+  },
+  {
+   "at": 61.97,
+   "seconds": 0.62,
+   "where": "after c10b4",
+   "reason": [
+    "tail+0.8: picture fades out"
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "id": "c10b1",
+   "status": "lean",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 2.25,
+   "end": 15.9,
+   "holdEnd": 16.255,
+   "text": "OpenAI's Lean development ends in two theorems, for C and for D. Each says: for every positive viscosity, there are admissible initial data and an admissible force for which no global smooth solution exists.",
+   "words": [
+    {
+     "word": "OpenAI's",
+     "start": 2.25,
+     "end": 3.17
+    },
+    {
+     "word": "Lean",
+     "start": 3.17,
+     "end": 3.29
+    },
+    {
+     "word": "development",
+     "start": 3.29,
+     "end": 3.75
+    },
+    {
+     "word": "ends",
+     "start": 3.75,
+     "end": 4.17
+    },
+    {
+     "word": "in",
+     "start": 4.17,
+     "end": 4.43
+    },
+    {
+     "word": "two",
+     "start": 4.43,
+     "end": 4.67
+    },
+    {
+     "word": "theorems,",
+     "start": 4.67,
+     "end": 4.99
+    },
+    {
+     "word": "for",
+     "start": 5.29,
+     "end": 5.49
+    },
+    {
+     "word": "C",
+     "start": 5.49,
+     "end": 5.71
+    },
+    {
+     "word": "and",
+     "start": 5.71,
+     "end": 5.99
+    },
+    {
+     "word": "for",
+     "start": 5.99,
+     "end": 6.33
+    },
+    {
+     "word": "D.",
+     "start": 6.33,
+     "end": 6.41
+    },
+    {
+     "word": "Each",
+     "start": 7.19,
+     "end": 7.29
+    },
+    {
+     "word": "says:",
+     "start": 7.29,
+     "end": 7.65
+    },
+    {
+     "word": "for",
+     "start": 8.05,
+     "end": 8.05
+    },
+    {
+     "word": "every",
+     "start": 8.05,
+     "end": 8.43
+    },
+    {
+     "word": "positive",
+     "start": 8.43,
+     "end": 8.83
+    },
+    {
+     "word": "viscosity,",
+     "start": 8.83,
+     "end": 9.39
+    },
+    {
+     "word": "there",
+     "start": 9.93,
+     "end": 9.93
+    },
+    {
+     "word": "are",
+     "start": 9.93,
+     "end": 10.15
+    },
+    {
+     "word": "admissible",
+     "start": 10.15,
+     "end": 10.59
+    },
+    {
+     "word": "initial",
+     "start": 10.59,
+     "end": 11.05
+    },
+    {
+     "word": "data",
+     "start": 11.05,
+     "end": 11.37
+    },
+    {
+     "word": "and",
+     "start": 11.37,
+     "end": 11.99
+    },
+    {
+     "word": "an",
+     "start": 11.99,
+     "end": 12.23
+    },
+    {
+     "word": "admissible",
+     "start": 12.23,
+     "end": 12.51
+    },
+    {
+     "word": "force",
+     "start": 12.51,
+     "end": 13.01
+    },
+    {
+     "word": "for",
+     "start": 13.01,
+     "end": 13.47
+    },
+    {
+     "word": "which",
+     "start": 13.47,
+     "end": 13.67
+    },
+    {
+     "word": "no",
+     "start": 13.67,
+     "end": 14.05
+    },
+    {
+     "word": "global",
+     "start": 14.05,
+     "end": 14.45
+    },
+    {
+     "word": "smooth",
+     "start": 14.45,
+     "end": 14.85
+    },
+    {
+     "word": "solution",
+     "start": 14.85,
+     "end": 15.29
+    },
+    {
+     "word": "exists.",
+     "start": 15.29,
+     "end": 15.9
+    }
+   ]
+  },
+  {
+   "id": "c10b2",
+   "status": "context",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 16.255,
+   "end": 31.74,
+   "holdEnd": 31.945,
+   "text": "Its predicates spell out the official clauses: smoothness, incompressibility, the same initial data, decay, finite energy with one uniform bound, periodic velocity and pressure. Compared with Fefferman's text clause by clause, we found none missing.",
+   "words": [
+    {
+     "word": "Its",
+     "start": 16.61,
+     "end": 16.85
+    },
+    {
+     "word": "predicates",
+     "start": 16.85,
+     "end": 17.29
+    },
+    {
+     "word": "spell",
+     "start": 17.29,
+     "end": 17.55
+    },
+    {
+     "word": "out",
+     "start": 17.55,
+     "end": 17.79
+    },
+    {
+     "word": "the",
+     "start": 17.79,
+     "end": 17.99
+    },
+    {
+     "word": "official",
+     "start": 17.99,
+     "end": 18.33
+    },
+    {
+     "word": "clauses:",
+     "start": 18.33,
+     "end": 18.97
+    },
+    {
+     "word": "smoothness,",
+     "start": 18.97,
+     "end": 19.85
+    },
+    {
+     "word": "incompressibility,",
+     "start": 20.23,
+     "end": 20.95
+    },
+    {
+     "word": "the",
+     "start": 21.35,
+     "end": 21.55
+    },
+    {
+     "word": "same",
+     "start": 21.55,
+     "end": 21.75
+    },
+    {
+     "word": "initial",
+     "start": 21.75,
+     "end": 22.03
+    },
+    {
+     "word": "data,",
+     "start": 22.03,
+     "end": 22.31
+    },
+    {
+     "word": "decay,",
+     "start": 22.71,
+     "end": 22.97
+    },
+    {
+     "word": "finite",
+     "start": 23.59,
+     "end": 23.75
+    },
+    {
+     "word": "energy",
+     "start": 23.75,
+     "end": 24.07
+    },
+    {
+     "word": "with",
+     "start": 24.07,
+     "end": 24.33
+    },
+    {
+     "word": "one",
+     "start": 24.33,
+     "end": 24.57
+    },
+    {
+     "word": "uniform",
+     "start": 24.57,
+     "end": 24.93
+    },
+    {
+     "word": "bound,",
+     "start": 24.93,
+     "end": 25.27
+    },
+    {
+     "word": "periodic",
+     "start": 25.87,
+     "end": 26.17
+    },
+    {
+     "word": "velocity",
+     "start": 26.17,
+     "end": 26.63
+    },
+    {
+     "word": "and",
+     "start": 26.63,
+     "end": 27.01
+    },
+    {
+     "word": "pressure.",
+     "start": 27.01,
+     "end": 27.41
+    },
+    {
+     "word": "Compared",
+     "start": 28.45,
+     "end": 28.45
+    },
+    {
+     "word": "with",
+     "start": 28.45,
+     "end": 28.71
+    },
+    {
+     "word": "Fefferman's",
+     "start": 28.71,
+     "end": 29.15
+    },
+    {
+     "word": "text",
+     "start": 29.15,
+     "end": 29.53
+    },
+    {
+     "word": "clause",
+     "start": 29.53,
+     "end": 29.81
+    },
+    {
+     "word": "by",
+     "start": 29.81,
+     "end": 30.03
+    },
+    {
+     "word": "clause,",
+     "start": 30.03,
+     "end": 30.31
+    },
+    {
+     "word": "we",
+     "start": 30.73,
+     "end": 30.87
+    },
+    {
+     "word": "found",
+     "start": 30.87,
+     "end": 31.09
+    },
+    {
+     "word": "none",
+     "start": 31.09,
+     "end": 31.37
+    },
+    {
+     "word": "missing.",
+     "start": 31.37,
+     "end": 31.74
+    }
+   ]
+  },
+  {
+   "id": "c10b3",
+   "status": "lean",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 31.945,
+   "end": 44.65,
+   "holdEnd": 45.22,
+   "text": "No hypothesis asks for a vortex or an estimate. OpenAI's own record lists both theorems with only the three standard axioms, and calls its review self-assessed. Nothing was rerun for this film.",
+   "words": [
+    {
+     "word": "No",
+     "start": 32.15,
+     "end": 32.43
+    },
+    {
+     "word": "hypothesis",
+     "start": 32.43,
+     "end": 32.99
+    },
+    {
+     "word": "asks",
+     "start": 32.99,
+     "end": 33.39
+    },
+    {
+     "word": "for",
+     "start": 33.39,
+     "end": 33.59
+    },
+    {
+     "word": "a",
+     "start": 33.59,
+     "end": 33.91
+    },
+    {
+     "word": "vortex",
+     "start": 33.91,
+     "end": 34.17
+    },
+    {
+     "word": "or",
+     "start": 34.17,
+     "end": 34.47
+    },
+    {
+     "word": "an",
+     "start": 34.47,
+     "end": 34.97
+    },
+    {
+     "word": "estimate.",
+     "start": 34.97,
+     "end": 34.97
+    },
+    {
+     "word": "OpenAI's",
+     "start": 35.81,
+     "end": 36.45
+    },
+    {
+     "word": "own",
+     "start": 36.45,
+     "end": 36.79
+    },
+    {
+     "word": "record",
+     "start": 36.79,
+     "end": 37.05
+    },
+    {
+     "word": "lists",
+     "start": 37.05,
+     "end": 37.33
+    },
+    {
+     "word": "both",
+     "start": 37.33,
+     "end": 37.75
+    },
+    {
+     "word": "theorems",
+     "start": 37.75,
+     "end": 38.13
+    },
+    {
+     "word": "with",
+     "start": 38.13,
+     "end": 38.61
+    },
+    {
+     "word": "only",
+     "start": 38.61,
+     "end": 38.85
+    },
+    {
+     "word": "the",
+     "start": 38.85,
+     "end": 39.07
+    },
+    {
+     "word": "three",
+     "start": 39.07,
+     "end": 39.35
+    },
+    {
+     "word": "standard",
+     "start": 39.35,
+     "end": 39.65
+    },
+    {
+     "word": "axioms,",
+     "start": 39.65,
+     "end": 40.07
+    },
+    {
+     "word": "and",
+     "start": 40.49,
+     "end": 40.85
+    },
+    {
+     "word": "calls",
+     "start": 40.85,
+     "end": 41.11
+    },
+    {
+     "word": "its",
+     "start": 41.11,
+     "end": 41.31
+    },
+    {
+     "word": "review",
+     "start": 41.31,
+     "end": 41.69
+    },
+    {
+     "word": "self-assessed.",
+     "start": 41.69,
+     "end": 42.45
+    },
+    {
+     "word": "Nothing",
+     "start": 43.05,
+     "end": 43.35
+    },
+    {
+     "word": "was",
+     "start": 43.35,
+     "end": 43.59
+    },
+    {
+     "word": "rerun",
+     "start": 43.59,
+     "end": 43.93
+    },
+    {
+     "word": "for",
+     "start": 43.93,
+     "end": 44.15
+    },
+    {
+     "word": "this",
+     "start": 44.15,
+     "end": 44.37
+    },
+    {
+     "word": "film.",
+     "start": 44.37,
+     "end": 44.65
+    }
+   ]
+  },
+  {
+   "id": "c10b4",
+   "status": "context",
+   "hold": "short",
+   "paragraph": "2.1",
+   "start": 45.22,
+   "end": 61.79,
+   "holdEnd": 62.59,
+   "text": "In October, Alexander Bastounis, Fabian Circelli and Anders Hansen showed two places where the Lean proof uses a different estimate from the paper: one more derivative, and another pressure bound. That refutes neither C nor D, but not every printed estimate was checked as written.",
+   "words": [
+    {
+     "word": "In",
+     "start": 45.22,
+     "end": 45.44
+    },
+    {
+     "word": "October,",
+     "start": 45.44,
+     "end": 45.9
+    },
+    {
+     "word": "Alexander",
+     "start": 46.46,
+     "end": 46.98
+    },
+    {
+     "word": "Bastounis,",
+     "start": 46.98,
+     "end": 47.6
+    },
+    {
+     "word": "Fabian",
+     "start": 48.2,
+     "end": 48.48
+    },
+    {
+     "word": "Circelli",
+     "start": 48.48,
+     "end": 49.04
+    },
+    {
+     "word": "and",
+     "start": 49.38,
+     "end": 49.44
+    },
+    {
+     "word": "Anders",
+     "start": 49.44,
+     "end": 49.82
+    },
+    {
+     "word": "Hansen",
+     "start": 49.82,
+     "end": 50.24
+    },
+    {
+     "word": "showed",
+     "start": 50.24,
+     "end": 50.54
+    },
+    {
+     "word": "two",
+     "start": 50.54,
+     "end": 50.82
+    },
+    {
+     "word": "places",
+     "start": 50.82,
+     "end": 51.16
+    },
+    {
+     "word": "where",
+     "start": 51.16,
+     "end": 51.4
+    },
+    {
+     "word": "the",
+     "start": 51.4,
+     "end": 51.6
+    },
+    {
+     "word": "Lean",
+     "start": 51.6,
+     "end": 51.72
+    },
+    {
+     "word": "proof",
+     "start": 51.72,
+     "end": 52.0
+    },
+    {
+     "word": "uses",
+     "start": 52.0,
+     "end": 52.24
+    },
+    {
+     "word": "a",
+     "start": 52.24,
+     "end": 52.48
+    },
+    {
+     "word": "different",
+     "start": 52.48,
+     "end": 52.74
+    },
+    {
+     "word": "estimate",
+     "start": 52.74,
+     "end": 53.02
+    },
+    {
+     "word": "from",
+     "start": 53.02,
+     "end": 53.26
+    },
+    {
+     "word": "the",
+     "start": 53.26,
+     "end": 53.44
+    },
+    {
+     "word": "paper:",
+     "start": 53.44,
+     "end": 53.66
+    },
+    {
+     "word": "one",
+     "start": 54.34,
+     "end": 54.44
+    },
+    {
+     "word": "more",
+     "start": 54.44,
+     "end": 54.7
+    },
+    {
+     "word": "derivative,",
+     "start": 54.7,
+     "end": 54.98
+    },
+    {
+     "word": "and",
+     "start": 55.02,
+     "end": 55.58
+    },
+    {
+     "word": "another",
+     "start": 55.58,
+     "end": 55.84
+    },
+    {
+     "word": "pressure",
+     "start": 55.84,
+     "end": 56.14
+    },
+    {
+     "word": "bound.",
+     "start": 56.14,
+     "end": 56.52
+    },
+    {
+     "word": "That",
+     "start": 56.9,
+     "end": 57.22
+    },
+    {
+     "word": "refutes",
+     "start": 57.22,
+     "end": 57.58
+    },
+    {
+     "word": "neither",
+     "start": 57.58,
+     "end": 57.88
+    },
+    {
+     "word": "C",
+     "start": 57.88,
+     "end": 58.26
+    },
+    {
+     "word": "nor",
+     "start": 58.26,
+     "end": 58.66
+    },
+    {
+     "word": "D,",
+     "start": 58.66,
+     "end": 58.94
+    },
+    {
+     "word": "but",
+     "start": 59.3,
+     "end": 59.62
+    },
+    {
+     "word": "not",
+     "start": 59.62,
+     "end": 59.86
+    },
+    {
+     "word": "every",
+     "start": 59.86,
+     "end": 60.26
+    },
+    {
+     "word": "printed",
+     "start": 60.26,
+     "end": 60.48
+    },
+    {
+     "word": "estimate",
+     "start": 60.48,
+     "end": 60.82
+    },
+    {
+     "word": "was",
+     "start": 60.82,
+     "end": 61.1
+    },
+    {
+     "word": "checked",
+     "start": 61.1,
+     "end": 61.3
+    },
+    {
+     "word": "as",
+     "start": 61.3,
+     "end": 61.58
+    },
+    {
+     "word": "written.",
+     "start": 61.58,
+     "end": 61.79
+    }
+   ]
+  }
+ ]
+}

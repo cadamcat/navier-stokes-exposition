@@ -1,0 +1,866 @@
+{
+ "chapter": "c5",
+ "voice": "marin",
+ "model": "gpt-4o-mini-tts",
+ "speed": null,
+ "audio": "c5.wav",
+ "duration": 64.84,
+ "inserted": [
+  {
+   "at": 0.0,
+   "seconds": 2.07,
+   "where": "chapter start",
+   "reason": [
+    "title card held 2 s, first picture 0.25 s before the first word"
+   ]
+  },
+  {
+   "at": 64.17,
+   "seconds": 0.67,
+   "where": "after c5b4",
+   "reason": [
+    "tail+0.8: picture fades out"
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "id": "c5b1",
+   "status": "proved",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 2.25,
+   "end": 16.38,
+   "holdEnd": 16.645,
+   "text": "Rescale a solution by a factor lambda: space shrinks by lambda, time by lambda squared, and the velocity grows by lambda. It still solves the equations, with the same viscosity and a rescaled force.",
+   "words": [
+    {
+     "word": "Rescale",
+     "start": 2.25,
+     "end": 2.79
+    },
+    {
+     "word": "a",
+     "start": 2.79,
+     "end": 3.13
+    },
+    {
+     "word": "solution",
+     "start": 3.13,
+     "end": 3.41
+    },
+    {
+     "word": "by",
+     "start": 3.41,
+     "end": 3.67
+    },
+    {
+     "word": "a",
+     "start": 3.67,
+     "end": 4.23
+    },
+    {
+     "word": "factor",
+     "start": 4.23,
+     "end": 4.23
+    },
+    {
+     "word": "lambda:",
+     "start": 4.23,
+     "end": 4.63
+    },
+    {
+     "word": "space",
+     "start": 5.57,
+     "end": 5.57
+    },
+    {
+     "word": "shrinks",
+     "start": 5.57,
+     "end": 5.93
+    },
+    {
+     "word": "by",
+     "start": 5.93,
+     "end": 6.29
+    },
+    {
+     "word": "lambda,",
+     "start": 6.29,
+     "end": 6.47
+    },
+    {
+     "word": "time",
+     "start": 7.17,
+     "end": 7.47
+    },
+    {
+     "word": "by",
+     "start": 7.47,
+     "end": 7.77
+    },
+    {
+     "word": "lambda",
+     "start": 7.77,
+     "end": 8.01
+    },
+    {
+     "word": "squared,",
+     "start": 8.01,
+     "end": 8.47
+    },
+    {
+     "word": "and",
+     "start": 8.81,
+     "end": 9.17
+    },
+    {
+     "word": "the",
+     "start": 9.17,
+     "end": 9.39
+    },
+    {
+     "word": "velocity",
+     "start": 9.39,
+     "end": 9.73
+    },
+    {
+     "word": "grows",
+     "start": 9.73,
+     "end": 10.21
+    },
+    {
+     "word": "by",
+     "start": 10.21,
+     "end": 10.59
+    },
+    {
+     "word": "lambda.",
+     "start": 10.59,
+     "end": 10.81
+    },
+    {
+     "word": "It",
+     "start": 11.35,
+     "end": 11.79
+    },
+    {
+     "word": "still",
+     "start": 11.79,
+     "end": 12.11
+    },
+    {
+     "word": "solves",
+     "start": 12.11,
+     "end": 12.41
+    },
+    {
+     "word": "the",
+     "start": 12.41,
+     "end": 13.13
+    },
+    {
+     "word": "equations,",
+     "start": 13.13,
+     "end": 13.13
+    },
+    {
+     "word": "with",
+     "start": 13.13,
+     "end": 13.71
+    },
+    {
+     "word": "the",
+     "start": 13.71,
+     "end": 13.93
+    },
+    {
+     "word": "same",
+     "start": 13.93,
+     "end": 14.13
+    },
+    {
+     "word": "viscosity",
+     "start": 14.13,
+     "end": 14.59
+    },
+    {
+     "word": "and",
+     "start": 14.59,
+     "end": 15.21
+    },
+    {
+     "word": "a",
+     "start": 15.21,
+     "end": 15.59
+    },
+    {
+     "word": "rescaled",
+     "start": 15.59,
+     "end": 15.89
+    },
+    {
+     "word": "force.",
+     "start": 15.89,
+     "end": 16.38
+    }
+   ]
+  },
+  {
+   "id": "c5b2",
+   "status": "proved",
+   "hold": "short",
+   "paragraph": "1.1",
+   "start": 16.645,
+   "end": 29.23,
+   "holdEnd": 29.47,
+   "text": "The L three norm does not change, but the energy is divided by lambda. Packing a flow into ever smaller regions costs ever less energy: in three dimensions, the energy bound is supercritical.",
+   "words": [
+    {
+     "word": "The",
+     "start": 16.91,
+     "end": 17.05
+    },
+    {
+     "word": "L",
+     "start": 17.05,
+     "end": 17.165
+    },
+    {
+     "word": "three",
+     "start": 17.165,
+     "end": 17.51
+    },
+    {
+     "word": "norm",
+     "start": 17.51,
+     "end": 17.73
+    },
+    {
+     "word": "does",
+     "start": 17.73,
+     "end": 17.97
+    },
+    {
+     "word": "not",
+     "start": 17.97,
+     "end": 18.23
+    },
+    {
+     "word": "change,",
+     "start": 18.23,
+     "end": 18.57
+    },
+    {
+     "word": "but",
+     "start": 18.97,
+     "end": 19.11
+    },
+    {
+     "word": "the",
+     "start": 19.11,
+     "end": 19.55
+    },
+    {
+     "word": "energy",
+     "start": 19.55,
+     "end": 19.59
+    },
+    {
+     "word": "is",
+     "start": 19.59,
+     "end": 19.99
+    },
+    {
+     "word": "divided",
+     "start": 19.99,
+     "end": 20.29
+    },
+    {
+     "word": "by",
+     "start": 20.29,
+     "end": 20.65
+    },
+    {
+     "word": "lambda.",
+     "start": 20.65,
+     "end": 20.93
+    },
+    {
+     "word": "Packing",
+     "start": 21.97,
+     "end": 21.97
+    },
+    {
+     "word": "a",
+     "start": 21.97,
+     "end": 22.41
+    },
+    {
+     "word": "flow",
+     "start": 22.41,
+     "end": 22.41
+    },
+    {
+     "word": "into",
+     "start": 22.41,
+     "end": 22.71
+    },
+    {
+     "word": "ever",
+     "start": 22.71,
+     "end": 23.09
+    },
+    {
+     "word": "smaller",
+     "start": 23.09,
+     "end": 23.37
+    },
+    {
+     "word": "regions",
+     "start": 23.37,
+     "end": 23.83
+    },
+    {
+     "word": "costs",
+     "start": 23.83,
+     "end": 24.51
+    },
+    {
+     "word": "ever",
+     "start": 24.51,
+     "end": 24.97
+    },
+    {
+     "word": "less",
+     "start": 24.97,
+     "end": 25.21
+    },
+    {
+     "word": "energy:",
+     "start": 25.21,
+     "end": 25.55
+    },
+    {
+     "word": "in",
+     "start": 26.13,
+     "end": 26.29
+    },
+    {
+     "word": "three",
+     "start": 26.29,
+     "end": 26.57
+    },
+    {
+     "word": "dimensions,",
+     "start": 26.57,
+     "end": 26.95
+    },
+    {
+     "word": "the",
+     "start": 27.37,
+     "end": 27.57
+    },
+    {
+     "word": "energy",
+     "start": 27.57,
+     "end": 27.85
+    },
+    {
+     "word": "bound",
+     "start": 27.85,
+     "end": 28.19
+    },
+    {
+     "word": "is",
+     "start": 28.19,
+     "end": 28.49
+    },
+    {
+     "word": "supercritical.",
+     "start": 28.49,
+     "end": 29.23
+    }
+   ]
+  },
+  {
+   "id": "c5b3",
+   "status": "claimed",
+   "hold": "short",
+   "paragraph": "2.1",
+   "start": 29.47,
+   "end": 49.38,
+   "holdEnd": 49.86,
+   "text": "Put the blowup time at one, and let tau be the time left. The announced core's radius shrinks like tau to the one half. Its length shrinks like tau to the one half minus h, for a small fixed number h. Its speed grows like tau to the minus one half minus h.",
+   "words": [
+    {
+     "word": "Put",
+     "start": 29.47,
+     "end": 29.73
+    },
+    {
+     "word": "the",
+     "start": 29.73,
+     "end": 30.01
+    },
+    {
+     "word": "blowup",
+     "start": 30.01,
+     "end": 30.35
+    },
+    {
+     "word": "time",
+     "start": 30.35,
+     "end": 30.65
+    },
+    {
+     "word": "at",
+     "start": 30.65,
+     "end": 30.85
+    },
+    {
+     "word": "one,",
+     "start": 30.85,
+     "end": 31.11
+    },
+    {
+     "word": "and",
+     "start": 31.59,
+     "end": 31.81
+    },
+    {
+     "word": "let",
+     "start": 31.81,
+     "end": 31.99
+    },
+    {
+     "word": "tau",
+     "start": 31.99,
+     "end": 32.29
+    },
+    {
+     "word": "be",
+     "start": 32.29,
+     "end": 32.49
+    },
+    {
+     "word": "the",
+     "start": 32.49,
+     "end": 32.65
+    },
+    {
+     "word": "time",
+     "start": 32.65,
+     "end": 32.97
+    },
+    {
+     "word": "left.",
+     "start": 32.97,
+     "end": 33.31
+    },
+    {
+     "word": "The",
+     "start": 34.01,
+     "end": 34.15
+    },
+    {
+     "word": "announced",
+     "start": 34.15,
+     "end": 34.49
+    },
+    {
+     "word": "core's",
+     "start": 34.49,
+     "end": 35.07
+    },
+    {
+     "word": "radius",
+     "start": 35.07,
+     "end": 35.33
+    },
+    {
+     "word": "shrinks",
+     "start": 35.33,
+     "end": 35.75
+    },
+    {
+     "word": "like",
+     "start": 36.51,
+     "end": 36.81
+    },
+    {
+     "word": "tau",
+     "start": 36.81,
+     "end": 37.15
+    },
+    {
+     "word": "to",
+     "start": 37.15,
+     "end": 37.35
+    },
+    {
+     "word": "the",
+     "start": 37.35,
+     "end": 37.57
+    },
+    {
+     "word": "one",
+     "start": 37.57,
+     "end": 37.77
+    },
+    {
+     "word": "half.",
+     "start": 37.77,
+     "end": 38.05
+    },
+    {
+     "word": "Its",
+     "start": 38.77,
+     "end": 39.11
+    },
+    {
+     "word": "length",
+     "start": 39.11,
+     "end": 39.47
+    },
+    {
+     "word": "shrinks",
+     "start": 39.47,
+     "end": 39.85
+    },
+    {
+     "word": "like",
+     "start": 40.49,
+     "end": 40.89
+    },
+    {
+     "word": "tau",
+     "start": 40.89,
+     "end": 40.93
+    },
+    {
+     "word": "to",
+     "start": 40.93,
+     "end": 41.13
+    },
+    {
+     "word": "the",
+     "start": 41.13,
+     "end": 41.37
+    },
+    {
+     "word": "one",
+     "start": 41.37,
+     "end": 41.53
+    },
+    {
+     "word": "half",
+     "start": 41.53,
+     "end": 41.81
+    },
+    {
+     "word": "minus",
+     "start": 41.81,
+     "end": 42.15
+    },
+    {
+     "word": "h,",
+     "start": 42.15,
+     "end": 42.45
+    },
+    {
+     "word": "for",
+     "start": 43.09,
+     "end": 43.19
+    },
+    {
+     "word": "a",
+     "start": 43.19,
+     "end": 43.41
+    },
+    {
+     "word": "small",
+     "start": 43.41,
+     "end": 43.75
+    },
+    {
+     "word": "fixed",
+     "start": 43.75,
+     "end": 44.09
+    },
+    {
+     "word": "number",
+     "start": 44.09,
+     "end": 44.37
+    },
+    {
+     "word": "h.",
+     "start": 44.37,
+     "end": 44.85
+    },
+    {
+     "word": "Its",
+     "start": 45.73,
+     "end": 46.03
+    },
+    {
+     "word": "speed",
+     "start": 46.03,
+     "end": 46.33
+    },
+    {
+     "word": "grows",
+     "start": 46.33,
+     "end": 46.71
+    },
+    {
+     "word": "like",
+     "start": 46.97,
+     "end": 47.19
+    },
+    {
+     "word": "tau",
+     "start": 47.19,
+     "end": 47.37
+    },
+    {
+     "word": "to",
+     "start": 47.37,
+     "end": 47.59
+    },
+    {
+     "word": "the",
+     "start": 47.59,
+     "end": 47.75
+    },
+    {
+     "word": "minus",
+     "start": 47.75,
+     "end": 48.09
+    },
+    {
+     "word": "one",
+     "start": 48.09,
+     "end": 48.43
+    },
+    {
+     "word": "half",
+     "start": 48.43,
+     "end": 48.63
+    },
+    {
+     "word": "minus",
+     "start": 48.63,
+     "end": 48.91
+    },
+    {
+     "word": "h.",
+     "start": 48.91,
+     "end": 49.38
+    }
+   ]
+  },
+  {
+   "id": "c5b4",
+   "status": "computed",
+   "hold": "short",
+   "paragraph": "2.1",
+   "start": 49.86,
+   "end": 64.04,
+   "holdEnd": 64.84,
+   "text": "Multiply the squared speed by the core's volume. The core's energy then scales like tau to the one half minus three h, which tends to zero. So the peak speed grows without bound, while the core's energy shrinks.",
+   "words": [
+    {
+     "word": "Multiply",
+     "start": 50.34,
+     "end": 50.83
+    },
+    {
+     "word": "the",
+     "start": 50.83,
+     "end": 51.13
+    },
+    {
+     "word": "squared",
+     "start": 51.13,
+     "end": 51.43
+    },
+    {
+     "word": "speed",
+     "start": 51.43,
+     "end": 51.75
+    },
+    {
+     "word": "by",
+     "start": 51.75,
+     "end": 51.97
+    },
+    {
+     "word": "the",
+     "start": 51.97,
+     "end": 52.31
+    },
+    {
+     "word": "core's",
+     "start": 52.31,
+     "end": 52.49
+    },
+    {
+     "word": "volume.",
+     "start": 52.49,
+     "end": 52.81
+    },
+    {
+     "word": "The",
+     "start": 53.53,
+     "end": 53.83
+    },
+    {
+     "word": "core's",
+     "start": 53.83,
+     "end": 54.21
+    },
+    {
+     "word": "energy",
+     "start": 54.21,
+     "end": 54.49
+    },
+    {
+     "word": "then",
+     "start": 54.49,
+     "end": 55.15
+    },
+    {
+     "word": "scales",
+     "start": 55.15,
+     "end": 55.17
+    },
+    {
+     "word": "like",
+     "start": 55.17,
+     "end": 55.51
+    },
+    {
+     "word": "tau",
+     "start": 55.51,
+     "end": 55.69
+    },
+    {
+     "word": "to",
+     "start": 55.69,
+     "end": 55.85
+    },
+    {
+     "word": "the",
+     "start": 55.85,
+     "end": 56.07
+    },
+    {
+     "word": "one",
+     "start": 56.07,
+     "end": 56.37
+    },
+    {
+     "word": "half",
+     "start": 56.37,
+     "end": 56.45
+    },
+    {
+     "word": "minus",
+     "start": 56.45,
+     "end": 56.83
+    },
+    {
+     "word": "three",
+     "start": 56.83,
+     "end": 57.13
+    },
+    {
+     "word": "h,",
+     "start": 57.13,
+     "end": 57.39
+    },
+    {
+     "word": "which",
+     "start": 57.81,
+     "end": 58.13
+    },
+    {
+     "word": "tends",
+     "start": 58.13,
+     "end": 58.35
+    },
+    {
+     "word": "to",
+     "start": 58.35,
+     "end": 58.63
+    },
+    {
+     "word": "zero.",
+     "start": 58.63,
+     "end": 58.87
+    },
+    {
+     "word": "So",
+     "start": 59.83,
+     "end": 59.95
+    },
+    {
+     "word": "the",
+     "start": 59.95,
+     "end": 60.11
+    },
+    {
+     "word": "peak",
+     "start": 60.11,
+     "end": 60.39
+    },
+    {
+     "word": "speed",
+     "start": 60.39,
+     "end": 60.75
+    },
+    {
+     "word": "grows",
+     "start": 60.75,
+     "end": 61.13
+    },
+    {
+     "word": "without",
+     "start": 61.13,
+     "end": 61.51
+    },
+    {
+     "word": "bound,",
+     "start": 61.51,
+     "end": 61.87
+    },
+    {
+     "word": "while",
+     "start": 62.45,
+     "end": 62.59
+    },
+    {
+     "word": "the",
+     "start": 62.59,
+     "end": 62.95
+    },
+    {
+     "word": "core's",
+     "start": 62.95,
+     "end": 63.13
+    },
+    {
+     "word": "energy",
+     "start": 63.13,
+     "end": 63.47
+    },
+    {
+     "word": "shrinks.",
+     "start": 63.47,
+     "end": 64.04
+    }
+   ]
+  }
+ ]
+}
